@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/*Lits base styles*/
+
+/*Small users list*/
+.list-users {
+   overflow: hidden;
+   }
+   .list-users li {
+      float: left;
+      width: 79px;
+      position: relative;
+      overflow: hidden;
+      }
+      .list-users .mask {
+         background: transparent 0 0 no-repeat;
+         position: absolute;
+         width: 79px;
+         height: 79px;
+         z-index: 10;
+         }
+      .list-users .foto {
+         display: block;
+         }
+      .list-users .title {
+         display: block;
+         font-weight: bold;
+         margin-top: 2px;
+         }
+      .list-users .overlay {
+         background: url('../images/bg-top-listusers-overlay.png') 0 0 repeat;
+         position: absolute;
+         bottom: 0;
+         z-index: 5;
+         height: 18px;
+         padding: 2px 4px;
+         color: #FFF;
+         font-size: .8em;
+         }
+      .list-users .ico {
+         display: block;
+         line-height: .75em;
+         letter-spacing:-0.03em;
+         }
+      .list-users .ico.online {
+         background: url('../images/ic-online.png') 1px 0 no-repeat;
+         padding-left: 10px;
+         line-height: .7em;
+         clear: both;
+         margin-bottom: 1px;
+         }
+      .list-users .ico.offline {
+         background: url('../images/ic-offline.png') 1px 0 no-repeat;
+         padding-left: 10px;
+         line-height: .7em;
+         clear: both;
+         margin-bottom: 1px;
+         }
+.list-users.list-profiles .title {
+   margin: 5px 0 3px;
+   }
+.list-users.list-profiles .rating {
+   font-size: .9em;
+   }
+   .list-users.list-profiles .rating b {
+      font-size: 12px;
+      }
+         
+/*Base hightlights list*/
+
+.list-highlights li {
+   padding: 8px 0 6px 0;
+   }
+   .list-highlights .title {
+      display: block;
+      }
+   .list-highlights .category {
+      font-size: .85em;
+      }
+   .list-highlights .date {
+      color: #808080;
+      font-size: .85em;
+      float: right;
+      }
+   .list-highlights .intro {
+      display: block;
+      margin: 3px 0 2px;
+      }
+   .list-highlights li .more {
+      float: right;
+      font-size: .9em;
+      }
+   .list-highlights a:link, .list-highlights a:active, .list-highlights a:visited {
+      color: #000;
+      }
+
+/*News list*/
+.list-highlights.comments {
+   margin-bottom: 10px;
+   }
+.list-highlights.comments li {
+   border-bottom: 1px solid #D5E0E4;
+   padding: 4px 0;
+   }
+   .list-highlights.comments .more {
+      font-weight: bold;
+      }
+   .list-highlights.comments .more:link, .list-highlights.comments .more:active, .list-highlights.comments .more:visited {
+      color: #C1062D;
+      }
+
+/*News list*/
+.list-highlights.news li {
+   padding-left: 127px;
+   }
+   .list-highlights.news .foto {
+      float: left;
+      margin-left: -127px;
+      }
+
+/*hotel-challenge list*/
+.list-highlights.hotel-challenge {
+   margin-right: -40px;
+   }
+   .list-highlights.hotel-challenge li {
+      float: left;
+      position: relative;
+      margin: 0 40px 10px 0;
+      padding: 0;
+      }
+      .list-highlights.hotel-challenge .foto {
+         display: block;
+         margin-bottom: 2px;
+         }
+
+
+.list-fotos,
+.list-friends {
+   overflow: hidden;
+   margin-right: -4px;
+   }
+   .list-fotos li,
+   .list-friends li {
+      float: left;
+      display: inline;
+      position: relative;
+      margin: 0 4px 4px 0;
+      }
+      .list-fotos .foto,
+      .list-friends img {
+         position: relative;
+         display: block;
+         }
+
+.list-fotos.videos .mask {
+   background: url('../images/bg-video-mask.png') 0 0 no-repeat;
+   position: absolute;
+   z-index: 8;
+   width: 44px;
+   height: 43px;
+   margin: 0 2px 0;
+   }
+.list-friends li {
+   min-height: 60px;
+   margin-bottom: 6px;
+   }
+   .list-friends img {
+      margin-bottom: 1px;
+      }
+   .list-friends .title {
+      font-size: .9em;
+      font-weight: bold;
+      }
+   .list-friends .title:link, .list-friends .title:active, .list-friends .title:visited {
+      color: #000;
+      }
+
+/*list fotos from section*/
+.list-section-fotos {
+   overflow: hidden;
+   margin-right: -7px;
+   }
+   .list-section-fotos li {
+      background: #FFF;
+      border: 1px solid #BBC6CA;
+      float: left;
+      width: 112px;
+      text-align: center;
+      margin-right: 5px;
+      padding: 4px;
+      }
+      .list-section-fotos .foto {
+         margin-bottom: -2px;
+         }

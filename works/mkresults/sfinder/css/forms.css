@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/*
+* Title: Forms styles
+*/
+input[type=text],
+input[type=password],
+select { 
+   font-size: 1.1em; 
+   padding: 3px 0 2px 1px; 
+   vertical-align: middle;
+}
+input[type=submit], 
+input[type=button],
+.button { 
+   font-size: 1.1em; 
+   font-weight: bold; 
+   text-align: center; 
+   vertical-align: middle; 
+   padding: 0 2px 3px; 
+}
+.button { 
+   border: none; 
+   color: #040404;
+   display: inline-block;
+   white-space: nowrap;
+   text-shadow: 1px 1px 1px #FFF;
+}
+a.button {
+   line-height: 1.6em;
+   width: 43px;
+   height: 20px;
+   }
+a.button:link, a.button:active, a.button:visited {
+   text-decoration: none;
+}
+.button.big-green,
+.button.big-pink {
+   font-size: 1.2em;
+   line-height: 1.9em;
+   width: 62px;
+   height: 26px;
+   }
+.button.big-green {
+   background: url('../images/bg-button-big-green.png') 0 0 no-repeat;
+   }
+.button.big-pink {
+   background: url('../images/bg-button-big-pink.png') 0 0 no-repeat;
+   }
+.button.big-purple {
+   background: url('../images/bg-button-big-purple.png') 0 0 no-repeat;
+   color: #FFF;
+   font-size: 1.6em;
+   font-weight: normal;
+   width: 101px;
+   height: 34px;
+   line-height: 34px;
+   text-shadow: 1px 1px 4px #555;
+   }
+
+.button.green {
+   background: url('../images/bg-button-green.png') 0 0 no-repeat;
+   }
+.button.pink {
+   background: url('../images/bg-button-pink.png') 0 0 no-repeat;
+   }
+.button.green-stretch {
+   background: #FFF url('../images/bg-button-green-repeat.png') 0 0 repeat-x;
+   border-top: 1px solid #5EA426;
+   border-left: 1px solid #5A9927;
+   border-bottom: 1px solid #337201;
+   border-right: 1px solid #54941F;
+   border-radius: 1px;
+   -moz-border-radius: 1px;
+   -webkit-border-radius: 1px;
+   box-shadow: inset 1px 1px #CBE98C;
+   -moz-box-shadow: inset 1px 1px 0 #CBE98C;
+   -webkit-box-shadow: inset 1px 1px 0 #CBE98C;
+   font-size: 1em;
+   height: 19px;
+   width: auto;
+   padding: 0 10px 1px;
+   }
+.button.grey,
+.button.big-grey {
+   background: #FFF url('../images/bg-button-grey-repeat.png') 0 0 repeat-x;
+   border-top: 1px solid #ADADAD;
+   border-left: 1px solid #AAA;
+   border-bottom: 1px solid #717171;
+   border-right: 1px solid #777;
+   border-radius: 1px;
+   -moz-border-radius: 1px;
+   -webkit-border-radius: 1px;
+   box-shadow: inset 1px 1px #EBEBEB;
+   -moz-box-shadow: inset 1px 1px 0 #EBEBEB;
+   -webkit-box-shadow: inset 1px 1px 0 #EBEBEB;
+   height: 25px;
+   padding: 0 10px 1px;
+   }
+.button.big-grey {
+   background-color: #9C9C9C;
+   font-size: 1.2em;
+   height: 28px;
+   padding: 0 15px 3px;
+   }
+.button.grey:active,
+.button.big-grey:active {
+   color: #444;
+   box-shadow: inset 1px 1px 3px #333;
+   -moz-box-shadow: inset 1px 1px 3px #333;
+   -webkit-box-shadow: inset 1px 1px 3px #333;
+   }
+
+
+/*******************************
+* =Forms
+********************************/
+.form-cont {
+   overflow: hidden;
+   margin-bottom: 10px;
+   }
+   
+   .form-cont .field {
+      border-top: 1px dotted #CCC;
+      overflow: hidden;
+      clear: both;
+      padding: 7px 14px 8px 0
+      }
+   .form-cont .field:first-child {
+      border: none;
+      }
+      .form-cont label {
+         color: #313131;
+         font-weight: bold;
+         float: left;
+         width: 205px;
+         line-height: 1.7em;
+         text-align: right;
+         padding-right: 10px;
+         }
+      .form-cont .checkbox,
+      .form-cont .radio {
+         float: none;
+         font-size: 1.2em;
+         margin-right: 6px;
+         padding: 0 3px 0 0;
+         }
+         .form-cont .checkbox input,
+         .form-cont .radio input {
+            vertical-align: -2px;
+            }
+      .form-cont input[type=text],
+      .form-cont select {
+         border: 1px solid #CCC;
+         }
+      .form-cont select {
+         min-width: 224px;
+         }
+      .form-cont .mini-inp {
+         min-width: 94px;
+         }
+      .form-cont .date {
+         min-width: 64px;
+         margin-right: 10px;
+         }
+      .form-cont .field-text {
+         font-size: 1.2em;
+         line-height: 1.5em;
+         }
+      .form-cont .sum {
+         color: #48940C;
+         font-size: 1.2em;
+         float: right;
+         }
+      .form-cont .total {
+         padding: 25px 14px 20px 0;
+         }
+      .form-cont .total .sum {
+         font-size: 1.6em;
+         font-weight: bold;
+         }
+         .form-cont .total .sum span {
+            color: #313131;
+            margin-right: 5px;
+            }
+
+      /*Tabular fields*/
+      .form-cont fieldset > table {
+         width: 100%;
+         }
+      .form-cont td.field {
+         border: none;
+         padding: 7px 0 8px;
+         }
+         .form-cont td.field label {
+            display: block;
+            text-align: left;
+            width: auto;
+            float: none;
+            }

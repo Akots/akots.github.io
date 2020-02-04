@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+   
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+   <title>Invalid confirmation link - SiteManager</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Language" content="en" />
+   <meta name="description" content="" />
+   <meta name="keywords" content="" />
+   <meta name="robots" content="all" />
+   
+   <link rel="stylesheet" type="text/css" href="css/base.css" media="all" />
+   <link rel="stylesheet" href="css/jquery-ui.custom.css" type="text/css" media="all" />
+
+   <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" media="all" /><![endif]-->
+   <script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+   <script src="js/common.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<!-- BEGIN #wrapper -->
+<div id="wrapper">
+   <div id="header-outer">
+      <div id="header">
+         <h1 id="logo"><a title="Go on Startup page" href="#">Site Manager </a></h1>
+         <div class="nav top-menu">
+            <ul>
+               <li class="autoriz"><a class="tg-signin pseudo" href="#"><span>Sign in</span></a> <a class="tg-register pseudo" href="#"><span>Registration</span></a></li>
+               <li><a href="#">Features<i></i></a></li>
+               <li><a href="#">Pricing<i></i></a></li>
+               <li><a href="#">Demo<i></i></a></li>
+               <li><a href="#">Community<i></i></a></li>
+               <li class="current"><a href="#">Support<i></i></a></li>
+            </ul>
+         </div><!-- /.top-menu -->
+      </div>
+   </div><!-- /#header -->
+   <div class="g-message">
+      <div class="inner"><span>Invalid confirmation link.</span></div>
+   </div>
+
+   <div id="footer">&copy; 2010 Site Manager. All Rights Reserved.</div>
+</div>
+<!-- END #wrapper -->
+
+<div class="over-panel signin">
+   <div class="inner">
+      <h1>Sign In</h1>
+      <div class="error-message">Invalid Login or password</div>
+      <form class="form-cont" action="Landing_submit" method="get">
+         <div class="field"><label for="sign-login">Login / E-mail</label>
+            <input type="text" maxlength="50" name="login" id="sign-login" class="inputbox" /></div>
+            
+         <div class="field"><label for="sign-password">Password</label>
+            <input type="password" maxlength="50" name="password" id="sign-password" class="inputbox" /></div>
+         
+         <div class="submit">
+               <button class="button yellow"><span>GO!</span><i></i></button> or <a class="cancel pseudo" href="#">Cancel</a>
+         </div>
+      </form>
+   </div>
+</div>
+
+
+<div class="over-panel register">
+   <div class="inner">
+      <h1>Registration</h1>
+      <form class="form-cont cols" action="Landing_submit" method="get">
+         <div class="field"><label for="sign-login">Login:</label>
+            <input type="text" maxlength="50" name="login" id="reg-login" class="inputbox" /></div>
+         
+         <div class="field"><label for="sign-email">E-mail:</label>
+            <input type="text" maxlength="50" name="email" id="reg-email" class="inputbox" /></div>
+            
+         <div class="field"><label for="sign-password">Password:</label>
+            <input type="password" maxlength="50" name="password" id="reg-password" class="inputbox" /></div>
+         
+         <div class="field"><label for="sign-confirmpassword">Confirm Password:</label>
+            <input type="password" maxlength="50" name="confirmpassword" id="reg-confirmpassword" class="inputbox" /></div>
+         
+         <div class="field capcha">
+            <img src="images/imgs/img-capcha.png" width="83" height="43" alt="Capcha" />
+            <label for="reg-capcha">Enter the code:</label>
+            <input type="text" maxlength="4" name="capcha" id="reg-capcha" class="inputbox" />
+         </div>
+
+         <div class="submit">
+               <button class="button yellow"><span>GO!</span><i></i></button> or <a class="cancel pseudo" href="#">Cancel</a>
+         </div>
+      </form>
+   </div>
+</div>
+
+</body>
+</html>

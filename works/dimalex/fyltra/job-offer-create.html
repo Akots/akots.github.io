@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+   
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+   <title>Create Job Offer - Fyltra</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Language" content="en" />
+   <meta name="description" content="" />
+   <meta name="keywords" content="" />
+   <meta name="robots" content="all" />
+   <link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />
+   <link rel="stylesheet" type="text/css" media="all" href="stylesheets/base.css" />
+   
+   <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="stylesheets/ie.css" media="all" /><![endif]-->
+
+   <script src="javascripts/rounded-corners.js" type="text/javascript" charset="utf-8"></script>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script src="javascripts/jqModal.js" type="text/javascript"></script>
+   <script src="javascripts/jquery.watermark.min.js" type="text/javascript"></script>
+   <script src="javascripts/common.js" type="text/javascript"></script>
+   <script type="text/javascript">
+      $().ready(function() {
+         selectDays($(".days-picker"), $("[name=workdays]"));
+      });
+   </script>
+</head>
+
+<body>
+<!-- BEGIN #wrapper -->
+<div id="wrapper">
+   <div id="header" class="clearfix">
+      <h1 id="logo"><a href="#">Filter and expedite your staff selection <span></span></a></h1>
+
+      <div class="user-panel">
+         <ul class="dropdown-list countrys">
+            <li class="cty-venezuela"><a href="#"><span class="pseudo">Venezuela</span></a></li>
+            <li class="it-visible cty-colombia"><a href="#"><span class="pseudo">Colombia</span></a></li>
+            <li class="cty-costarica"><a href="#"><span class="pseudo">Costa Rico</span>a</a></li>
+            <li class="cty-panama"><a href="#"><span class="pseudo">Panama</span></a></li>
+         </ul>
+
+         <a class="pseudo action" href="#">Sign in</a> <span class="spr">&bull;</span> Register as <a class="role-seeker" href="#">Job Seeker</a> or <a class="role-employer" href="#">Employer</a>
+      </div>
+      
+      <div class="top-menu nav">
+         <ul>
+            <li class="rc5"><a href="#">Home</a></li><li class="rc5"><a href="#">My Account</a></li><li class="rc5"><a href="#">Search jobs</a></li><li class="rc5"><a href="#">Pricing</a></li><li class="rc5"><a href="#">What is Fyltra?</a></li>
+         </ul>
+      </div>
+      
+   </div><!-- /#header -->
+
+   <div id="main" class="rc10">
+      <div id="content" class="profile job-offer clearfix">
+      	<h2>Create Job Offer</h2>
+         <form action="#" class="form-cont long-fields">
+            <div class="field">
+               <label class="required" for="title">Title</label>
+               <input type="text" name="title" id="title" value="Account Manager" class="inputbox" />
+               <label class="error" for="title">Title is too short</label>
+            </div>
+            <div class="field">
+               <span class="label">Company</span>
+               <span class="field-val">Proctor &amp; Gamble</span>
+            </div>
+            <div class="field">
+               <label for="industry">Industry</label>
+               <select name="industry" id="usr-industry">
+                  <option value="">Chemicals</option></select>
+            </div>
+
+            <div class="fields-separator"></div>
+
+            <div class="field"><label for="usr-country">Country</label>
+               <select name="country" id="usr-country">
+                  <option value="0">Venezuela</option>
+                  <option value="1">Colombia</option>
+                  <option value="2">Costa Rico</option>
+                  <option value="3">Panama</option>
+               </select>
+            </div>
+            <div class="field"><label for="usr-province">Province</label>
+               <select name="province" id="usr-province">
+                  <option value="0">Apure</option>
+               </select>
+            </div>
+            
+            <div class="field"><label for="usr-city">City</label>
+               <select name="city" id="usr-city">
+                  <option value="0">San Fernando de Apure</option>
+               </select>
+            </div>
+            
+            <div class="field">
+               <label for="address">Address</label>
+               <input type="text" name="address" id="address" value="Bond Street, 17" class="inputbox" />
+            </div>
+            
+            <div class="fields-separator"></div>
+            
+            <div class="field"><label for="usr-contracttype">Contract type</label>
+               <select name="contracttype" id="usr-contracttype">
+                  <option value="0">Full time</option>
+               </select>
+            </div>
+            
+            <div class="field"><label for="usr-explevel">Expirience level</label>
+               <select name="explevel" id="usr-explevel">
+                  <option value="0">From 1 year</option>
+               </select>
+            </div>
+            
+            <div class="field"><label for="usr-explevel">Education level</label>
+               <select name="education" id="usr-education">
+                  <option value="0">High</option>
+               </select>
+            </div>
+            
+            <div class="field"><label for="usr-languages">Languages</label>
+               <div class="field-pattern">
+                  <select name="languages" id="usr-languages">
+                     <option value="0">-</option>
+                     <option value="0">English</option>
+                  </select>
+               </div>
+               <div class="field-pattern clone">
+                  <select name="languages" id="usr-languages">
+                     <option value="0">-</option>
+                     <option value="0">English</option>
+                  </select>
+               </div>
+               <a href="#" class="add-item pseudo">Add another language</a>
+               
+            </div>
+            
+            <div class="field"><label for="usr-responsible">Personality</label>
+               <div class="field-pattern">
+               <select name="responsible" id="usr-responsible">
+                  <option value="0">Responsible</option>
+               </select></div>
+               <a href="#" class="add-item pseudo">Add another personality type</a>
+            </div>
+            
+            <div class="field"><label for="usr-incentives">Other incentives</label>
+               <select name="job_offer[other_incentive_id]" id="job_offer_other_incentive_id"><option value="1">N/A</option>
+                  <option value="2">Insurance</option>
+                  <option value="3">Education formation</option>
+                  <option value="4">Stocks</option>
+                  <option value="5">Revs shares</option>
+                  <option value="6">Bonuses</option>
+                  <option value="7">Free days</option>
+                  <option value="8">Hours to work at home</option>
+                  <option value="9">Lunch tickets</option>
+                  <option value="10">Travel expenses</option>
+                  <option value="11">Gas bonuses</option>
+                  <option value="12">Transport bonus</option>
+                  <option value="13">To be discussed</option></select>
+            </div>
+            
+            <div class="fields-separator"></div>
+            
+            <div class="field range salary">
+               <label for="salary_min">Salary range</label>
+               <input type="text" name="salary_min" id="salary_min" value="1000" class="inputbox mini" /> <span class="spr">&mdash;</span> <input type="text" name="salary_max" id="address" value="2000" class="inputbox mini" />
+               <select class="mini currency" name="currency" id="usr-currency">
+                  <option value="0">USD</option>
+               </select>
+            </div>
+            
+            <div class="fields-separator"></div>
+            
+            <div class="field floatbox"><span class="label">Working days</span>
+               <ul class="days-picker select-days clearfix">
+                  <li class="selected"><span class="pseudo">Mon</span></li>
+                  <li class="selected"><span class="pseudo">Tue</span></li>
+                  <li class="selected"><span class="pseudo">Wed</span></li>
+                  <li class="selected"><span class="pseudo">Thu</span></li>
+                  <li class="selected"><span class="pseudo">Fri</span></li>
+                  <li><span class="pseudo">Sat</span></li>
+                  <li><span class="pseudo">Sun</span></li>
+               </ul>
+               <input value="1111100" type="text" class="inputbox mini" name="workdays" />
+            </div>
+            
+            <div class="field range clear salary">
+               <label for="hours_min">Working hours</label>
+               <input type="text" name="hours_min" id="salary_min" value="1000" class="inputbox mini" /> <span class="spr">&mdash;</span> <input type="text" name="hours_max" id="address" value="2000" class="inputbox mini" />
+            </div>
+            
+            <div class="fields-separator"></div>
+            
+            <div class="field">
+               <label class="required" for="description">Description</label>
+               <textarea name="description" id="description" cols="30" rows="10" class="inputbox"></textarea>
+            </div>
+            
+            <div class="field">
+               <label for="description">Other requirements</label>
+               <textarea name="description" id="description" cols="30" rows="10" class="inputbox"></textarea>
+            </div>
+            
+            <div class="fields-separator"></div>
+            
+            <div class="submit">
+               <button class="button yellow"><span>Post job offer</span><i></i></button> <span class="spr">or</span> <input type="submit" value="Preview&hellip;" class="btn-submit" />
+            </div>
+               
+         </form>
+      </div><!-- #content -->
+
+   </div><!-- /#main -->
+
+   <div id="footer">
+      <div class="copy">&copy; 2010 <b class="inline-logo"><span class="name">Fyltra</span>.com</b><br />
+         All rights reserved</div>
+
+      <ul class="links">
+         <li><a href="#">Post a new job</a></li>
+         <li><a href="#">Site widget</a></li>
+         <li><a href="#">RSS</a></li>
+      </ul>
+
+      <ul class="links">
+         <li><a href="#">About Us</a></li>
+         <li><a href="#">Contact</a></li>
+      </ul>
+   </div><!-- /#footer -->
+</div>
+<!-- END #wrapper -->
+</body>
+</html>

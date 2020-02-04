@@ -1,0 +1,194 @@
+/*
+Title: Forms
+***********
+*/
+.inputbox, input[type=file], select, textarea {
+  font-size: 1.1em;
+  vertical-align: middle;
+  }
+.button { vertical-align: middle; }
+textarea { overflow: auto; }
+
+.btn-submit {
+  padding: .1em .8em;
+  vertical-align: middle;
+  }
+
+.error { color: #C00; }
+.disabled {
+  filter:alpha(opacity=20);
+  -moz-opacity: 0.2;
+  -khtml-opacity: 0.2;
+  opacity: 0.2;
+  cursor: default;
+  }
+
+.message-error {
+  border: 1px solid #F00;
+  color: #F00;
+  margin: .5em 0 .8em;
+  padding: .5em;
+  }
+.form-cont {
+  margin: .2em 0 .9em;
+  padding: .1em 0;
+  }
+  .form-cont legend {
+    display: block;
+    color: #333;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0 0 .6em;
+    }
+  
+  .field legend {
+    color: #000;
+    font-size: 1em;
+    padding-bottom: .5em;
+    }
+  .form-cont .field {
+    margin-bottom: .9em;
+    padding: 0 0 .2em;
+    }
+  .fields-separator {
+    overflow: hidden;
+    margin: .92em 0;
+    }
+  .form-cont .col {
+    width: 49.99%;
+    float: left;
+    }
+    .form-descr {
+      color: #333;
+      width: 27em;
+      font-size: .9em;
+      }
+    .form-cont label,
+    .form-cont .label {
+      display: block;
+      font-size: 1em;
+      vertical-align: middle;
+      padding-bottom: .5em;
+      }
+    .form-cont .label label {
+      display: inline;
+      margin: 0 .3em 0 0;
+      padding-bottom: 0;
+      }
+    .checkbox, .radio {
+      display: block;
+      text-indent: -15px;
+      padding-left: 15px;
+      }
+      .checkbox input,
+      .radio input {
+        width: 13px;
+        height: 13px;
+        padding: 0;
+        margin: 0 .2em 0 0;
+        vertical-align: bottom;
+        position: relative;
+        top: -0.05em;
+        }
+      .radio input { top: -2px; }
+    .form-cont .checkbox, .form-cont .radio {
+      margin-bottom: .5em;
+      padding-bottom: 0;
+      }
+    .form-cont .inputbox {
+      width: 15em;
+      }
+    .form-cont select {
+      width: 15.3em;
+      }
+    .form-cont .mini,
+    .form-cont .fields-mini .inputbox {
+      width: 7.5em;
+      }
+    .form-cont .fields-w-descr .inputbox {
+      width: 16em;
+      }
+    .form-cont .error,
+    .form-cont .inline { display: -moz-inline-stack; display: inline-block; }
+    .form-cont .error {
+      margin: 0 0 0 1em;
+      padding: 0;
+      }
+    .form-cont .hint {
+      display: block;
+      color: #777;
+      font-size: .9em;
+      margin: .3em 0 0;
+      }
+    .form-cont .label .hint {
+      display: -moz-inline-stack;
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle;
+      }
+    .form-cont sup {
+      font-size: 1.4em;
+      vertical-align: 1px;
+      margin: 0 .2em;
+      }
+    .form-cont .submit,
+    .form-cont .b-submit {
+      word-spacing: .5em;
+      margin-bottom: 1.1em;
+      }
+    .form-cont .b-submit {
+      background-color: #D3EBFA;
+      margin-top: 1em;
+      padding: .83em;
+      }
+      .form-cont .button {
+        padding-left: .8em;
+        padding-right: .8em;
+        }
+      .form-cont .submit .cancel,
+      .form-cont .b-submit .cancel {
+        margin-left: -0.3em;
+        }
+    .form-cont .link-forgot {
+      font-size: .9em;
+      margin: .3em 0 0;
+      }
+    .form-cont .field.gender {
+      margin-bottom: .4em;
+      }
+    /* Select birthday */
+    .form-cont .field.birthday {
+      margin-right: -0.8em;
+      }
+      .form-cont .field.birthday select {
+        margin-right: .8em;
+        }
+      .form-cont .field.birthday .month {
+        width: 8.95em;
+        }
+      .form-cont .field.birthday .day {
+        width: 3.3em;
+        }
+      .form-cont .field.birthday .year {
+        width: 5em;
+        }
+    /* Terms */
+    .form-cont .field.terms label {
+      display: inline;
+      padding: 0;
+      }
+    .form-cont .field.terms a {
+      vertical-align: middle;
+      }
+    /* Captcha */
+    .form-cont .field.capcha label {
+      display: block;
+      }
+      .form-cont .field.capcha img {
+        vertical-align: middle;
+        margin: 0 1em 0 0;
+        }
+      .form-cont .field.capcha .inputbox {
+        width: 9.4em;
+        }

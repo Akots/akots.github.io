@@ -1,0 +1,316 @@
+/*
+Author: Kotsuruba Alexander
+Version:  4.07.08
+*/
+/* Colors
+   #010101- black */
+   
+*{ font-size: 100.01%; padding: 0; margin: 0; }
+body {
+   background: #FDE518 url('../images/bg-body.png') top center no-repeat fixed;
+   color: #010101;
+   font-size: 76%;
+   font-family: Tahoma, Arial, Helvetica, sans-serif;
+   text-align: center;
+}
+
+/* =The Begining of the End (default styles)
+----------------------------------------------- */
+.clear {clear: both;}
+ul {list-style-type: none;}
+a:link, a:active, a:visited { color: #000; }
+   a:hover { color: #333; text-decoration: none; }
+a:link *, a:visited * { cursor: pointer; }
+
+acronym, abbr { border-bottom: 1px dotted #666;	cursor: help; }
+
+table { border: 0; border-collapse: collapse; }	table td { padding: 0; }
+textarea { font-family: Tahoma, Arial, Geneva, Helvetica, sans-serif; } 
+fieldset, img, a img { border: none; border: 0; }
+img { font-size: 1.2em; }
+legend {	display: none; }
+label { cursor: pointer; }
+.inputbox {
+   border: 1px solid #C2C2C2;
+   font-size: 1.1em;
+   padding: 2px 0 2px 1px;
+   }
+   .inputbox:focus {
+      border: 1px solid #666;
+      }
+select.inputbox {
+   height: 1.65em;
+}
+.button {
+   background: url('../images/bg-red-button.gif') 0 0 no-repeat;
+   border: none;
+   color: #FFF;
+   font-size: 2.1em;
+   font-weight: normal;
+   text-align: center;
+   height: 41px;
+   width: 160px;
+   padding: 1px 4px 4px;
+   cursor: pointer;
+}
+.button.small {
+   background: url('../images/bg-red-button_small.gif') 0 0 no-repeat;
+   width: 99px;
+   }
+.pseudo { border-bottom: 1px dotted; cursor: pointer; text-decoration: none !important; }
+.ta-ctr { text-align: center; }
+.fsz-norm { font-size: 1.1em; }
+.fsz-bigger { font-size: 1.2em; }
+.fsz-smaller { font-size: 1em; }
+.grey { color: #666;	}
+
+
+/* =General styles
+----------------------------------------------- */
+#wrapper {
+
+   }
+   /* =Header(logo,menu...)
+   ----------------------------------------------- */
+   #header {
+      background: url('../images/bg-topmenu-repeat.png') 0 0 repeat-x;
+      text-align: center;
+      margin: 34px 0 14px;
+      }
+      #header-inner {
+         width: 893px;
+         text-align: left;
+         position: relative;
+         height: 63px;
+         margin: 0 auto;
+         }
+      #logo {
+         background: url(../images/logo.png) top center no-repeat;
+         color: #003F80;
+         font-size: 2em;
+         position: absolute;
+         width: 199px;
+         height: 97px;
+         overflow: hidden;
+         text-decoration: none;
+         text-indent: -9000px;
+         margin-top: -34px;
+         }
+      
+         .top-menu {
+            background: url('../images/ic-topm-gravura.png') 99% 14px no-repeat;
+            margin: 0 0 0 215px;
+            padding: 9px 0 0;
+            }
+            .top-menu li {
+               display: inline-block;
+               }
+               .top-menu a {
+                  font: normal 1.6em Georgia, "Times New Roman", serif;
+                  line-height: 1.5;
+                  margin: 0 33px 0 0;
+                  padding: 2px;
+                  }
+               .top-menu a:link, .top-menu a:active, .top-menu a:visited {
+                  color: #000;
+                  text-decoration: none;
+                  }
+               .top-menu a:hover {
+                  text-decoration: underline;
+                  }
+               a#active_menu:link, a#active_menu:active, a#active_menu:visited, a#active_menu:hover {
+                  background: #FFF;
+                  color: #333;
+                  }
+
+   /* =Content(main)
+   ----------------------------------------------- */
+   #main {
+      width: 893px;
+      text-align: left;
+      margin: 0 auto;
+      }
+      .content {
+         background: #FFF;
+         }
+         .header {
+            color: #2E2E2E;
+            font: normal 2.3em Verdana, Tahoma, Arial, Helvetica, sans-serif;
+            margin-bottom: 16px;
+            }
+         .inner p {
+            font-size:1.2em;
+            line-height:1.5em;
+            }
+         .tabular {
+            width: 100%;
+            }
+            .tabular td {
+               font-size: 1.2em;
+               padding: 6px;
+               }
+   .shadow {
+      position: relative;
+      overflow: hidden;
+      }
+      .shadow .ct,
+      .shadow .cb {
+         background: url('../images/bg-shw-top_bot.png') 0 0 repeat-x;
+         height: 4px;
+         font-size: 0;
+         position: relative;
+         display: block;
+         margin: 0 8px;
+         }
+      .shadow .ct {
+         border-bottom: 4px solid #FFF;
+         }
+      .shadow .cb {
+         border-top: 4px solid #FFF;
+         background-position: 0 100%;
+         }
+      .shadow .cl,
+      .shadow .cr {
+         background: url('../images/bg-shw-lft_rgt.png') 0 0 repeat-y;
+         }
+      .shadow .cr {
+         background-position: 100% 0;
+         }
+      .shadow .cn {
+         background-image: url('../images/bg-shw-cor.png');
+         background-repeat: no-repeat;
+         font-size: 0;
+         position: absolute;
+         z-index: 100;
+         width: 16px;
+         height: 16px;
+         }
+      .shadow .cn.tl {
+         left: -8px;
+         top: -8px;
+         }
+      .shadow .cn.tr {
+         right: -8px;
+         top: -8px;
+         }
+      .shadow .cn.bl {
+         bottom: -8px;
+         left: -8px;
+         }
+      .shadow .cn.br {
+         bottom: -8px;
+         right: -8px;
+         }
+      .shadow .content {
+         margin: 0 4px;
+         padding: 9px 9px;
+         }
+      .promote {
+         
+         }
+         .promote .teaser {
+            background: url('../images/bg-teaser.jpg') 0 0 no-repeat;
+            height: 410px;
+            margin-bottom: 21px;
+            }
+            .promote .order {
+               background: url('../images/bg-ordernow.png') 0 0 no-repeat;
+               position: absolute;
+               right: 59px;
+               width: 258px;
+               height: 475px;
+               }
+               .promote .order a {
+                  position: absolute;
+                  width: 100%;
+                  height: 63px;
+                  font-size: 2em;
+                  bottom: 0;
+                  text-indent: -9000px;
+                  }
+         .promote .inner {
+            padding: 0 23px 23px 23px;
+            }
+            .promote .header {
+               color: #2E2E2E;
+               letter-spacing: 0.03em;
+               text-shadow: 1px 1px 1px #DDDDDA;
+               word-spacing: 0.1em;
+               font: normal 2em Georgia, "Times New Roman", serif;
+               text-transform: uppercase;
+               margin-bottom: 30px;
+               }
+            .promote .inner img {
+               float: right;
+               margin: 0 -15px 13px 10px;
+               }
+         .product-view {
+            padding: 12px 22px 22px 42px;
+            }
+            .product-view .preview {
+               text-align: center;
+               margin-bottom: 35px;
+               }
+            .product-description {
+               float: left;
+               width: 385px;
+               margin-right: 35px;
+               margin-top: -6px;
+               }
+               .product-description p {
+                  color: #000;
+                  font-size: 1.4em;
+                  text-align: justify;
+                  }
+            .price-summary {
+               width: 380px;
+               float: right;
+               }
+               .price-summary td {
+                  border: 1px solid #000;
+                  font-size: 1.4em;
+                  padding: 10px 8px 10px 16px;
+                  }
+               .product-view .total {
+                  text-align: right;
+                  clear: both;
+                  width: 100%;
+                  overflow: hidden;
+                  margin-bottom: 10px;
+                  }
+                  .product-view .total table {
+                     float: right;
+                     }
+                     .product-view .total td {
+                        border: none;
+                        font-size: 1.4em;
+                        padding: 4px 8px 4px 4px;
+                        }
+            .countries {
+               border-top: 3px solid #E0E0E0;
+               margin: 20px 0 4px;
+               }
+               .countries td {
+                  border-bottom: 1px dashed #ABABAB;
+                  font-size: 1.4em;
+                  vertical-align: middle;
+                  padding: 4px 5px 6px;
+                  }
+               .countries .title {
+                  width: 82%;
+                  padding-left: 38px;
+                  }
+                  .countries .title img {
+                     float: left;
+                     margin-left: -38px;
+                     margin-bottom: -4px;
+                     }
+               .countries .quanty .inputbox {
+                  width: 55px;
+                  font-size: 16px;
+                  margin-left: 8px;
+                  }
+            .product-view .button {
+               float: right;
+               margin-left: 4px;
+               }

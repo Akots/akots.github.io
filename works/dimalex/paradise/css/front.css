@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/*Styles for front page*/
+
+.front .header-inner {
+   height: 237px;
+   }
+.front .outer-bg-repeat-bottom {
+   display: none;
+   }
+.front .outer-bg-bottom {
+   background: url('../images/img-front-domiki.png') 50% 190px no-repeat;
+   position: relative;
+   }
+.front .footer-content {
+   padding-top: 18px;
+   }
+.top-users {
+   overflow: hidden;
+   }
+.list-top-users {
+   position: relative;
+   margin: 0 -67px 0 54px;
+   }
+   .list-top-users li {
+      float: left;
+      width: 87px;
+      position: relative;
+      overflow: hidden;
+      margin: 0 67px 17px 0;
+      }
+      .list-top-users .leader {
+         clear: both;
+         float: none;
+         margin-left: 109px;
+         }
+      .list-top-users .bg {
+         background: #0392D4;
+         position: relative;
+         padding: 4px 4px 4px;
+         }
+         .list-top-users .mask {
+            background-image: url('../images/bg-top-listusers-mask.png');
+            }
+         .list-top-users .overlay {
+            bottom: 4px;
+            width: 71px;
+            height: 18px;
+            }
+            .list-top-users .ico.home {
+               background: url('../images/ic-home.png') 0 0 no-repeat;
+               border-right: 1px solid #FFF;
+               float: left;
+               margin-right: 4px;
+               padding: 2px 4px 1px 14px;
+               }
+            .list-top-users .ico.rating {
+               background: url('../images/ic-rating.png') 0 0 no-repeat;
+               float: left;
+               padding: 3px 0 1px 12px;
+               }
+      .list-top-users .title {
+         padding: 0 4px;
+         }
+      .list-top-users .title:link, .list-top-users .title:active, .list-top-users .title:visited {
+         color: #FFF;
+         }
+.sponsor-list {
+   position: absolute;
+   left: 300px;
+   z-index: 10;
+   }
+.sponsor-list.logo-burn {
+   background: url('../images/logo-burn.png') 0 0 no-repeat;
+   width: 152px;
+   height: 88px;
+   }
+
+.top-listen-promote {
+   margin: 0 0 0 -34px;
+   }
+.search-profile {
+   background: #000;
+   border: 1px solid #4D4D4D;
+   color: #FFF;
+   position: absolute;
+   right: 0;
+   width: 270px;
+   margin-top: 60px;
+   padding: 16px;
+   }
+   .search-profile .inputbox {
+      width: 186px;
+      }
+   .search-profile label {
+      display: block;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      }
+.toplisten {
+   border-left: 1px solid #4D4D4D;
+   overflow: hidden;
+   margin: 12px 0 0 -14px;
+   padding-left: 12px;
+   }
+   .toplisten .tabs {
+      background: url('../images/bg-tabs-shw-top.png') 0 100% no-repeat;
+      margin: 0 0 17px -17px;
+      padding-left: 17px;
+      }
+      .toplisten .tabs li a {
+         background: url('../images/bg-tab-black.png') 0 5px no-repeat;
+         }
+         .tabs li a:link, .tabs li a:active, .tabs li a:visited {
+            color: #818181;
+            }
+      .toplisten .tabs .active a {
+         background-position: 0 0;
+         }
+         .tabs .active a:link, .tabs .active a:active, .tabs .active a:visited {
+            color: #FFF;
+            }
+   .list-profiles {
+      background: url('../images/bg-toplisten-shw-bottom.png') 0 100% no-repeat;
+      overflow: hidden;
+      margin: 0 -65px 0 5px;
+      }
+      .list-profiles li {
+         color: #FFF;
+         margin: 0 58px 32px 0;
+         }
+      .list-profiles .mask {
+         background-image: url('../images/bg-top-listen-mask.png');
+         }
+         .list-profiles .title:link, .list-profiles .title:active, .list-profiles .title:visited {
+            color: #FDC689;
+            }
+   .toplisten .pagination {
+      clear: both;
+      }
+   .toplisten .pagination a:link, .toplisten .pagination a:active, .toplisten .pagination a:visited,
+   .toplisten .pagination span {
+      color: #FFF;
+      }
+   .toplisten .pagination .current,
+   .toplisten .pagination .current:link, .toplisten .pagination .current:active, .toplisten .pagination .current:visited {
+      background: #FFF;
+      color: #000;
+      }
+.blc.highlights {
+   background: url('../images/bg-sidebar-black-butterflies.png') 0 102% no-repeat;
+   color: #FFF;
+   width: 302px;
+   margin: 0 -1px;
+   }
+   .blc.highlights .inner {
+      background: url('../images/bg-sidebar-black-shw-top.png') 0 0 no-repeat;
+      border-right: 1px solid #0E0E0E;
+      border-left: 1px solid #0E0E0E;
+      margin-bottom: 3px;
+      padding: 10px 10px 12px;
+      }
+      .list-highlights a:link, .list-highlights a:active, .list-highlights a:visited {
+         color: #FFF;
+         }
+      .blc.highlights .more:link, .blc.highlights .more:active, .blc.highlights .more:visited {
+         color: #FDC689
+         }
+   .list-highlights.news {
+      margin-bottom: 14px;
+      }
+       .list-highlights.news li {
+         border-bottom: 1px solid #1A1A1A;
+         padding: 8px 0 6px 127px;
+         }
+         .list-highlights.news .foto {
+            margin-left: -137px;
+            }

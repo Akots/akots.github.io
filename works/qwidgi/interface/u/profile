@@ -1,0 +1,176 @@
+﻿<div id="profile-edit">
+
+<div id="profile" class="main hidebar">
+<input type="hidden" value="1" name="user_id" />
+
+<form action="" method="post" autocomplete="off">
+   <div id="profile-header" class="profile-header brd-dotted-bottom">
+		<h1 class="name"><span class="first_name_cont value"></span> <span class="second_name_cont value"></span> <span class="last_name_cont value"></span></h1>
+		<div generated="true" title="first_name" class="error"></div>
+      <div generated="true" title="second_name" class="error"></div>
+      <div generated="true" title="last_name" class="error"></div>
+	</div>
+	<div class="common_info">
+		<div class="avatar">
+         <div class="profile-avatar-corners"><div></div></div>
+         <img />
+      </div>
+	   <div class="quick_menu_bg"><ul class="quick_menu">
+	      <li><a class="add_right_people" href="javascript:void(0)" title="Добавить в нужные люди"></a></li>
+	      <li><a class="send_user_message" rel="Артем Анищенко" href="javascript:void(0)" title="Отправить сообщение"></a></li>
+         <li><a class="edit-photo" href="javascript:void(0)" title="Редактировать профайл"></a></li>
+	   </ul></div>
+	</div>
+   <div id="info">
+      <div id="first-info">
+         <div class="email info-item">
+            <span class="label">E-mail</span>
+            <span class="value"></span>
+         </div>
+         <div class="info-item change-password">
+            <span class="label"><label for="password">Пароль:</label></span>
+            <span class="row"><a href="javascript:void(0)" class="change-password ajax">изменить пароль</a></span>
+        </div>
+      	<div class="tel info-item mob empty">
+      		<span class="label">Мобильный</span>
+      		<span class="value"></span>
+      	</div>
+      	<div class="tel info-item home empty">
+      		<span class="label">Домашний</span>
+      		<span class="value"></span>
+      	</div>
+      	<div class="tel info-item work empty">
+      		<span class="label">Рабочий</span>
+      		<span class="value"></span>
+      	</div>
+      	<!--div class="icq info-item">
+      		<span class="label">ICQ</span>
+      		<span class="value"></span>
+      	</div>
+      	<div class="skype info-item">
+      		<span class="label">Skype</span>
+      		<span class="value"></span>
+      	</div-->
+      </div>
+
+      <div id="work" class="info-item">
+         <h3 class="hidebar_header label">Работа</h3>
+         <div class="hidebar_content">
+            <div class="job pattern">
+               <h4 class="title"><span class="org_cont"></span></h4>
+               <div generated="true" title="org" class="error"></div>
+               <p class="job_city">
+                  <input type="hidden" value="" name="job_id"/>
+                  <span class="value"></span>
+               </p>
+               <p class="venue">
+                  <span class="value"></span>
+               </p>
+               <p class="pos_title"><span class="pos_cont"></span></p>
+               <div generated="true" title="pos" class="error"></div>
+               <p class="double">с <span class="start_work_cont"></span> по <span class="end_work_cont"></span></p>
+            </div>
+         </div>
+      </div>
+
+      <div id="educ" class="info-item educ">
+         <h3 class="hidebar_header label">Образование</h3>
+         <div class="hidebar_content">
+            <div class="highschool pattern">
+               <h4 class="title">
+                  <span class="type">Высшее</span>
+                  <span class="educ_city"><span class="value"></span></span>
+                  <span class="school_cont value"></span>
+               </h4>
+               <input type="hidden" value="" name="school_id"/>
+               <p class="faculty"><span class="value"></span></p>
+               <p class="title"><span class="school_year_cont value"></span></p>
+               <div generated="true" title="school_year" class="error"></div>
+               <p class="sub-faculty"><span class="value"></span></p>
+               <p class="shape"><span class="value"></span></p>
+               <p class="status"><span class="value"></span></p>
+            </div>
+
+            <div class="school pattern">
+               <h4 class="title">
+                  <span class="type">Среднее</span>
+                  <span class="school_cont value"></span>
+               </h4>
+               <p class="educ_city">
+                  <span class="value"></span>
+               </p>
+               <p class="title"><span class="school_year_cont value"></span></p>
+            </div>
+         </div>
+      </div>
+
+      
+      <div id="secondary-info" class="info-item">
+         <h3 class="hidebar_header label">Обо мне</h3>
+         <div class="hidebar_content">
+            <div class="sex select info-item">
+               <span class="label">Пол</span>
+               <span class="value"></span>
+            </div>
+            <div class="birthday info-item">
+               <span class="label">Дата рождения</span>
+               <span class="value"></span>
+            </div>
+            <div class="city info-item">
+               <span class="label">Родной город</span>
+               <span class="value">
+                  <div class="val"></div>
+                  <input class="ac_input" autocomplete="off" style="display: none;" maxlength="50" id="city" name="city" />
+                  <input name="city_id" class="city_id" value="" type="hidden">
+               </span>
+            </div>
+            <div class="address info-item">
+               <span class="label">Адрес</span>
+               <span class="value"></span>
+            </div>
+            <div class="polit info-item">
+               <span class="label">Политические взгляды</span>
+               <span class="value"></span>
+            </div>
+            <div class="trustin info-item">
+               <span class="label">Религиозные взгляды</span>
+               <span class="value"></span>
+            </div>
+            <div id="about" class="about r info-item">
+               <span class="label">
+                  О себе
+               </span>
+               <div class="about_cont textarea value">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</form>
+
+   <div id="change-password" class="popupwindow">
+      <div class="popupwindow-pad">
+         <form id="form-change-password" action="" method="post">
+         <fieldset>
+            <legend>Изменить пароль</legend>
+            <table>
+            <tr>
+               <td class="label"><label for="old_password">Старый пароль:<label></td>
+               <td class="input"><input id="old_password" maxlength="50" name="old_password" type="password" size="30" /></td>
+            </tr>
+            <tr>
+               <td class="label"><label for="new_password">Новый пароль:<label></td>
+               <td class="input"><input id="new_password" maxlength="50" name="new_password" type="password" size="30" /></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td class="submit"><input type="submit" value="Изменить" /></td>
+            </tr>
+            </table>
+         </fieldset>
+         </form>
+      </div>
+   </div>
+
+</div>
+

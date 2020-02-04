@@ -1,0 +1,149 @@
+#auth_view {overflow: hidden;}
+.auth_form li {display:inline;padding:0 5pt;}
+.auth_form li.first {padding:0;}
+
+.auth_form ul,
+.auth_form p 
+   {
+   font-size: 1.1em;
+   margin: 0 9pt 10pt;
+   }
+
+.auth_form .auth_div {margin-top:20pt;}
+
+.auth_form ul,.auth_form ul a {color:red;}
+
+#auth_view .message
+   {
+   position: static;
+   color: red !important;
+   height: 1.5em;
+   }
+
+#splash{
+   position:absolute;
+   top:0;
+   bottom:0;
+   left:0;
+   right:0;
+   width:100%;
+   height:100%;
+   z-index:1999;
+   background-color:#000;
+   filter:alpha(opacity=50);
+   -moz-opacity: .5;
+   opacity: .5;
+}
+
+#auth_view .content
+   {
+   height: 190pt;
+   padding: 10pt 0 10pt 10pt;
+   }
+#auth_view .submit
+   {
+   position: relative;
+   clear: both;
+   margin: 0 0 0 125px;
+   }
+#auth_view .remind_div .submit 
+   {
+   margin: 0 0 0 60px;
+   }
+.auth_form .tools
+   {
+   position: relative;
+   margin: 0 0 0 60px;
+   }
+
+.auth_form, .remind_form
+{
+  font-size: 1.2em;
+}
+.remind_form{margin-top:60pt;}
+
+.remind_div,
+.auth_div
+   {
+   margin: 0 0 0 65px;
+   }
+.remind_div 
+   {
+   padding: 8px 0 0;
+   }
+.auth_form .remind_form
+   {
+   display: none;
+   font-size: 1.2em;
+   }
+.remind_form{ margin-top: 60pt; }
+   
+   #auth_view div.error
+      {
+      color: #f00;
+      display: none;
+      font-size: 0.9em;
+      position: absolute;
+      top: 30px;
+      left: 60px;
+      }
+   .auth_form a
+      {
+      color:#a8a28f;
+      }
+.remind_form .submit .submit_button
+   {
+   float: left;
+   }
+   .submit .disabled
+      {
+      cursor: auto;
+      filter: alpha(opacity=50);
+      -moz-opacity: .5;
+      opacity: .5;
+      }
+   .auth_form .loading
+      {
+      background: url(/i/indicator-load.gif) 10pt center no-repeat;
+      width: 300px;
+      height: 20px;
+      }
+   #auth_view .input
+      {
+      height: 4.2em;
+      position: relative;
+      }
+      #auth_view .input input
+         {
+         width: 160pt;
+         position: relative;
+         }
+      #auth_view .label
+         {
+         display: block;
+         line-height: 2.3em;
+         float: left;
+         width: 5em;
+         }
+      .remind_div .input input
+         {
+         width: 175pt;
+         }
+      #auth_view #button-login
+         {
+         width: 110px;
+         padding: 2px 18px 5px 16px;
+         }
+      #auth_view #button-register
+         {
+         width: 195px;
+         padding: 2px 18px 5px 16px;
+         }
+      @media all and (-webkit-min-device-pixel-ratio:10000),
+      not all and (-webkit-min-device-pixel-ratio:0) {
+         #auth_view #button-login,
+         #auth_view #button-register
+            {
+            padding: 3px 18px 5px 16px;
+            }/* Такая большая хрень для Opera */
+      }

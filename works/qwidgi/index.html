@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+   <title>Qwidgi</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=7"/>
+   
+   <link rel="shortcut icon" href="i/favicon.ico" />
+   
+   <link rel="stylesheet" type="text/css" href="/c/common.css" />
+   <link rel="stylesheet" type="text/css" href="/c/c.css" />
+   <link rel="stylesheet" type="text/css" href="/c/profiles.css" />
+   <link rel="stylesheet" type="text/css" href="/c/person-card.css" />
+   <link rel="stylesheet" type="text/css" href="/c/menu.css" />
+   <link rel="stylesheet" type="text/css" href="/c/datepicker.css" />
+   <link rel="stylesheet" type="text/css" href="/c/company-card.css" />
+   <link rel="stylesheet" type="text/css" href="/c/albums.css" />
+   <link rel="stylesheet" type="text/css" href="/c/tabs.css" />
+   <link rel="stylesheet" type="text/css" href="/c/profile-tab.css" />
+   <link rel="stylesheet" type="text/css" href="/c/auth.css" />
+   <link rel="stylesheet" type="text/css" href="/c/feedback.css" />
+   <link rel="stylesheet" type="text/css" href="/c/demo.css" />
+   <link rel="stylesheet" type="text/css" href="/c/invite.css" />
+   <link rel="stylesheet" type="text/css" href="/c/hidebar.css" />
+   <link rel="stylesheet" type="text/css" href="/c/remind.css" />
+   <link rel="stylesheet" type="text/css" href="/c/mess.css" />
+   <link rel="stylesheet" type="text/css" href="/c/dashboard.css" />
+   <link rel="stylesheet" type="text/css" href="/c/search.css" />
+   <link rel="stylesheet" type="text/css" href="/c/popup-hint.css" />
+   <link rel="stylesheet" type="text/css" href="/c/info.css" />
+
+   <!--[if lte IE 7]>
+         <link rel="stylesheet" type="text/css" href="/c/ie.css" />
+         <script src="/j/iepngfix_tilebg.js"></script>
+      <![endif]-->
+   
+   <script src="/j/jquery/jquery.js"></script>
+   <script src="/j/jquery/ui.js"></script>
+   <script src="/j/jquery/ui.tabs.js"></script>
+   <script src="/j/jquery/ui.draggable.js"></script>
+   <script src="/j/jquery/ui.droppable.js"></script>
+   <script src="/j/jquery/history.js"></script>
+   <script src="/j/jquery/selectboxes.js"></script>
+   <script src="/j/jquery/alphanumeric.js"></script>
+   <script src="/j/jquery/validate.js"></script>
+   <script src="/j/jquery/delegate.js"></script>
+   <script src="/j/jquery/imgareaselect.js"></script>
+	<script src="/j/jquery/dimensions.js"></script>
+
+   <script src="/j/jquery/datepicker.js"></script>
+   <script src="/j/jquery/datepicker-ru.js"></script>
+   <script src="/j/jquery/corner.js"></script>
+   <script src="/j/jquery/tabs.js"></script>
+   <script src="/j/jquery/autocomplete.js"></script>
+   <script src="/j/jquery/autogrow.js"></script>
+
+   <script src="http://www.google.com/jsapi?key=ABQIAAAAkh2oFRC4s-FIobA4Dt3olRQQTBbkcYr-niIrCfnEInbp09MF5RRoHwzYAGW5XaBGUSV8ZPnh9JJz5A" type="text/javascript"></script>
+
+   <script src="/j/popup-hint.js"></script>
+   <script src="/j/common.js"></script>
+   <script src="/j/inputex.js"></script>
+   <script src="/j/user_menu.js"></script>
+   <script src="/j/selectex.js"></script>
+   <script src="/j/datepickerex.js"></script>
+   <script src="/j/demo.js"></script>
+   <script src="/j/info.js"></script>
+   <script src="/j/setup_autocomplete.js"></script>
+   <script src="/j/storage.js"></script>
+   <script src="/j/work_places.js"></script>
+   <script src="/j/city.js"></script>
+   <script src="/j/educ_lists.js"></script>
+   <script src="/j/education.js"></script>
+   <script src="/j/job.js"></script>
+   <script src="/j/invite.js"></script>
+   <script src="/j/invite_outer.js"></script>
+   <script src="/j/person.js"></script>
+   <script src="/j/user_profile.js"></script>
+   <script src="/j/user_info.js"></script>
+   <script src="/j/path.js"></script>
+   <script src="/j/layout.js"></script>
+   <script src="/j/errors.js"></script>
+   <script src="/j/content_link.js"></script>
+   <script src="/j/remind.js"></script>
+   <script src="/j/auth.js"></script>
+   <script src="/j/feedback.js"></script>
+   <script src="/j/remind.js"></script>
+   <script src="/j/dashboard.js"></script>
+   <script src="/j/main.js"></script>
+   <script src="/j/office.js"></script>
+   <script src="/j/add_event.js"></script>
+   <script src="/j/hidebar.js"></script>
+   <script src="/j/vacancy.js"></script>
+   <script src="/j/response.js"></script>
+   <script src="/j/relations.js"></script>
+   <script src="/j/contacts.js"></script>
+   <script src="/j/qgallery.js"></script>
+   <script src="/j/title.js"></script>
+   <script src="/j/message.js"></script>
+   <script src="/j/office_info.js"></script>
+   <script src="/j/office_profiles.js"></script>
+   <script src="/j/messager.js"></script>
+   <script src="/j/search.js"></script>
+   <script src="/j/search-quick.js"></script>
+
+   <script type="text/javascript">
+      var IS_PROTO = true;
+      var AUTH = false;
+      var ID = 1234;
+   </script>
+</head>
+
+<body>
+   <div id="head">
+      <a href="/" class="logo"></a>
+      <div id="user-functions">
+          <!--a id="add-widjet" title="" href="#">Добавить виджет</a-->
+      </div>
+      <div id="search-box">
+         <form class="form-search" enctype="application/x-www-form-urlencoded" method="get" action="/search">
+            <fieldset>
+               <legend>Быстрый поиск</legend>
+               <label for="quick-search"><input id="quick-search" name="search_field" value="Поиск" type="text" /></label>
+               <input class="search_submit" type="submit" value="" />
+            </fieldset>
+         </form>
+      </div>
+      <div class="dock"></div>
+   </div>
+   <div id="body" class="index-page">
+      <div id="top-bg"></div>
+      <div id="top-lft-bg"></div>
+      <div id="top-rgt-bg"></div>
+      <div id="main-lft"></div>
+      <div id="main-rgt"></div>
+      <div id="bot-bg"></div>
+      <div id="bot-lft-bg"></div>
+      <div id="bot-rgt-bg"></div>
+   </div>
+   <div id="footer">
+      <span class="float_right">
+         <a id="feedback" title="" href="javascript:void(0);">обратная связь</a>
+      </span>
+      <a class="float_right" href="#eula">пользовательское соглашение</a>
+      <a class="float_right" href="#faq">FAQ</a>
+      <a class="float_right" href="#about">о сайте</a>
+      <span>&copy; 2008 Qwidgi Corp.</span>
+      
+   </div>
+   <form class="popup-header form-cont feedback" action="/interface/feedback" method="post">
+      <label for="email">E-mail:</label>
+      <input maxlength="360" class="email" name="email" type="text" size="80" />
+      <div class="both"></div>
+      <label for="msg">Сообщение:</label>
+      <textarea class="msg" id="msg" name="msg" rows="10" cols="76"></textarea>
+      <div class="result"></div>
+      <div class="submit"><input type="submit" value="Отправить" /></div>
+   </form>
+</body>
+</html>

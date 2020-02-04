@@ -1,0 +1,62 @@
+.hidebar
+{
+   margin-bottom: 10px;
+   clear:both;
+}
+
+.hidebar_header
+{
+   display: inline;
+}
+.hidebar_header
+{
+   background: url(/i/icns-grey-str.png) 103% -48px no-repeat;
+   display: block;
+   cursor: pointer;
+   visibility: visible;
+   width: auto;
+   padding-right: 12px;
+   position: relative;
+}
+.info-item .hidebar_header
+{
+   float: none;
+   margin:0;
+}
+.hidebar_header.hidden 
+{
+   background-position: 105% 4px;
+   visibility: visible;
+   padding-right: 10px;
+}
+   .hidebar_header.hidden a
+   {
+      color: #414846;
+      text-decoration: none;
+   }
+.hidebar_content
+{
+   position: relative;
+   margin: 10px 20px 0 20px;
+}
+.hidebar .hidebar_header .info
+{
+   display:block;
+   position: absolute;
+   right : 30px;
+   top : 5px;
+}
+.hidden_title
+{
+   font-size: 1.4em;
+   font-weight: bold;
+   float: left;
+   white-space: normal;
+   width: 250pt;
+   text-align: left;
+   margin: -14px 0 0 145px;
+}
+.hidden_title li
+{
+   display:inline;
+}

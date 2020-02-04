@@ -1,0 +1,25 @@
+/* zagolovki for english version */
+#zagshedule, #zagshedule span {background: #171914 url(../images/title/shedule_en.gif) 0 0 no-repeat;             height: 10px; width: 61px; margin-bottom: 20px;}
+#zagfeaturedart, #zagfeaturedart span {background: #171914 url(../images/title/featuredart_en.gif) 0 0 no-repeat; height: 10px; width: 110px; margin-bottom: 20px;}
+#zagradioshow, #zagradioshow span {background: #171914 url(../images/title/radioshow_en.gif) 0 0 no-repeat;       height: 10px; width: 78px; margin-bottom: 20px;}
+#zagradioshows, #zagradioshows span {background: #171914 url(../images/title/radioshow_en.gif) 0 0 no-repeat;     height: 10px; width: 85px; margin-bottom: 20px;}
+
+#zagnews, #zagnews span {background: #171914 url(../images/title/news_en.gif) 0 0 no-repeat;             height: 10px; width: 36px; margin-bottom: 20px;}
+#zagcontact, #zagcontact span {background: #171914 url(../images/title/contact_en.gif) 0 0 no-repeat;    height: 10px; width: 74px; margin-bottom: 20px;}
+#zagfaq, #zagfaq span {background: #171914 url(../images/title/faq_en.gif) 0 0 no-repeat;                height: 14px; width: 162px; margin-bottom: 20px;}
+#zagdjlisting, #zagdjlisting span {background: #171914 url(../images/title/listing_en.gif) 0 0 no-repeat;height: 13px; width: 62px; margin-bottom: 20px;}
+#zagpodcast, #zagpodcast span {background: #171914 url(../images/title/podcast_en.gif) 0 0 no-repeat;    height: 10px; width: 63px; margin-bottom: 20px;}
+#zagregister, #zagregister span {background: #171914 url(../images/title/register_en.gif) 0 0 no-repeat; height: 10px; width: 90px; margin-bottom: 20px;}
+#zagsearch, #zagsearch span { background: #171914 url(../images/title/search_en.gif) 0 0 no-repeat;   height: 10px; width: 48px; margin-bottom: 20px; }
+#zagtimezone, #zagtimezone span { background: #171914 url(../images/title/timezone_en.gif) 0 0 no-repeat; height: 10px; width: 127px; margin-bottom: 20px; }
+#zagprofile, #zagprofile span { background: #171914 url(../images/title/profile_en.gif) 0 0 no-repeat; height: 10px; width: 50px; margin-bottom: 19px; }
+#zagaddnews, #zagaddnews span { background: #171914 url(../images/title/addnews_en.gif) 0 0 no-repeat; height: 10px; width: 66px; margin-bottom: 19px; }
+#zagpasswordrecovery, #zagpasswordrecovery span { background: #171914 url(../images/title/passwordrecovery_en.gif) 0 0 no-repeat; height: 10px; width: 139px; margin-bottom: 19px; }
+/* end zagolovki */
+
+/* buttons */
+.find { background: url(../images/button_find_en.gif) top left no-repeat; font: bold 11px Tahoma, Helvetica, sans-serif; padding: 3px 0px 4px 0px; margin: 5px 0 0 14px; text-align: left; vertical-align: middle; width: 38px; }
+.save { background: url(../images/button_save_en.gif) top left no-repeat; font-weight: bold; font-size: 11px; padding: 3px 0px 4px 0px; text-align: center; vertical-align: middle; width: 44px; }
+.create { background: url(../images/button_create_en.gif) top left no-repeat; font-weight: bold; font-size: 11px; padding: 3px 0px 4px 0px; text-align: center; vertical-align: middle; width: 48px; }
+.clear { background: url(../images/button_clear_en.gif) top left no-repeat; font-weight: bold; font-size: 11px; padding: 3px 0px 4px 0px; text-align: center; vertical-align: middle; width: 45px; }
+/* end buttons */

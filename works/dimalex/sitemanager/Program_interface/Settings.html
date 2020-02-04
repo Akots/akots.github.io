@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+   
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+   <title>Settings</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Language" content="en" />
+   <meta name="description" content="" />
+   <meta name="keywords" content="" />
+   <meta name="robots" content="all" />
+   <link type="image/x-icon" href="../favicon.ico" rel="shortcut icon" />
+   <link rel="stylesheet" type="text/css" media="all" href="css/base.css" />
+   <link rel="stylesheet" href="css/forms.css" type="text/css" media="all" />
+   <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" media="all" /><![endif]-->
+</head>
+
+<body>
+<!-- BEGIN #wrapper -->
+<div id="wrapper">
+   <div id="header-outer">
+      <div id="header">
+         <h1 id="logo"><a title="Go on Startup page" href="#">Site Manager</a></h1>
+         <div class="nav top-menu">
+            <a href="#" class="logout">Log out</a>
+            <a href="#" class="settings">Settings</a>
+            <ul class="main-actions">
+               <li><a class="trigger-cat-add" href="#">Create category</a></li>
+               <li><a href="#">Add domain</a></li>
+            </ul>
+            <ul class="pages">
+               <li><a href="#">Templates</a></li>
+               <li><a href="#">Tokens</a></li>
+               <li><a href="#">Content</a></li>
+            </ul>
+         </div>
+      </div>
+   </div><!-- #header -->
+
+   <div id="main-outer">
+      <div id="main">
+         <div class="content">
+         
+            <ul class="form-tabs">
+               <li class="form-tabs-item expanded">
+                  <h2 class="form-head"><a href="#" class="pseudo">IP Adress</a></h2>
+                  <form action="#" class="form-cont">
+                     <div class="field ip">
+                        <label for="ip_address">IP Address:</label>
+                        <div class="field-val ip_address">
+                           <input class="inputbox" type="text" name="ip_address" value="172.17.17.35" />
+                        </div>
+                        <div class="field-val ip_address">
+                           <input class="inputbox" type="text" name="ip_address" value="" />
+                           <a title="Delete IP" class="remove delete_ip_address_button" rel="nofollow" href="javascript:void(0);" onclick="deleteIP(this);">x</a>
+                        </div>
+                        <a title="Add IP address" class="add-item pseudo" href="javascript:void(0);" rel="nofollow" onclick="AddIP();">Add IP</a>
+                     </div>
+                     <button>Apply</button>
+                  </form>
+               </li>
+            
+               <li class="form-tabs-item expanded">
+                  <h2 class="form-head"><a href="#" class="pseudo">Webhost Manager</a></h2>
+                  <form action="#" class="form-cont">
+                     <div class="field">
+                        <label for="name">Login:</label>
+                        <input type="text" name="name" id="name" class="inputbox" />
+                     </div>
+                     <div class="field">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" class="inputbox" />
+                     </div>
+                     <div class="field">
+                        <label for="passwordconfirm">Confirm Password:</label>
+                        <input type="password" name="passwordconfirm" id="passwordconfirm" class="inputbox" />
+                     </div>
+                     <button>Apply</button>
+                  </form>
+               </li>
+            
+               <li class="form-tabs-item expanded">
+                  <h2 class="form-head"><a href="#" class="pseudo">Database Connection</a></h2>
+                  <form action="#" class="form-cont">
+                  <div class="fields-area">
+                     <div class="field">
+                        <label for="base-host">Host:</label>
+                        <input type="text" name="host" id="base-host" class="inputbox" />
+                     </div>
+                     <div class="field">
+                        <label for="base-user">User:</label>
+                        <input type="text" name="user" id="base-user" class="inputbox" />
+                     </div>
+                     <div class="field">
+                        <label for="base-passw">Password:</label>
+                        <input type="password" name="passw" id="base-passw" class="inputbox" />
+                     </div>
+                     <div class="field">
+                        <label for="base-name">Name:</label>
+                        <input type="text" name="name" id="base-name" class="inputbox" />
+                     </div>
+                  </div>
+                  <button>Apply</button>
+                  </form>
+               </li>
+            </ul>
+         
+            
+            
+         </div><!-- /.content -->
+
+      </div><!-- /#main -->
+   </div><!-- /#main-outer -->
+</div>
+<!-- END #wrapper -->
+</body>
+</html>

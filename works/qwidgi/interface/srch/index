@@ -1,0 +1,17 @@
+<div class="system_error"></div>
+<div class="search" id="search">
+   <div id="lftcol-groups">
+      <ul class="menu" >
+         <li class="title office"><a href="#search/office"><span>Офисы</span></a></li>
+         <li class="title people"><a href="#search/people"><span>Контакты</span></a></li>
+         <li class="title vacancy"><a href="#search/vacancy"><span>Вакансии</span></a></li>
+         <li class="title google"><a href="#search/google"><span>Google</span></a></li>
+      </ul>
+   </div>
+
+   <div id="offices" class="office tab"></div>
+   <div id="persons" class="people tab"></div>
+   <div id="vacancies" class="vacancy tab"></div>
+   <div id="google" class="google tab"></div>
+
+</div>

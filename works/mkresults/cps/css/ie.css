@@ -1,0 +1,47 @@
+/*******************************
+* Title: Styles for IE 7 & early
+********************************/
+
+/*First child emulation*/
+*html .top-menu li {
+   background-image:expression(
+      this.runtimeStyle.azimuth = 'none',
+      this.previousSibling ? false : 'none'
+   );
+   }
+/*Hover emulation*/
+*html .top-menu .ie-hover {
+ 	m: expression(this.onmouseover =  new Function("this.className = 'ie-hover-over';"));
+   }
+*html .top-menu .ie-hover-over {
+   m: expression(this.onmouseout = new Function("this.className = 'ie-hover';"));
+   }
+*html .top-menu .ie-hover-over .sub-menu {
+   display: block;
+   }
+
+*html .top-menu .sub-menu {
+   text-align: left;
+   padding-top: 16px;
+   padding-bottom: 4px;
+   }
+*html .top-menu .sub-menu li {
+   display: inline;
+   text-align: left;
+   }
+
+*html #sidebar .header {
+   margin-right: 7px;
+   }
+*html #sidebar .inner {
+   height: 343px;
+   }
+
+*html .partners .cn {
+   position: absolute;
+   width: 265px;
+   margin: -2px 0 0 -5px;
+}
+*html .partners .cn.b {
+   margin: 0 -2px -2px;
+   }

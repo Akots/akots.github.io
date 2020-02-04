@@ -1,0 +1,186 @@
+#search-box
+   {
+   background: url(/i/bg-search-box.png) 0 0 no-repeat;
+   float: right;
+   width: 178px;
+   height: 27px;
+   margin: 32px 10px 0 0;
+   }
+   #search-box #quick-search
+     {
+     color: #bbbebd;
+     font-size: 1.4em;
+     border: 0;
+     margin: 5px 0 0 10px;
+     width:138px;
+     }
+    #search-box input:focus 
+      {
+      outline: none;
+      color: #1f2726;
+      }
+    #search-box .search_submit
+        {
+         background: url(/i/ic-search-submit.gif) 0 0 no-repeat;
+         margin:7px 0 0 0;
+         border: none;
+         cursor:pointer;
+         height:13px;
+         width:13px;
+        }
+        
+
+
+#search .ui-tabs-nav
+{
+	position:relative;
+   height:100%;
+}
+
+#toggle
+{
+	position:absolute;
+	border:0px;
+	background-color:#E5E5E5;
+	bottom:-2em;
+	right:3em;
+	padding:5px 10px;
+	z-index:10;
+}
+
+#search_view #offices input#search,
+#search_view #persons input#search,
+#search_view #vacancies input#search
+{
+	border:1px solid #CCCCCC;
+	background:#E8EDF0;
+	padding:3px 10px;
+	margin:0 0 0 59%;
+}
+
+#search_view #persons #male,
+#search_view #persons #female
+{
+	width:auto;
+	position:relative;
+	top:.2em;
+}
+
+.search .info
+{
+	margin: 20px 10px 0 10px;
+	padding: 0 0 20px 0;
+	font-size: 1.2em;
+}
+#search-box .error
+{
+   color:#CCC;
+   margin: 10px 0 0 10px;
+}
+#search-box label
+{
+   float:left;
+   width:155px;
+}
+#search_view #vacancies .vacancy_card 
+   {
+   margin-bottom: 1em;
+   }
+#search_view #offices,
+#search_view #persons,
+#search_view #google,
+#search_view #vacancies
+   {
+   position: absolute;
+   top: 0;
+   left: 184px;
+   right: 0;
+   bottom: 0;
+   padding: 20px;
+   }
+#search_view #persons,
+#search_view #vacancies,
+#search_view #google
+   {
+   overflow: auto;
+   }
+   #search_view #vacancies .vacancy-header 
+      {
+      margin-bottom: 1.4em;
+      }
+   #search_view #vacancies .vacancy-description 
+      {
+      margin-bottom: 3px;
+      }
+#search_view .message_wrap
+   {
+   width: 410px;
+   margin: 40px 0 0 220px;
+   }
+
+#search_view .menu .title
+{
+   position:relative;
+}
+.tools .send_email .icon{
+   float:none;
+   background: transparent url(/i/email.png) center center no-repeat;
+   border:0;
+   background-color:transparent;
+   width:16px;
+   height:16px;
+   cursor:pointer;
+}
+
+.vacancy_card {padding-top:10pt;}
+
+#search_view{overflow:hidden;}
+
+#search_view .profile_comp{
+   margin:0 0 0 200px;
+}
+#search_view #offices .view
+   {
+   position: absolute;
+   left: 19em;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   overflow: auto;
+   padding: 20px 8px 0 40px;
+   }
+   #search_view #offices .lftcol-groups-items .title em 
+      {
+      color: #7E8792;
+      display: block;
+      font-size: 11px;
+      font-style: normal;
+      margin-top: 4px;
+      }
+   #search_view #offices .lftcol-groups-items .title a:hover em, #search_view #offices .lftcol-groups-items .title a.active em
+      {
+      color: #FFF;
+      font-weight: normal;
+      }
+   #search_view #offices #profile_comp 
+      {
+      margin: 29px 0 0;
+      }
+   #search_view #offices h1 
+      {
+      font-size: 2.4em;
+      }
+      #search_view #offices h1 a:link, #search_view #offices  h1 a:active, #search_view #offices  h1 a:visited
+         {
+         color: #1F2726;
+         text-decoration: none;
+         }
+   #search_view #offices .quick_menu_bg 
+      {
+      float: none;
+      background: transparent url(/i/bg-foto-functions.png) no-repeat scroll 100% -83px
+      }
+    #search_view #offices .quick_menu
+      {
+      background:  url(/i/bg-foto-functions.png) no-repeat;
+      }

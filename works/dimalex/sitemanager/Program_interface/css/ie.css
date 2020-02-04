@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/*
+Title:  Styles for IE
+*/
+
+/**
+* Knowing bugs
+*************************************************/
+
+  /* Fixes IE5.x and IE6 overflow behavior of textarea and input elements elements */
+  * html textarea { overflow: scroll; overflow-x: hidden; }
+  * html input { overflow: hidden; }
+
+
+  /*Disabled! Fixes with 'position: relative' *
+   body,
+  #main { position: relative; }
+  * html body { position: static; }
+  */
+
+
+  /*Clearing*/
+  .clearfix { display:  inline-block; }  /* ... especial for IE7 */
+  .clearfix { display:  block; }      /* ... für IE5,IE6,IE7 */
+  * html .clearfix { height:  1%; }   /* ... für IE5 + IE6/Win | hasLayout aktivieren */
+
+  /*.floatbox { width: 100%; }*/
+
+
+  /*Disabled! Preventing several css bugs by forcing "hasLayout" */
+  /* body { height: 1%; }*/
+  /* .page_margins, .page, #header, #nav, #main, #footer { zoom: 1; } */ /* IE6 & IE7 */
+  /* * html #header, * html #main, * html #footer { width: 100%; wid\th: auto; } */  /* IE 5.x & IE6 | IE6 only */
+
+
+  /*Disappearing List-Background Bugs*/
+  * html ul, * html ol, * html dl { position: relative; }
+
+
+  /*Disabled! List-Numbering Bug */
+  /* body ol li { display: list-item; } */
+
+  /* Form related bugfixes */
+  fieldset, legend { position: relative; }
+
+/**********************************************************/
+.inputbox, select {
+   padding: .25em 0 .3em .2em;
+   }
+.form-cont .inputbox, .form-cont select, .form-cont button { margin-left: 0; }
+* html .w-lft-bar .content {
+   float: left;
+   width: 640px;
+   }
+
+* html .actions a,
+* html .lst-cats .has-sublist .section {
+   background-image: url('../images/ie/ic-actions.png');
+   }
+* html .lst-cats li .act-box:hover, * html .act-box:hover .act-rgt,
+* html .lst-cats li .act-box.hover, * html .act-box.hover .act-rgt {
+   background-image: url('../images/ie/bg-act-box.png');
+   }
+* html .overlay {
+   position: absolute;
+   }
+* html .modal-window {
+   top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(50 * (document.documentElement.offsetHeight || document.body.clientHeight) / 110) + 'px');
+   position: absolute;
+   }
+#header .top-menu ul,
+#header .top-menu li, .tabs li,
+.sort li, .total-stats li,
+.stats-graph .header h4, .pager .pages li,
+.actions.mass-manage li {
+   display: inline;
+   }
+
+.stats-data .index, .stats-data .val {
+   display: inline;
+   }
+.pseudo {
+   zoom:1;
+   }
+.stats-data .stats-index {
+   zoom: 1;
+   *display: inline;
+   _height: 170px;
+   }
+   
+.act-box a.section {
+   vertical-align: -5px;
+   }
+.act-box a.entry {
+   vertical-align: -4px;
+   }
+.act-box .actions {
+   line-height: 16px;
+   }
+.scroll-box{
+	padding:0 0 20px
+	}
+.date-range .date-picker .ui-datepicker {
+   margin-bottom: -14px;
+   }
+.date-range .date-picker.clearfix {
+   display: none;
+   }
+.date-range.selected .date-picker.clearfix {
+   display: block;
+   }
+.mass-manage-mode .entry input {
+   vertical-align: -7px;
+   margin: 0 -2px 0 -3px;
+   }
+.system-message { zoom:1; }
+.system-message .cn.br,
+.system-message .cn.bl {
+   bottom: -3px;
+   }

@@ -1,0 +1,79 @@
+<div class="invite handmade">
+   <form action="" id="invite_form">
+   <h1>Пригласить знакомых по электронной почте</h1>
+   <div class="hr"></div>
+   <ul>
+      <!--
+      <li class="out"><label for="mailru"><input type="radio" id="mailru" value="mailru" name="source" class="checker" /><a href="/invite/mailru"><img alt="" src="/i/import/mailru.gif" /></a></label></li>
+      <li class="out"><label for="yandex"><input type="radio" id="yandex" value="yandex" name="source" class="checker" /><a href="/invite/yandex"><img alt="" src="/i/import/yandex.gif" /></a></label></li>
+      <li class="out"><label for="google"><input type="radio" id="google" value="google" name="source" class="checker" /><a href="/invite/google"><img alt="" src="/i/import/google.gif" /></a></label></li>
+      <li class="out"><label for="im"><input type="radio" id="im" value="im" name="source" class="checker" /><a href="/invite/ims"><img alt="" src="/i/import/ims.gif" /></a></label></li>
+      -->
+      <li class="out"><label for="vkontakte"><input type="radio" id="vkontakte" value="vkontakte" name="source" class="checker" /><a href="#invite/vkontakte"><img alt="ВКонтакте" src="/i/import/vkontakte.gif" /></a></label></li>
+      <li class="out"><label for="odnoklassniki"><input type="radio" value="odnoklassniki" id="odnoklassniki" name="source" class="checker" /><a href="#invite/odnoklassniki"><img alt="Одноклассники" src="/i/import/odnoklassniki.gif" /></a></label></li>
+      <li class="out"><label for="facebook"><input type="radio" id="facebook" value="facebook" name="source" class="checker" /><a href="#invite/facebook"><img alt="Facebook" src="/i/import/facebook.png" /></a></label></li>
+      <li class="handmade"><label for="handmade"><input type="radio" id="handmade" value="handmade" name="source" class="checker" />Указать адрес вручную</a></label>
+      <ol class="person">
+      <li><ul class="row pattern">
+         <li class="name">
+            <label for="name_0">Имя</label>
+            <span class="req">*</span>
+            <input type="text" value="" id="name_0" name="name_0" />
+            <div class="error"></div>
+         </li>
+         <li class="surname">
+            <label for="surname_0">Фамилия </label>
+            <input type="text" value="" id="surname_0" name="surname_0" />
+         </li>
+         <li class="email">
+            <label for="email_0">Email</label>
+            <span class="req">*</span>
+            <input type="text" value="" id="email_0" name="email_0" />
+            <div class="error"></div>
+         </li>
+         </ul></li>
+      </ol></li>
+      <li class="next"><div class="result"></div><input type="submit" value="Пригласить знакомых" class="button submit" /></li>
+   </ul>
+   </form>
+</div>
+
+<div class="invite outer-network">
+   <h1>Приглашение друзей из сети <span class="outer-title"></span></h1>
+   <div class="hr"></div>
+
+   <form action="" class="auth">
+      <p class="intro">Вам понравилось в Qwidgi, но напрягает тот факт, что список друзей, который уже есть на другом сайте, нужно собирать заново? Не проблема! Не надо посылать приглашение каждому вручную. Воспользуйтесь простым рецептом!</p>
+      <h2>Шаг 1 из 3</h2>
+      <p>Введите email и пароль, используемые вами для входа на сайт <span class="outer-title"></span></p>
+      <fieldset>
+         <div class="input">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" />
+         </div>
+         <div class="input">
+            <label for="pass">Пароль:</label>
+            <input type="password" id="pass" name="pass" />
+         </div>
+      </fieldset>
+      <div class="result"></div>
+      <input type="submit" value="Получить список друзей" class="button submit" />
+   </form>
+
+   <form action="" class="friends">
+      <h2>Шаг 2 из 3</h2>
+      <p>Выберите знакомых, которых Вы желаете пригласить на Qwidgi.com</p>
+      <div class="list"></div>
+      <p>Выбранным людям от Вашего имени будет отправлено сообщение:</p>
+      <div class="template"></div>
+      <input type="submit" value="Отправить приглашения" class="button submit" />
+   </form>
+
+   <div class="report">
+      <h2>Шаг 3 из 3</h2>
+      <p>Подождите, пока рассылаются приглашения</p>
+      <ul class="list"></ul>
+      <div class="result"></div>
+   </div>
+
+</div>

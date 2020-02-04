@@ -1,0 +1,17 @@
+[
+   {id:1, url:'/office/123/album/2/view/1', title:'Фуфло'},
+   {id:2, url:'/office/123/album/2/view/2', title:'Это я'},
+   {id:3, url:'/office/123/album/2/view/3', title:'Это я'},
+   {id:4, url:'/office/123/album/2/view/4', title:'Это я'},
+   {id:1, url:'/office/123/album/2/view/5', title:'Это я'},
+   {id:2, url:'/office/123/album/2/view/6', title:'Это я'},
+   {id:3, url:'/office/123/album/2/view/7', title:'Это я'},
+   {id:4, url:'/office/123/album/2/view/8', title:'Это я'},
+   {id:1, url:'/office/123/album/2/view/9', title:'Это я'},
+   {id:2, url:'/office/123/album/2/view/10', title:'Это я'},
+   {id:3, url:'/office/123/album/2/view/11', title:'Это я'},
+   {id:4, url:'/office/123/album/2/view/12', title:'Это я'},
+   {id:1, url:'/office/123/album/2/view/13', title:'Это я'},
+   {id:2, url:'/office/123/album/2/view/14', title:'Это я'},
+   {id:3, url:'/office/123/album/2/view/15', title:'Это я'}
+]

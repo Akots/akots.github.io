@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/*
+Author: Kotsuruba Alexander
+Version:  00.00.00
+***********
+ Colors:
+   #404F5C - black
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q,
+small, strike, strong, sub, sup, tt,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, button,
+table, caption, tbody, tfoot, thead, tr, th, td {
+   background: transparent;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+}
+
+body {
+   background: #FFF;
+   color: #404F5C;
+   font-size: 75%; /* Set 1em = 12px*/
+   font-family: Arial, Tahoma, sans-serif;
+   text-align: center;
+}
+
+/* The Begining of the End (default styles)
+----------------------------------------------- */
+fieldset, img, a img { border: 0 solid; }
+
+blockquote:before, blockquote:after,
+  q:before, q:after { content:""; }
+
+acronym, abbr { border-bottom: 1px dotted; cursor: help; }
+
+ol, ul { list-style: none; }
+
+a:active { color: #F00; }
+a { color: #01709B; text-decoration: underline; }
+   a:hover { text-decoration: none; }
+a:link *, a:visited * { cursor: pointer; }
+
+table { border: 0; border-collapse: collapse; }
+
+textarea { font-family: Arial, Tahoma, sans-serif; } 
+legend {	display: none; }
+
+.hidden { display: none !important; }
+
+/* Clearfix method for clearing floats */
+.clear { clear: both; }
+.floatbox { overflow: hidden; }
+.clearfix:after { clear: both; content: "."; display: block; font-size: 0; height: 0; visibility: hidden; }
+   .clearfix { display:block; }
+
+.pseudo { border-bottom: 1px dotted; cursor: pointer; text-decoration: none !important; }
+.ta-ctr { text-align: center; }
+
+.fsz-smaller { font-size: .8em; }
+.fsz-norm { font-size: 1em; }
+.fsz-bigger { font-size: 1.2em; }
+
+.grey { color: #666;	}
+
+ul { overflow: hidden; }
+   li { font-size: 1.2em; margin-bottom: .6em; }
+p { line-height: 1.3em; margin: 0 0 .8em; }
+
+/* Layouts
+----------------------------------------------- */
+#wrapper {
+   margin: 0 auto;
+   text-align: left;
+   }
+
+   /* =Main
+   ----------------------------------------------- */
+   @font-face {
+    font-family: 'TitilliumText22LThin';
+    src: url('../fonts/TitilliumText22L001-webfont.eot');
+    src: url('../fonts/TitilliumText22L001-webfont.eot?iefix') format('eot'),
+         url('../fonts/TitilliumText22L001-webfont.woff') format('woff'),
+         url('../fonts/TitilliumText22L001-webfont.ttf') format('truetype'),
+         url('../fonts/TitilliumText22L001-webfont.svg#webfontEtJY7Tfo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+   @font-face {
+   	font-family: 'TitilliumMaps29L400wt';
+   	src: url('../fonts/titilliummaps29l001-webfont.eot');
+   	src: local('☺'), url('../fonts/titilliummaps29l001-webfont.woff') format('woff'), url('../fonts/titilliummaps29l001-webfont.ttf') format('truetype'), url('../fonts/titilliummaps29l001-webfont.svg#webfontdWpv2rmi') format('svg');
+   	font-weight: normal;
+   	font-style: normal;
+      }
+   
+   @font-face {
+   	font-family: 'TitilliumMaps29L800wt';
+   	src: url('../fonts/titilliummaps29l002-webfont.eot');
+   	src: local('☺'), url('../fonts/titilliummaps29l002-webfont.woff') format('woff'), url('../fonts/titilliummaps29l002-webfont.ttf') format('truetype'), url('../fonts/titilliummaps29l002-webfont.svg#webfontqDV5045D') format('svg');
+   	font-weight: normal;
+   	font-style: normal;
+      }
+   
+   @font-face {
+   	font-family: 'TitilliumMaps29L999wt';
+   	src: url('../fonts/titilliummaps29l003-webfont.eot');
+   	src: local('☺'), url('../fonts/titilliummaps29l003-webfont.woff') format('woff'), url('../fonts/titilliummaps29l003-webfont.ttf') format('truetype'), url('../fonts/titilliummaps29l003-webfont.svg#webfontJdZj8BsI') format('svg');
+   	font-weight: normal;
+   	font-style: normal;
+      }
+
+   /*Install wizard*/
+   body.install {
+      background-color: #EDEFF1;
+      }
+      .install #wrapper {
+         width: 51.66em;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         margin: -205px 0 10px -310px;
+         }
+      .install #logo {
+         background: url('../images/logo.png') 0 0 no-repeat;
+         display: block;
+         width: 455px;
+         height: 133px;
+         overflow: hidden;
+         text-indent: -9000px;
+         margin: 0 auto 6px;
+         }
+      .install #main {
+         background-color: #2888A6;
+         border-left: 1px solid #2888A6;
+         border-right: 1px solid #186381;
+         border-bottom: 1px solid #0B5A7A;
+         }
+         .install #main .cr-lft,
+         .install #main .cr-rgt {
+            background: url('../images/bg-lftsolid-cor-bot.gif') -13px -3px no-repeat;
+            width: 14px;
+            height: 11px;
+            position: absolute;
+            margin: -10px 0 0 -1px;
+            }
+         .install #main .cr-rgt {
+            background-position: 0 0;
+            right: 0;
+            width: 13px;
+            height: 14px;
+            margin-top: -13px;
+            }
+         .install .header {
+            background: url('../images/bg-main-top.png') 0 0 no-repeat;
+            display: block;
+            color: #EEF2F6;
+            font: 2.7em/1 'TitilliumMaps29L400wt', Arial, sans-serif;
+            letter-spacing: -0.04em;
+            height: 34px;
+            text-shadow: 1px 1px 1px #1E3B4F;
+            text-shadow: 1px 1px 1px rgba(30,59,79,.7);
+            margin: 0 -1px;
+            padding: 10px 0 8px 20px;
+            }
+            .steps {
+               float: left;
+               position: relative;
+               width: 17.08em;
+               padding: 15px 5px 0 12px;
+               }
+               .steps li {
+                  color: #B0E4F1;
+                  text-shadow: 1px 1px 0 #1C5369;
+                  text-shadow: 1px 1px 0 rgba(8,28,44,0.6);
+                  font-size: 1.2em;
+                  margin-bottom: .6em;
+                  padding: 0 0 0 17px;
+                  }
+                  .steps .on,
+                  .steps .current {
+                     background: url('../images/ics-steps.png') 0 2px no-repeat;
+                     }
+                  .steps .current {
+                     background-position: 1px -23px;
+                     color: #FFF;
+                     font-weight: bold;
+                     }
+            .install .maincontent {
+               background-color: #F2F4F5;
+               overflow: hidden;
+               padding: 10px 5px 9px 12px;
+               }
+               .install .maincontent h2 {
+                  color: #38859d;
+                  font: bold 2em/1 'TitilliumMaps29L999wt', Arial, sans-serif;
+                  margin-bottom: .4em;
+                  }
+               .install .form-cont {
+                  margin: 0 0 0 -3px;
+                  }
+                  .fields-area {
+                     min-height: 8em;
+                     }
+                  .install .buttons {
+                     border-top: 1px solid #9AA3AA;
+                     margin: 12px 0 0 -5px;
+                     }
+               .require-name {
+                  display: inline-block;
+                  width: 15.45em;
+                  }
+               .ok {
+                  color: #00A532;
+                  font-weight: bold;
+                  }
+               .notok {
+                  color: #F00;
+                  font-weight: bold;
+                  }
+               .info {
+                  display: inline-block;
+                  cursor: help;
+                  width: 120px;
+                  overflow: hidden;
+                  vertical-align: top;
+                  }
+                  .field .remove {
+                     background: url('../images/ic-remove.png') 0 0 no-repeat;
+                     width: 12px;
+                     height: 13px;
+                     text-indent: -9000px;
+                     vertical-align: -1px;
+                     display: inline-block;
+                     margin: 0 0 0 6px;
+                     }
+                  .form-cont .field.ip {
+                     width: 18em;
+                     margin: 0 0 1.2em;
+                     }
+                     .field-val {
+                        margin-bottom: 1em;
+                        }
+                     .add-item {
+                        color: #404F5C;
+                        font-size: 1.2em;
+                        margin: 0 1.2em 0 0;
+                        }
+                  .install .message-error {
+                     width: 28.7em;
+                     }
+            /*Message done*/
+            .success #main {
+               border-left-color: #0B5A7A;
+               }
+            .success .maincontent {
+               text-align: center;
+               padding: 3em 0;
+               }
+               .success .maincontent h2 {
+                  color: #0DA4D4;
+                  font: bold 3.2em/1 'TitilliumMaps29L999wt', Arial, sans-serif;
+                  letter-spacing: -0.005em;
+                  }
+               .success #main .cr-lft,
+               .success #main .cr-rgt {
+                  background-image: url('../images/bg-cor-bot.gif');
+                  }
+               .success #main .cr-lft {
+                  background-position: -13px 0;
+                  width: 13px;
+                  height: 14px;
+                  margin-top: -13px;
+                  }

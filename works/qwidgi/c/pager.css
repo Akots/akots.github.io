@@ -1,0 +1,110 @@
+.pager
+{
+   clear:both;
+   /*height:90px;
+   border:1px solid #D9D9D9;
+   margin:0pt 7px 10px;
+   padding:10px;
+   width:250px;*/
+
+   
+}
+
+.pager ul
+{
+   padding:0;
+   margin:0 auto;
+   font-size: 1.2em;
+   display:inline;
+}
+
+.pager li
+{
+   list-style-type:none;
+   display:inline;
+   margin:0 4px;
+   cursor:pointer;
+   color: #61B4E2;
+   height:10px;
+}
+
+.pager li:hover
+{
+   text-decoration: none;
+   background-color: #DDDDDD;
+}
+
+.pager li.dots:hover,
+.pager li.selected:hover
+{
+   text-decoration: none;
+   background-color:inherit;
+}
+
+.pager li.selected
+{
+   cursor:auto;
+   color: #555555;
+}
+
+.pager li.dots
+{
+   cursor:auto;
+   color: #555555;
+}
+
+
+/*.person_card img
+{
+   float:left;
+   margin-right:10px;
+}
+
+.person_card .icon
+{
+   position:absolute;
+   bottom:0px;
+   right:0px;
+   margin: 5px;
+   list-style-type:none;
+   padding:0;
+}
+
+.person_card .name
+{
+   font-weight:bold;
+   margin-bottom:5px;
+}
+
+
+
+
+
+.person_card .icon li
+{
+   display:inline;
+   margin:0 4px;
+}
+
+.person_card .icon input,
+.person_card .icon a
+{
+   border:0;
+   background-color:transparent;
+   width:16px;
+   height:16px;
+   cursor:pointer;
+}
+
+.person_card .icon .delete input
+{
+   background:url(/i/cross.png) no-repeat center center;
+}
+.person_card .icon .send_message input
+{
+   background:url(/i/email.png) no-repeat center center;
+}
+.person_card .icon .right_people input
+{
+   background:url(/i/group.png) no-repeat center center;
+}*/

@@ -1,0 +1,115 @@
+/*
+Title: Styles for IE 7 and early versions
+Authors: Kotsuruba Alexander, Chelyuskin Vladislav
+Version:  10.03.09
+*/
+
+.inputbox {
+   font-size: 1.3em;
+   line-height: 1.2em;
+   padding: 3px 0 2px 2px;
+   }
+select.inputbox {
+   padding: 1px 0 2px 0;
+}
+#submit-big .inputbox {
+   font-size: 1.5em;
+   padding: 5px 0 4px 0;
+}
+   *html #lft-cor {
+      background: none;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='i/bg-ie-topmenu-cor-lft.png', sizingMethod='scale');
+      }
+   *html #rgt-cor {
+      background: none;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='i/bg-ie-topmenu-cor-rgt.png', sizingMethod='scale');
+      right: -1px;
+      }
+   #top-menu li {
+      line-height: 2.4em;
+      display: inline;
+      }
+   *html  #top-menu li.last {
+      right: -1px;
+      }
+   #top-menu a:link, #top-menu a:active, #top-menu a:visited {
+      display: block;
+      padding: 5px 0 7px;
+      }
+   *html #top-menu a:link, *html #top-menu a:active, *html #top-menu a:visited {
+      width: 100%;
+      height: 100%;
+      } 
+
+.grey-box .rgt-top {
+   right: -1px;
+   }
+.grey-box .rgt-bot {
+   right: -1px;
+   }
+/********* LEFT COL ***********/
+#online .links {
+   width: 122px;
+   _width: 120px;
+   }
+   #online .links a:link, #online .links a:active, #online .links a:visited {
+      position: relative;
+      }
+   *html #online .links a:link, *html #online .links a:active, *html #online .links a:visited {
+      display: inline-block;
+      margin-bottom: -2px;
+      padding: 0 4px -2px 0;
+   }
+.num span {
+   line-height: 1.3em;
+   padding-left: 4px;
+   }
+.num br {
+   font-size: 7pt;
+   }
+   *html #online .dash {
+      background: transparent url(../i/bg_online_border.png) repeat-x bottom;
+      padding: 1px 5px 0 0;
+      }
+.user-list li {
+   zoom: 1;
+   *display: inline;
+   _height: 211px;
+   *margin-right: 21px;
+   }
+.status-online, .status-offline {
+   display: inline-block;
+   margin-top: -4px;
+   }
+.gender-male, .gender-female,
+.lst-user-info .gender-male,
+.lst-user-info .gender-female {
+   display: inline-block;
+   padding: 2px 7px 4px 10px;
+   margin-left: -2px;
+   }
+#search .pad {
+   position: static;
+   }
+   #search .submit {
+      margin-top: 3px;
+      }
+
+   #search .search_adv {
+      position: relative;
+      }
+   .virtual_select {
+      top: 67px;
+      }
+/********* FOOTER ***********/
+*html .scrolling-area {
+   width: 811px;
+   padding: 0 0 0 10px;
+   }
+#footer_links a {
+   position: relative;
+   }
+#footer_links .copy {
+   left: 214px;
+   }
+   

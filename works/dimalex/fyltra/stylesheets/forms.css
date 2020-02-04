@@ -1,0 +1,491 @@
+@charset "UTF-8";
+/*
+Title: Forms styles
+*/
+.inputbox,
+select {
+   background: #FFF;
+   border: 1px solid #CCC;
+   font-size: 1.2em;
+   vertical-align: middle;
+   padding: .4em 0 .4em .3em;
+
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   border-radius: 3px;
+   }
+select { height: 2.26em; line-height: 1.7em; }
+.inputbox.mini,
+select.mini {
+   width: auto;
+   }
+.inputbox:focus,
+select:focus {
+   border-color: #98CFF7;
+   box-shadow: 0 0 3px rgba(0, 150, 255, .5);
+   -moz-box-shadow: 0 0 3px rgba(0, 150, 255, .5);
+   -webkit-box-shadow: 0 0 3px rgba(0, 150, 255, .5);
+   }
+/*********************** BUTTONS ********************************/
+.btn-submit {
+   padding: .15em .8em;
+   min-width: 7em;
+   vertical-align: middle;
+   }
+.button span, .button i {
+   background: url('../images/bg-buttons.png') 0 0 no-repeat;
+   height: 44px;
+   line-height: 44px;
+   display: inline-block;
+   }
+button.button { margin: 0 -3px; }
+.button {
+   background: transparent;
+   display: inline-block;
+   border: none;
+   width: auto;
+	overflow: visible;
+   cursor: pointer;
+   position: relative;
+   text-decoration: none;
+   vertical-align: middle;
+   white-space: nowrap;
+   }
+   .button span {
+      color: #000;
+   	font-family: 'TitilliumText14L600wt', Helvetica, sans-serif;
+      font-size: 1.7em;
+   	font-style: normal;
+   	white-space: nowrap;
+   	text-shadow: 1px 1px 1px rgb(255, 255, 255);
+      text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
+      vertical-align: top;
+      text-align: center;
+   	padding: 0 5px 0 16px;
+   	}
+   .button i {
+      width: 9px;
+      }
+#main .button:active { outline: none; }
+.button:active span { color: #333; text-shadow: none; }
+
+/*Blue big as default*/
+.button span { background-position: 0 -90px; }
+.button i { background-position: 100% -90px; }
+
+.button:focus span,
+.button:hover span { background-position: 0 -136px; }
+.button:focus i,
+.button:hover i {  background-position: 100% -136px; }
+
+.button:active span { background-position: 0 -182px; }
+.button:active i {  background-position: 100% -182px; }
+
+/*Disable blue button*/
+.button.blue.disabled:focus span,
+.button.blue.disabled:hover span { background-position: 0 -90px; }
+.button.blue.disabled:focus i,
+.button.blue.disabled:hover i { background-position: 100% -90px; }
+.button.blue.disabled:active span { background-position: 0 -90px; }
+.button.blue.disabled:active i { background-position: 100% -90px; }
+
+.button.yellow span { background-position: 0 -230px; }
+.button.yellow i {  background-position: 100% -230px; }
+
+.button.yellow:focus span,
+.button.yellow:hover span { background-position: 0 -276px; }
+.button.yellow:focus i,
+.button.yellow:hover i {  background-position: 100% -276px; }
+
+.button.yellow:active span { background-position: 0 -323px; }
+.button.yellow:active i {  background-position: 100% -323px; }
+
+/*.button.yellow span, .button.blue span { min-width: 7.5em; }*/
+
+/*Disable yellow button*/
+.button.yellow.disabled:focus span,
+.button.yellow.disabled:hover span { background-position: 0 -230px; }
+.button.yellow.disabled:focus i,
+.button.yellow.disabled:hover i { background-position: 100% -230px; }
+.button.yellow.disabled:active span { background-position: 0 -230px; }
+.button.yellow.disabled:active i { background-position: 100% -230px; }
+
+.button.grey span { background-position: 0 -510px; }
+.button.grey i {  background-position: 100% -510px; }
+
+.button.grey:focus span,
+.button.grey:hover span { background-position: 0 -557px; }
+
+.button.grey:focus i,
+.button.grey:hover i {  background-position: 100% -557px; }
+
+.button.grey:active span { background-position: 0 -605px; }
+.button.grey:active i {  background-position: 100% -605px; }
+
+/*Blue big as default*/
+.button.green span { background-position: 0 -370px; }
+.button.green i {  background-position: 100% -370px; }
+
+.button.green:focus span,
+.button.green:hover span { background-position: 0 -416px; }
+.button.green:focus i,
+.button.green:hover i {  background-position: 100% -416px; }
+
+.button.green:active span { background-position: 0 -463px; }
+.button.green:active i {  background-position: 100% -463px; }
+
+/*Small green*/
+.button.small-green span {
+   background-position: 0 0;
+   font-size: 1.2em;
+   height: 26px;
+   min-width: 5em;
+   line-height: 26px;
+   padding: 0 0 0 10px;
+   }
+   .button.small-green i { 
+      background-position: 100% 0px;
+      height: 26px;
+      line-height: 26px;
+      }
+button.button.small-green span { font-size: 1.05em; }
+.button.small-green:focus span,
+.button.small-green:hover span { background-position: 0 -30px; }
+.button.small-green:focus i,
+.button.small-green:hover i {  background-position: 100% -30px; }
+
+.button.small-green:active span { background-position: 0 -60px; }
+.button.small-green:active i {  background-position: 100% -60px; }
+
+.disabled {
+   cursor: default;
+   -moz-opacity: 0.4;
+   -khtml-opacity: 0.4;
+   opacity: 0.4;
+   }
+.button.disabled span  {
+   color: #777;
+   text-shadow: 1px 1px 1px rgb(255, 255, 255);
+   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
+   }
+
+/*Forms elementary*/
+.form-cont {
+   padding-bottom: 5px;
+   }
+   .field {
+      overflow: hidden;
+      clear: both;
+      padding: .1em 0 .6em 92px;
+      }
+   .fields-separator {
+      overflow: hidden;
+      margin: .92em 0;
+      }
+      .field label,
+      .field .label {
+         float: left;
+         font-size: 1.2em;
+         line-height: 1.2em;
+         text-shadow: 1px 1px 1px #FFF;
+         width: 5.55em;
+         margin-left: -92px;
+         padding: .5em 0.7em 0 0;
+         }
+      .field .inline-label,
+      .inline-field .inline-label{
+         float: none;
+         display: -moz-inline-box;
+         display: inline-block;
+         width: auto;
+         margin-left: 0;
+         vertical-align: bottom;
+      }
+      .field-val {
+         display: inline-block;
+         font-size: 1.2em;
+         margin: .6em 0 0;
+         }
+      .field .inputbox { width: 20.85em; }
+      .field textarea.inputbox { width: 36.3em; min-height: 14.3em; overflow: auto; }
+      .field textarea.inputbox_small { width: 20.85em; min-height: 7em; overflow: auto; }
+      .field select { width: 21.3em; }
+      .field .mini { width: auto; }
+      .hint { color: #BBB; } /* hint in textbox */
+
+      .field .field-pattern { float: left; margin: 0 0 .3em; padding: 0 0 .1em; }
+      .field .clone { clear: left; }
+      
+      .field .add-item {
+         float: left;
+         line-height: 1.2em;
+         margin: .7em 0 0 1.25em;
+         }
+      .field .field-desc {
+         line-height: 2.4em;
+         margin-left: 1.25em;
+         display: -moz-inline-box;
+         display: inline-block;
+         vertical-align: bottom;
+         font-size: 12px;
+         }
+         .field .field-desc span {
+            display: block;
+            line-height: 1.3em;
+            }
+      .required {
+         font-weight: bold;
+         }
+      .field label.error {
+         background: none;
+         display: block;
+         float: none;
+         width: auto;
+         font-size: 1em;
+         text-shadow: none;
+         line-height: 1;
+         margin: .3em 0 0 .15em;
+         padding: 0;
+         }
+      .field.checkbox {
+         padding: 0 0 0.5em 92px;
+         }
+      .field.checkbox label, .field label.checkbox {
+         font-size: 1em;
+         display: inline-block;
+         position: relative;
+         width: auto;
+         float: none;
+         margin-left: 92px;
+         padding-left: 17px;
+         }
+      .field label.checkbox {
+         font-size: 1em;
+         display: inline-block;
+         position: relative;
+         width: auto;
+         float: none;
+         margin-left: 0;
+         padding-left: 18px;
+         }
+         .checkbox input {
+            position: absolute;
+            margin: 0.05em 0.4em 0.3em -18px;
+            padding: 0;
+            }
+         .field.checkbox label span {
+            display: block;
+            cursor: default;
+            margin-top: -0.25em;
+            }
+      .checkbox_label label {
+         margin-left: 0 !important;
+         margin-top: 4px;
+         }
+      .field.range .inputbox { width: 7em; }
+      .field.file { padding-left: 0; }
+         .field.file input { height: 2em; line-height: 2em;  }
+
+      .days-picker.select-days {
+         position: relative;
+         padding: .3em 0;
+         }
+         .days-picker.select-days li {
+            background-color: #E5E5E5;
+            float: left;
+            display: inline;
+            height: 20px;
+            width: 33px;
+            height: 20px;
+            line-height: 19px;
+            text-align: center;
+            position: relative;
+            z-index: 4;
+            }
+         .days-picker.select-days .selected {
+            z-index: 5;
+            }
+            .days-picker.select-days .selected {
+               background-color: #0096FF;
+               border: none;
+               color: #FFF;
+               }
+            .days-picker.select-days .selected .pseudo {
+               border: none;
+               position: relative;
+               z-index: 2;
+               }
+
+            .days-picker.select-days .crn-lft,
+            .days-picker.select-days .crn-rgt {
+               display: none;
+               }
+            .days-picker.select-days .selected .crn-lft,
+            .days-picker.select-days .selected .crn-rgt {
+               background: url('../images/bg-day-picker.png') 0 0 no-repeat;
+               position: absolute;
+               display: none;
+               width: 9px;
+               height: 20px;
+               z-index: 1;
+               left: 0;
+               margin: 0 0 0 -9px;
+               }
+            .days-picker.select-days .selected .crn-rgt {
+               background-position: 100% 0;
+               left: auto;
+               right: 0;
+               margin: -19px -9px 0 0;
+               }
+         .days-picker.view-days li {
+            display: none;
+            line-height: 1em;
+            margin-right: .1em;
+            padding: 0;
+            }
+         .days-picker.view-days .selected {
+            display: inline-block;
+            }
+            .days-picker.view-days li .pseudo {
+               border: none;
+               cursor: default;
+               }
+
+            
+      .field .spr { color: #999; }
+      .field .b-grey{margin: 0;}
+      .submit { padding: .6em 0 .5em 92px; }
+         .submit .spr { font-size: 1.2em; position: relative; margin: 0 .3em; }
+      
+      .form-footer{
+         border-top: 1px solid #e6e6e6;
+         margin-top: 1.3em;
+         padding-top: 1.9em;
+         }
+      .field .pre-input{
+         position: absolute;
+         margin-left: -1.3em;
+         margin-top: .7em;
+         }
+		.inline-field{ font-size: 14px; }
+		.field-help {
+		   color: #777;
+         font-size: .9em;
+         text-shadow: none;
+         line-height: 1.2em;
+         margin: .4em 0 .2em .15em;
+         }
+      /* Cards images */
+		.field .card-type {
+			display: inline;
+			vertical-align: top;
+			margin-left: 16px;
+		   }
+			.field .card-type img {
+				margin: 0 0 0 .6em;
+			   }
+		/* Select time */
+		.form-cont .time-input .time-from,
+      .form-cont .time-input .time-to {
+         margin: 0 0 5px;
+         }
+         .form-cont .time-input label {
+            width: 3.2em;
+            float: left;
+            margin: 0;
+            font-style: italic;
+            }
+         .form-cont .time-input .sel-mon {
+            width: 12em;
+            margin-right: .1em;
+            }
+         .form-cont .time-input .sel-mon_num {
+            width: 5em;
+            margin-right: .1em;
+            }
+         .form-cont .time-input .sel-year {
+            width: 5em;
+            }
+            .form-cont .time-input .time-now label {
+               font-size: 1.2em;
+               width: auto;
+               font-style: normal;
+               }
+      /* Image upload*/
+      .field.image img {
+         margin-bottom: 1.2em;
+         }
+
+      /* Spaces length variants */
+      .separate-fields .field {
+         overflow: visible;
+         padding-left: 0;
+         }
+         .separate-fields label,
+         .separate-fields .label {
+            font-size: 1em;
+            display: block;
+            float: none;
+            width: auto;
+            margin: 0 0 .3em;
+            }
+         .separate-fields .inputbox,
+         .separate-fields select {
+            font-size: 1em;
+            }
+      .separate-fields .field.checkbox label {
+         margin-left: 0;
+         }
+      .separate-fields .submit {
+         padding-left: 0;
+         }
+
+      .long-fields .field,
+      .long-fields .submit {
+         padding-left: 180px;
+         }
+         .long-fields label,
+         .long-fields .label {
+            width: 11.8em;
+            margin-left: -180px;
+            }
+         .long-fields .error { margin-left: .15em; }
+      
+      .average-fields .field {
+         padding-left: 118px;
+         }
+      .average-fields .field.checkbox {
+         padding-left: 0;
+         }
+         .average-fields .field label,
+         .average-fields .field .label {
+            margin-left: -118px;
+            }
+         .average-fields .field label.error {
+            margin-left: .15em;
+            }
+            .average-fields .field.checkbox label {
+               margin-left: 118px;
+               }
+
+   .salary-input .inputbox{
+      width: 16.4em;
+      }
+
+   .add-another{
+      font-size: 14px;
+      padding-left: 180px;
+      margin-bottom: 1em;
+      }
+      .add-item_icon{
+         margin-left: 16px;
+         display: -moz-inline-box;
+         display: inline-block;
+         }  
+      .add-item_icon:before{
+         position: absolute;
+         content: "\2B";
+         margin: -.2em 0 0 -16px;
+         color: #0C0;
+         font-size: 20px;
+         }

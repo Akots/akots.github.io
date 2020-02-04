@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/*
+Title: Basic layout
+*/
+#wrapper {
+   width: 81.65em;
+   margin: 0 auto 0;
+   padding-top: 16px;
+   text-align: left;
+   position: relative;
+   }
+.w-flashbox #wrapper { padding: 46px 0 0; }
+   /* =Header
+   ----------------------------------------------- */
+   #header {
+      position: relative;
+      padding: 0 20px;
+      }
+
+   /* =Main
+   ----------------------------------------------- */
+   #main {
+      background: #FFF;
+      border: 1px solid #CCC;
+      min-height: 12em;
+      border-radius: 10px;
+      padding: 15px 18px;
+      }
+      .with-sidebar #content,
+      .lft-col {
+         float: left;
+         width: 52.5em;
+         }
+      .content-lft #content {
+         width: 45em;
+         }
+   /*Top panel*/
+   .main-panel {
+      background: #FFF url('../images/bg-grad-mainpanel.png') 0 100% repeat-x;
+      border-bottom: 1px solid #CCC;
+      margin: -15px -18px 27px;
+      padding: 27px 18px 25px;
+      }
+      .main-panel .quick-actions {
+         float: right;
+         }
+      
+   .lft-side {
+      width: 11.7em;
+      float: left;
+      margin-right: 1.7em;
+      }
+   .center {
+      overflow: hidden;
+      padding-bottom: .3em;
+      }
+   .w-lft-side .lft-side {
+      margin-right: 0;
+      }
+   .w-lft-side .center {
+      overflow: visible;
+      margin-left: 13.8em;
+      position: relative;
+      }
+      
+   /* =Sidebar
+   ----------------------------------------------- */
+   .sidebar,
+   .acide {
+      width: 25em;
+      float: right;
+      }
+      
+   
+/* =Footer
+----------------------------------------------- */	
+#footer {
+   overflow: hidden;
+   padding: 20px;
+   }

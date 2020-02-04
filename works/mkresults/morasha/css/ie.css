@@ -1,0 +1,42 @@
+/*
+Title: Styles for IE 7 and early versions
+Version: 09.10.09
+*/
+html, body { overflow: hidden; height: 100%; }
+
+*html #wrapper {
+   overflow-y: scroll;
+   }
+*html .bg-screen {
+   position: absolute;
+   top: expression(eval(document.documentElement.scrollTop));
+   margin-top: -140px;
+   }
+.bg-dotted {
+   position: absolute;
+   }
+*html .bg-dotted {
+   display: none;
+   }
+*+html .top-menu {
+   margin-top: 30px;
+   }
+*html .top-menu {
+   margin-top: 22px;
+   }
+.top-menu li {
+   display: inline;
+   }
+*html .photos .inner {
+   padding-left: 12px;
+}
+.button.red {
+   padding: 7px 1px 9px 10px;
+   }
+
+.content .shw.bot {
+   background-position: 0 0;
+   height: 6px;
+   overflow: hidden;
+   padding-bottom: 0;
+   }

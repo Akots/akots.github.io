@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/*
+Title:  Styles for IE
+*/
+
+/**
+* Knowing bugs
+*************************************************/
+
+  /* Fixes IE5.x and IE6 overflow behavior of textarea and input elements elements */
+  * html textarea { overflow: scroll; overflow-x: hidden; }
+  * html input { overflow: hidden; }
+
+
+  /*Disabled! Fixes with 'position: relative' *
+  body,
+  #main { position: relative; }
+  * html body { position: static; }
+  */
+
+
+  /*Clearing*/
+  .clearfix { display:  inline-block; }  /* ... especial for IE7 */
+  .clearfix { display:  block; }    /* ... für IE5,IE6,IE7 */
+  * html .clearfix { height:  1%; }  /* ... für IE5 + IE6/Win | hasLayout aktivieren */
+
+  /*.floatbox { width: 100%; }*/
+
+
+  /*Disabled! Preventing several css bugs by forcing "hasLayout" */
+  /* body { height: 1%; }*/
+  /* .page_margins, .page, #header, #nav, #main, #footer { zoom: 1; } */ /* IE6 & IE7 */
+  /* * html #header, * html #main, * html #footer { width: 100%; wid\th: auto; } */  /* IE 5.x & IE6 | IE6 only */
+
+
+  /*Disappearing List-Background Bugs*/
+  * html ul, * html ol, * html dl { position: relative; }
+
+
+  /*Disabled! List-Numbering Bug */
+  /* body ol li { display: list-item; } */
+
+  /* Form related bugfixes */
+  fieldset, legend { position: relative; overflow: visible; }
+
+/**********************************************************/
+.form-cont legend { margin-left: -7px; }
+.checkbox input { *overflow: hidden; }
+
+* html #logo { background-image: url('../images/ie/logo.png'); }
+* html .fun-bun { background-image: url('../images/ie/small-logo.png'); }
+
+* html .leader-teaser { background-image: url('../images/ie/bg-rgt-corner.png'); position: relative; }
+
+/*Fix display inline-block*/
+.top-menu li, .lst-middot li, .activity-notif li, .listed-data .separated-info li,
+.man .fn.n, .woman .fn.n, .listed-data .separated-info li,
+.slider li,
+.form-cont .label .hint  {
+  zoom:1; /* for IE (hasLayout true) */
+  *display:inline; /* for IE */
+  }
+
+/**Modal windows */
+* html .overlay {
+  position: absolute;
+  }
+* html .modal-window {
+  top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(50 * (document.documentElement.offsetHeight || document.body.clientHeight) / 110) + 'px');
+  position: absolute;
+  }
+
+/********************
+Fix lists bullets
+*********************
+*/
+.lst-bullet li,
+.lst-middot li {
+  zoom: expression(
+      runtimeStyle.zoom = 0,
+      insertBefore(
+        createElement("m"), firstChild)
+   );
+  }
+  .lst-bullet li m {
+    position: absolute;
+    margin-left: -0.8em;
+    zoom: expression(
+        runtimeStyle.zoom = 0,
+        innerText = "\2022"
+     );
+  }
+  .lst-middot li m {
+    position: absolute;
+    margin-left: -0.7em;
+    zoom: expression(
+        runtimeStyle.zoom = 0,
+        innerText = "\00B7"
+     );
+    }
+
+/*Pathway fix*/
+.pathway li {
+  zoom: expression(
+        runtimeStyle.zoom = 0,
+        previousSibling &&
+        insertBefore(
+            createElement("m"), firstChild)
+    );
+  }
+  .pathway li m {
+    position: absolute;
+    font-size: 16px;
+    line-height: 2.3em;
+    margin: 0 .3em 0 -0.7em;
+    zoom: expression(
+          runtimeStyle.zoom = 0,
+          innerText = "\203A"
+      );
+  }
+
+.lst-middot li {
+  m: expression(!this.a ?
+    (this.a=1, ( this.previousSibling ? false : this.className = 'first')):
+    0)
+  }
+.top-menu li.first { margin-left: 0; }
+.lst-middot .first m { display: none; }
+
+.top-menu { zoom:1; }
+.user-panel .user-act li {
+  margin-right: 1.1em;
+  }
+* html .top-panel { zoom:1; }
+  .activity-notif .cnt-notif { vertical-align: -3px; }
+
+/* Main page*/
+.user-highlight {
+  margin: 0 -3px 0 -1px;
+  }
+* html .user-highlight li {
+  overflow: hidden;
+  display: inline;
+  }
+  * html .user-highlight .summary {
+    zoom: 1; 
+    width: 100%;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#30000000,endColorstr=#30000000);
+    margin: 0 0 -1px;
+    }
+  * html .user-highlight a:hover .summary {
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
+    }
+
+/*Profile*/
+* html .actions a {
+  background-image: url('../images/ie/ic-actions.png');
+  }
+* html .status, * html .status .bg-rgt {
+  background-image: url('../images/ie/bg-user-status.png');
+  }
+* html .status.edit {
+  width: 11em;
+  }
+.status label {
+  zoom: 1;
+  *padding-top: 4px;
+  padding-left: 9px;
+  }
+.profile .content, .view-photos .content, .content-lft .content { zoom:1; }
+
+.profile .man h1,
+.profile .woman h1 {
+  padding-right: 0.6em;
+  }
+.profile .photos .current-foto {
+  zoom:1;
+  margin-bottom: -1px;
+  }
+/* View photos*/
+.slider .fade {
+  height: 100px;
+  }
+* html .slider .current .fade,
+* html .slider a:hover .fade {
+  visibility: hidden;
+  }
+
+.edit-profile .form-cont { zoom:1; }

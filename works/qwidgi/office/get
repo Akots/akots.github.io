@@ -1,0 +1,28 @@
+{
+   id:123,
+   logotype_url : '/i/photo/90x90/1.jpg',
+   comp_name: 'GloRu.Net',
+   city: 'Днепропетровск',
+   number_vacancies: 8,
+   number_photos: 1251,
+   number_messages: 58,
+   number_employees: 200,
+   year_create: '2008',
+   pattern_ownership: 'ООО',
+   branch: 'Агропромышленность',
+   venue: 'Героев Сталинграда, 139к',
+   comp_phone: '(0562) 32-34-54',
+   comp_email: 'petr.rostov@gmail.com',
+   comp_site: 'http://gmail.com/',
+   first_name: 'Артем',
+   second_name: 'Геннадьевич',
+   last_name: 'Анищенко',
+   change_fields: [3,6,8],
+   edit:true,
+   relations:{
+      '123':2,
+      '1234':1,
+      '1235':3,
+      '12':1
+   }
+}

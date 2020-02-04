@@ -1,0 +1,125 @@
+body, html {
+	margin:0;
+   padding:0;
+   background-color:#1f2726;
+   width:100%;
+   font-family:"Arial";
+   font-size:12px;
+   color:#1f2726;
+}
+a{
+   color:#085897;
+}
+a img{
+   border:none;
+}
+h1{
+   margin:10px 0;
+   font-size:19px;
+   font-weight:bold;
+   color:#000;
+   position:absolute;
+   z-index:1;
+}
+.hr{
+   height: 1px;
+   line-height:1px;
+   border-bottom: 1px solid #dfdddf;
+   padding:0;
+   margin:50px 0 10px 0;
+   width:100%;
+}
+.clear{
+   height:1px;
+   width:100%;
+   clear:both;
+   display:block;
+}
+#wrapper{
+   margin:150px auto 0 auto;
+   width:550px;
+}
+   #logo{
+      height:57px;
+      width:100%;
+      background:transparent url(logo.png) no-repeat scroll 0 0;
+      padding:0 0 15px 0;
+   }
+   #main{
+      width:480px;
+      background-color:#FFF;
+      padding:0 35px 15px 35px;
+      position:relative;
+   }
+      #text
+      {
+         padding-top:40px;
+      }
+         .message
+         {
+            font-size:23px;
+         }
+         .context
+         {
+            font-size:11px;
+            color:#b5c1bf;
+         }
+   #footer{
+      margin:10px 0;
+      font-size:11px;
+   }
+      #footer span{
+         color:#363d3c;
+         float:left;
+      }
+      #footer a{
+         color:#363d3c;
+         float:right;
+         margin:0 0 0 15px;
+         text-decoration:none;
+      }
+      #footer a:hover{
+         color:#FFF;
+      }
+      
+/**** Corners ****/
+
+.header_back
+{
+   background:transparent url(header.png) repeat-x;
+   height:44px;
+   width:526px;
+   position:absolute;
+   top:0;
+   left:12px;
+}
+.corner{
+   width:12px;
+   position:absolute;
+   font-size:1px;
+   background:transparent url(corners.png) no-repeat;
+}
+   .l_top{
+      height:44px;
+      background-position:0 0;
+      top:0;
+      left:0;
+   }
+   .r_top{
+      height:44px;
+      background-position:-12px 0;
+      top:0;
+      right:0;
+   }
+   .l_bott{
+      height:12px;
+      background-position:0 -44px;
+      bottom:0;
+      left:0;
+   }
+   .r_bott{
+      height:12px;
+      background-position:-12px -44px;
+      bottom:0;
+      right:0;
+   }

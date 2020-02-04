@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/*
+Author: Kotsuruba Alexander
+Version:  00.00.00
+***********
+ Colors:
+   #333 - black
+*/
+   
+* { padding: 0; margin: 0; }
+html { font-size: 100.01%; }
+
+body {
+   background: #FFF url('../images/bg-header-repeat.png') 0 0 repeat-x;
+   color: #333;
+   font-size: 75%; /* Set 1em = 12px*/
+   font-family: Arial, Tahoma, sans-serif;
+   text-align: left;
+}
+
+/* The Begining of the End (default styles)
+----------------------------------------------- */
+fieldset, img, a img { border: 0 solid; }
+
+blockquote:before, blockquote:after,
+  q:before, q:after { content:""; }
+
+acronym, abbr { border-bottom: 1px dotted; cursor: help; }
+
+ol, ul { list-style: none; }
+
+a { text-decoration: underline; }
+   a:hover { text-decoration: none; }
+a:link *, a:visited * { cursor: pointer; }
+
+table { border: 0; border-collapse: collapse; }
+
+textarea { font-family: Arial, Tahoma, sans-serif; } 
+legend {	display: none; }
+
+.hidden { display: none !important; }
+
+/* Clearfix method for clearing floats */
+.clear { clear: both; }
+.floatbox { overflow: hidden; }
+.clearfix:after { clear: both; content: "."; display: block; font-size: 0; height: 0; visibility: hidden; }
+   .clearfix { display:block; }
+
+.pseudo { border-bottom: 1px dotted; cursor: pointer; text-decoration: none !important; }
+.ta-ctr { text-align: center; }
+
+.fsz-smaller { font-size: .8em; }
+.fsz-norm { font-size: 1em; }
+.fsz-bigger { font-size: 1.2em; }
+
+.grey { color: #666;	}
+
+
+/* Layouts
+----------------------------------------------- */
+#wrapper {
+   width: 980px;
+   margin: 0 auto;
+   text-align: left;
+   }
+   /* =Header(logo,menu...)
+   ----------------------------------------------- */
+   #header {
+      background: url('../images/bg-header.png') 0 0 no-repeat;
+      position: relative;
+      height: 166px;
+      }
+      #logo {
+         position: relative;
+         float: left;
+         width: 355px;
+         height: 84px;
+         margin-top: 17px;
+         }
+         #logo a {
+            color: #000;
+            display: block;
+            font-size: 21px;
+            text-decoration: none;
+            overflow: hidden;
+            position: relative;
+            text-transform: uppercase;
+            width: 355px;
+            height: 84px;
+            }
+            #logo a span {
+               background: transparent url('../images/logo.png') 0 0 no-repeat;
+               cursor: pointer;
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 355px;
+               height: 84px;
+               }
+         
+         .autoriz {
+            float: right;
+            margin-top: 6px;
+            }
+            .autoriz li {
+               float: left;
+               margin-left: 8px;
+               }
+
+         .top-menu {
+            background: url('../images/bg-topmenu-brd.png') 0 0  no-repeat;
+            clear: both;
+            position: relative;
+            overflow: hidden;
+            height: 47px;
+            top: 8px;
+            }
+            .top-menu li {
+               display: inline-block;
+               margin: 0 -2px 0 0;
+               }
+            .top-menu a {
+               background: url('../images/bg-topmenu-brd.png') 100% 0  no-repeat;
+               display: block;
+               font-family: Tahoma;
+               font-size: 1.6em;
+               line-height: 2em;
+               font-weight: bold;
+               position: relative;
+               text-shadow: 2px 2px 2px #4f5119;
+               padding: 2px 24px 5px;
+               }
+            .top-menu a:link, .top-menu a:active, .top-menu a:visited {
+               color: #FFF;
+               text-decoration: none;
+               }
+            .top-menu .active a:link, .top-menu .active a:active, .top-menu .active a:visited,
+            .top-menu a:hover {
+
+               }
+
+   /* =Main
+   ----------------------------------------------- */
+   #main {
+      background: url('../images/bg-main-top.jpg') 0 -4px no-repeat;
+      overflow: hidden;
+      }
+      /* =Main Content
+      ----------------------------------------------- */
+      #content {
+         position: relative;
+         float: left;
+         width: 725px;
+         }
+      
+      /* =Cols
+      ----------------------------------------------- */
+      #lft-col {
+   
+         }
+      #rgt-col {
+         float: right;
+         width: 246px;
+         }
+
+   /********* LEFT COL ***********/
+
+
+   /********* RIGHT COL ***********/
+   
+/* =Footer
+----------------------------------------------- */	
+#footer {
+   clear: both;
+   }
+   .logo-copyrights {
+
+      }
+   .links {
+
+      }
+      .links a {
+
+         }

@@ -1,0 +1,183 @@
+<div class="demo text">
+
+<div class="icon">
+<div class="icon-img">
+<img src="/i/widget/contacts.png" alt="Контакты" class="png-fix pallet" />
+</div>
+<p class="title">Контакты</p>
+<div class="description">
+<h2>Контакты</h2>
+<p>Удобная записная книга с возможностью создания групп, поиском и алфавитной навигацией по списку контактов. Используя данный виджет, удобно просматривать профайлы участников.</p>
+<p><a href="#auth" title="Вход в систему и регистрация">Вход</a></p>
+</div>
+</div>
+
+<div class="icon">
+<div class="icon-img">
+<img src="/i/widget/messages.png" alt="Мои сообщения" class="png-fix pallet" />
+</div>
+<p class="title">Мои сообщения</p>
+<div class="description">
+<h2>Мои сообщения</h2>
+<p>При помощи этого виджета можно переписываться с другими участниками системы Qwidgi и получать системные уведомления.</p>
+<p><a href="#auth" title="Вход в систему и регистрация">Вход</a></p>
+</div>
+</div>
+
+<div class="icon">
+<div class="icon-img">
+<img src="/i/widget/office.png" alt="Офисы" class="png-fix pallet" />
+</div>
+<p class="title">Офисы</p>
+<div class="description">
+<h2>Офисы</h2>
+<p>Здесь Вы найдёте всю информацию о жизни Вашего офиса! Виджет «Офис» - это корпоративная «тусовка», где можно пообщаться с сотрудниками, обменяться корпоративной информацией и просто поделиться слухами. Будьте в курсе событий, приобщайтесь к корпоративной культуре!</p>
+<p><a href="#auth" title="Вход в систему и регистрация">Вход</a></p>
+</div>
+</div>
+
+<div class="icon">
+<div class="icon-img">
+<img src="/i/widget/photo.png" alt="Фотографии" class="png-fix pallet" />
+</div>
+<p class="title">Фотографии</p>
+<div class="description">
+<h2>Фотографии</h2>
+<p>Простой и мощный интерфейс для добавления и управления фотоальбомами. Загружайте свои фото и публикуйте их, чтобы показать друзьям!</p>
+<p><a href="#auth" title="Вход в систему и регистрация">Вход</a></p>
+</div>
+</div>
+
+<div class="icon">
+<div class="icon-img">
+<a href="#invite"><img src="/i/widget/invite.png" alt="Пригласить друга" class="png-fix" /></a>
+</div>
+<p class="title"><a href="#invite">Пригласить друга</a></p>
+<div class="description">
+<h2>Пригласить друга</h2>
+<p>Пригласите друзей и знакомых в систему Qwidgi! Если Ваши друзья уже зарегистрированы в системе Qwidgi, они получат приглашение добавить Вас в друзья.</p>
+</div>
+</div>
+
+
+<div class="icon">
+<div class="icon-img">
+<img src="/i/widget/rss.png" alt="RSS" class="png-fix" />
+</div>
+<p class="title">RSS<em>(скоро)</em></p>
+<div class="description">
+<h2>RSS</h2>
+<p>Здесь должен быть описание виджета, которого у нас сейчас нет, скоро будет.</p>
+<p><a href="#auth" title="Вход в систему и регистрация">Вход</a></p>
+</div>
+</div>
+
+<div class="unavailable icon">
+<div class="icon-img">
+<img src="/i/widget/blog.png" alt="Блоги" class="png-fix pallet" />
+</div>
+<p class="title">Блоги<em>(скоро)</em></p>
+<div class="description">
+<h2>Блоги</h2>
+<p>Ведите собственный блог в системе Qwidgi! Читайте заметки Ваших друзей и публикуйте собственные.</p>
+<p><a href="#auth" title="Вход в систему и регистрация">Вход</a></p>
+</div>
+</div>
+
+<div class="unavailable icon">
+<div class="icon-img">
+<img src="/i/widget/messages_reserve.png" alt="Щебеталка" class="png-fix pallet" />
+</div>
+<p class="title">Щебеталка<em>(скоро)</em></p>
+<div class="description">
+<h2>Щебеталка</h2>
+<p>Это микроблог, в котором автор может оставить короткие заметки о том, чем он сейчас занимается или о чём размышляет в данный момент. Например, “Пью пиво” или “Задался вопросом. Что было бы, если бы ёжики были хлебом?”. В общем, любую информацию – мимолётные мысли, наблюдения, переживания - привлекшую внимание автора в течение дня.</p>
+<p><a href="#auth" title="Вход в систему и регистрация">Вход</a></p>
+</div>
+</div>
+
+<div class="unavailable icon">
+<div class="icon-img">
+<img src="/i/widget/groups.png" alt="Группы" class="png-fix pallet" />
+</div>
+<p class="title">Группы<em>(скоро)</em></p>
+<div class="description">
+<h2>Группы</h2>
+<p>Вступив в группы – сообщества по интересам, Вы сможете концентрированно получать обновления информации, размещаемой в группе другими её участниками, общаться по интересам и заводить новые знакомства в интересующей Вас среде. </p>
+<p><a href="#auth" title="Вход в систему и регистрация">Вход</a></p>
+</div>
+</div>
+
+<div class="unavailable icon">
+<div class="icon-img">
+<img src="/i/widget/calendar.png" alt="Календарь" class="png-fix pallet" />
+</div>
+<p class="title">Календарь<em>(скоро)</em></p>
+<div class="description">
+<h2>Календарь</h2>
+<p>Удобный «вечный» настольный календарь. Незаменимая вещь для делового человека!</p>
+<p><a href="#auth" title="Вход в систему и регистрация">Вход</a></p>
+</div>
+</div>
+
+<div class="unavailable icon">
+<div class="icon-img">
+<img src="/i/widget/documents.png" alt="Документы" class="png-fix pallet" />
+</div>
+<p class="title">Документы<em>(скоро)</em></p>
+<div class="description">
+<h2>Документы</h2>
+<p>Используя это виджет, Вы сможете создавать и редактировать документы популярных форматов (Word, Excel, Power Point) on-line, используя только браузер. Где бы Вы не находились, Вы сможете быстро и легко составить отчёт, написать письмо или сделать расчёты, используя привычный для пользователя пакета Microsoft Office, интерфейс.</p>
+<p><a href="#auth" title="Вход в систему и регистрация">Вход</a></p>
+</div>
+</div>
+
+<div class="unavailable icon">
+<div class="icon-img">
+<img src="/i/widget/video.png" alt="Видео" class="png-fix pallet" />
+</div>
+<p class="title">Видео<em>(скоро)</em></p>
+<div class="description">
+<h2>Видео</h2>
+<p>Одной из самых интересных «фишек» Web 2.0 стало потоковое видео. Теперь сервис потокового видео идёт к Вам, как гора к Магомету! Не покидая системы Qwidgi, Вы сможете просматривать видео Ваших друзей – участников системы, а также загружать своё собственное, чтобы показать его друзьям.</p>
+<p><a href="#auth" title="Вход в систему и регистрация">Вход</a></p>
+</div>
+</div>
+
+<div class="unavailable icon">
+<div class="icon-img">
+<img src="/i/widget/audio.png" alt="Аудио" class="png-fix pallet" />
+</div>
+<p class="title">Аудио<em>(скоро)</em></p>
+<div class="description">
+<h2>Аудио</h2>
+<p>Виджет «Аудио» позволяет загружать, организовывать и публиковать музыкальные файлы, которые находятся на Вашем жёстком диске.</p>
+<p><a href="#auth" title="Вход в систему и регистрация">Вход</a></p>
+</div>
+</div>
+
+<div class="unavailable icon">
+<div class="icon-img">
+<img src="/i/widget/guests.png" alt="Гости" class="png-fix pallet" />
+</div>
+<p class="title">Гости<em>(скоро)</em></p>
+<div class="description">
+<h2>Гости</h2>
+<p>Фото последнего участника, просматривавшего Ваш профайл.</p>
+<p><a href="#auth" title="Вход в систему и регистрация">Вход</a></p>
+</div>
+</div>
+
+<div class="unavailable icon">
+<div class="icon-img">
+<img src="/i/widget/travel.png" alt="Путешествия" class="png-fix" />
+</div>
+<p class="title">Путешествия<em>(скоро)</em></p>
+<div class="description">
+<h2>Путешествия</h2>
+<p>Здесь должен быть описание виджета, которого у нас сейчас нет, скоро будет.</p>
+<p><a href="#auth" title="Вход в систему и регистрация">Вход</a></p>
+</div>
+</div>
+
+</div>

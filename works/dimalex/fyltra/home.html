@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+   
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+   <title>Fyltra</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Language" content="en" />
+   <meta name="description" content="" />
+   <meta name="keywords" content="" />
+   <meta name="robots" content="all" />
+   <link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />
+   <link rel="stylesheet" type="text/css" media="all" href="stylesheets/base.css" />
+   
+   <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="stylesheets/ie.css" media="all" /><![endif]-->
+   
+   <script src="javascripts/rounded-corners.js" type="text/javascript" charset="utf-8"></script>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script src="javascripts/jqModal.js" type="text/javascript"></script>
+   <script src="javascripts/jquery.watermark.min.js" type="text/javascript"></script>
+   <script src="javascripts/common.js" type="text/javascript"></script>
+   <script type="text/javascript">
+      jQuery(document).ready(function($) {
+         /*Login popup*/
+         $(".modal-window.sign-in").jqm({toTop:true, trigger: '.trigger-signin'});
+         
+         /*Water marks*/
+         $('#g-search').watermark('Search for a job', {className: 'hint'});
+      
+         $('.sign-in [name=username]').watermark('Username or E-mail', {className: 'hint'});
+         $('.sign-in [name=password]').watermark('Password', {className: 'hint'});
+         
+         dropdownSelect($(".dropdown-list.countrys"));
+      })
+   </script>
+
+</head>
+
+<body class="w-flashbox">
+<!-- BEGIN #wrapper -->
+<div id="wrapper">
+   <div id="header" class="clearfix">
+      <h1 id="logo"><a href="#">Filter and expedite your staff selection <span></span></a></h1>
+
+      <div class="user-panel">
+         <ul class="dropdown-list countrys">
+            <li class="it-visible cty-venezuela"><a href="#"><span class="pseudo">Venezuela</span></a></li>
+            <li class="cty-colombia"><a href="#"><span class="pseudo">Colombia</span></a></li>
+            <li class="cty-costarica"><a href="#"><span class="pseudo">Costa Ricoa</span></a></li>
+            <li class="cty-panama"><a href="#"><span class="pseudo">Panama</span></a></li>
+         </ul>
+
+         <a class="pseudo trigger-signin" href="#">Sign in</a> <span class="spr">&bull;</span> Register as <a class="role-seeker" href="#">Job Seeker</a> or <a class="role-employer" href="#">Employer</a>
+      </div>
+      
+      <div class="top-menu nav">
+         <ul>
+            <li class="rc5 active"><b>Home</b></li><li class="rc5"><a href="#">My Account</a></li><li class="rc5"><a href="#">Search jobs</a></li><li class="rc5"><a href="#">Pricing</a></li><li class="rc5"><a href="#">What is Fyltra?</a></li>
+         </ul>
+      </div>
+      
+   </div><!-- /#header -->
+
+   <div id="main" class="clearfix rc10 with-sidebar">
+      <div class="main-panel rc10">
+         <div class="quick-actions">
+            <a href="#" class="button blue"><span>Upload your CV</span><i></i></a> <a href="#" class="button yellow"><span>Post a new job</span><i></i></a>
+         </div>
+         
+         <form action="#" class="form-cont search">
+            <fieldset>
+               <legend>Search</legend>
+               <input type="text" name="search" id="g-search" value="Search for a job" class="inputbox hint" />
+               <button class="button grey"><span>Search</span><i></i></button>
+            </fieldset>
+         </form>
+      </div><!-- .main-panel -->
+
+      <div id="content">
+         <h2>Featured companies</h2>
+         <div class="featured-companies">
+            <ul>
+               <li><a href="#"><img src="images/imgs/img-logo-fittest.png" width="118" height="79" alt="Logo Fittest"/></a></li>
+               <li><a href="#"><img src="images/imgs/img-logo-gesein.png" width="120" height="79" alt="Logo Gesein"/></a></li>
+               <li><a href="#"><img src="images/imgs/img-logo-grupo.png" width="120" height="80" alt="Logo Grupo"/></a></li>
+               <li><a href="#"><img src="images/imgs/img-logo-hm.png" width="120" height="80" alt="Logo Hm"/></a></li>
+               <li><a href="#"><img src="images/imgs/img-logo-hp.png" width="118" height="80" alt="Logo Hp"/></a></li>
+            </ul>
+            <ul>
+               <li><a href="#"><img src="images/imgs/img-logo-ica.png" width="119" height="80" alt="Logo Ica"/></a></li>
+               <li><a href="#"><img src="images/imgs/img-logo-jti.png" width="119" height="80" alt="Logo Jti"/></a></li>
+               <li><a href="#"><img src="images/imgs/img-logo-leroy.png" width="120" height="80" alt="Logo Leroy"/></a></li>
+               <li><a href="#"><img src="images/imgs/img-logo-pepsi.png" width="119" height="79" alt="Logo Pepsi"/></a></li>
+               <li><a href="#"><img src="images/imgs/img-logo-siemens.png" width="119" height="79" alt="Logo Siemens"/></a></li>
+            </ul>
+         </div>
+         
+         <h2>Sponsored job offers</h2>
+         <table class="tabular sponsored">
+            <thead>
+               <tr>
+                  <th class="title">Vacancy</th>
+                  <th>Company</th>
+                  <th>City</th>
+                  <th class="salary">Salary</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="starred">
+                  <td class="title"><a href="#">Commercial</a></td>
+                  <td><a href="#">CECOVICA S.L.</a></td>
+                  <td>Tarragona</td>
+                  <td class="salary">8 000 $</td>
+               </tr>
+               <tr class="odd">
+                  <td class="title"><a href="#">Teleoperator / A media jornada tardes</a></td>
+                  <td><a href="#">Synergie T.T., E.T.T. Cataluna</a></td>
+                  <td>Sant Boi De Liobrega</td>
+                  <td class="salary">17 000 $</td>
+               </tr>
+               <tr>
+                  <td class="title"><a href="#">Ingeniero de proyectos (Fabricacion imaquinaria)</a></td>
+                  <td><a href="#">Eurogroup Consulting</a></td>
+                  <td>Barcelona</td>
+                  <td class="salary">4 000 $</td>
+               </tr>
+               <tr class="odd">
+                  <td class="title"><a href="#">Teleoperator / A media jornada tardes</a></td>
+                  <td><a href="#">Synergie T.T., E.T.T. Cataluna</a></td>
+                  <td>Sant Boi De Liobrega</td>
+                  <td class="salary unspec">&mdash;</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h2>Recent job offers</h2>
+         <table class="tabular">
+            <thead>
+               <tr>
+                  <th class="title">Vacancy</th>
+                  <th>Company</th>
+                  <th>City</th>
+                  <th class="salary">Salary</th>
+                  <th>Added</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="starred">
+                  <td class="title"><a href="#">Commercial</a></td>
+                  <td><a href="#">CECOVICA S.L.</a></td>
+                  <td>Tarragona</td>
+                  <td class="salary unspec">&mdash;</td>
+                  <td class="posted">5 seconds ago</td>
+               </tr>
+               <tr class="odd">
+                  <td class="title"><a href="#">Teleoperator / A MEDIA JORNADA TARDES</a></td>
+                  <td><a href="#">SYNERGIE T.T., E.T.T. Cataluna</a></td>
+                  <td>Sant Boi De Liobrega</td>
+                  <td class="salary">2 000 $</td>
+                  <td class="posted">5 seconds ago</td>
+               </tr>
+               <tr>
+                  <td class="title"><a href="#">INGENIERO DE PROYECTOS (FABRICACION IMAQUINARIA)</a></td>
+                  <td><a href="#">Eurogroup Consulting</a></td>
+                  <td>Barcelona</td>
+                  <td class="salary">18 000 $</td>
+                  <td class="posted">5 seconds ago</td>
+               </tr>
+               <tr class="odd">
+                  <td class="title"><a href="#">Teleoperator / A MEDIA JORNADA TARDES</a></td>
+                  <td><a href="#">SYNERGIE T.T., E.T.T. Cataluna</a></td>
+                  <td>Sant Boi De Liobrega</td>
+                  <td class="salary">4 000 $</td>
+                  <td class="posted">Yesterday</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <div class="cities">
+            <h2 class="tabs"><a class="pseudo active role-seeker" href="#">Job offers</a> and <a class="pseudo role-employer" href="#">Employee's CVs</a> in cities</h2>
+
+            <div class="cty-group">
+               <h3 class="cty-venezuela">Venezuela</h3>
+               <ul class="lst-bullet grouped-links">
+                  <li><a href="#">Caracas</a></li>
+                  <li><a href="#">Maracaibo</a></li>
+                  <li><a href="#">Valencia</a></li>
+                  <li><a href="#">Barquisimeto</a></li>
+                  <li><a href="#">Maracay</a></li>
+                  <li><a href="#">Ciudad Guayana</a></li>
+                  <li><a href="#">Barcelona</a></li>
+                  <li><a href="#">Maturín</a></li>
+                  <li><a href="#">Turmero</a></li>
+                  <li><a href="#">Ciudad Bolívar</a></li>
+                  <li><a href="#">Barinas</a></li>
+               </ul>
+            </div>
+
+            <div class="cty-group">
+               <h3 class="cty-colombia">Colombia</h3>
+               <ul class="lst-bullet grouped-links">
+                  <li><a href="#">Caracas</a></li>
+                  <li><a href="#">Maracaibo</a></li>
+                  <li><a href="#">Valencia</a></li>
+                  <li><a href="#">Barquisimeto</a></li>
+                  <li><a href="#">Maracay</a></li>
+                  <li><a href="#">Ciudad Guayana</a></li>
+                  <li><a href="#">Barcelona</a></li>
+                  <li><a href="#">Maturín</a></li>
+                  <li><a href="#">Turmero</a></li>
+                  <li><a href="#">Ciudad Bolívar</a></li>
+                  <li><a href="#">Barinas</a></li>
+               </ul>
+            </div>
+            
+            <div class="cty-group">
+               <h3 class="cty-costarica">Costa Rica</h3>
+               <ul class="lst-bullet grouped-links">
+                  <li><a href="#">Caracas</a></li>
+                  <li><a href="#">Maracaibo</a></li>
+                  <li><a href="#">Valencia</a></li>
+                  <li><a href="#">Barquisimeto</a></li>
+                  <li><a href="#">Maracay</a></li>
+                  <li><a href="#">Ciudad Guayana</a></li>
+                  <li><a href="#">Barcelona</a></li>
+                  <li><a href="#">Maturín</a></li>
+                  <li><a href="#">Turmero</a></li>
+                  <li><a href="#">Ciudad Bolívar</a></li>
+                  <li><a href="#">Barinas</a></li>
+               </ul>
+            </div>
+            
+            <div class="cty-group">
+               <h3 class="cty-panama">Panama</h3>
+               <ul class="lst-bullet grouped-links">
+                  <li><a href="#">Caracas</a></li>
+                  <li><a href="#">Maracaibo</a></li>
+                  <li><a href="#">Valencia</a></li>
+                  <li><a href="#">Barquisimeto</a></li>
+                  <li><a href="#">Maracay</a></li>
+                  <li><a href="#">Ciudad Guayana</a></li>
+                  <li><a href="#">Barcelona</a></li>
+                  <li><a href="#">Maturín</a></li>
+                  <li><a href="#">Turmero</a></li>
+                  <li><a href="#">Ciudad Bolívar</a></li>
+                  <li><a href="#">Barinas</a></li>
+               </ul>
+            </div>
+         </div>
+      </div><!-- #content -->
+      
+      <div class="sidebar">
+         <div class="new-feature linkedin"><a href="#">Complete your Profile</a> using <img src="images/logo-linkedin.png" width="79" height="22" alt="Linkedin" /> Account!</div>
+         
+         <div class="b-grey plans-promote rc5">
+            <h3 class="header">Are you an employment agency or a human resources department?</h3>
+            <a href="#" class="button green"><span>Try our basic plan!</span><i></i></a>
+            <b class="info"><span class="cl-red">Free</span> 30-day trial, no credit card required</b>
+         </div>
+         
+         <div class="b-grey categories rc5">
+            <h2 class="header">Jobs by category</h2>
+            <div class="grouped-links clearfix">
+               <ul>
+                  <li><a href="#">Programmers</a><span class="cnt">732</span></li>
+                  <li><a href="#">Designers</a><span class="cnt">697</span></li>
+                  <li><a href="#">Administrators</a><span class="cnt">472</span></li>
+                  <li><a href="#">Marketers</a><span class="cnt">428</span></li>
+                  <li><a href="#">Editors </a><span class="cnt">392</span></li>
+                  <li><a href="#">Managers</a><span class="cnt">384</span></li>
+                  <li><a href="#">Engineers</a><span class="cnt">300</span></li>
+               </ul>
+               <ul>
+                  <li><a href="#">Researches</a><span class="cnt">732</span></li>
+                  <li><a href="#">Operators</a><span class="cnt">697</span></li>
+                  <li><a href="#">Cleaners</a><span class="cnt">244</span></li>
+                  <li><a href="#">User interface designers</a><span class="cnt">207</span></li>
+                  <li><a href="#">Lawyers</a><span class="cnt">199</span></li>
+                  <li><a href="#">Economists</a><span class="cnt">172</span></li>
+                  <li><a href="#">Mechanics</a><span class="cnt">54</span></li>
+               </ul>
+            </div>
+            
+            <hr class="ln-shw" />
+            
+            <div class="more">
+               <a href="#">More categories</a>
+            </div>
+         </div><!-- /.categories -->
+         
+         <img src="images/imgs/img-banner-acuvue.jpg" width="300" height="250" alt="Banner Acuvue" />
+         
+      </div><!-- /.sidebar -->
+
+   </div><!-- /#main -->
+
+   <div id="footer">
+      <div class="copy">&copy; 2010 <b class="inline-logo"><span class="name">Fyltra</span>.com</b><br />
+         All rights reserved</div>
+
+      <ul class="links">
+         <li><a href="#">Post a new job</a></li>
+         <li><a href="#">Site widget</a></li>
+         <li><a href="#">RSS</a></li>
+      </ul>
+
+      <ul class="links">
+         <li><a href="#">About Us</a></li>
+         <li><a href="#">Contact</a></li>
+      </ul>
+   </div><!-- /#footer -->
+</div>
+<!-- END #wrapper -->
+
+<div class="flashbox notice">Nice to see you again, Mr. Gorsky!</div>
+<div class="flashbox success">Job offer has been posted successfully!</div>
+<div class="flashbox error">Error. Database is overloaded <a title="Close" href="#" class="close-flashbox"></a></div>
+
+<div class="modal-window map">
+   <span title="Close" class="close"></span>
+   <h2 class="header">York Boulevard 47/5</h2>
+   <img src="images/imgs/img-map-sample.png" width="760" height="483" alt="Map Sample" />
+</div>
+
+<div class="modal-window sign-in">
+   <span title="Close" class="close-window"></span>
+   <h2 class="header">Sign in</h2>
+   <form action="#" class="form-cont">
+      <div class="field"><input type="text" name="username" value="" class="inputbox hint" /></div>
+      <div class="field"><input type="password" name="password" value="" class="inputbox hint" /></div>
+      
+      <div class="field checkbox"><label for="remember-me"><input type="checkbox" name="remember_me" id="remember-me" /> Keep me logged in</label></div>
+      <div class="forgote"><a class="action" href="#">Forgot password?</a></div>
+      
+      <div class="submit clear">
+         <input type="submit" value="Sign in" class="btn-submit" />
+      </div>
+      
+   </form>
+</div>
+
+<div class="overlay hidden"></div>
+</body>
+</html>

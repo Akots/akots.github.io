@@ -1,0 +1,7 @@
+﻿{
+	sc:true, 
+	photo_id:1, 
+	album_id:3, 
+	album_create:'Создан минуту назад', 
+	album_last_update:'Обновлен минуту назад'
+}

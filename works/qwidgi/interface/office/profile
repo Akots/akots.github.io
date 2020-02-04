@@ -1,0 +1,180 @@
+<div id="lftcol-groups"></div>
+
+<div id="company-edit" class="company main">
+
+<div id="profile_comp" class="profile_comp main">
+
+<form action="" method="post" autocomplete="off">
+   <div class="profile_comp-header brd-dotted-bottom">
+      <h1>
+         <span class="comp_name">
+            <span class="value"></span>
+         </span>
+         <span class="pattern_ownership">
+            <span class="value"></span>
+         </span>
+      </h1>
+      <div class="wrap_menu"></div>
+      <div class="both"></div>
+   </div>
+   <div class="page basic_info">
+      <div class="common_info">
+         <div class="logotype">
+         <div class="profile-avatar-corners"><div></div></div>
+         <img />
+         </div>
+         <div class="quick_menu_bg"><ul class="quick_menu">
+            <li class="change_relation">
+               <a href="javascript:void(0)" title="Изменить связь" class="icon" ></a> 
+               <ul class="rel_options">
+                  <li class="t1 lev1"><a href="javascript:void(0);" class="to_partner">Переместить в партнеры</a></li>
+                  <li class="t2 lev1"><a href="javascript:void(0);" class="to_competitors">Переместить в конкуренты</a></li> 
+                  <li class="t3 lev1"><a href="javascript:void(0);" class="to_corporations">Переместить в корпоративные связи</a></li>
+               </ul>
+            </li>
+   	      <li><a class="send_user_message" rel="" href="javascript:void(0)" title="Отправить сообщение"></a></li>
+            <li><a class="edit-photo" href="javascript:void(0)" title="Редактировать профайл"></a></li>
+   	   </ul></div>
+      </div>
+      <div class="company_info">
+         <div class="city info-item">
+            <span class="label">Регион:</span>
+            <span class="value"><div style="display: inline;" class="val"></div><input class="ac_input" autocomplete="off" style="display: none;" maxlength="50" id="city" name="city" /><input name="city_id" class="city_id" value="" type="hidden" />
+            </span>
+         </div>
+         <!--div class="number-employees info-item">
+            <span class="label">Сотрудников:</span>
+            <span class="value"></span>
+         </div-->
+         <div class="branch info-item">
+            <span class="label">Индустрия:</span>
+            <span class="value"></span>
+         </div>
+         <!--div class="year-create info-item">
+            <span class="label">Год создания:</span>
+            <span class="value"></span>
+         </div-->
+         <div class="venue info-item">
+            <span class="label"><label for="venue">Адрес офиса:</label></span>
+            <span class="value"><input type="hidden" value="" name="venue_id" class="venue_id"/></span>
+         </div>
+         <div class="comp_phone info-item">
+            <span class="label">Телефон:</span>
+            <span class="value"></span>
+         </div>
+         <div class="comp_email info-item">
+            <span class="label">E-mail:</span>
+            <span class="value"></span>
+         </div>
+         <div class="comp_site info-item">
+            <span class="label">Сайт:</span>
+            <span class="value"></span>
+         </div>
+         <div class="info-item">
+            <span class="label">Генеральный директор:</span>
+            <span class="director">
+               <span class="first_name_cont value"></span> <span class="second_name_cont value"></span> <span class="last_name_cont value"></span>
+               <div generated="true" title="first_name" class="error"></div>
+               <div generated="true" title="second_name" class="error"></div>
+               <div generated="true" title="last_name" class="error"></div>
+            </span>
+         </div>
+      </div>
+   </div>
+
+</form>
+
+</div>
+
+<div id="employees" class="employees main"></div>
+
+<div id="comp_albums" class="comp_albums main"></div>
+
+<div id="vacancy_cont" class="vacancy_cont listview main">
+   <form action="" method="post" autocomplete="off">
+   <div class="lftcol-groups-items">
+   <ul id="vacancies" class="page vacancies">
+         <li class="vacancy pattern">
+            <a class="title value" href="javascript:void(0);"></a>
+         </li>
+   </ul>
+   <div class="tools col-tools"><div class="bg-tools">
+      <a class="add" title="Добавление вакансии" href="javascript:void(0);"><span></span></a>
+   </div></div>
+   </div>
+   <div class="vacancy-view pattern">
+         <a href="javascript:void(0);" class="delete" title="Удалить" /></a>
+         <div class="title vacancy-header brd-dotted-bottom"><h1 class="value" href="javascript:void(0);"></h1></div>
+         <div class="description vacancy-description value"><p class="value textarea"></p></div>
+
+   </div>
+   </form>
+</div>
+
+<div id="responses" class="page main responses">
+   <div class="responses-list">
+      <div class="response pattern">
+         <div class="avatar">
+            <a class="link_to_user">
+            <div class="avatar-corners-top"></div>
+            <img src="/u/photo" width="56" height="56" />
+            <div class="avatar-corners-bot"></div>
+            </a>
+         </div>
+         <div class="content">
+            <p class="send_date"></p>
+            <h2 class="name"><a class="link_to_user"></a></h2>
+            <div class="text"></div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div id="relations" class="relations main">
+   <div class="lftcol-groups-items sub-items">
+      <ul class="menu">
+         <li class="tab partners">
+         <h3><span class="new_count num">(0)</span>Партнеры</h3>
+         <ul class="page partners">
+            <li class="title pattern"><a href="javascript:void(0);"></a></li>
+         </ul>
+         </li>
+         <li class="tab competitors">
+         <h3>Конкуренты<span class="new_count num">(0)</span></h3>
+         <ul class="page competitors">
+         </ul>
+         </li>
+         <li class="tab corporations">
+         <h3>Корпоративные связи<span class="new_count num">(0)</span></h3>
+         <ul class="page corporations">
+         </ul>
+         </li>
+      </ul>
+   </div>
+   <div class="company-view">
+   </div>
+      <ul class="menu icon">
+         <li class="rel_menu accept"><a href="javascript:void(0)" title="Подтвердить связь" class="icon"> Подтвердить связь</a></li>
+         <li class="rel_menu relations"><a href="javascript:void(0)" title="Связи компании" class="icon" > Связи компании</a></li>
+         <li class="rel_menu send_message"><a href="javascript:void(0)" title="Оставить отзыв" class="icon" >Оставить отзыв</a>
+            <div class="message_box">
+               <div class="header">Кому: <span></span><input type="button" class="close_message_box" /></div>
+               <div class="body">
+                  <textarea name="message" id="message" class="message"></textarea> 
+                  <input type="submit" value="Оставить отзыв" class="submit"> 
+               </div> 
+            </div>
+         </li>
+         <li class="rel_menu change_relation"><a href="javascript:void(0)" title="Изменить связь" class="icon" >Изменить связь</a> 
+         <ul>
+            <li><a href="javascript:void(0);" to_type="1" class="to_partner">Переместить в партнеры</a></li>
+            <li><a href="javascript:void(0);" to_type="2" class="to_competitors">Переместить в конкуренты</a></li> 
+            <li><a href="javascript:void(0);" to_type="3" class="to_corporations">Переместить в корпоративные связи</a></li>
+         </ul>
+         </li>
+         <li class="rel_menu delete"><a href="javascript:void(0)" title="Удалить из связей" class="icon" >Удалить из связей</a></li>
+     </ul>
+</div>
+
+</div>
+

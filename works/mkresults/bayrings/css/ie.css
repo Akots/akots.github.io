@@ -1,0 +1,81 @@
+/*
+Title: Styles for IE
+*/
+
+*html .shop-items {
+   zoom: 1;
+   }
+   .shop-items li.item {
+      zoom: 1;
+      *display: inline;
+      *margin-right: 17px;
+      }
+      *html .item .footer {
+         content:expression(
+            !this.a ? (this.a=1,!this.innerHTML.length ? this.innerHTML = '<span></span>' : ''):0
+            );/*If foot is not contains elements then create one*/
+   	   }
+
+      *html .shop-items .more {
+         right: 1px;
+         bottom: 36px;
+         }
+      *+html .shop-items .more {
+         right: 1px;
+         bottom: 36px;
+         }
+      *html .grouped-by-cats .more {
+         bottom: 1px;
+         }
+      *html .shop-items .preview .more {
+         bottom: 0;
+         }
+      *html .banner .cn.br,
+      *html .preview .cn.br {
+         right: -16px;
+         }
+      *html .item .cn.bl,
+      *html .item .cn.br {
+         bottom: 7px;
+         }
+      *+html .item .cn.bl,
+      *+html .item .cn.br {
+         bottom: 7px;
+         }
+      *html .no-foot .cn.bl,
+      *html .no-foot .cn.br {
+         bottom: -1px;
+         }
+      *html .banner .cn.br,
+      *html .banner .cn.bl {
+         bottom: -16px;
+         }
+      *html .preview .cn.br,
+      *html .preview .cn.bl {
+         bottom: -1px;
+         }
+*html .aside {
+   display: inline;
+   }
+   .search .search-bg input {
+      color: #7F7F7F;
+      border: 0;
+      float: left;
+      }
+.with-aside .content {
+   display: inline;
+   margin-right: -14px;
+   margin-left: 30px;
+   }
+*html .with-aside .content {
+   margin-left: 26px;
+   }
+.subscribe-bg {
+   padding: 2px 7px 2px 8px;
+   }
+*+html .subscribe-bg {
+   padding: 1px 7px 2px 8px;
+   }
+   .subscribe-bg .inputbox {
+      height: 16px;
+      }

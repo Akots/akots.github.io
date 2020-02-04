@@ -1,0 +1,7 @@
+.ui-tabs-hide {
+	display: none;
+}
+.ui-tabs-disabled {
+	opacity: .4;
+	filter: alpha(opacity=40);
+}

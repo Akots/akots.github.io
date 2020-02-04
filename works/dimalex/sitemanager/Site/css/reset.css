@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/*
+***********
+Title: Reset & Override basic styles, declare Common styles
+***********
+*/
+   
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q,
+small, strike, strong, sub, sup, tt,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+}
+html, body, div { background: transparent; }
+
+body {
+   background: #F3F4F6;
+   color: #FFF;
+   font-size: 75%; /* Set 1em = 12px*/
+   font-family: Arial, Tahoma, sans-serif;
+   text-align: center;
+}
+
+/* The Begining of the End (default styles)
+----------------------------------------------- */
+fieldset, img, a img { border: 0 solid; }
+
+blockquote:before, blockquote:after,
+  q:before, q:after { content:""; }
+
+acronym, abbr { border-bottom: 1px dotted; cursor: help; }
+
+ol, ul { list-style: none; }
+
+a:focus, a:hover { color: #D29113; }
+a { color: #00719E; text-decoration: underline; }
+   a:hover { text-decoration: none; }
+a:link *, a:visited * { cursor: pointer; }
+
+table { border: 0; border-collapse: collapse; }
+
+textarea { font-family: Arial, Tahoma, sans-serif; } 
+legend {	display: none; }

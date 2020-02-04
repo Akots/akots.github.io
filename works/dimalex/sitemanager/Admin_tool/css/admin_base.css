@@ -1,0 +1,357 @@
+
+/*
+Title: Basic styles
+Author: Kotsuruba Alexander
+Version:  06.10.2010
+***********
+ Colors:
+   #575B5D - black
+   #BAC4C8 - borders
+*/
+
+@import "reset.css";
+@import "admin_forms.css";
+body { color: #575B5D; text-align: left; }
+
+.hidden { display: none !important; }
+
+/* Clearfix method for clearing floats */
+.clear { clear: both; }
+.floatbox { overflow: hidden; }
+.clearfix:after { clear: both; content: "."; display: block; font-size: 0; height: 0; visibility: hidden; }
+   .clearfix { display:block; }
+
+.pseudo { border-bottom: 1px dashed; cursor: pointer; text-decoration: none !important; }
+.ta-ctr { text-align: center; }
+
+.fsz-smaller { font-size: .8em; }
+.fsz-norm { font-size: 1em; }
+.fsz-bigger { font-size: 1.2em; }
+
+.grey { color: #666;	}
+.action { color: #575B5D; text-shadow: 1px 1px 0 #FFF; }
+
+.ta-rgt { text-align: right; }
+
+/*Tabs*/
+.tabs  {
+   margin: 0 0 1em;
+   }
+.tabs li {
+   display: inline-block;
+   margin-right: 1.5em;
+   }      
+   .tabs .selected a {
+      color: #575B5D;
+      border: none;
+      padding-bottom: .1em;
+      }
+
+/* Pager */
+.pager {
+   text-align: center;
+   margin: 10px 0 20px;
+   }
+   .pager .pages li {
+      background-color: #FFF;
+      border: 1px solid #BAC4C8;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      display: -moz-inline-stack;
+      display: inline-block;
+      padding: .2em .45em;
+      margin: 0 .3em 0 0;
+      }
+      .pager .pages li a {
+         text-decoration: none;
+         }
+   .pager .pages .prev {
+      margin-right: 1.2em;
+      }
+   .pager .pages .next {
+      margin-left: 1.2em;
+      }
+   .pager .pages .pgEmpty,
+   .pager .pages .pgEmpty:hover {
+      border-color: #CCC;
+      color: #CCC;
+      cursor: default;
+      }
+   .pager .pages .current, .pager .pages .current a {
+      color: #575B5D;
+      cursor: default;
+      font-weight: bold;
+      }
+
+h1 { font-size: 2.2em; font-weight: bold; margin-bottom: .8em; }
+h2 { font-size: 1.6em; font-weight: bold; margin-bottom: .5em; }
+h3 { font-size: 1.3em; margin-bottom: .5em; }
+h4 { font-size: 1em; margin-bottom: .2em; }
+
+li { margin-bottom: .5em; }
+p { line-height: 1.3em; margin: 0 0 .8em; }
+
+.tabular {
+   border: 1px solid #A7B2B8;
+   width: 100%;
+   text-align: left;
+   margin: 0 0 1.8em;
+   }
+   .tabular thead th {
+      background-color: #2E7F98;
+      color: #FFF;
+      font-size: 1.4em;
+      font-weight: bold;
+      text-align: left;
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6);
+      padding: 6px 5px 8px 20px;
+      }
+   .tabular tbody td {
+      line-height: 1.4em;
+      padding: 6px 5px 8px 20px;
+      }
+   .tabular .odd td {
+      background-color: #D8E1E5;
+      }
+
+   .tabular tbody tr td:first-child {
+      border: none;
+      }
+   .tabular tbody td {
+      border-left: 1px solid #FFF;
+      }
+   .tabular th.num,
+   .tabular tbody tr td.num {
+      padding-left: 8px;
+      }
+   .tabular .num {
+      width: 12px;
+      text-align: center;
+      }
+
+
+/* Layouts
+----------------------------------------------- */
+#wrapper {
+   
+   }
+   #header {
+      background: #31819A;
+      height: 7.5em;
+      }
+   #logo {
+      color: #EEE;
+      font-size: 2.2em;
+      width: 244px;
+      height: 72px;
+      margin: 0 auto 20px;
+      }
+      #logo a {
+         background: url('../images/logo.png') 0 0 no-repeat;
+         display: block;
+         color: #F1F3F4;
+         text-decoration: none;
+         width: 244px;
+         height: 72px;
+         overflow: hidden;
+         text-indent: -9000px;
+         }
+   #header #logo {
+      position: absolute;
+      left: 10px;
+      margin: 10px 0 0 0;
+      }
+   /* =Header(logo,menu...)
+   ----------------------------------------------- */
+   .top-menu {
+      position: relative;
+      top: 3.2em;
+      margin: 0 0 0 25em;
+      }
+      .top-menu li {
+         color: #FFF;
+         font-size: 1.4em;
+         height: 26px;
+         display: -moz-inline-stack;
+         display: inline-block;
+         margin: 0 1.55em 0 0;
+         }
+      .top-menu .autoriz {
+         float: right;
+         margin: 0 40px 0 0;
+         }
+         .top-menu .current a, .top-menu .current a i {
+            background: url('../images/bg-topm-active.png') 0 1px no-repeat;
+            }
+         .top-menu a {
+            color: #FFF;
+            position: relative;
+            display: inline-block;
+            word-spacing: nowrap;
+            text-shadow: 1px 1px 0 rgba(8,28,44,.5);
+            padding: 0.2em 0 0.2em;
+            }
+         .top-menu .stats {
+            font-size: 1.2em;
+            line-height: 1.4em;
+            margin-left: 2em;
+            }
+            .top-menu .stat-index { margin: 0 .3em; }
+               .top-menu .stat-index abbr {
+                  border: none;
+                  font-weight: bold;
+                  }
+         .top-menu .logout {
+            font-size: 1.1em;
+            background-position: 0 -86px;
+            margin-left: 2em;
+            }
+            .top-menu .logout a {
+               background: url('../images/ic-logout.png') 0 5px no-repeat;
+               padding-left: 1.3em;
+               }
+         .top-menu a:hover {
+            color: #D29113;
+            }
+         .top-menu a i {
+            display: none;
+            }
+         .top-menu .current a {
+            padding-left: 1em;
+            }
+         .top-menu .current a,
+         .top-menu .current a:hover {
+            color: #FFF;
+            cursor: default;
+            text-decoration: none;
+            }
+         .top-menu .current a i {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 11px;
+            height: 25px;
+            margin-right: -11px;
+            }
+         .top-menu .current a i {
+            background-position: 100% -24px;
+            }
+
+   /* =Main
+   ----------------------------------------------- */
+   #main {
+      width: auto;
+      min-width: 784px;
+      max-width: 1160px;
+      min-height: 497px;
+      padding: 22px 20px;
+      }
+   #footer {
+      font-size: .9em;
+      color: #0E2C42;
+      padding: 5em 20px 2em;
+      }
+
+/********************
+* Tables
+********************/
+.tabular .user .mail {
+   margin-left: .3em;
+   }
+.tabular .mes {
+   width: 45%;
+   }
+.tabular .metadata {
+   width: 19%;
+   }
+.tabular.subscribers .mes {
+   width: 60%;
+   }
+.statuses  {
+   display: inline;
+   margin-right: .3em;
+   }
+   .statuses li {
+      display: inline;
+      margin: .6em 0;
+      }
+   .statuses .last-mes { display: block; }
+      .statuses .status {
+         display: inline-block;
+         min-width: 4em;
+         margin: 0 .2em 0 .5em;
+         }
+      .statuses .expand {
+         margin-left: .3em;
+         }
+.search {
+   margin: 0 0 10px;
+   }
+   .search .legend {
+      font-size: 1.4em;
+      margin: 0 0 .3em;
+      }
+   .search fieldset {
+      display: inline;
+      margin: 0 2em 1em 0;
+      }
+      .search fieldset .inputbox {
+         width: 11.2em;
+         margin-right: .2em;
+         }
+      .search fieldset select { margin-left: .2em; }
+   .search .btn-submit { margin-right: .8em; }
+
+/*******************
+* Main page
+*******************/
+.login {
+   background: #31819A;
+   color: #FFF;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   width: 275px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   margin: -170px 0 0 -155px;
+   padding: 20px 30px;
+   }
+   .login label {
+      color: #FFF;
+      font-size: 1.2em;
+      }
+   .login .inputbox {
+      font-size: 1.4em;
+      width: 270px;
+      }
+   .login .submit { text-align: center; }
+
+   .login .field .label {
+      margin-bottom: .4em;
+      }
+   .login .form-cont .capcha .inputbox {
+      width: 157px;
+      }
+   .login .form-cont .capcha label,
+   .login .form-cont .field .error {
+      width: auto;
+      margin-left: 0;
+      }
+   .login .form-cont .capcha .error {
+      margin-left: 110px;
+      }
+   .login a {
+      color: #A6D7E1;
+      }
+   .login a:focus, .login a:hover {
+      color: #D29113;
+      }
+   .forgote-pas {
+      color: #A6D7E1;
+      font-size: .9em;
+      margin-left: 120px;
+      }

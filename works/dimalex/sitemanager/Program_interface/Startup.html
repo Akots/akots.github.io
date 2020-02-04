@@ -1,0 +1,601 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+   
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+   <title>Startup page</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Language" content="en" />
+   <meta name="description" content="" />
+   <meta name="keywords" content="" />
+   <meta name="robots" content="all" />
+   <link type="image/x-icon" href="../favicon.ico" rel="shortcut icon" />
+   <link rel="stylesheet" type="text/css" href="css/base.css" media="all" />
+   <link rel="stylesheet" href="css/jquery-ui.custom.css" type="text/css" media="all" />
+
+   <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" media="all" /><![endif]-->
+   <!--[if IE]><script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
+   <script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+   <script src="js/jqModal.js" type="text/javascript"></script>
+   <script src="js/jquery.flot.min.js" type="text/javascript"></script>
+   <script src="js/jquery.ui.core.min.js" type="text/javascript"></script>
+   <script src="js/jquery.ui.datepicker.min.js" type="text/javascript"></script>
+   
+   <script src="js/common.js" type="text/javascript"></script>
+   
+   
+   <script type="text/javascript" language="javascript" id="source">
+      var datasets = {"mintick":"hour","next":"1284116400000","prev":"1284109200000","total":{"label":"Total Hits","data":[[1284030000000,2222],[1284033600000,3],[1284037200000,0],[1284040800000,0],[1284044400000,0],[1284048000000,0],[1284051600000,0],[1284055200000,0],[1284058800000,0],[1284062400000,0],[1284066000000,0],[1284069600000,0],[1284073200000,0],[1284076800000,0],[1284080400000,0],[1284084000000,0],[1284087600000,0],[1284091200000,0],[1284094800000,0],[1284098400000,0],[1284102000000,0],[1284105600000,0],[1284109200000,0],[1284112800000,0]],"count":0},"bot":{"label":"Bot Hits","data":[[1284030000000,0],[1284033600000,3],[1284037200000,300],[1284040800000,0],[1284044400000,0],[1284048000000,0],[1284051600000,0],[1284055200000,0],[1284058800000,0],[1284062400000,0],[1284066000000,0],[1284069600000,0],[1284073200000,0],[1284076800000,0],[1284080400000,0],[1284084000000,0],[1284087600000,0],[1284091200000,0],[1284094800000,2020],[1284098400000,123],[1284102000000,0],[1284105600000,0],[1284109200000,0],[1284112800000,0]],"count":0}}
+      
+      <!--
+         var graphs = {
+             data: [],
+             bot: true,
+             timezone: 0,
+             _getData: function(p) {
+                 graphs.data = datasets;
+                 graphs.update();
+             },
+             init: function() {
+                 d = new Date();
+                 this.timezone = -d.getTimezoneOffset()/60;
+                 this._getData();
+             },
+             update: function() { 
+                 data = this.bot ? new Array(this.data['total'], this.data['bot']) : new Array(this.data['total']);
+                 minTickSize = this.data['mintick'] == 'week' || this.data['mintick'] == 'range' ? 'day' : this.data['mintick'];
+                 $.plot($('#graph'), data, {
+                     series: {
+                         lines: {show: true, lineWidth: 1.5},
+                         points: {show: true, radius: 2, lineWidth: 0, fill: false},
+                         bars: {barWidth: 20},
+                         shadowSize: 0
+                     },
+                     grid: {
+                        borderWidth: 1,
+                        borderColor: '#003145',
+                        tickColor: '#C2CDD3',
+                        labelMargin: 4,
+                        hoverable: true,
+                        clickable: true
+                     },
+                     xaxis: {mode: 'time', minTickSize: [1, minTickSize]},
+                     yaxis: {min: 0, tickDecimals: 0},
+                     colors: ['#00baff', '#ff009c']
+                 });
+                 $('#graph_total_count').text(this.data['total']['count']);
+                 $('#graph_bot_count').text(this.data['bot']['count']);
+                 hits = this.data['total']['data'];
+                 last = hits[hits.length-1];
+                 from = $.datepicker.formatDate('mm/dd/yy', new Date(parseInt(hits[0])));
+                 to = $.datepicker.formatDate('mm/dd/yy', new Date(parseInt(last)));
+                 $('.select-area').text(from + ' - ' + to);
+                 link = 'http://sitemanager_client.dimalexsoftware.com/stats/xls/?id=0' + '&tick=' + this.data['mintick'] + 
+                     (this.data['mintick'] == 'range' ? '&from=' + from + '&to=' + to : '&last=' + parseInt(last).toFixed());
+                 $('#export_xls_link').attr('href', link);
+             },
+             next: function() {
+                 if (this.data['mintick'] == 'range') {
+                     this._getData({'tick': 'range', 'from': this.data['from']['next'], 'to': this.data['to']['next']});
+                 } else {
+                     this._getData({'tick': this.data['mintick'], 'last': this.data['next']});
+                 }
+             },
+             prev: function() {
+                 if (this.data['mintick'] == 'range') {
+                     this._getData({'tick': 'range', 'from': this.data['from']['prev'], 'to': this.data['to']['prev']});
+                 } else {
+                     this._getData({'tick': this.data['mintick'], 'last': this.data['prev']});
+                 }
+             },
+             display: function(bot) {
+                 this.bot = bot;
+                 this.update();
+             },
+             period: function(tick, el) {
+                 liEl = $(el).parent();
+                 liEl.parent().find('.selected').removeClass('selected');
+                 liEl.addClass('selected');
+                 $('.date-range').removeClass('selected');
+                 this.data['mintick'] = tick,
+                 this._getData({'tick': this.data['mintick']});
+             },
+             range: function() {
+                 this.data['mintick'] = 'range',
+                 this._getData({'tick': this.data['mintick'], 'from': $('#daterange-start').val(), 'to': $('#daterange-end').val()});
+                 $('.date-range').removeClass('selected');
+                 $('ul.tabs .selected').removeClass('selected');
+             }
+         };
+         $(function () {
+         graphs.init();
+         
+         $('#idbots').click(function() {
+             graphs.display($(this).is(':checked'));
+         });
+         
+             $('#graph').bind('plothover', function(event, pos, item) {
+                 if (item) {
+                     $('#graph_tooltip')
+                      .find(".graph_tooltip-content")
+                      .html('<div>Hits - ' + item.datapoint[1] + '</div>')
+                      .end()
+                      .css({top: item.pageY - $('#graph_tooltip').outerHeight() - 16, left: item.pageX - 21})
+                      .fadeIn(200);
+                 } else {
+                     $('#graph_tooltip').hide();
+                 }
+             });
+         });
+         //-->
+</script>
+</head>
+
+<body class="w-basket">
+<!-- BEGIN #wrapper -->
+<div id="wrapper">
+   <div id="header-outer">
+      <div id="header">
+         <div class="system-mess system-error">
+            Category is succesfully saved
+         </div>
+         <h1 id="logo"><a title="Go on Startup page" href="#"><span class="go-home"></span> Site Manager </a></h1>
+         <div class="nav top-menu">
+            <a href="#" class="logout">Logout</a>
+            <ul class="main-actions">
+               <li class="current"><a class="trigger-cat-add" href="#">Create category<i></i></a></li>
+               <li><a href="#">Add domain<i></i></a></li>
+            </ul>
+            <ul class="pages">
+               <li><a href="#">Templates<i></i></a></li>
+               <li><a href="#">Tokens<i></i></a></li>
+               <li class="current"><a href="#">Content<i></i></a></li>
+            </ul>
+         </div><!-- /.top-menu -->
+      </div>
+   </div><!-- /#header -->
+   <div id="main-outer">
+
+      <div id="main" class="w-lft-bar">
+         <div class="nav lft-bar adv-search-show">
+            <div class="search">
+               <form action="#">
+                  <div class="field search">
+                     <input class="inputbox" type="text" /><input class="button" type="submit" value="" />
+                  </div>
+                  <a href="#" class="action pseudo adv-search">Advanced Search</a> <a class="reset action" href="#"><span class="pseudo">Reset search</span></a>
+                  <div class="advanced form-cont">
+                     <div class="field">
+                        <select name="cat">
+                           <option value="0">Sеаrch domain by category</option>
+                        </select>             
+                     </div>
+                     <div class="field range">
+                        <span class="label">Search domain by date</span>
+                        <label for="date_start">From</label><input type="text" name="date_start" id="date_start" class="inputbox mini" /> 
+                        <label for="date_end">To</label><input type="text" name="date_start" id="date_end" class="inputbox mini" />
+                     </div>
+                  </div>
+               </form>
+            </div>
+
+            <div class="domains ">
+               <h2>Domains:</h2>
+               <label class="trigger-mass-mode checkbox" for="mass_mode"><input type="checkbox" name="mass_mode" id="mass_mode" /> Mass mode</label> <a href="#" title="Collapse all categories" class="toogle-cats collapse">Collapse all</a>
+            
+               <ul class="actions mass-manage">
+                  <li><a class="move-selected action disabled" title="Move to category" href="#"><span class="pseudo">Move</span></a></li>
+                  <li><a class="trash-selected action disabled" title="Move to trash" href="#"><span class="pseudo">Trash</span></a></li>
+                  <li><a class="trash-list action" title="Trash list window" href="#"><span class="pseudo">Trash list</span></a></li>
+               </ul>
+ 
+               <ul class="sort">
+                  <li class="active down"><a class="action pseudo" href="#">by Category</a></li>
+                  <li class="up"><a class="action pseudo" href="#">by Date</a></li>
+                  <li class="up"><a class="action pseudo" href="#">Alphabetically</a></li>
+               </ul>
+               <ul class="lst-cats movable">
+                  <li class="section has-sublist list-open">
+                     <span class="act-box">
+                        <a class="section expanded" title="Collapse" href="#">General category 1</a>
+                        <span class="actions act-rgt">
+                           <a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="add action" title="Add Domain" href="#">Domain</a>
+                        </span>
+                     </span>
+                     <ul class="sub-list">
+                        <li class="entry">
+                           <span class="act-box act-box_disabled">
+                              <input type="checkbox" name="dom1" /> <a class="entry" href="#">people.yahoo.co</a>
+                              <span class="actions act-rgt">
+                                  <a title="Move domain" class="move" href="#"></a><a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="stats" title="View statistic" href="#"></a><a class="clone" title="Clone Domain" href="#"></a>
+                              </span>
+                           </span>
+                        </li>
+                        <li class="entry">
+                           <span class="act-box act-box_disabled">
+                              <input type="checkbox" name="dom1" /> <a class="entry" href="#">stals.co</a>
+                              <span class="actions act-rgt">
+                                  <a title="Move domain" class="move" href="#"></a><a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="stats" title="View statistic" href="#"></a><a class="clone" title="Clone Domain" href="#"></a>
+                              </span>
+                           </span>
+                        </li>
+                     </ul>
+                  </li>
+                  
+                  <li class="section has-sublist list-open">
+                     <span class="act-box">
+                        <a class="section expanded" title="Collapse" href="#">General category 2</a>
+                        <span class="actions act-rgt">
+                           <a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="add action" title="Add Domain" href="#">Domain</a>
+                        </span>
+                     </span>
+                     <ul class="sub-list">
+                        <li class="entry">
+                           <span class="act-box">
+                              <input type="checkbox" name="dom1" /> <a class="entry" href="#">people.yahoo.co</a>
+                              <span class="actions act-rgt">
+                                  <a title="Move domain" class="move" href="#"></a><a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="stats" title="View statistic" href="#"></a><a class="clone" title="Clone Domain" href="#"></a>
+                              </span>
+                           </span>
+                        </li>
+                        <li class="entry">
+                           <span class="act-box hover">
+                              <input type="checkbox" name="dom1" /> <a class="entry" href="#">stals.co</a>
+                              <span class="actions act-rgt">
+                                  <a title="Move domain" class="move" href="#"></a><a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="stats" title="View statistic" href="#"></a><a class="clone" title="Clone Domain" href="#"></a>
+                              </span>
+                           </span>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="section has-sublist list-open">
+                     <span class="act-box hover">
+                        <a class="section expanded" title="Collapse" href="#">General category 1</a>
+                        <span class="actions act-rgt">
+                           <a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="add action" title="Add Domain" href="#">Domain</a>
+                        </span>
+                     </span>
+                     <ul>
+                        <li class="no_items">Nothing found.</li>
+                     </ul>
+                     
+                  </li>
+                  
+                  <li class="section has-sublist list-open">
+                     <span class="act-box">
+                        <a class="section expanded" title="Collapse" href="#">General category 2</a>
+                        <span class="actions act-rgt">
+                           <a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="add action" title="Add Domain" href="#">Domain</a>
+                        </span>
+                     </span>
+                     <ul class="sub-list">
+                        <li class="entry">
+                           <span class="act-box">
+                              <input type="checkbox" name="dom1" /> <a class="entry" href="#">people.yahoo.co</a>
+                              <span class="actions act-rgt">
+                                  <a title="Move domain" class="move" href="#"></a><a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="stats" title="View statistic" href="#"></a><a class="clone" title="Clone Domain" href="#"></a>
+                              </span>
+                           </span>
+                        </li>
+                        <li class="entry">
+                           <span class="act-box hover">
+                              <input type="checkbox" name="dom1" /> <a class="entry" href="#">stals.co</a>
+                              <span class="actions act-rgt">
+                                  <a title="Move domain" class="move" href="#"></a><a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="stats" title="View statistic" href="#"></a><a class="clone" title="Clone Domain" href="#"></a>
+                              </span>
+                           </span>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="section has-sublist list-open">
+                     <span class="act-box hover">
+                        <a class="section expanded" title="Collapse" href="#">General category 1</a>
+                        <span class="actions act-rgt">
+                           <a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="add action" title="Add Domain" href="#">Domain</a>
+                        </span>
+                     </span>
+                     <ul class="sub-list">
+                        <li class="entry">
+                           <span class="act-box">
+                              <a class="entry" href="#">people.yahoo.co</a>
+                              <span class="actions act-rgt">
+                                  <a title="Move domain" class="move" href="#"></a><a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="stats" title="View statistic" href="#"></a><a class="clone" title="Clone Domain" href="#"></a>
+                              </span>
+                           </span>
+                        </li>
+                        <li class="entry">
+                           <span class="act-box">
+                              <a class="entry" href="#">stals.co</a>
+                              <span class="actions act-rgt">
+                                  <a title="Move domain" class="move" href="#"></a><a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="stats" title="View statistic" href="#"></a><a class="clone" title="Clone Domain" href="#"></a>
+                              </span>
+                           </span>
+                        </li>
+                     </ul>
+                  </li>
+                  
+                  <li class="section has-sublist list-open">
+                     <span class="act-box">
+                        <a class="section expanded" title="Collapse" href="#">General category 2</a>
+                        <span class="actions act-rgt">
+                           <a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="add action" title="Add Domain" href="#">Domain</a>
+                        </span>
+                     </span>
+                     <ul class="sub-list">
+                        <li class="entry">
+                           <span class="act-box">
+                              <a class="entry" href="#">people.yahoo.co</a>
+                              <span class="actions act-rgt">
+                                  <a title="Move domain" class="move" href="#"></a><a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="stats" title="View statistic" href="#"></a><a class="clone" title="Clone Domain" href="#"></a>
+                              </span>
+                           </span>
+                        </li>
+                        <li class="entry">
+                           <span class="act-box hover">
+                              <a class="entry" href="#">stals.co</a>
+                              <span class="actions act-rgt">
+                                  <a title="Move domain" class="move" href="#"></a><a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="stats" title="View statistic" href="#"></a><a class="clone" title="Clone Domain" href="#"></a>
+                              </span>
+                           </span>
+                        </li>
+                     </ul>
+                  </li>
+               </ul><!-- /.lst-cats -->
+               
+               <div class="deleted not-empty open">
+                  <div class="header">
+                     <a class="restore-link" href="#">Restore all</a>
+                     <a class="section expanded" title="Collapse" href="#deleted-entries">Deleted:</a> <b>(12)</b>
+                  </div>
+                  
+                  <ul id="deleted-entries" class="lst-cats">
+                     <li class="section has-sublist list-open">
+                        <span class="act-box">
+                           <a class="section expanded" title="Collapse" href="#">General category 2</a>
+                           <span class="actions act-rgt">
+                              <a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="add action" title="Add Domain" href="#">Domain</a>
+                           </span>
+                        </span>
+                        <ul class="sub-list">
+                           <li class="entry">
+                              <span class="act-box">
+                                 <a class="entry" href="#">people.yahoo.co</a>
+                                 <span class="actions act-rgt">
+                                     <a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="stats" title="View statistic" href="#"></a><a class="clone" title="Clone Domain" href="#"></a>
+                                 </span>
+                              </span>
+                           </li>
+                           <li class="entry">
+                              <span class="act-box hover">
+                                 <a class="entry" href="#">stals.co</a>
+                                 <span class="actions act-rgt">
+                                     <a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="stats" title="View statistic" href="#"></a><a class="clone" title="Clone Domain" href="#"></a>
+                                 </span>
+                              </span>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="section has-sublist list-open">
+                        <span class="act-box">
+                           <a class="section expanded" title="Collapse" href="#">General category 2</a>
+                           <span class="actions act-rgt">
+                              <a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="add action" title="Add Domain" href="#">Domain</a>
+                           </span>
+                        </span>
+                        <ul class="sub-list">
+                           <li class="entry">
+                              <span class="act-box">
+                                 <a class="entry" href="#">people.yahoo.co</a>
+                                 <span class="actions act-rgt">
+                                     <a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="stats" title="View statistic" href="#"></a><a class="clone" title="Clone Domain" href="#"></a>
+                                 </span>
+                              </span>
+                           </li>
+                           <li class="entry">
+                              <span class="act-box hover">
+                                 <a class="entry" href="#">stals.co</a>
+                                 <span class="actions act-rgt">
+                                     <a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="stats" title="View statistic" href="#"></a><a class="clone" title="Clone Domain" href="#"></a>
+                                 </span>
+                              </span>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="entry">
+                        <span class="act-box">
+                           <a class="entry" href="#">people.yahoo.co</a>
+                           <span class="actions act-rgt">
+                               <a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="stats" title="View statistic" href="#"></a><a class="clone" title="Clone Domain" href="#"></a>
+                           </span>
+                        </span>
+                     </li>
+                     <li class="entry">
+                        <span class="act-box hover">
+                           <a class="entry" href="#">stals.co</a>
+                           <span class="actions act-rgt">
+                               <a href="#" title="Restore" class="restore"></a><a class="edit" title="Edit category" href="#"></a><a class="delete" title="Move to trash" href="#"></a><a class="stats" title="View statistic" href="#"></a><a class="clone" title="Clone Domain" href="#"></a>
+                           </span>
+                        </span>
+                     </li>
+                  </ul>
+               </div><!-- /.deleted -->
+
+            </div><!-- /.domains -->
+            </div><!-- /.lft-nav -->
+         <div class="content">
+            <div class="inner">
+               <div class="stats-graph">
+               
+                  <div class="system-message">
+                    <div class="cn tl"></div><div class="cn tr"></div>
+                    You haven't paid the subscription thats why now you can use only 5 domains! <br> 
+                    <div class="cn bl"></div><div class="cn br"></div>
+                  </div>
+               
+                  <div class="header"><h4>Domain statistics for peopele.yahoo.com</h4> <a href="#" class="pseudo all-stats">All Domains stats</a></div>
+                  <ul class="tabs">
+                     <li class="selected"><a class="pseudo action" href="#">Day</a></li>
+                     <li><a class="pseudo action" href="#">Week</a></li>
+                     <li><a class="pseudo action" href="#">Month</a></li>
+                     <li><a class="pseudo action" href="#">Year</a></li>
+                  </ul>
+                  
+                  
+                  <script type="text/javascript">
+                  $(document).ready(function() {
+                     $('.date-range .date-picker').datepicker({
+                       minDate: '05/01/2010',
+                       maxDate: '+1d',
+                       showOtherMonths: true,
+                       selectOtherMonths: true,
+                       numberOfMonths: 3,
+                       onSelect: function(selectedDate) {
+                           var option = $(this).attr('id') == 'dt_created_from' ? 'minDate' : 'maxDate';
+                           var instance = $(this).data('datepicker');
+                           var date = $.datepicker.parseDate(instance.settings.dateFormat || $.datepicker._defaults.dateFormat, selectedDate, instance.settings);
+                           $('#daterange-start, #daterange-end').not(this).datepicker('option', option, date);
+                       }
+                     });
+                  });
+                  </script>
+                  <div class="date-range selected">
+                     <div class="date-select select-cors">
+                        <div class="cn tl"></div><div class="cn tr"></div>
+                        <span class="select-area">12.07.2010 - 11.08.2010</span>
+                        <div class="cn bl"></div><div class="cn br"></div>
+                     </div>
+                     
+                     <div class="date-picker select-cors clearfix">
+                        <div class="cn tl"></div>
+                        <form action="#" class="date-inputs form-cont">
+                           <div class="field"><label for="date-start">Date range:</label>
+                              <input type="text" name="daterange_start" id="daterange-start" class="inputbox mini focus" /> <input type="text" name="daterange_end" id="daterange-end" class="inputbox mini" />
+                           </div>
+                           
+                           <input type="submit" value="Apply" class="btn-submit" /><a href="#" class="pseudo cancel">Cancel</a>
+                        </form>
+                        <div class="cn bl"></div><div class="cn br"></div>
+                     </div>
+                  </div>
+                  
+                  <div id="graph_tooltip"><div class="graph_tooltip-content"></div><span class="graph_tooltip-arr"></span></div>
+                  <div style="width: 618px; height: 220px;" class="graph" id="graph"></div>
+                  <div class="graph-navigate"><a title="Next" class="next disabled" href="#"></a><a title="Back" class="back" href="#"></a></div>
+                  <div class="graph-additional">
+                     <div class="export-stats"><a class="action exp-excel" href="#">Export to Excel</a></div>
+                  
+                     <div class="toogle-stats"><label class="checkbox" for="idbots"><input type="checkbox" name="bots" id="idbots" /> Display bot hits</label></div>
+                     
+                     <ul class="total-stats">
+                        <li>Total Hits - <b>642</b></li>
+                        <li>Bots Hits - <b>0</b></li>
+                     </ul>
+                  </div>
+                  
+                  
+               </div>
+               
+               <div id="stats_global_box">
+               
+                  <ul class="stats-data">
+                     <li class="stats-index">
+                        <h3>Top Browsers</h3>
+                        <ul class="lst-icons">
+                           <li><span class="val">75 <span class="percent">61.48%</span></span><img class="ico" src="images/imgs/firefox.png" width="14" height="14" alt="Firefox" /><span class="index">Firefox</span></li>
+                           <li><span class="val">32<span class="percent">26.23%</span></span><img class="ico" src="images/imgs/firefox.png" width="14" height="14" alt="Firefox" /><span class="index">Opera</span></li>
+                           <li><span class="val">14<span class="percent">11.48%</span></span><img class="ico" src="images/imgs/firefox.png" width="14" height="14" alt="Firefox" /><span class="index">Explorer</span></li>
+                           <li><span class="val">1<span class="percent">0.82%</span></span><img class="ico" src="images/imgs/firefox.png" width="14" height="14" alt="Firefox" /><span class="index">Safari</span></li>
+                           <li><span class="val">1<span class="percent">0.16%</span></span> <span class="index">Other</span></li>
+                           <li><span class="val">620</span> <span class="index">Total</span></li>
+                        </ul>
+                     </li>
+                     <li class="stats-index">
+                        <h3>Countries</h3>
+                        <ul class="lst-icons">
+                           <li><span class="val">92 <span class="percent">95.83%</span></span><img class="ico" src="images/imgs/ua.png" width="14" height="14" alt="Ua" /> <span class="index">Ukraine</span></li>
+                          <li><span class="val">92 <span class="percent">95.83%</span></span><img class="ico" src="images/imgs/ua.png" width="14" height="14" alt="Ua" /> <span class="index">Ukraine</span></li>
+                          <li><span class="val">92 <span class="percent">95.83%</span></span><img class="ico" src="images/imgs/ua.png" width="14" height="14" alt="Ua" /> <span class="index">Ukraine</span></li>
+                          <li><span class="val">92 <span class="percent">95.83%</span></span><img class="ico" src="images/imgs/ua.png" width="14" height="14" alt="Ua" /> <span class="index">Ukraine</span></li>
+                          <li><span class="val">92 <span class="percent">95.83%</span></span><img class="ico" src="images/imgs/ua.png" width="14" height="14" alt="Ua" /> <span class="index">Ukraine</span></li>
+                          
+                        </ul>
+                     </li>
+                     <li class="stats-index">
+                        <h3>Search Engin Hits</h3>
+                        <ul class="lst-icons">
+                           <li><span class="val">4 44.44%</span><img class="ico" src="images/imgs/bing.png" width="14" height="14" alt="Bing" /> <span class="index">Baidu</span></li>
+                           <li><span class="val">4 44.44%</span><img class="ico" src="images/imgs/bing.png" width="14" height="14" alt="Bing" /> <span class="index">Baidu</span></li>
+                           <li><span class="val">4 44.44%</span><img class="ico" src="images/imgs/bing.png" width="14" height="14" alt="Bing" /> <span class="index">Baidu</span></li>
+                           <li><span class="val">4 44.44%</span><img class="ico" src="images/imgs/bing.png" width="14" height="14" alt="Bing" /> <span class="index">Baidu</span></li>
+                           <li><span class="val">4 44.44%</span><img class="ico" src="images/imgs/bing.png" width="14" height="14" alt="Bing" /> <span class="index">Baidu</span></li>
+                        </ul>
+                     </li>
+                     <li class="stats-index">
+                        <h3>Keywords</h3>
+                        <ul>
+                           <li><span class="val">25 73.53%</span><span class="index">op.com</span></li>
+                           <li><span class="val">2 5.88%</span><span class="index">слово</span></li>
+                           <li><span class="val">2 5.88%</span><span class="index">four</span></li>
+                           <li><span class="val">1 2.94%</span><span class="index">ввв</span></li>
+                           <li><span class="val">1 2.94%</span> <span class="index">空间</span></li>
+                           <li><span class="val">3 8.82%</span> <span class="index">Other</span></li>
+                           <li><span class="val">34</span> <span class="index">Total</span></li>
+                        </ul>
+                     </li>
+                  </ul>
+               
+               </div>
+               
+               
+            </div>
+         </div><!-- /.content -->
+      </div><!-- /#main -->
+   </div>
+   <a class="back-mainsite" title="Back to Main site" href="#">Back to main site</a>
+</div>
+<!-- END #wrapper -->
+
+<div class="modal-window cat-manage">
+   <div class="inner">
+      <span title="Close" class="close-window"></span>
+      <h2 class="header">Edit Category</h2>
+      <form action="#" class="form-cont">
+         <div class="field"><label for="cat">Category name:</label>
+            <input type="text" name="username" value="" id="cat" class="inputbox" /></div>
+   
+            <button>Save</button>
+      </form>
+   </div>
+</div>
+
+<div class="modal-window trash-list-manage">
+   <div class="inner">
+      <span title="Close" class="close-window"></span>
+      <h2 class="header">Move domains to trash</h2>
+      <form action="#" class="form-cont">
+         <div class="field"><label for="trash_list">List of domain names, separated by new line:</label>
+            <textarea name="trash_list" id="trash_list" cols="30" rows="10" class="inputbox"></textarea>
+         </div>
+   
+         <button>Trash</button>
+      </form>
+   </div>
+</div>
+
+<div class="modal-window move-list-manage">
+   <div class="inner">
+      <span title="Close" class="close-window"></span>
+      <h2 class="header">Move Domains in Category</h2>
+      <form action="#" class="form-cont">
+         <div class="field"><label for="move_cat">Category name:</label>
+            <select name="move_cat" id="move_cat" class="inputbox">
+               <option value="0">General category 1</option></select>
+               
+            </div>
+            <button>Move</button>
+      </form>
+   </div>
+</div>
+
+</body>
+</html>

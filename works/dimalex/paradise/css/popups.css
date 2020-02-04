@@ -1,0 +1,296 @@
+@charset "UTF-8";
+/*Styles for popup pages*/
+
+* { padding: 0; margin: 0; }
+html { font-size: 100.01%; }
+body {
+    background: #f6f5f5 url('../images/popup/bg-live-chat-popup.jpg') 0 0 no-repeat;
+    color: #000;
+    font-size: 75%; /* Set 1em = 12px*/
+    font-family: Arial, Tahoma, sans-serif;
+    text-align: left;
+}
+.popup {
+   background: #000;
+   }
+img{border:none;}
+.logo-paradise {
+    float:left;
+    background: url('../images/popup/logo-paradise-hotel.png') 0 0 no-repeat;
+    display: block;
+    position: relative;
+    width: 170px;
+    height: 80px;
+    z-index: 10;
+    margin: 10px 10px 0;
+}
+h2{font-weight:normal;font-size:1.5em}
+a:link,a:visited{text-decoration:none;}
+.chat{ margin:0 30px 0 240px;width:340px; }
+.chat a{font-weight:bold;}
+.link-pink:link, .link-pink:active, .link-pink:visited { color: #C1062D; }
+.status{ float:right;font-weight:bold;padding-left:12px;background:url('../images/popup/live-chat-status-online.png') 0 50% no-repeat;}
+.chat-log{overflow-y:scroll;width:100%;border:1px solid #d1d0d0;font-size:0.9em;height:425px;margin: 5px 0 15px;}
+.chat-log .meta{float:right;}
+.message{background: #fff;padding:5px;}
+.odd{background: #ebebeb;}
+.date{float:right;}
+.historik{float:left;}
+.date select{width:130px;}
+/*input box*/
+.add-comment .inputbox {
+    clear:both;
+    margin-bottom:4px;
+    width:340px;
+}
+.inputbox {
+    border:1px solid #000000;
+    font-size:1.1em;
+    padding:2px 0 2px 1px;
+    vertical-align:middle;
+}
+.button.black, .button.medium-black, .button.big-black {
+    background:transparent url(../images/bg-button-black.png) no-repeat scroll 0 0;
+    color:#FFFFFF;
+    font-size:0.9em;
+    height:23px;
+    padding:0 3px 3px;
+    width:64px;
+}
+.add-comment .button {
+    float:right;
+}
+.button {
+    background:transparent none repeat scroll 0 0;
+    border:0 none;
+    cursor:pointer;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:middle;
+}
+/* Clearfix method for clearing floats */
+.clear { clear: both; }
+.floatbox { overflow: hidden; }
+.clearfix:after { clear: both; content: "."; display: block; font-size: 0; height: 0; visibility: hidden; }
+   .clearfix { display: block; }
+
+/*input box*/
+.sidebar{float:left;width:207px;padding-right:32px;}
+.status-switcher{
+    color:#fff;
+    padding:10px 0 10px;
+    background:url('../images/popup/bg-live-chat-status.png') 100% 0 no-repeat;
+}
+.user{width:80px;padding:5px 23px 10px 15px;float:left;}
+.status-switcher a{font-weight:bold;}
+.status-switcher .title{font-size:1.2em}
+.status-switcher form div{margin:5px 0 5px;}
+
+/*broadcast*/
+.broadcast{background:#000;}
+.broadcast .logo-paradise, .broadcast .user{float:none;}
+.broadcast .user{width:170px;text-align:center;}
+.broadcast .user a{color:#fdc689;font-weight:bold;}
+.video {
+    background:url('../images/popup/bg-live-broadcast.png') 0 0 repeat-x;
+}
+.video table{padding:10px 0 0;}
+.popup .bg-outer {
+   background:url('../images/popup/bg-popup-repeat.png') 0 0 repeat-x;
+   }
+.video .bg-inner,
+.popup .bg-inner {background:url('../images/popup/bg-live-broadcast-palm.png') 0 100% no-repeat;}
+
+.video .popularity{
+    background:url('../images/popup/bg-popularity-hot.png') #fff 0 100% no-repeat;
+    border:1px solid #d6d8d8;
+    height:208px;
+    width:128px;
+    text-align:center;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+.video .overlay{
+    background: transparent url('../images/popup/bg-popularity-not.png') 0 0 no-repeat;
+    height:65px;/*TRUE height:161 px*/
+    width:128px;
+    position:relative;
+    top:15px;
+}
+.video .popularity h2{margin:0 0 10px;}
+.video .popularity .length{padding:10px 0 10px;}
+.video-frame{padding:0 10px 0;}
+.broadcast-user{width:190px;}
+.broadcast-user .user{padding:0;}
+.profiles h2,.counter{color:#fff}
+.counter{float:right;position:relative;right:30px;}
+.rating {
+    background: #000;
+    float: left;
+    width: 36px;
+    height: 5px;
+    border:1px solid #808080;
+    position: relative;
+}
+.rating .active {
+    background: url('../images/popup/rating-active.png') 0 0 repeat-x;
+    position: relative;
+    height: 5px;
+    margin: 0;
+}
+/*list users*/
+.ico-burn-suitten {
+  background: url('../images/popup/ic-burn-suitten.png') 0 0 no-repeat;
+  position: absolute;
+  left: 345px;
+  width: 90px;
+  height: 71px;
+  }
+.list-users{
+margin-left:150px;
+width: 280px;
+}
+.profiles {
+    width:570px;
+    margin: 10px;
+    padding-top: 10px;
+    background: url('../images/popup/bg-sponsored-by-burn.png') 100% 100% no-repeat;
+}
+.profiles li {
+    width: 44px;
+    margin: 0 27px 0 0;
+    float:left;
+}
+.profiles li.str {
+    width: auto;
+    float: none;
+    overflow: hidden;
+    margin: 0 0 5px 0;
+    padding: 8px 10px 0;
+}
+.profiles li.str ul {
+    overflow: hidden;
+    margin-right: -27px;
+}
+.profiles .leader {
+    float: none;
+    clear: both;
+    margin: 0 auto 8px;
+}
+.profiles .mask {
+    background: url('../images/bg-hotel-residents-mask.png') 0 0 no-repeat;
+    width: 44px;
+    height: 44px;
+}
+.profiles .overlay {
+    margin-top:-15px;
+    height:8px;
+    padding:3px 0 2px 2px;
+    position:absolute;
+    z-index:5;
+}
+.profiles .title {
+    font-size: .9em;
+}
+.profiles .title:link, .profiles .title:active, .profiles .title:visited {
+    color: #fdc689;
+}
+
+
+.popup .bg-inner {
+   overflow: hidden;
+   padding: 93px 0 10px 56px;
+   }
+.popup .logo-paradise {
+   position: absolute;
+   left: 0;
+   top: 0;
+   }
+.popup .description {
+   float: left;
+   width: 244px;
+   margin-right: 12px;
+   }
+   .popup .description p,
+   .popup .description li {
+      list-style: none inside;
+      font-size: .9em;
+      line-height: 1.4em;
+      margin-bottom: 4px;
+      }
+.popup .preview {
+   float: left;
+   margin: -10px 0 0;
+   }
+
+/*webcam*/
+.webcam-test .description .header {
+   margin-bottom: 10px;
+   }
+   .webcam-test .sporsor {
+      margin: 10px 0;
+      }
+/*record video*/
+.record-video .description {
+   width: 200px;
+   position: relative;
+   margin: 12px 0 0 10px;
+   }
+   .record-video .steps li {
+      font-size: 1em;
+      margin-bottom: 18px;
+      }
+      .record-video .steps a {
+         color: #000;
+         font-weight: bold;
+         }
+      .record-video .steps a:link, .record-video .steps a:active, .record-video .steps a:visited {
+         color: #707070;
+         }
+      .record-video .steps .active a:link, .record-video .steps .active a:active, .record-video .steps .active a:visited {
+         color: #000;
+         }
+.record-video .preview {
+   position: relative;
+   margin: -60px 0 20px;
+   }
+.record-video .preview .video-wrap {
+   margin-bottom: 6px;
+   }
+.record-video .record {
+   position: relative;
+   }
+   .record-video .record .button {
+      float: left;
+      }
+   .record-video .activity-bar {
+      background: url('../images/popup/bg-record-process.png') 0 0 no-repeat;
+      float: left;
+      width: 187px;
+      height: 8px;
+      position: relative;
+      margin: 8px 0 0 12px;
+      }
+      .record-video  .activity-bar .current-activity {
+         background: url('../images/popup/bg-record-process-active.png') 0 0 repeat-x;
+         position: relative;
+         height: 6px;
+         margin: 0 1px;
+         top: 1px;
+         }
+      .record-video  .activity-bar .count,
+      .record-video .record .time {
+         position: absolute;
+         font-size: .9em;
+         font-weight: bold;
+         top: 12px;
+         margin-left: 40px;
+         }
+.record-video .record .time {
+   position: absolute;
+   right: -20px;
+   margin: -1px 0 0 0;
+   }
+.record-video .separator {
+   margin: 0 8px;
+   }

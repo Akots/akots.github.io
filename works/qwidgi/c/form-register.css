@@ -1,0 +1,64 @@
+#registration-form {
+	background: #F3F3F3;
+	width: 300px;
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+}
+
+#registration-form .form-box {
+	margin: 5px 10px;
+}
+
+#registration-form h3 {
+	font-size: 1.3em;
+	padding: 10px 0 0 0;
+	margin: 0 0 25px 0;
+}
+
+#registration-form .table {
+	float: right;
+}
+
+#registration-form .text {
+	border: 1px solid #D3D3D3;
+	padding: 2px 5px;
+}
+
+#registration-form .label {
+	text-align: right;
+	width: 100%;
+}
+
+#registration-form .input {
+	padding: 0 0 0 5px;
+	vertical-align: top;
+	height: 50px;
+	min-height: 50px;
+}
+
+#registration-form .submit {
+	padding: 5px 0;
+	text-align: right;
+}
+
+#registration-form div.error {
+/*	background: url(/i/error.png) 0 50% no-repeat;
+	padding: 0 0 0 20px;
+*/
+	font-size: 0.8em;
+	color: #63B5DE;
+	margin: 0;
+	padding: 0;
+}
+
+#registration-form .message {
+	background: #FFE5B2;
+	border: 1px solid #FFB27F;
+	color: #666;
+	text-align: center;
+	font-weight: normal;
+	font-size: 0.8em;
+	margin: 0 10px 0 0;
+	padding: 2px 5px;
+	display: none;
+}

@@ -1,0 +1,483 @@
+@charset "UTF-8";
+/*
+Author: Kotsuruba Alexander
+Version:  18.05.2010
+***********
+ Colors:
+   #111E22 - black
+   #4690BB - blue links
+*/
+   
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q,
+small, strike, strong, sub, sup, tt,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+header, nav, footer, section {
+   background: transparent;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   vertical-align: baseline;
+}
+
+body {
+   background-color: #C4E1E5;
+   color: #111E22;
+   font-size: 75%; /* Set 1em = 12px*/
+   font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* The Begining of the End (default styles)
+----------------------------------------------- */
+
+fieldset, img, a img { border: 0 solid; }
+
+blockquote:before, blockquote:after,
+  q:before, q:after { content:""; }
+
+acronym, abbr { border-bottom: 1px dotted; cursor: help; }
+
+ol, ul { list-style: none outside; }
+
+a { color: #4690BB; text-decoration: none; }
+/*a:visited { color:#7BABC6; }*/
+a:hover { color: #397598; text-decoration: none; }
+
+a:link *, a:visited * { cursor: pointer; }
+
+table { border: 0; border-collapse: collapse; }
+
+textarea { font-family: Arial, Tahoma, sans-serif; } 
+
+.hidden { display: none !important; }
+
+/* Clearfix method for clearing floats */
+.clear { clear: both; }
+.floatbox { overflow: hidden; }
+.clearfix:after { clear: both; content: "."; display: block; font-size: 0; height: 0; visibility: hidden; }
+   .clearfix { display:block; }
+
+.pseudo { border-bottom: 1px dotted; cursor: pointer; text-decoration: none !important; }
+.ta-ctr { text-align: center; }
+
+.fsz-smaller { font-size: .8em; }
+.fsz-norm { font-size: 1em; }
+.fsz-bigger { font-size: 1.2em; }
+
+.grey { color: #666; }
+
+header, nav, article, footer, main { display: block; }
+
+/* Layouts
+----------------------------------------------- */
+#main-outer {
+   /*background: #D0EFF3 url('../images/bg-clouds.png') fixed no-repeat 50% 92px;*/
+   background: #D0EFF3;
+   padding: 39px 0 6px;
+   }
+   #main {
+      width: 78.3em;
+      position: relative;
+      overflow: hidden;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+      margin: 0 auto;
+      }
+
+   
+   /* =Header(logo,menu...)
+   ----------------------------------------------- */
+   .logo-wrap {
+      float: left;
+      width: 33em;
+      margin: 0 0 25px 10px;
+      }
+      #logo {
+         background: url(../images/logo.png) 1px 2px no-repeat;
+         float: left;
+         width: 193px;
+         height: 32px;
+         overflow: hidden;
+         outline: none;
+         }
+      header .description {
+         color: #7F8D8F;
+         font-size: 1.3em;
+         font-weight: normal;
+         line-height: 1.1;
+         font-style: italic;
+         float: left;
+         cursor: default;
+         width: 11.5em;
+         white-space: nowrap;
+         margin: 1px 0 0 20px;
+         }
+   nav {
+      float: right;
+      width: 43em;
+      margin: 1em 0 0;
+      }
+      nav li {
+         float: left;
+         margin-right: 2.7em;
+         }
+         nav a {
+            font-size: 1.8em;
+            line-height: 1;
+            letter-spacing: .03em;
+            text-decoration: none;
+            text-shadow: 1px -1px .4em #FFF;
+            }
+         nav a.selected, nav a.selected:link, nav .selected:active, nav .selected:visited, nav .selected:hover {
+            border: none;
+            color: #000;
+            cursor: default;
+            }
+
+   /* =Main
+   ----------------------------------------------- */
+   .maincontent {
+      clear: both;
+      position: relative;
+      min-height: 35em;
+      }
+      .maincontent a:visited { color: #7BABC6; }
+      .maincontent a:hover { color: #397598; }
+
+      article {
+         width: 46em;
+         }
+      article h2 {
+         font-size: 2.3em;
+         line-height: 1;
+         font-weight: normal;
+         margin-bottom: .4em;
+         }
+      article h3 {
+         font-size: 1.3em;
+         margin-bottom: .5em;
+         }
+      article p,
+      article ul {
+         font-size: 1.2em;
+         line-height: 1.4em;
+         margin-bottom: 1.4em;
+         }
+      article b, article strong {
+         color: #222E33;
+         }
+      article li {
+         margin-bottom: 8px;
+         }
+      article ul li {
+         background: url('../images/ic-sp-bullet.png') 0 .55em no-repeat;
+         padding: 0 0 0 .8em;
+         }
+      article .unmarked li {
+         background: none;
+         padding: 0;
+         }
+      article .categ {
+         float: right;
+         font-size: 12px;
+         margin: 0 0 10px 10px;
+         }
+      article .no-bot {
+         margin-bottom: .1em;
+         }
+
+      /*Home styles*/
+      .home .maincontent {
+         top: 3px;
+         }
+      .home article {
+         font-size: 1.7em;
+         line-height: 1.3em;
+         width: 26.4em;
+         text-shadow: 1px -1px 1px rgba(255, 255, 255, .5);
+         }
+      .home article p,
+      .home article ul {
+         font-size: 100%;
+         line-height: inherit;
+         margin-bottom: 1.1em;
+         }
+         .home article li {
+            background-position: 1px .55em;
+            padding: 0 0 0 .75em;
+            }
+      
+      /*Contacts*/
+      .page-template-contacts-php .wpcf7 {
+         overflow: hidden;
+         float: right;
+         width: 460px;
+         }
+      .page-template-contacts-php article {
+         font-size: 1.5em;
+         line-height: 1.3em;
+         float: left;
+         width: 22em;
+         text-shadow: 1px -1px 1px rgba(255, 255, 255, .5);
+         margin: .6em 0 0;
+         }
+      .page-template-contacts-php .form-cont input[type=text] {
+         width: 16em;
+         }
+      .page-template-contacts-php .form-cont textarea {
+         width: 26.2em;
+         }
+
+      /*Services*/
+      .abstracts {
+         color: #37484C;
+         font-size: 1.4em;
+         position: absolute;
+         right: 0;
+         width: 19em;
+         }
+
+      /*Slider works*/
+      .portfolio-slider {
+         position: absolute;
+         top: -2px;
+         right: -1px;
+         width: 383px;
+         }
+         .portfolio-slider .header {
+            color: #47575B;
+            font-size: 2em;
+            font-weight: normal;
+            display: block;
+            text-align: center;
+            }
+      .portfolio-slider .preview {
+         background: url('../images/bg-portfolio-slider.png') 0 0 no-repeat;
+         min-height: 226px;
+         padding: 14px 0 0 12px;
+         }
+         .portfolio-slider .img-wrap {
+            width: 360px;
+            height: 214px;
+            position: relative;
+            overflow: hidden;
+            }
+            .portfolio-slider .summary {
+               background-color: rgb(23,27,27);
+               background-color: rgba(23,27,27,.5);
+               color: #FFF;
+               display: none;
+               position: absolute;
+               z-index: 10;
+               bottom: 0;
+               left: 0;
+               width: 344px;
+               padding: 6px 5px 7px 12px;
+               }
+            .portfolio-slider .img-wrap a {
+               outline: 0;
+               text-decoration: none;
+               bottom: 0;
+               }
+            .portfolio-slider .img-wrap a:hover .summary {
+               display: block;
+               }
+               .portfolio-slider .summary .title {
+                  color: #F5F6F6;
+                  font-size: 1.7em;
+                  margin: 0 4px 0 0;
+                  }
+               .portfolio-slider .summary .description {
+                  color: #D4D5D5;
+                  font-size: 1.2em;
+                  }
+         .portfolio-slider .controls {
+            text-align: center;
+            margin: 10px 0 0 -4px;
+            }
+         .portfolio-slider .controls span {
+            background: url('../images/ic-slider-circle.png') 0 0 no-repeat;
+            cursor: pointer;
+            width: 20px;
+            height: 18px;
+            display: inline-block;
+            margin-left: 4px;
+            }
+         .portfolio-slider .controls .activeSlide {
+            background-position: 0 100%;
+            width: 24px;
+            height: 24px;
+            vertical-align: -2px;
+            margin: 0 -5px 0 5px;
+            }
+
+      /***********************
+      * Works
+      ************************/
+
+      .work {
+         background-color: #F1FAFB;
+         border-radius: 10px;
+         -webkit-box-shadow: 0 -2px 3px rgba(0,0,0,.1);
+            -moz-box-shadow: 0 -2px 3px rgba(0,0,0,.1);
+            box-shadow: 0 -2px 3px rgba(0,0,0,.1);
+         clear: both;
+         position: relative;
+         overflow: hidden;
+         margin: 0 0 20px;
+         padding: 12px 20px 10px 10px;
+         }
+      .works-list .work {
+         height: 224px;
+         padding-bottom: 0;
+         }
+         .work .img {
+            background: url() 0 0 no-repeat;
+            -moz-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+
+            -webkit-background-size: 390px auto;
+            background-size: 390px auto;
+
+            float: left;
+            width: 390px;
+            height: 213px;
+            margin: 0 22px 0 0;
+            }
+         .work .img:hover {
+            -moz-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+            }
+         .work .title {
+            font-size: 2.1em;
+            font-weight: bold;
+            display: block;
+            margin-bottom: .3em;
+            }
+            .work .title a {
+               text-decoration: none;
+               }
+         .work .summary {
+            display: block;
+            font-size: 1.7em;
+            line-height: 1em;
+            font-style: italic;
+            margin-bottom: .8em;
+            }
+         .work .entry-content {
+            font-size: 1.3em;
+            line-height: 1.4em;
+            margin-bottom: .6em;
+            }
+         .work .categ, .work .date, .work .url {
+            display: block;
+            font-size: 1.3em;
+            margin-bottom: .3em;
+            }
+            
+         /*Single work view*/
+         .work.view .bg-shadow-wrap {
+            padding-right: 20px;
+            }
+         .work.view .img {
+            margin-bottom: 10px;
+            }
+         .work.view .entry-content {
+            overflow: hidden;
+            margin-bottom: 1.2em;
+            }
+            .work.view .entry-content p {
+               margin-bottom: 1.2em;
+               }
+         .work.view .additional {
+            overflow: hidden;
+            }
+      a[rel="external"] {
+         background: url('../images/ic-external.gif') 99% 44% no-repeat;
+         padding-right: .9em;
+         }
+
+   
+/* =Footer
+----------------------------------------------- */ 
+footer {
+   width: 78.3em;
+   overflow: hidden;
+   -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+   margin: 0 auto;
+   padding: 15px 20px 10px;
+   }
+   footer dl {
+      float: left;
+      width: 300px;
+      }
+      footer dt {
+         font: 2em "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+         margin-bottom: 3px;
+         }
+      footer dd {
+         font-size: 1.4em;
+         line-height: 1.4em;
+         }
+      .resume,
+      .moikrug,
+      .linkedin {
+         background: url('../images/ics-info.png') 0 5px no-repeat;
+         padding-left: 1.3em;
+         }
+      .moikrug {
+         background-position: 0 -18px;
+         }
+      .linkedin {
+         background-position: 0 -40px;
+         }
+      .copyrights {
+         color: #5D6365;
+         font-size: 1.2em;
+         line-height: 1.5em;
+         }
+   
+
+/*
+   Mobile & Tables layout
+*/
+@media screen and (max-width:720px) {
+   #main {
+      width: 100%;
+      padding: 0 10px;
+      }
+   header .description {
+      font-size: 1.2em;
+      }
+   nav {
+      display: none;
+   }
+   .works-list .work {
+      height: auto;
+      padding-right: 10px;
+      }
+   .work .img {
+      background-size: 100% auto;
+      display: block;
+      width: 100%;
+      float: none;
+      margin-bottom: 15px;
+      }
+}
+
+@media screen and (max-width:320px) {
+   header .description {
+      display: none;
+   }
+}

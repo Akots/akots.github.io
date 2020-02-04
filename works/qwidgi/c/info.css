@@ -1,0 +1,46 @@
+.info
+{
+   font-size:1.4em;
+   padding:30px;
+   color:#343837;
+   margin:0 auto;
+   max-width:1000px;
+}
+   .info h1, .info h2, .info h3, .info h4, .info h5, .info h6
+   {
+   margin:0 0 10px 0;
+   }
+   .info span
+   {
+      padding-left:20px;
+      display:block;
+   }
+   .info p
+   {
+      margin: 0 0 10px 0;
+   }
+   .info ul
+   {
+      list-style-type:disc;
+      margin:15px;
+   }
+   .info ol
+   {
+      list-style-type:decimal;
+      padding:5px 0 5px 20px;
+   }
+      .info li
+      {
+         padding:5px 0;
+         list-style-position:inside;
+      }
+      .info .bolded
+      {
+         font-weight:bold;
+         padding-top:15px;
+         padding-bottom:7px;
+         margin-bottom:7px;
+         font-size:16px;
+         color:#000;
+         background:transparent url(/i/brd-dotted-bottom.gif) repeat-x scroll left bottom;
+      }

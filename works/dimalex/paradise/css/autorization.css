@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*Styles for Autorization page*/
+.autorization #content.with-shadow .inner {
+   overflow: hidden;
+   }
+.autorization-blc {
+   border: none;
+   padding-bottom: 0;
+   }
+   .autorization-methods {
+      margin-top: 10px;
+      }
+      .autorization-methods li {
+         border-color: #B4BBBE;
+         position: relative;
+         height: 472px;
+         }
+         .autorization-methods .header {
+            font-size: 1.6em;
+            font-weight: normal;
+            margin-bottom: 17px;
+            }
+         .autorization-methods h4.header {
+            font-size: .9em;
+            font-weight: bold;
+            margin-bottom: 2px;
+            }
+         .autorization-methods li p {
+            margin-bottom: 20px  !important;
+            }
+         .autorization-methods label {
+            font-size: .9em;
+            font-weight: bold;
+            width: 68px;
+            }
+         .autorization-methods .inputbox {
+            width: 210px;
+            }
+         .autorization-methods .form-login {
+            width: 293px;
+            }
+            .autorization-methods form {
+               width: 284px;
+               }
+               .autorization-methods .form-login .inputbox {
+                  width: 210px;
+                  }
+         .autorization-methods .register {
+            width: 304px;
+            }
+         .autorization-methods .login-facebook {
+            width: 280px;
+            }

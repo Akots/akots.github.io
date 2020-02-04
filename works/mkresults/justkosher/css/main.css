@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/******************************
+* Title: Styles for index page
+*******************************/
+
+.index #main {
+   overflow: auto;
+   overflow-x: hidden;
+   }
+
+.index #content {
+   position: relative;
+   top: 5px;
+   right: 0 !important;
+   overflow: hidden;
+   margin-right: 294px;
+   }
+.index #rgt-col {
+   position: relative;
+   float: right;
+   overflow: hidden;
+   }
+
+.index table.special-offers {
+   margin-bottom: 20px;
+   }
+
+/*Introduce speach*/
+.blc.introduce p {
+   font-size: 1.4em;
+   line-height: 1.3em;
+   margin-bottom: 1.3em;
+   }
+.blc.introduce .fl-lft {
+   margin-right: 14px;
+   }
+
+/*Introduce speach*/
+.mod.shabbat-times .header {
+   font-size: 1.2em;
+   }
+.mod.shabbat-times .times {
+   width: 100%;
+   margin-bottom: 10px;
+   }
+   .mod.shabbat-times .times td {
+      font-size: .9em;
+      padding-bottom: 8px;
+      }
+
+/*Delivery zone*/
+.mod.delivery-zone .header {
+   font-size: 1.2em;
+   }
+.mod.delivery-zone .inner {
+   padding-bottom: 25px;
+   }
+   .mod.delivery-zone p {
+      color: #646464;
+      line-height: 1.3em;
+      margin-bottom: 12px;
+      }
+   .mod.delivery-zone .input {
+      width: 170px;
+      float: left;
+      margin-right: 14px;
+      }
+      .mod.delivery-zone .input .inputbox {
+         width: 158px;
+         }
+   .mod.delivery-zone .button {
+      margin-top: 5px;
+      }
+
+/*Supervision block*/
+.mod.supervision .header {
+   font-size: 1.2em;
+   }
+.mod.supervision .inner {
+   background: none;
+   border: none;
+   padding-left: 0;
+   padding-right: 0;
+   }
+   .mod.supervision .inner .img {
+      margin-right: 9px;
+      }

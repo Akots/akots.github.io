@@ -1,0 +1,56 @@
+[
+   {
+      id:1234,
+      name:'userProfile',
+      title:'Артем Геннадьевич Анищенко',
+      ico:'/u/photo/135x135',
+      url:'u/profile',
+      cont: '/interface/u/profile',
+      fixed:true
+   },
+   {
+      id:567,
+      name:'officeProfile',
+      title:'Мой офис',
+      ico:'/i/widget/office.png',
+      url:'office/123/profile',
+      cont: '/interface/office/profile'
+   },
+   {
+      id:5671,
+      name:'qgallery',
+      title:'Мои фотографии',
+      ico:'/i/widget/photo.png',
+      url:'u/album',
+      cont: null
+   },
+   {
+      id:56711,
+      name:'contacts',
+      title:'Мои контакты',
+      /*ico:'/i/widget/contacts.png',*/
+      ico:'/u/right_people/preview',
+      url:'u/contact',
+      cont: null,
+      type:'list',
+      list:[
+         {id: 1, name: 'Петя Ростов'},
+         {id: 2, name: 'Вадим Алексеенко'},
+         {id: 3, name: 'Марина Степаненко'},
+         {id: 4, name: 'Оксана Конгун'},
+         {id: 5, name: 'Денис Сарконис'},
+         {id: 1, name: 'Тимофей Рябцев'},
+         {id: 2, name: 'Артем Анищенко'},
+         {id: 2, name: 'Вадим Алексеенко'},
+         {id: 3, name: 'Марина Степаненко'},
+         {id: 4, name: 'Оксана Конгун'},
+         {id: 5, name: 'Денис Сарконис'},
+         {id: 1, name: 'Тимофей Рябцев'},
+         {id: 2, name: 'Артем Анищенко'},
+         {id: 2, name: 'Вадим Алексеенко'},
+         {id: 3, name: 'Марина Степаненко'},
+         {id: 6, name: 'Петя Ростов'}
+      ],
+      num:18
+   }
+]

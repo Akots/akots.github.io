@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+   
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+   <title>Fyltra</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Language" content="en" />
+   <meta name="description" content="" />
+   <meta name="keywords" content="" />
+   <meta name="robots" content="all" />
+   <link type="image/x-icon" href="../favicon.ico" rel="shortcut icon" />
+   <link rel="stylesheet" type="text/css" media="all" href="stylesheets/base.css" />
+   
+   <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="stylesheets/ie.css" media="all" /><![endif]-->
+
+   <script src="javascripts/rounded-corners.js" type="text/javascript" charset="utf-8"></script>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script src="javascripts/jqModal.js" type="text/javascript"></script>
+   <script src="javascripts/jquery.watermark.min.js" type="text/javascript"></script>
+   <script src="javascripts/common.js" type="text/javascript"></script>
+   <script type="text/javascript">
+      $().ready(function() {
+         selectDays($(".days-picker"), $("[name=workdays]"));
+      });
+   </script>
+</head>
+
+<body>
+<!-- BEGIN #wrapper -->
+<div id="wrapper">
+   <div id="header" class="clearfix">
+      <h1 id="logo"><a href="#">Filter and expedite your staff selection <span></span></a></h1>
+
+      <div class="user-panel">
+         <ul class="dropdown-list countrys">
+            <li class="cty-venezuela"><a href="#"><span class="pseudo">Venezuela</span></a></li>
+            <li class="it-visible cty-colombia"><a href="#"><span class="pseudo">Colombia</span></a></li>
+            <li class="cty-costarica"><a href="#"><span class="pseudo">Costa Rico</span>a</a></li>
+            <li class="cty-panama"><a href="#"><span class="pseudo">Panama</span></a></li>
+         </ul>
+
+         <a class="pseudo action" href="#">Sign in</a> <span class="spr">&bull;</span> Register as <a class="role-seeker" href="#">Job Seeker</a> or <a class="role-employer" href="#">Employer</a>
+      </div>
+      
+      <div class="top-menu nav">
+         <ul>
+            <li class="rc5 active"><b>Home</b></li><li class="rc5"><a href="#">My Account</a></li><li class="rc5"><a href="#">Search jobs</a></li><li class="rc5"><a href="#">Pricing</a></li><li class="rc5"><a href="#">What is Fyltra?</a></li>
+         </ul>
+      </div>
+      
+   </div><!-- /#header -->
+
+   <div id="main" class="rc10">
+      <div id="content" class="profile profile-wizard clearfix">
+      	<h1>Profile Wizard</h1>
+
+         <div class="welcome clearfix">
+            <div class="w-img"><img src="images/imgs/wizard.jpg" alt="" /></div>
+            <div class="w-txt">
+               <p>Welcome! This profile wizard will help you generate your Fyltra profile (<a href="#">see sample</a>). Please fill in the information in all categories as accurately as possible. Remember that your profile will be the first thing employers look at when they search for candidates or review applicants to a job offer.</p>
+               <p>If you have any doubts please check our <a href="#">Support page</a> at anytime or send us a message via the "Questions" button found at the left of the screen.</p>
+               <p>Good Luck!</p>
+            </div>
+         </div>
+
+         <ul class="form-tabs">
+            <li><a href="#">Job Experience</a></li>
+            <li><span class="active">Education</span></li>
+            <li><span>Languages</span></li>
+            <li><span>Complementary info</span></li>
+         </ul>
+
+         <form action="#" class="form-cont long-fields">
+            
+            <div class="field">
+               <label for="c-country">Country</label>
+               <select name="c-country" id="c-country">
+                  <option value="0">Choose...</option>
+                  <option value="1">Colombia</option>
+                  <option value="2">Costa Rico</option>
+                  <option value="3">Panama</option>
+               </select>
+            </div>
+            <div class="field">
+               <label for="c-uni">University</label>
+               <input type="text" name="c-uni" id="c-uni" class="inputbox" />
+            </div>
+
+            <div class="fields-separator"></div>
+
+            <div class="field time-input">
+               <span class="label">Time period</span>
+               <div class="time-from">
+                  <label for="c-time_from_m">From</label>
+                  <select name="c-time_from_m" id="c-time_from_m" class="sel-mon">
+                     <option value="0">March</option>
+                     <option value="1">March</option>
+                     <option value="2">March</option>
+                     <option value="3">March</option>
+                  </select>
+                  <select name="c-time_from_y" id="c-time_from_y" class="sel-year">
+                     <option value="0">2009</option>
+                     <option value="1">2010</option>
+                     <option value="2">2011</option>
+                     <option value="3">2012</option>
+                  </select>
+               </div>
+               <div class="time-to">
+                  <label for="c-time_to_m">To</label>
+                  <select name="c-time_to_m" id="c-time_to_m" class="sel-mon">
+                     <option value="0">March</option>
+                     <option value="1">March</option>
+                     <option value="2">March</option>
+                     <option value="3">March</option>
+                  </select>
+                  <select name="c-time_to_y" id="c-time_to_y" class="sel-year">
+                     <option value="0">2009</option>
+                     <option value="1">2010</option>
+                     <option value="2">2011</option>
+                     <option value="3">2012</option>
+                  </select>
+               </div>
+               <div class="time-now">
+                  <label class="checkbox" for="c-time_now"><input type="checkbox" id="c-time_now" name="c-time_now" /> I currently work here</label>
+               </div>
+            </div>
+
+            <div class="fields-separator"></div>
+
+            <div class="field">
+               <label for="c-degr">Degree</label>
+               <select name="c-degr" id="c-degr">
+                  <option value="0">Choose...</option>
+                  <option value="1">Colombia</option>
+                  <option value="2">Costa Rico</option>
+                  <option value="3">Panama</option>
+               </select>
+            </div>
+            <div class="field"><label for="c-flds">Fields of study</label>
+               <input type="text" name="c-flds" id="c-flds" class="inputbox" />
+               <span class="field-desc">
+                  <span>Examples: web, law, diplomacy.</span>
+                  <span>Separate areas by comma</span>
+               </span>
+            </div>
+
+
+            <div class="form-footer">
+
+               <div class="add-another">
+                  <a href="#" class="pseudo add-item_icon">Add another university...</a>
+               </div>
+
+               <div class="submit">
+                 <input type="submit" value="Continue" class="btn-submit" />
+               </div>
+               
+            </div>
+               
+         </form>
+      </div><!-- #content -->
+
+   </div><!-- /#main -->
+
+   <div id="footer">
+      <div class="copy">&copy; 2010 <b class="inline-logo"><span class="name">Fyltra</span>.com</b><br />
+         All rights reserved</div>
+
+      <ul class="links">
+         <li><a href="#">Post a new job</a></li>
+         <li><a href="#">Site widget</a></li>
+         <li><a href="#">RSS</a></li>
+      </ul>
+
+      <ul class="links">
+         <li><a href="#">About Us</a></li>
+         <li><a href="#">Contact</a></li>
+      </ul>
+   </div><!-- /#footer -->
+</div>
+<!-- END #wrapper -->
+</body>
+</html>

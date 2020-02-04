@@ -1,0 +1,71 @@
+﻿[
+	{
+		user_id : '123',
+		emp_id : 100,
+		avatar_url : '/i/photo/162x162/1.jpg',
+		name: 'Андрейченко Екатерина',
+		position: 'Главный очень бухгалтер',
+		right_people_url: '/u/123/contact',
+		user_page_url: '/u/123/profile',
+		is_right_man: false,
+		is_accepted: false,
+		is_voted: false
+	},
+	{
+		user_id : '1234',
+		emp_id : 200,
+		avatar_url : '/i/photo/162x162/2.jpg',
+		name: 'Анищенко Антон',
+		position: 'Менеджер',
+		right_people_url: '/u/1234/contact',
+		user_page_url: '/u/1234/profile',
+		is_right_man: false,
+		is_accepted: false,
+		is_voted: true
+	},
+	{
+		user_id : '22',
+		emp_id : 200,
+		avatar_url : '/i/photo/162x162/3.jpg',
+		name: 'Ростов Петр',
+		position: 'Уборщица и дворник',
+		right_people_url: '/u/22/contact',
+		user_page_url: '/u/22/profile',
+		is_right_man: true,
+		is_accepted: true,
+		is_voted: true
+	},	
+	{
+		user_id : '12345',
+		emp_id : 200,
+		avatar_url : '/i/photo/162x162/4.jpg',
+		name: 'Андрейченко Екатерина',
+		position: 'Главный очень бухгалтер',
+		right_people_url: '/u/12345/contact',
+		user_page_url: '/u/12345/profile',
+		is_right_man: true,
+		is_accepted: true
+	},
+	{
+		user_id : '12',
+		emp_id : 200,
+		avatar_url : '/i/photo/162x162/2.jpg',
+		name: 'Анищенко Антон',
+		position: 'Менеджер',
+		right_people_url: '/u/12/contact',
+		user_page_url: '/u/12/profile',
+		is_right_man: false,
+		is_accepted: true
+	},
+	{
+		user_id : '1',
+		emp_id : 200,
+		avatar_url : '/i/photo/162x162/1.jpg',
+		name: 'Ростов Петр',
+		position: 'Уборщица и дворник',
+		right_people_url: '/u/1/contact',
+		user_page_url: '/u/1/profile',
+		is_right_man: true,
+		is_accepted: true
+	}
+]

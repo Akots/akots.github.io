@@ -1,0 +1,680 @@
+/* Title: styles for IE 6 */
+
+.png-fix,
+.ie6 .toggle-view
+   { behavior: url(/c/png_fix/iepngfix.htc); }
+.ie6 .png-fix a,
+.ie6 .toggle-view
+   { cursor: pointer; }
+.is-ie input.cancel,
+.is-ie .cancel input
+   {
+   padding: 2px 18px 2px 16px;
+   }
+.ie6 #head 
+   { width: 99%; }
+   .ie6 #head .icon .link
+      {
+      width: 100%;
+      height: 100%;
+      }
+   .is-ie #head .icon#userProfile .title 
+      {
+      margin-top: 76px
+      }
+   .ie6 #head .icon .title
+      { margin-top: 80px; }
+    .ie6 #head .is-icon .title
+      { margin-top: 80px; }
+
+   .ie6 #head .icon .title 
+      { width: 100%; }
+   .ie6 .block a
+      {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      }
+    .ie6 .block .title
+       { bottom: 0; }
+    .ie7 .block a img 
+       {
+       margin-bottom: 13px;
+       }
+
+   .ie6 #top-bg,
+   .ie6 #bot-bg
+      { width: 100%;  }
+   .ie6 #top-bg 
+      {
+      background: transparent url(/i/ie/bg-insidepage-repeat.png) 0 0 repeat-x;
+      }
+   .ie6 #top-lft-bg, .ie6 #top-rgt-bg
+      {
+      background: url(/i/ie/bg-insidepage-topcorners.png) 0 0 no-repeat;
+      height: 43px;
+      }
+   .ie6 #top-rgt-bg 
+      {
+      background-position: 1px -91px;
+      margin-right: -1px;
+      }
+   .ie6 #bot-lft-bg, .ie6 #bot-rgt-bg, .ie6 #bot-bg
+      {
+      display: none;
+      }
+   .ie6 #main-lft, .ie6 #main-rgt
+      {
+      background: url(/i/ie/bg-insidepage-lftrgtrepeat.png) 0 0 repeat-y;
+      height: 100%;
+      }
+   .ie6 #main-rgt
+      {
+      background-position: 2px 0;
+      margin-right: -1px;
+      }
+   .ie6 .index-page
+      { background: #2C3635 !important; }
+   
+   .ie6 .index-page #top-bg, .ie6 .index-page #bot-bg
+      { background: transparent url(/i/ie/bg-index-top-repeat.png) 0 0 repeat-x; display: block; }
+   .ie6 .index-page #top-lft-bg, .ie6 .index-page #top-rgt-bg,
+   .ie6 .index-page #bot-lft-bg, .ie6 .index-page #bot-rgt-bg
+      { background: transparent url(/i/ie/bg-index-toplftrgt.png) 0 0 no-repeat; }
+   .ie6 .index-page #main-lft, .ie6 .index-page #main-rgt
+      {
+      background: transparent url(/i/ie/bg-index-lftrgt-repeat.png) 0 30px repeat-y;
+      display: block;
+      }
+   .ie6 .index-page #main-rgt
+      { background-position: 100% 20px; }
+   .ie6 .index-page #top-rgt-bg
+      { background-position: 0 -61px;  }
+
+   .ie6 .index-page #bot-bg 
+      {
+      background-position: 0 100%;
+      display: block;
+      margin-bottom: -4px;
+      }
+   .ie6 .index-page #bot-lft-bg
+      {
+      background-position: 0 -77px;
+      display: block;
+      }
+   .ie6 .index-page #bot-rgt-bg 
+      {
+      background-position: 0 100%;
+      display: block;
+      z-index: 1000;
+      height: 10px;
+      width: 25px;
+      }
+   .ie6 #page-functional
+      {
+      right: 30px;
+      }
+      .ie6 .toggle-view
+         {
+         width: 90px;
+         }
+
+.ie6 #body, .ie6 .layout
+   { height: expression(document.body.clientHeight-130); }
+   .ie6 .layout
+      { width: 98.1%; height: expression(document.body.clientHeight-173); }
+
+      .ie6 #lftcol-groups
+         {
+         height: expression(document.body.clientHeight-175);
+         }
+         .ie7 #lftcol-groups ul,
+         .ie7 #list-items ul
+            {
+            zoom: 1;
+            }
+      .ie6 #profile
+         { overflow: visible; }
+         .ie6 .common_info 
+           {
+           left: 0;
+           width: 196px;
+           }
+   .ie6 .common_info
+      { left: 0; }
+   .is-ie .common_info img
+      {
+      margin-bottom: -2px;
+      }
+   .is-ie .common_info .edit a,
+   .is-ie .imgview .url {
+      background-color: #FFF;
+      filter:alpha(opacity=0);
+      left: 0
+      }
+   .ie6 .quick_menu li a
+      {
+      background-image: url(/i/ie/icns-profile-functions.gif);
+      }
+      .ie6 .quick_menu .change_relation a
+         {
+         background-position: 0 -166px;
+         }
+      .ie6 .quick_menu li .add_right_people
+         {
+         background-position: 9px -31px;
+         }
+      .ie6 .quick_menu 
+         {
+         padding-top: 1px;
+         }
+      .ie6 .quick_menu li .edit-photo, .ie6 .quick_menu li .edit-photo:active
+         {
+         background-position: 9px -74px;
+         width: 40px;
+         position: relative;
+         margin: 0 -6px 0 0;
+         }
+      .ie6 .quick_menu li .edit-photo.search, .ie6 .quick_menu li .edit-photo.search:active
+         {
+         background-position: 0 -115px;
+         }
+     .ie7 .quick_menu li .edit-photo
+         {
+         background-position: 1px -76px;
+         }
+      .ie7 .quick_menu li .edit-photo.search
+         {
+         background-position: 0 -116px;
+         }
+
+     .ie7 #change-password .label
+        {
+        text-align: right;
+        }
+     .ie7 #change-password label
+       {
+       width: 92px;
+       padding-right: 12px;
+       }
+.ie7 .info-item table .label 
+   {
+   width: 110px;
+   display: block;
+   }
+.ie7 #profile .about_cont
+   {
+   margin: 0;
+   }
+.is-ie .foto-corners-bot,
+.is-ie .person_card .icons,
+.is-ie .imgview .img .foto-corners-bot,
+.is-ie .imgview .img .tools
+   { bottom: 0; }
+.is-ie .contacts_view.listview #list-items
+   {
+   width: 19.1em;
+   }
+.ie6 #contacts_view.listview #list-items,
+.ie6 .profile_comp .employees, .ie6 .employees
+   { height: expression(document.body.clientHeight-220); }
+.ie6 .contacts_view.listview .contact,
+.ie6 .responses-list, .ie6 .company.main,
+   {
+   left: 19.1em;
+   width: expression(document.body.clientWidth-215);
+   height: expression(document.body.clientHeight-175);
+   }
+.ie6 .company.main,
+.ie6 .albums.real
+   {
+   left: 18.3em !important;
+   width: expression(document.body.clientWidth-208);
+   height: expression(document.body.clientHeight-175);
+   }
+   .ie6 #lftcol-groups h2
+      { display: block; }
+   .ie6 #qgallery_view #lftcol-groups h2,
+   .albums.real .title
+      { zoom: 1; }
+.ie6 .responses-list,
+.ie6 .company.main
+   {
+   left: 18.9em;
+   }
+.ie6 .company.main .contacts_view
+   {
+   left: 0 !important;
+   padding: 0;
+   }
+   .ie6 .company.main .employees #list-items
+      {
+      position: relative;
+      height: auto;
+      width: auto;
+      overflow: hidden;
+      left: 0;
+      }
+   .ie6 .company.main .employees.listview
+      {
+      left: 0 !important;
+      overflow: hidden;
+      }
+      .ie6 .company.main .employees.listview #list-items
+         {
+         border-right: 2px solid #DAD5C4;    
+         top: 4.7em;
+         width: 19.1em !important;
+         height: expression(document.body.clientHeight-220);
+         padding: 0;
+         overflow: auto;
+         }
+         .ie6 .company.main .employees.listview #list-items .position 
+            {
+            display: none;
+            }
+   .ie6 #profile,
+   .ie6 .profile_comp,
+   .ie6 .contacts_view.listview .contact
+      { left: 0 !important; }
+   
+   .ie6 .profile_comp 
+      {
+      width: 70%;
+      overflow: hidden;
+      }
+.ie6 .contacts_view #list-items
+   {
+   width: expression(document.body.clientWidth-15);
+   height: expression(document.body.clientHeight-194);
+   }
+.is-ie .contacts_view .list
+   {
+   width: auto;
+   }
+   .ie6 #filter-search,
+   .ie6 #filter-search span
+      {
+      background-image: url(/i/ie/bg-filter-search.gif);
+      }
+   .ie6 .profile-tabs li:hover, .ie6 .profile-tabs .active, .ie6 .profile-tabs .hover
+   	{
+   	background: url(/i/ie/ic-str-active-menucontacts.gif) bottom center no-repeat;
+   	}
+   .ie7 .profile-tabs li
+      {
+      height: 37px;
+      }
+   .ie6 .profile-tabs a
+      {
+      background-image: url(/i/ie/icns-profile.gif);
+      }
+   .ie6 #profile-header .profile-tabs li 
+      {
+      background: none;
+      }
+   .ie6 #profile-header .profile-tabs a
+      {
+      background-image: url(/i/ie/icns-contact.gif);
+      }
+   .ie6 .profile-tabs .tab-groups.active a
+      {
+      background-position: -130px 0 !important;
+      }
+   .ie6 .profile-tabs .tab-video.active a
+      {
+      background-position: -88px 0 !important;
+      }
+   .ie6 .profile-tabs .tab-contacts.active a
+      {
+      background-position: -174px 0 !important;
+      }
+   .ie6 .profile-tabs .tab-office.active a
+	 	{
+	 	background-position: -44px 0 !important;
+	 	}
+   .is-ie .contacts_view .list .item
+      {
+      min-height: 228px;
+      height: auto; !important
+      height: 228px;
+      }
+   .ie6 .contacts_view .list .item
+      {
+      height: 248px;
+      margin-bottom: 3em;
+      }
+   .ie6 .company.main .contacts_view .list .item 
+      {
+      min-height: 198px;
+      height: auto; !important
+      height: 198px;
+      }
+   .is-ie .contacts_view.listview .list .item
+      {
+      min-height: 18px;
+      height: auto;
+      overflow: hidden;
+      margin: 0;
+      padding: 0
+      }
+   .ie6 .contacts_view.listview .list .item
+      {
+      display: inline;
+      position: relative;
+      }
+      .is-ie .person_card .name,
+      .is-ie .person_card .position,
+      .is-ie .person_card .description
+         {
+         overflow: hidden;
+         display: inline;
+         }
+      .ie6 .foto-corners-top,
+      .ie6 .foto-corners-bot,
+      .foto-corners-repeat,
+      .foto-corners-repeat span
+      	{
+      	background: none; 
+      	}
+      .ie6 .foto-corners-top span,
+      .ie6 .foto-corners-top span span,
+      .ie6 .foto-corners-bot span,
+      .ie6 .foto-corners-bot span span,
+      .ie6 .profile-avatar-corners,
+      .ie6 .profile-avatar-corners div
+         {
+         background-image: url(/i/ie/bg-foto-corners-topbot.gif);
+         display: block;
+         position: absolute;
+         width: 100%;
+         height: 7px;
+         }
+         .ie6 .profile-avatar-corners div
+            {
+            height: 100%;
+            }
+         .ie6 .foto-corners-top span span,
+         .ie6 .profile-avatar-corners div
+            {
+            background-position: 100% -17px;
+            }
+         .ie6 .foto-corners-bot span
+            {
+            background-position: 0 -53px;
+            }
+            .ie6 .foto-corners-bot span span
+               {
+               background-position: 100% -73px;
+               }
+      .is-ie .qgallery .imgview .photos
+         {
+         width: 105%;
+         margin-right: 0;
+         }
+      .is-ie .albums .list li
+         {
+         display: inline;
+         }
+         .is-ie .albums.real .title a
+            {
+            display: block;
+            }
+         .is-ie #lftcol-groups .hover
+            {
+            z-index: 1000;
+            }
+         .ie6 #lftcol-groups .hover .tools
+            {
+            background-position: 0 100%; 
+            }
+         .ie6 #lftcol-groups .hover .hover 
+            {
+            background-position: 0 -128px;
+            }
+         .ie6 .albums.real .tools li a,
+         .ie6 qgallery .album .tools a,
+         .ie6 #lftcol-groups .album .tools,
+         .ie6 #lftcol-groups .album .tools a
+            {
+            background-image: url(/i/ie/icns-album-functions.gif);
+            }
+         .ie6 .imgview .photo .title input,
+         .ie6 .albums.real .title input
+            {
+            margin: -1px 0 -1px 0;
+            padding: 3px 5px 3px 1px;
+            }
+         .ie7 .albums.real .title input
+            {
+            margin: -5px 0 -3px -2px;
+            padding: 3px 5px 3px 1px;
+            }
+         .ie7 .imgview .photo .title input 
+            {
+            margin: -5px 0 -3px -3px;
+            padding: 3px 5px 3px 2px;
+            }
+         .ie7 .imgview h1.title 
+            {
+            padding: 3px 5px 3px 2px;
+            }
+            .ie7 .imgview h1.title .val
+               {
+               padding: 5px 0 4px 2px;
+               }
+            .ie7 .imgview h1.title .val:hover 
+               {
+               margin: 0 0 -1px -1px;
+               padding: 4px 0 4px 2px;
+               }
+            .ie7 .imgview h1.title input
+               {
+               margin: -1px 0 -2px -1px;
+               padding: 3px 0 3px 2px;
+               }
+         .is-ie .albums.real .preview img 
+            {
+            margin-bottom: 4px;
+            }
+        .is-ie .albums.real .count 
+           {
+           position: relative;
+           }
+            .is-ie .albums.real .message_wrap
+               {
+               margin-left: 30px;
+               }
+            .is-ie .albums.real .message a 
+               {
+               display: inline-block;
+               }
+           .is-ie .albums.real .tools a
+               {
+               position: relative;
+               overflow: hidden;
+               }
+      .ie6 .person_card .icons,
+      .ie6 .imgview .tools, .ie6 .albums.real .tools 
+         {
+         background: #000;
+         }
+      .ie7 .person_card .icons,
+      .ie7 .imgview .tools
+         { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/i/bg-userfoto-functions.png',sizingMethod='scale'); }
+
+      .is-ie .person_card .icon li
+         {
+         display: inline;
+         margin: 0;
+         }
+         .is-ie .person_card .icon input,
+         .is-ie .person_card .icon a
+            {
+            display: inline;
+            width: 18px;
+            height: 17px;
+            }
+          .ie6 .person_card .icon input,
+          .ie6 .person_card .icon a
+            {
+            background-image: url(/i/ie/icns-userfoto-functions.png);
+            }
+         .is-ie .person_card .icon a 
+            {
+            display: block;
+            padding: 2px 3px;
+            }
+            .is-ie .person_card .icon .add_right_people input
+               {
+               width: 32px;
+               height: 15px;
+               }
+            .is-ie .person_card .icon .send_message
+               {
+               padding-right: 0;
+               }
+   .ie6 .hidebar_header,
+   .ie6 #lftcol-groups h2 a
+      {
+      background-image: url(/i/ie/icns-grey-str.gif);
+      }
+   .is-ie .edit #profile-header h1
+      {
+      padding: 10px 0 8px 6px;
+      margin: -10px 0 -8px 0;
+      }
+   .is-ie .edit .profile_comp-header h1
+      {
+      min-height: 30px;
+      height: auto; !important
+      height: 30px;
+      padding: 10px 0 8px 6px;
+      margin-bottom: -4px;
+      }
+   .is-ie .info-item
+      {
+      min-height: 20px;
+      height: auto; !important
+      height: 20px;
+      padding: 10px 11px 5px;
+      }
+   .is-ie #secondary-info .info-item 
+      {
+      padding: 7px 11px 3px;
+      }
+   .is-ie .info-item table,
+   .is-ie .job,
+   .is-ie div.highschool,
+   .is-ie div.school
+      {
+      margin: -4px 0 20px 0;
+      padding: 5px 0 4px;
+      }
+   .is-ie .edit .value,
+   .is-ie .edit .empty
+      {
+      margin-left: -5px;
+      }
+   .is-ie #first-info .info-item .value,
+   .is-ie .basic_info .info-item .value
+      {
+      line-height: 1.2em;
+      }
+   .is-ie #secondary-info .info-item
+      {
+      margin: -4px 0;
+      padding: 7px 11px 6px 11px;
+      }
+      .is-ie #profile span
+         {
+         padding-right: 3px;
+         }
+      .is-ie #profile span span
+         {
+         padding: 0;
+         }
+      .is-ie .info-item h4.title .type
+         {
+         font-size: 11px;
+         }
+      .is-ie #profile .val,
+      .is-ie .profile_comp .val,
+      .is-ie .vacancy-view .val
+         {
+         padding: 7px 5px 6px 5px;
+         }
+      .is-ie #profile .val:hover,
+      .is-ie .profile_comp .val:hover,
+      .is-ie .vacancy-view .val:hover
+         {
+         margin: 0;
+         padding: 6px 4px 5px 4px;
+         }
+      .is-ie #profile .about_cont .val:hover 
+         {
+         margin-top: -4px
+         }
+      .is-ie #profile .value input, .is-ie #profile .value select, .is-ie #profile .value textarea,
+      .is-ie .profile_comp .value input, .is-ie .profile_comp .value select,
+      .is-ie .profile_comp .value textarea, .is-ie .vacancy-view .value input,
+      .is-ie .vacancy-view .value textarea
+         {
+         margin: -7px 0 -6px;
+         padding: 6px 4px 5px 4px;
+         }
+      .is-ie #profile #profile-header .value input, 
+      .is-ie .profile_comp .profile_comp-header .value input
+         {
+         margin: -11px -4px -5px 0;
+         }
+      .is-ie #profile #profile-header .value select,
+      .is-ie .profile_comp .profile_comp-header .value select 
+         {
+         margin: -14px -4px -5px 0;
+         }
+      .is-ie #profile #work h4 input
+         {
+         margin: -5px 0 -4px;
+         padding: 5px 5px 5px 4px;
+         }
+      .is-ie #profile #work input,
+      .is-ie #profile #educ input,
+      .is-ie #profile #work select,
+      .is-ie #profile #educ select
+         {
+         margin: -9px 0 -5px;
+         padding: 6px 4px 5px 4px;
+         }
+      .is-ie .employees.main #list-items .person_card 
+         {
+         width: 100%;
+         }
+      .is-ie .contacts_view.listview #list-items a 
+        {
+        height: 100%;
+        }
+   * html #view_changes .vote,
+   * html #im_view .cont .vote 
+      {
+      display: inline-block;
+      }
+   *+html #view_changes .vote,
+   *+html #im_view .cont .vote 
+      {
+      display: inline-block;
+      }
+/* invites */
+.ie6 #invite_form ul
+   {
+   margin: 0 12px;
+   }
+.ie7 #invite_form ul
+   {
+   margin: 0 30px;
+   }
+.ie6 #invite_form .handmade .person .row li input 
+   {
+   margin-left: -15px;
+   }
+      

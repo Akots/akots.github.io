@@ -1,0 +1,226 @@
+/*
+Title: Lists items style
+*/
+
+.shop-items {
+   overflow: hidden;
+   margin-right: -16px;
+   }
+   .shop-items .item {
+      position: relative;
+      overflow: hidden;
+      width: 276px;
+      float: left;
+      margin: 0 14px 27px 0;
+      }
+   .shop-items li.item {
+      display: -moz-inline-stack;
+      display: inline-block;
+      vertical-align: top;
+      float: none;
+      }
+      .item .header {
+         background: transparent;
+         color: #CA215A;
+         font: 3em/1em Georgia, "Times New Roman", serif;
+         position: absolute;
+         top: 10px;
+         left: 13px;
+         }
+         .item .header span {
+            color: #000;
+            font-size: 20px;
+            display: block;
+            }
+      .item .outer {
+         background-color: #FFF;
+         background-repeat: no-repeat;
+         background-position: 0 100%;
+         border: 1px solid #C9C9C9;
+         border-bottom: none;
+         height: 207px;
+         }
+      .no-foot .outer {
+         border: 1px solid #C9C9C9;
+         }
+      .shop-items .more {
+         background: url('../i/bg-item-more.png') 0 0 no-repeat;
+         position: absolute;
+         right: 1px;
+         bottom: 29px;
+         z-index: 5;
+         width: 81px;
+         height: 26px;
+         padding: 4px 0 0 24px;
+         }
+         .shop-items .more a {
+            background: url('../i/ic-more-str.png') 0 8px no-repeat;
+            color: #FFF;
+            display: block;
+            font: bold 1.5em/1.5em Georgia, "Times New Roman", serif;
+            text-decoration: none;
+            padding-left: 12px;
+            }
+      .item .footer {
+         background: url('../i/bg-shopit-foot-repeat.png') 0 0 repeat-x;
+         border-top: 1px solid #D4D4D4;
+         height: 28px;
+         position: relative;
+         overflow: hidden;
+         padding: 0 8px 0 16px;
+         }
+         .item .footer .select-cat {
+            background: url('../i/ic-select-cat.png') 100% 1px no-repeat;
+            display: block;
+            cursor: pointer;
+            color: #010101;
+            font: 1.1em Arial, Tahoma, sens-serif;
+            z-index: 100;
+            position: relative;
+            margin-top: 2px;
+            padding: 3px 0;
+            }
+         .item .footer .select-cat:hover {
+            color: #555;
+            }
+      .item .cn {
+         background: url('../i/bg-grey-corners.png') 0 0 no-repeat;
+         width: 30px;
+         height: 30px;
+         position: absolute;
+         z-index: 10;
+         }
+      .item .cn.bl,
+      .item .cn.br {
+         background: url('../i/bg-lightgrey-corners-bot.png') 0 0 no-repeat;
+         height: 28px;
+         bottom: 0;
+         }
+      .no-foot .item .cn {
+         background: url('../i/bg-grey-corners.png') 0 0 no-repeat;
+         height: 30px;
+         }
+      .item .cn.tl {
+         left: -15px;
+         top: -15px;
+         }
+      .item .cn.tr {
+         right: -15px;
+         top: -15px;
+         }
+      .item .cn.bl {
+         left: -15px;
+         }
+      .item .cn.br {
+         right: -15px;
+         }
+   .shop-items .banner,
+   .shop-items .preview {
+      float: none;
+      width: 570px;
+      }
+   .shop-items .banner {
+      margin-bottom: 20px;
+      }
+      .shop-items .banner .more,
+      .shop-items .preview .more {
+         bottom: 1px;
+         }
+      .banner .outer {
+         background-color: #F5C5C6;
+         background-position: 0 100%;
+         border: 1px solid #E08BA2;
+         height: 186px;
+         }
+      .preview .outer {
+         border-bottom: 1px solid #C9C9C9;
+         height: 93px;
+         }
+   .banner .cn, .banner .cn.br, .banner .cn.bl {
+      background: url('../i/bg-pink-corners.png') 0 0 no-repeat;
+      height: 32px;
+      }
+   .banner .cn.tl {
+      top: -16px;
+      }
+   .banner .cn.tr {
+      right: -16px;
+      top: -16px;
+      }
+   .banner .cn.bl {
+      bottom: -16px;
+      }
+   .banner .cn.br {
+      bottom: -16px;
+      }
+
+   .grouped-by-cats .cat-header {
+      border-bottom: 2px solid #CA215A;
+      color: #CA215A;
+      font: italic 2.4em/1em Georgia, "Times New Roman", serif;
+      letter-spacing: -0.005em;
+      padding: .3em 0 .8em;
+      }
+   .grouped-by-cats {
+      margin-right: 0 !important;
+      }
+   .grouped-by-cats ul {
+      overflow: hidden;
+      margin: .3em 0 1.2em;
+      }
+      .grouped-by-cats ul li.item {
+         background: #FFF url('../i/bg-item-ornament.png') 0 100% no-repeat;
+         margin-right: -2px;
+         }
+      .three-items .item {
+         width: 190px;
+         }
+         .three-items .item .outer {
+            background-position: 65% 33%;
+            height: 235px;
+            }
+      .four-items .item {
+         width: 142px;
+         }
+         .four-items .item .outer {
+            background-position: 40% 40%;
+            height: 245px;
+            }
+         .grouped-by-cats .item .outer {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #C9C9C9;
+            }
+         .grouped-by-cats .item .header {
+            font-size: 2.2em;
+            font-style: italic;
+            }
+         .item-descr {
+            color: #585858;
+            font-size: 1.2em;
+            line-height: 1.3em;
+            position: absolute;
+            top: 170px;
+            margin: 0 0 0 10px;
+            }
+         .three-items .item .item-descr {
+            margin: 0 0 0 23px;
+            }
+            .item-descr a:link, .item-descr a:active, .item-descr a:visited {
+               color: #585858;
+               }
+         .grouped-by-cats .more {
+            background: url('../i/bg-item-more.png') 0 0 no-repeat;
+            position: absolute;
+            right: 0;
+            bottom: 1px;
+            z-index: 5;
+            width: 60px;
+            height: 17px;
+            padding: 3px 0 0 26px;
+            }
+            .grouped-by-cats .more a {
+               background: url('../i/ic-more-small-str.png') 0 5px no-repeat;
+               font: bold 1em/1.5em Georgia, "Times New Roman", serif;
+               padding-left: 9px;
+               }

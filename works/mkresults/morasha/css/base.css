@@ -1,0 +1,318 @@
+/*
+Author: Kotsuruba Alexander
+Version:  8.10.09
+*/
+/* Colors
+   #666- black
+   #0197FE - blue
+   #FF7F00 - orange */
+   
+*{ font-size: 100.01%; padding: 0; margin: 0; }
+body {
+   background: #FFF;
+   color: #000;
+   font-size: 67%;
+   line-height: 1;
+   font-family: Tahoma, Arial, Helvetica, sans-serif;
+   overflow: hidden;
+}
+
+/* =The Begining of the End (default styles)
+----------------------------------------------- */
+.clear {clear: both;}
+ul {list-style-type: none;}
+a:link, a:active, a:visited { color: #FF7F00; }
+   a:hover { color: #333; text-decoration: none; }
+a:link *, a:visited * { cursor: pointer; }
+
+acronym, abbr { border-bottom: 1px dotted #666;	cursor: help; }
+
+table { border: 0; border-collapse: collapse; }	table td { padding: 0; }
+textarea { font-family: Tahoma, Arial, Geneva, Helvetica, sans-serif; } 
+fieldset, img, a img { border: none; border: 0; }
+img { color:#06C; font-size: 1.2em; }
+legend {	display: none; }
+label { cursor: pointer; }
+.inputbox {
+   border: 1px solid #848484;
+   font-size: 1.3em;
+   padding: 2px 0 2px 1px;
+   }
+   .inputbox:focus {
+      border: 1px solid #666;
+      }
+
+.button {
+   font-size: 1.3em;
+   letter-spacing: -0.001em;
+   text-transform: uppercase;
+   cursor: pointer;
+   text-align: left;
+}
+input.button {
+   color: #FFF;
+   border: none;
+   }
+.button:link, .button:active, .button:visited {
+   color: #FFF;
+   text-decoration: none;
+   }
+.button:hover {
+   color: #DFDFDF;
+   }
+.button.red {
+   background: url('../images/bg-button-red.png') 0 0 no-repeat;
+   padding: 7px 32px 9px 10px;
+   }
+.button.grey {
+   background: url('../images/bg-button-grey.png') 0 0 no-repeat;
+   font-size:1.2em;
+   letter-spacing: -0.03em;
+   padding: 4px 32px 9px 6px;
+   }
+   
+.pseudo { border-bottom: 1px dotted; cursor: pointer; text-decoration: none !important; }
+.ta-ctr { text-align: center; }
+.fsz-norm { font-size: 1.1em; }
+.fsz-bigger { font-size: 1.2em; }
+.fsz-smaller { font-size: 1em; }
+.grey { color: #666;	}
+
+/* =General styles
+----------------------------------------------- */
+#wrapper {
+   position: absolute;
+   overflow: auto;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 10;
+   }
+.bg-screen {
+   width: 100%;
+   height: auto;
+   overflow-y: hidden;
+   }
+.bg-dotted {
+   background: transparent url('../images/bg-body-dotted.gif') 0 0 repeat;
+   position: fixed;
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 1;
+   }
+   /* =Header(logo,menu...)
+   ----------------------------------------------- */
+   #header {
+      background: #FFF;
+      border-top: 2px solid #576383;
+      border-bottom: 2px solid #576383;
+      overflow: hidden;
+      margin: 48px 0 34px;
+      padding: 10px 0 15px 34px;
+      }
+      #logo {	
+         background: url(../images/logo.png) 0 0 no-repeat;
+         color: #0057A7;
+         display: inline;
+         font-size: 1.6em;
+         float: left;
+         width: 155px;
+         height: 46px;
+         text-decoration: none;
+         text-indent: -9000px;
+         margin: 0 68px 2px 19px;
+         }
+      
+         .top-menu {
+            height: 28px;
+            margin: 20px 0 0 58px;
+            }
+            .top-menu li {
+               display: inline-block;
+               overflow: hidden;
+               margin-right: 14px;
+               }
+               .top-menu a {
+                  background: url('../images/ic-str.gif') 3px -1000px no-repeat;
+                  font-size: 1.3em;
+                  font-family: "Trebuchet MS";
+                  letter-spacing: -0.005em;
+                  word-spacing: -0.01em;
+                  text-transform: uppercase;
+                  padding-left: 14px;
+                  }
+               .top-menu a:link, .top-menu a:active, .top-menu a:visited {
+                  color: #010101;
+                  text-decoration: none;
+                  }
+               .top-menu a:hover {
+                  background-position: 0 3px;
+                  }
+               .top-menu .active:link, .top-menu .active:active, .top-menu .active:visited, .top-menu .active:hover {
+                  background-position: 0 3px;
+                  }
+
+   /* =Content(main)
+   ----------------------------------------------- */
+   #main {
+      width: 970px;
+      margin-left: 33px;
+      }
+      h2 {
+         font-size: 2.7em;
+         font-family: "Myriad Pro";
+         }
+      h3 {
+         
+         }
+      /************Lates projects************/
+      .lates-project {
+
+         }
+         .header {
+            color: #FFF;
+            border-bottom: 4px solid #FFF;
+            font-weight: normal;
+            letter-spacing: -0.005em;
+            }
+         .lates-project .header {
+            padding-bottom: 9px;
+            margin-bottom: 32px;
+            }
+         .lates-project .preview {
+            text-align: center;
+            padding-right: 32px;
+            }
+
+         .button.black {
+            background: url('../images/bg-button-black.png') 0 0 no-repeat;
+            padding: 8px 42px 9px 18px;
+            }
+         .lates-project .preview .button.black {
+            float: right;
+            }
+      /************Windgets****************/
+      .widgets {
+         overflow: hidden;
+         position: relative;
+         margin: 74px -24px 0 0;
+         }
+         .widget {
+            width: 303px;
+            float: left;
+            margin-right: 24px;
+            -moz-box-shadow: 3px 3px 15px #000;
+            -webkit-box-shadow: 3px 3px 15px #000;
+            box-shadow: 3px 3px 15px #000;
+            }
+            .widget .header {
+               background-position: 0 0;
+               background-repeat: no-repeat;
+               border: none;
+               height: 43px;
+               font-size: 14px;
+               text-indent: -9000px;
+               text-transform: uppercase;
+               padding-left: 44px;
+               }
+            .widget .inner {
+               background: url('../images/bg-widjet-transprt.png') 0 0 repeat;
+               font-family: "Trebuchet MS", Tahoma, sans-serif;
+               height: 120px;
+               overflow: hidden;
+               padding: 12px 10px;
+               }
+               .widget .inner h4 {
+                  font-size: 16px;
+                  font-weight: normal;
+                  margin-bottom: 12px;
+                  }
+               .widget .inner p {
+                  font-size: 1.1em;
+                  line-height: 1.4em;
+                  }
+               .widget .inner .photo {
+                  border: 3px solid #B0B0B0;
+                  -moz-border-radius: 3px;
+                  -webkit-border-radius: 3px;
+                  border-radius: 3px;
+                  }
+                  .widget .inner .photo img {
+                     display: block;
+                     }
+               .widget .inner .photo:hover {
+                  border-color: #0057A7;
+                  }
+            .lates .header {
+               background-image: url('../images/bg-header-lates_on_our_blog.png');
+               }
+            .lates .inner {
+               border-bottom: 3px solid #27A400;
+               }
+               .lates .inner h4 {
+                  margin-bottom: 19px;
+                  }
+               .lates .inner .photo {
+                  float: left;
+                  margin-right: 17px;
+                  }
+            .photos .header {
+               background-image: url('../images/bg-header-photo_gallery.png');
+               }
+            .photos .inner {
+               border-bottom: 3px solid #017B9E;
+               padding-left: 14px;
+               padding-right: 0;
+               }
+               .photos .inner .photo {
+                  float: left;
+                  margin: 0 15px 9px 0;
+                  }
+            
+            /************Subscribe***********/
+            .subscribe .header {
+               background-image: url('../images/bg-header-get_involved.png');
+               }
+            .subscribe .inner {
+               border-bottom: 3px solid #BE0000;
+               text-align: right;
+               padding-right: 21px;
+               }
+               .subscribe .input {
+                  margin-bottom: 13px;
+                  }
+                  .subscribe .input label {
+                     color: #3B3B3B;
+                     font-size: 1.4em;
+                     padding-right: 3px;
+                     }
+                  .subscribe .input .inputbox {
+                     padding: 5px 0 5px 3px;
+                     }
+
+/* =Footer
+----------------------------------------------- */	
+#footer {
+   float: left;
+   margin-top: 3px;
+   padding: 10px 7px 9px 7px;
+   clear: both;
+   }
+   .logo-copyrights {
+      background: url(../images/logo_bottom.gif) 0 0 no-repeat;
+      font-size: 1.2em;
+      line-height: 1.3em;
+      height: 31px;
+      padding: 0 0 0 210px;
+      }
+   .links {
+      float: right;
+      font-size: 1.2em;
+      padding: 5px 0 0 0;
+      }
+      .links a {
+         margin-left: 4px;
+         }

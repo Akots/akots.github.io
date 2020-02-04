@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+   
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+   <title>SiteManager Admin tools</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Language" content="en" />
+   <meta name="description" content="" />
+   <meta name="keywords" content="" />
+   <meta name="robots" content="all" />
+   <link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />
+   <link rel="stylesheet" type="text/css" href="css/admin_base.css" media="all" />
+
+   <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="css/admin_ie.css" media="all" /><![endif]-->
+</head>
+
+<body>
+<!-- BEGIN #wrapper -->
+<div id="wrapper" >
+   <div class="login">
+      <h1 id="logo"><a title="Go on Startup page" href="#">Site Manager </a></h1>
+      <form class="form-cont" action="#" method="get">
+         <div class="message mes-error">Invalid Login or password</div>
+         <div class="field"><div class="label"><label for="sign-login">Login / E-mail</label></div>
+            <input type="text" maxlength="50" name="login" id="sign-login" class="inputbox" /></div>
+            
+         <div class="field">
+            <div class="label">
+            <label for="sign-password">Password</label> <a class="forgote-pas" href="#">Forgot Password?</a></div>
+            <input type="password" maxlength="50" name="password" id="sign-password" class="inputbox" />
+            <label for="sign-password" class="error">Password is incorrect</label>
+         </div>
+            
+         <div class="field">
+            <label class="checkbox" for="remember_me"><input type="checkbox" checked="checked" id="remember_me" value="1" name="remember_me" /> Remember me</label>
+         </div>
+         
+         
+         <div class="field capcha">
+            <img src="images/img-capcha.png" width="83" height="43" alt="Img Capcha" />
+            <label for="captcha-input">Enter the code:</label>
+            <input type="hidden" value="81abfc3504108b34f78edb6fe79c0fb9" id="captcha-id" name="captcha[id]" />
+            <input maxlength="4" type="text" class="inputbox" value="" id="captcha-input" name="captcha[input]" />
+            <label class="error" for="captcha-input">Please enter the verification code.</label>
+         </div>
+         
+         <div class="submit">
+               <button class="button yellow"><span>Login</span><i></i></button>
+         </div>
+      </form>
+   </div>
+</div>
+<!-- END #wrapper -->
+
+</body>
+</html>

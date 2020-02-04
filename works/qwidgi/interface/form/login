@@ -1,0 +1,28 @@
+<form class="auth_form" action="" method="post">
+<p> Qwidgi - это социальный проект, который облегчает людям использование различных онлайн-сервисов в единой системе.</p>
+<ul>
+   <li class="first">Подробно</li>
+   <li>Видео тур</li>
+   <li><a href="#faq">FAQ</a></li>
+</ul>
+</p>
+<div class="auth_div">
+   <div class="input">
+      <label for="usermail" class="label">E-mail: </label><input id="usermail" maxlength="360" class="email" name="email" type="text" tabindex="1" />
+   </div>
+   <div class="input">
+      <label for="userpassword" class="label">Пароль:</label><input maxlength="50" id="userpassword" class="password" name="password" type="password" tabindex="2" />
+      <span class="remind"><a class="remind-link ajax" href="javascript:void(0);" tabindex="5">Забыли пароль?</a></span>
+   </div>
+   <div class="tools">
+      <div class="checkbox">
+        <label for="remember"><input id="remember" class="remember" type="checkbox" name="remember" tabindex="3" />
+        Запомнить меня</label>
+      </div>
+   </div>
+</div>
+<div class="submit"><div class="message"></div><input class="submit_button" type="submit" value="Вход" tabindex="4" /></div>
+
+
+</form>
+

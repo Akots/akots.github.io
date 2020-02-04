@@ -1,0 +1,52 @@
+/************Content***********/
+.content .shw.rgt {
+   background: url(../images/bg-main-shw-rgt.png) 100% 0 repeat-y;
+   }
+.content .shw.bot {
+   background: url(../images/bg-main-shw-bot.png) 0 100% no-repeat;
+   padding-bottom: 7px;
+   }
+.content .inner-bg {
+   background: url(../images/bg-main-transprt.png) 0 0 repeat;
+   margin: 0 6px 0 0;
+   padding: 24px 40px 12px 33px;
+   }
+
+.content h2.header {
+   text-transform: uppercase;
+   margin-right: 6px;
+   padding-bottom: 9px;
+   }
+.hentry {
+   overflow: hidden;
+   margin-bottom: 26px;
+   }
+   .hentry .header {
+      border-bottom: 2px solid #B5B4B5;
+      color: #000;
+      font: normal 3.9em Georgia, "Times New Roman", serif;
+      margin-bottom: 19px;
+      padding-bottom: 11px;
+      }
+   .hentry .entry-content {
+      font: normal 1.4em/1.4em "Trebuchet MS", Tahoma, sans-serif;
+      }
+      .hentry .entry-content p {
+         margin-bottom: 1.4em;
+         }
+
+   .more {
+      text-align: right;
+      margin-top: 10px;
+      }
+      .more .button {
+         float: right;
+         padding-top: 6px;
+         }
+
+/*Content List styles*/
+.list .hentry .photo,
+.single-entry .hentry .fl-lft {
+   float: left;
+   margin: 0 32px 18px 0;
+   }

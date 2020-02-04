@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/*
+Title:  Styles for IE
+*/
+
+/**
+* Knowing bugs
+*************************************************/
+
+  /* Fixes IE5.x and IE6 overflow behavior of textarea and input elements elements */
+  * html textarea { overflow: scroll; overflow-x: hidden; }
+  * html input { overflow: hidden; }
+
+
+  /*Disabled! Fixes with 'position: relative' *
+   body,
+  #main { position: relative; }
+  * html body { position: static; }
+  */
+
+
+  /*Clearing*/
+  .clearfix { display:  inline-block; }  /* ... especial for IE7 */
+  .clearfix { display:  block; }      /* ... für IE5,IE6,IE7 */
+  * html .clearfix { height:  1%; }   /* ... für IE5 + IE6/Win | hasLayout aktivieren */
+
+  /*.floatbox { width: 100%; }*/
+
+
+  /*Disabled! Preventing several css bugs by forcing "hasLayout" */
+  /* body { height: 1%; }*/
+  /* .page_margins, .page, #header, #nav, #main, #footer { zoom: 1; } */ /* IE6 & IE7 */
+  /* * html #header, * html #main, * html #footer { width: 100%; wid\th: auto; } */  /* IE 5.x & IE6 | IE6 only */
+
+
+  /*Disappearing List-Background Bugs*/
+  * html ul, * html ol, * html dl { position: relative; }
+
+
+  /*Disabled! List-Numbering Bug */
+  /* body ol li { display: list-item; } */
+
+  /* Form related bugfixes */
+  fieldset, legend { position: relative; }
+
+/**********************************************************/
+header .description,
+nav a,
+.portfolio-slider .header,
+footer dt,
+article h2,
+.form-cont legend,
+.work .summary {
+   font-family: Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   }
+* html .ic-sun {
+   position: absolute;
+   }
+nav a {
+   zoom: 1;
+   }
+
+*+html nav .toggle-lang {
+   line-height: 2.5em;
+   }
+* html nav .toggle-lang {
+   margin: 4px 0 0;
+   }
+* html .portfolio-slider .preview {
+   height: 226px;
+   }
+.portfolio-slider .summary {
+   background-color: #171B1B;
+   }
+* html .portfolio-slider .summary {
+   display: block;
+   }
+
+* html article.about ul li,
+* html article .unmarked li {
+   list-style: none inside;
+   zoom: 1;
+   }
+* html article .unmarked li {
+   margin-left: -8px;
+   }
+* html .works-list .work,
+* html .bg-shadow-wrap {
+   zoom:1;
+   }
+*+html .works-list {
+	padding-bottom: 5px;
+	}

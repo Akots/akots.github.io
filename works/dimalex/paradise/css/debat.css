@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/*Styles for Debat pages*/
+
+.debat #sidebar {
+   margin-top: 8px;
+   }
+   
+#content.with-shadow .inner {
+   background-color: #EAF8FD;
+   }
+#content .bg-inner {
+   padding: 12px 9px 12px 12px;
+   }
+
+.debat #content .intro {
+   line-height: 1.4em;
+   border-bottom: 1px solid #D5E0E4;
+   margin-bottom: 15px;
+   padding-bottom: 14px;
+   }
+.debat #content .description {
+   width: 375px;
+   margin-bottom: 22px;
+   }
+.intro .create-debat {
+   background: url('../images/imgs/img-opret-debat.png') 100% 100% no-repeat;
+   float: right;
+   width: 210px;
+   margin-right: -9px;
+   padding-bottom: 19px;
+   }
+   .intro .create-debat .header {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      }
+   .intro .create-debat p {
+      font-size: .9em;
+      line-height: 1.5em;
+      margin-right: 73px;
+      }
+.change-view label {
+   font-size: 1.2em;
+   margin-right: 12px;
+   }
+.change-view .inputbox {
+   width: 180px;
+   }
+.debat .info {
+   color: #656565;
+   font-size: .8em;
+   margin: 5px 0 0 318px;
+   }
+.debat .comments {
+   width: 512px;
+   }
+.comments-list .header {
+   font-weight: bold;
+   }
+.hentry {
+   background: none;
+   padding-left: 8px;
+   padding-right: 10px;
+   padding-bottom: 0;
+   }
+   .hentry li {
+      border: none;
+      }
+.debat .hentry .who a:link, .debat .hentry .who a:active, .debat .hentry .who a:visited {
+   color: #C1062D;
+   }
+.debat .hentry .date {
+   color: #656565;
+   }
+.debat-panel {
+   background: #DEEBF0;
+   border-bottom: 1px solid #BBC6CA;
+   color: #DEEBF0;
+   overflow: hidden;
+   padding: 8px 6px;
+   }
+   .debat-panel a {
+      font-weight: bold;
+      }
+   .debat-panel .toogle-discuss {
+      float: right;
+      }
+   .debat-panel .all-discusses {
+      background: url('../images/ic-str-black-rgt.png') 100% 50% no-repeat;
+      padding-right: 13px;
+      }
+   .toogle-discuss.collapse {
+      background: url('../images/ic-str-black-up.png') 100% 50% no-repeat;
+      padding-right: 15px;
+      }
+   .toogle-discuss.expand {
+      background: url('../images/ic-str-black-down.png') 100% 50% no-repeat;
+      padding-right: 15px;
+      }
+   .debat-panel a:link, .debat-panel a:active, .debat-panel a:visited, 
+   .list-discusses a:link, .list-discusses a:active, .list-discusses a:visited {
+      color: #000;
+      }
+.list-discusses {
+   margin-bottom: 20px;
+   }
+   .list-discusses li {
+      border-bottom: 1px solid #BBC6CA;
+      overflow: hidden;
+      padding: 14px 8px;
+      }
+      .debat .list-discusses .info {
+         margin: 0 0 10px 306px;
+         }
+      .list-discusses .header {
+         font-size: 1.2em;
+         }
+      .list-discusses .toogle-discuss {
+         font-weight: bold;
+         float: right;
+         }
+/*Create debat form*/
+.create-debat .input {
+   padding-left: 8px;
+   }
+.create-debat .select,
+.create-debat .image {
+   border-bottom: 1px solid #D5E0E4;
+   padding-bottom: 12px;
+   }
+.create-debat .input label {
+   font-size: 1.2em;
+   font-weight: bold;
+   }
+.create-debat .input .checkbox {
+   font-size: 1em;
+   font-weight: normal;
+   }
+.create-debat .input select.inputbox {
+   width: 175px;
+   }
+.create-debat .input input.inputbox,
+.create-debat .input textarea.inputbox {
+   width: 488px;
+   }
+   .create-debat .button.opret-debat {
+      display: block;
+      margin-top: 20px;
+      }

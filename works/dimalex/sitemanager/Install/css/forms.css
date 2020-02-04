@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/*
+Title: Forms
+***********
+*/
+.inputbox {
+   border: 1px solid #B8BCBF;
+   font-size: 1em;
+   vertical-align: middle;
+   padding: .35em 0 .3em .3em;
+   
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   box-shadow: inset 1px 1px 0px rgba(78,84,86,0.7);
+   -moz-box-shadow: inset 1px 1px 0px rgba(78,84,86,0.7);
+   -webkit-box-shadow: inset 1px 1px 0px rgba(78,84,86,0.7);
+   }
+.inputbox:focus {
+   border-color: #8BD5EC;
+   box-shadow: 0 0 3px #8BD5EC;
+   -moz-box-shadow: 0 0 3px #8BD5EC;
+   -webkit-box-shadow: 0 0 3px #8BD5EC;
+   }
+button {
+   background: url('../images/bg-buttons.png') 0 0 no-repeat;
+   border: none;
+   color: #004E6E;
+	overflow: visible;
+   cursor: pointer;
+   position: relative;
+   vertical-align: middle;
+   font: bold 1.4em/26px 'TitilliumMaps29L999wt', Arial, sans-serif;
+   letter-spacing: -0.04em;
+   white-space: nowrap;
+   text-shadow: 1px 1px 0 #ADDEF3;
+   text-shadow: 1px 1px 0 rgba(207,239,255,.65);
+   width: 81px;
+   height: 26px;
+   }
+   button i {
+      background: url('../images/ics-str.png') 0 5px no-repeat;
+      }
+button.back {
+   font: normal 1.4em/26px 'TitilliumMaps29L400wt', Arial, sans-serif;
+   }
+   button.back i {
+      margin-left: -4px;
+      padding-left: 16px;
+      }
+button:active {
+   background-position: 0 -35px;
+   -ms-background-position-x: 1px;/*For IE 8 compinsate 1px click*/
+	-ms-background-position-y: -34px;
+   }
+button.next i {
+   background-position: 100% -30px;
+   margin-right: -4px;
+   padding-right: 17px;
+   }
+
+button.finish {
+   background-position: 0 -72px;
+   color: #085500;
+   width: 73px;
+   text-shadow: 1px 1px 1px #9BDDC2;
+   text-shadow: 1px 1px 1px rgba(207,239,255,.65);
+   }
+button.finish:active {
+   background-position: 0 -106px;
+   }
+
+.error { color: #F00; }
+
+.message-error {
+   border: 1px solid #F00;
+   color: #F00;
+   margin: .5em 0 .8em;
+   padding: .5em;
+   }
+.form-cont .field {
+   width: 15.5em;
+   padding-bottom: 1em;
+   }
+   .form-cont .required label {
+      font-weight: bold;
+      }
+   .form-cont label {
+      display: inline-block;
+      margin: 0 0 .3em .45em;
+      }
+   .form-cont .error { color: #F00; margin: .2em 0 0 .45em; }
+   .form-cont label input {
+      vertical-align: -2px;
+      }
+   .form-cont .inline {
+      display: inline-block;
+      }
+   .form-cont .inputbox {
+      width: 15em;
+      }
+   .form-cont textarea.inputbox {
+      width: 28em;
+      }
+   .form-cont textarea.code-inp {
+      font-family: "Courier New";
+      width: 40em;
+      min-height: 20em;
+      }
+   .form-cont .required {
+      background: url('../images/ic-required.png') 100% 0 no-repeat;
+      padding-right: .5em;
+      }
+   .buttons {
+      clear: both;
+      text-align: right;
+      overflow: hidden;
+      margin: 15px 0 0;
+      padding: 19px 12px 10px 0;
+      }
+      .buttons button {
+         margin-left: 11px;
+         }

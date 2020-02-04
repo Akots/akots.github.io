@@ -1,0 +1,68 @@
+#remind {
+	background: #fff;
+	padding: 0;
+	margin: 0;
+	z-index: 20;
+	/*position: absolute;*/
+	height: 300px;
+}
+
+#remind h3 {
+	font-size: 1.4em;
+	padding: 0;
+	margin: 0 0 25px 0;
+}
+
+#login-box #remind table
+{
+	width:auto;
+}
+
+#remind .label {
+	text-align: right;
+	padding: 5px 0 0 0;
+}
+
+#remind .input {
+	padding: 0 0 0 15px;
+	vertical-align: top;
+	height: 50px;
+	min-height: 50px;
+}
+
+#remind .input input {
+	width: 225px;
+}
+
+#remind .row {
+	text-align: right;
+	padding: 5px 0;
+}
+
+#remind .submit {
+	padding: 15px 0 0 0;
+}
+
+#remind div.error {
+	font-size: 0.9em;
+	color: #f00;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+
+#remind .message {
+	background: #FFE5B2;
+	border: 1px solid #FFB27F;
+	color: #666;
+	text-align: center;
+	font-weight: normal;
+	font-size: 0.9em;
+	margin: 0;
+	padding: 2px 0;
+	display: none;
+	width: 150px;
+	height: 20px;
+	line-height: 20px;
+	position: absolute;
+}

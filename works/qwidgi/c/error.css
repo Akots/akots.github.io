@@ -1,0 +1,94 @@
+body, html {
+	margin:0;
+   padding:0;
+   background-color:#1f2726;
+   width:100%;
+   font-family:"Arial";
+   font-size:12px;
+   color:#c2c4c4;
+}
+a{
+   color:#42acff;
+}
+a img{
+   border:none;
+}
+h1{
+   margin:0;
+   padding:35px 0;
+   font-size:23px;
+   color:#fff;
+}
+.hr{
+   height: 1px;
+   line-height:1px;
+   border-bottom: 1px solid #2b302f;
+   padding:0;
+   margin:10px 0;
+   width:100%;
+}
+.clear{
+   height:1px;
+   width:100%;
+   clear:both;
+   display:block;
+}
+#wrapper{
+   margin:150px auto 0 auto;
+   width:550px;
+}
+   #logo{
+      height:55px;
+      width:100%;
+      background:transparent url(/i/logo_err.png) no-repeat scroll 0 0;
+      padding:0 0 15px 0;
+   }
+   #main{
+      width:480px;
+      background-color:#191f1e;
+      padding:0 35px 15px 35px;
+      position:relative;
+   }
+   #footer{
+      margin:10px 0;
+      font-size:11px;
+   }
+      #footer span{
+         color:#363d3c;
+         float:left;
+      }
+      #footer a{
+         color:#363d3c;
+         float:right;
+         margin:0 0 0 15px;
+         text-decoration:none;
+      }
+      #footer a:hover{
+         color:#FFF;
+      }
+      
+/**** Corners ****/
+
+.corner{
+   width:8px;
+   height:8px;
+   position:absolute;
+   font-size:1px;
+   background:transparent url(/i/corners.png) no-repeat;
+}
+   .l_top{
+      background-position:0 0;
+      top:0;
+      left:0;
+   }
+   .r_top{
+      background-position:-8px 0;
+      top:0;
+      right:0;
+   }
+   .l_bott{
+      background-position:0 -8px;
+      bottom:0;
+      _bottom:-1px;
+      left:0;
+   }

@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/*Styles for form elemetnts: inputs, buttons, etc.*/
+
+.inputbox {
+   border: 1px solid #000;
+   font-size: 1.1em;
+   padding: 2px 0 2px 1px;
+   vertical-align: middle;
+   }
+select.inputbox {
+   padding: 1px 0 1px 1px;
+   }
+input[type=checkbox] {
+   vertical-align: -2px;
+   }
+.button {
+   background: none;
+   border: 0;
+   cursor: pointer;
+   text-align: center;
+   font-weight: bold;
+   vertical-align: middle;
+   }
+.button.black,
+.button.medium-black,
+.button.big-black {
+   background: url('../images/bg-button-black.png') 0 0 no-repeat;
+   color: #FFF;
+   font-size: .9em;
+   width: 64px;
+   height: 23px;
+   padding: 0 3px 3px;
+   }
+.button.medium-black {
+   background: url('../images/bg-button-medium-black.png') 0 0 no-repeat;
+   width: 93px;
+   }
+.button.big-black {
+   background: url('../images/bg-button-big-black.png') 0 0 no-repeat;
+   width: 109px;
+   }
+.button.opret-debat {
+   background: url('../images/imgs/img-opret-debat.png') 0 0 no-repeat;
+   width: 73px;
+   height: 83px;
+   }
+.input {
+   overflow: hidden;
+   margin-bottom: 12px;
+   }
+   .input label {
+      float: left;
+      width: 125px;
+      }
+   .input .checkbox {
+      float: none;
+      }
+
+
+/*Create profile form*/
+.create-profile fieldset {
+   border-top: 1px solid #D2DFE4;
+   display: block;
+   position: relative;
+   padding: 6px 0 10px 12px;
+   }
+   .create-profile fieldset legend {
+      display: inline;
+      color: #000;
+      font-weight: bold;
+      margin: 0 0 0 -12px;
+      padding-bottom: 6px;
+      padding-right: 10px;
+      }
+   .create-profile .header {
+      font-size: 1em;
+      font-weight: normal;
+      margin-bottom: 10px;
+      }
+   .create-profile .upload-foto img {
+      float: left;
+      margin-right: 16px;
+      }
+   .create-profile .upload-foto ul {
+      margin: 88px 0 0;
+      }
+      .create-profile .upload-foto ul li {
+         line-height: 2em;
+         }
+   .create-profile .input input.inputbox {
+      width: 164px;
+      }
+   .create-profile .birthday .inputbox {
+      margin: 0 20px 0 5px;
+      }
+   .create-profile #day {
+      width: 45px;
+      }
+   .create-profile #month {
+      width: 95px;
+      }
+   .create-profile #year {
+      width: 65px;
+      }
+   .create-profile .rules {
+      margin-bottom: 30px;
+      }

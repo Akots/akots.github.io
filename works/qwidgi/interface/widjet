@@ -1,0 +1,45 @@
+[
+   {
+      id:80,
+      name:'im',
+      title:'Мои сообщения',
+      ico:'/i/widget/messages.png',
+      url:'im',
+      count:2
+   },
+   {
+      id:85,
+      name:'invite',
+      title:'Пригласить друга',
+      ico:'/i/widget/invite.png',
+      url:'invite',
+      cont:'/interface/form/invite'
+   },
+   {
+      id:8,
+      name:'guest',
+      title:'Гости',
+      ico:'/u/guest/preview',
+      url:'guest',
+      type:'list',
+      list:[
+         {id: 1, name: 'Петя Ростов'},
+         {id: 2, name: 'Вадим Алексеенко'},
+         {id: 3, name: 'Марина Степаненко'},
+         {id: 4, name: 'Оксана Конгун'},
+         {id: 5, name: 'Денис Сарконис'},
+         {id: 1, name: 'Тимофей Рябцев'},
+         {id: 2, name: 'Артем Анищенко'},
+         {id: 2, name: 'Вадим Алексеенко'},
+         {id: 3, name: 'Марина Степаненко'},
+         {id: 4, name: 'Оксана Конгун'},
+         {id: 5, name: 'Денис Сарконис'},
+         {id: 1, name: 'Тимофей Рябцев'},
+         {id: 2, name: 'Артем Анищенко'},
+         {id: 2, name: 'Вадим Алексеенко'},
+         {id: 3, name: 'Марина Степаненко'},
+         {id: 6, name: 'Петя Ростов'}
+      ],
+      num:18
+   }
+]

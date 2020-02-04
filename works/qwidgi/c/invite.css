@@ -1,0 +1,199 @@
+.invite
+{
+   margin: 0 auto;
+   width: 46em;
+   padding: 1.5em 0 1em 0;
+   font-size: 1.2em;
+}
+.invite h1,
+.invite h2,
+.invite p
+{
+   margin: 0.5em 0;
+}
+.invite p.intro
+{
+   margin: 0.5em 0 2.1em 0;
+}
+.invite fieldset
+{
+   margin: 0 0 0 8em;
+}
+.invite .hr
+{
+   border-bottom-style: dotted;
+}
+.invite div.result
+{
+   display: none;
+   width: 100%;
+   margin: 0 0 1em 0;
+   border-top: 1px dashed #fbb;
+   border-bottom: 1px dashed #fbb;
+   padding: 0 0.3em;
+   background: #fee;
+   text-align: left;
+}
+.invite div.status
+{
+   border-color: #aaa;
+   background: #f6f6f6;
+   color: #000;
+}
+.invite .req,
+.invite div.error,
+.invite span.error
+{
+   color: #f00;
+}
+
+#invite_form ul
+{
+   list-style-type: none;
+   margin:0 25px;
+}
+#invite_form h1
+{
+   text-align:center;
+}
+#invite_form li.out
+{
+   float: left;
+}
+
+#invite_form li.handmade
+{
+   display: block;
+   clear: both;
+   width: 100%;
+   text-align: center;
+   padding: 1em 0;
+}
+
+#invite_form .next
+{
+   width: 100%;
+   text-align: center;
+}
+
+#invite_form .handmade .person
+{
+   padding: 1em 0 0 0;
+}
+
+#invite_form .handmade .person .row
+{
+   display: table-row;
+}
+
+#invite_form .handmade .person .row li
+{
+   display: table-cell;
+   text-align:left;
+   margin: 0 0 10px 0;
+   padding:0 10px;
+}
+
+#invite_form .handmade .person .row li input
+{
+   font-size:1.4em;
+   margin:5px 0 0;
+   padding:3px;
+   width:8em;
+}
+
+#invite_form .handmade .person .row li .error
+{
+   min-height: 1.2em;
+}
+
+#invite_form .handmade .person .row li input
+{
+   display: block;
+   border:1px solid #cfc9b7;
+}
+#invite_form .handmade .person .add
+{
+   list-style-type: none;
+}
+
+#invite_form .bg-loading
+{
+   background: #fff url(/i/indicator-load.gif) 50% 50% no-repeat;
+}
+
+#invite_form .error
+{
+   font-size:0.8em;
+   text-align:center;
+}
+
+.outer-network,
+.outer-network .friends,
+.outer-network .report
+{
+   display: none;
+}
+.outer-network .auth .input
+{
+   margin: 0.6em 0;
+}
+.outer-network .auth label
+{
+   display: block;
+   float: left;
+   clear: left;
+   margin: 0.6em 0 0 0;
+   width: 6.5em;
+}
+.outer-network .auth fieldset div.error
+{
+   margin-left: 5.8em;
+}
+.outer-network .auth .submit
+{
+   margin-left: 9.2em;
+}
+.outer-network .bg-loading fieldset
+{
+   background: #fff url(/i/loading.gif) 82% 50% no-repeat;
+}
+.outer-network .list label
+{
+   display: block;
+   margin: 0.2em 0 0.2em 8em;
+}
+.outer-network .list li
+{
+   margin: 0.2em 0 0.2em 8em;
+   min-height: 16px;
+}
+.outer-network .list input
+{
+   margin-right: 0.5em;
+}
+.outer-network .list .status
+{
+   display: block;
+   float: right;
+   clear: none;
+   margin: 0 2em 0 1em;
+}
+.outer-network .list .bg-loading
+{
+   background: #fff url(/i/loader.gif) 100% 0 no-repeat;
+}
+.outer-network .template
+{
+   margin: 0.7em 2em 0.7em 3.5em;
+   padding: 0.3em 2em;
+   background: #f6f6f6;
+}
+.outer-network .friends .submit
+{
+   margin-left: 9.5em;
+}
+.outer-network .report div.result
+{
+   margin: 1em 0;
+}

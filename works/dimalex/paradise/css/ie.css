@@ -1,0 +1,233 @@
+@charset "UTF-8";
+/*
+Title:  Styles for IE
+*/
+
+/**
+* Knowing bugs
+*************************************************/
+
+  /* Fixes IE5.x and IE6 overflow behavior of textarea and input elements elements */
+  * html textarea { overflow: scroll; overflow-x: hidden; }
+  * html input { overflow: hidden; }
+
+
+  /*Disabled! Fixes with 'position: relative' *
+   body,
+  #main { position: relative; }
+  * html body { position: static; }
+  */
+
+
+  /*Clearing*/
+  .clearfix { display:  inline-block; }  /* ... especial for IE7 */
+  .clearfix { display:  block; }      /* ... für IE5,IE6,IE7 */
+  * html .clearfix { height:  1%; }   /* ... für IE5 + IE6/Win | hasLayout aktivieren */
+
+  /*.floatbox { width: 100%; }*/
+
+
+  /*Disabled! Preventing several css bugs by forcing "hasLayout" */
+  /* body { height: 1%; }*/
+  /* .page_margins, .page, #header, #nav, #main, #footer { zoom: 1; } */ /* IE6 & IE7 */
+  /* * html #header, * html #main, * html #footer { width: 100%; wid\th: auto; } */  /* IE 5.x & IE6 | IE6 only */
+
+
+  /*Disappearing List-Background Bugs*/
+  * html ul, * html ol, * html dl { position: relative; }
+
+
+  /*Disabled! List-Numbering Bug */
+  /* body ol li { display: list-item; } */
+
+  /* Form related bugfixes */
+  fieldset, legend { position: relative; }
+
+/**********************************************************/
+* html body {
+   width: 100%;
+   height: 100%;
+   }
+.button.black,
+.button.medium-black,
+.button.big-black {
+   padding: 1px 3px 4px;
+   }
+* html .outer-bg-repeat-top {
+   display: none;
+   }
+* html .outer-bg-top {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   }
+* html .main-menu li, * html .sub-menu li {
+   m: expression(!this.a ?
+      (this.a=1, ( this.previousSibling ? false : this.className = 'first')):
+      0)
+   }
+.nav li {
+   display: inline;
+   }
+.main-menu li,
+.sub-menu li,
+.tabs li {
+   float: left;
+   display: inline;
+   }
+.tabs {
+   zoom: 1;
+   }
+   .tabs li {
+      margin-bottom: 0;
+      }
+      .tabs li a {
+         overflow: hidden;
+         }
+   .tabs .active {
+      margin-bottom: 0;
+      }
+* html #sidebar .blc .bg-inner {
+   width: 280px;
+   overflow: hidden;
+   }
+#sidebar .list-highlights.news .date {
+   text-align: right;
+   width: 45px;
+   }
+* html .blc.with-shadow .bg-top,
+* html .blc.with-shadow .bg-bottom {
+   font-size: 4px;
+   }
+* html .body-overlay {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(50 * (document.documentElement.offsetHeight || document.body.clientHeight) * 0) + 'px');
+   }
+* html .modal-window {
+   position: absolute;
+   top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(50 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');
+   }
+*+html .scroll-area {
+   overflow-x: hidden;
+   }
+* html .tree li {
+   zoom: 1;
+   }
+
+/*Front page*/
+* html .with-sidebar #content {
+   float: left;
+   overflow: hidden;
+   }
+.front .blc.highlights {
+   background-position: 0 102%;
+   }
+.front .list-highlights.news li .more {
+   text-align: right;
+   width: 60px;
+   }
+* html .top-users {
+   width: 610px;
+   }
+   * html .list-top-users,
+   * html .list-profiles {
+      width: 700px;
+      }
+   * html .list-top-users .overlay {
+      bottom: 3px;
+      }
+
+.top-listen-promote {
+   margin: 0 0 0 -24px;
+   }
+.toplisten {
+   padding-bottom: 20px;
+   }
+   *+ html .list-profiles {
+      padding-bottom: 30px;
+      }
+
+/*Profile*/
+* html .burn-rating .placing {
+   width: 160px;
+   }
+* html .burn-rating .points {
+   width: 95px;
+   text-align: right;
+   }
+.inner .list-highlights.news li .more {
+   text-align: right;
+   width: 70px;
+   }
+* html .profile .blc .list-fotos,
+* html .profile .blc .list-friends,
+* html #sidebar .blc.hotel-challenge {
+   zoom: 1;
+   }
+* html #sidebar .blc.hotel-challenge .inner {
+   width: 300px;
+   }
+   * html #sidebar .list-highlights.hotel-challenge {
+      width: 300px;
+      }
+* html .list-users.hotel-residents li.str ul {
+   width: 287px;
+   }
+.list-friends li {
+   height: auto !important;
+   height: 60px;
+   }
+.list-highlights.hotel-challenge li {
+   width: 109px;
+   }
+
+.modal-window.friends-request .list-edit-friends li.section {
+   width: 99%;
+   }
+* html .edit-profile .change-foto li {
+   line-height: 1em;
+   }
+
+/*Debat */
+*+html .debat .main-menu{
+   margin: 117px 3px 0 6px;
+   }
+   /*Submenu in navigation. fix of position and distance from #main*/
+*+html .sub-menu{
+   margin: 145px 3px 0 6px;
+   }
+.sub-menu-in-content #main { padding-top: 63px; }
+* html .create-debat {
+   margin-right: -4px;
+   }
+* html .debat .list-discusses li {
+   zoom: 1;
+   }
+
+/*Profiles*/
+* html .profiles #sidebar {
+   overflow: hidden;
+   }
+.profiles .profiles-blc .tabs {
+   margin-bottom: -5px;
+   }
+   
+/*Create profile*/
+.create-profile fieldset legend {
+   left: -5px;
+   }
+   #top-users-bar{ margin-bottom:0; padding-top:10px; }
+   .news-entries .news .entry .fluid-img{margin:0px -10px 8px 324px;}
+   .news-entries .news .entry{margin-bottom:12px;}
+.video{padding-top:10px;}
+.video .bg-inner{overflow:hidden;}
+.profiles .overlay {
+height:8px;
+margin:35px 0 0 -45px;
+padding:0;
+z-index:5;
+}
+#video-block{margin-top:-35px;padding-bottom:70px;}
+#video-block .rating-num{margin-top:-40px;}

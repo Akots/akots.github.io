@@ -1,0 +1,108 @@
+
+.demo
+{
+   color:white;
+   font-size:120%;
+}
+.demo .icon-img
+   {
+   width: 160px;
+   height: 160px;
+   overflow: hidden;
+   }
+
+#dashboard_view .demo .icon img,
+.demo .icon img{
+   width:auto;
+   height:auto;
+   display:block;
+}
+
+.demo .icon .description
+{
+   display:none;
+   text-align:left;
+}
+
+
+.demo .icon{
+    float:left;
+    text-align:center;
+    margin:0 8pt;    
+    font-weight:bold;
+}
+
+.demo .icon.hover .description,
+.demo .icon:hover .description
+{
+    display:block;
+    position:absolute;
+    top:40%;
+    left:50%;
+    width:150px;
+    z-index:50;
+    padding:10pt;
+}
+
+.demo .icon.hover{
+   z-index:500;
+}
+
+.demo .icon.right:hover .description,
+.demo .icon.hover.right .description{
+    left:auto;
+    right:50%;
+}
+
+.demo .icon.bottom:hover .description,
+.demo .icon.hover.bottom .description{
+    top:auto;
+    bottom:60%;
+}
+
+.demo .icon{
+   position:relative;
+}
+
+.demo h2{margin:2pt auto 9pt auto;color:yellow;font-size:9pt;}
+
+.demo br{line-height:1px;font-size:1px;margin:0;padding:0;}
+
+.demo .description p{
+   font-size:9pt;
+   font-weight:normal;
+}
+.demo .description a{
+    color:white;
+    text-decoration:underline;
+    font-weight:bold;
+}
+.demo  a{color:white;text-decoration:none;}
+.demo  a:hover{color:yellow;text-decoration:none;}
+
+.demo em{
+    font-style:normal;
+    padding-left:5pt;
+}
+
+#dashboard_view.demo_view .demo,
+#demo_view .demo{
+   margin:0 auto;
+   width:80%;
+}
+
+#demo_view,
+#dashboard_view.demo_view
+{
+   top:10px;
+   bottom:12px;
+   left:20px;
+   right:20px;
+   margin:0;
+   min-height:200px;
+   overflow:auto;
+   width:auto;
+   padding-top:30pt;
+}
+
+

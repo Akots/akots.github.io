@@ -1,0 +1,34 @@
+/*
+{
+   sc: false,
+   mg: 'Неверно введен email/пароль'
+}
+*/
+
+{
+   sc: true,
+   list: [
+      {
+         id: 123,
+         firstName: 'Василий',
+         lastName: 'Васильев'
+      },
+      {
+         id: 1234,
+         firstName: 'Евлампий',
+         lastName: 'Евлампиев',
+         innerID: 321
+      },
+      {
+         id: 12345,
+         firstName: 'Иван',
+         lastName: 'Иванов'
+      },
+      {
+         id: 123456,
+         firstName: 'Алексей',
+         lastName: 'Алексеев'
+      }
+   ],
+   tpl: "Здравствуйте, ФИО!\n\nВасилий Иванов приглашает вас на сайт www.Qwidgi.com\nДля автоматической регистрации нажмите сюда:\nhttp://www.qwidgi.com/invite/accept/4e624ca559ed8dcb8b702ef2635a36d3\n\nС уважением, администрация Qwidgi.com"
+}

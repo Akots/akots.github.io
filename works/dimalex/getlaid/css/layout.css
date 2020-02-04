@@ -1,0 +1,79 @@
+/*
+Title: Basic layout
+***********
+*/
+
+#wrapper {
+  width: 980px;
+  margin: 0 auto;
+  text-align: left;
+  }
+  /* =Header(logo,menu...)
+  ----------------------------------------------- */
+  #header {
+    position: relative;
+    height: 3.8em;
+    z-index: 3;
+    padding: 2em 1.67em 0;
+    }
+
+    .top-nav {
+      position: relative;
+      margin-left: 350px;
+      }      
+
+
+  /* =Main
+  ----------------------------------------------- */
+  #main {
+    background-color: #FFF;
+    position: relative;
+    z-index: 2;
+    padding: 2.35em 1.67em;
+    }
+    .with-sidebar .content {
+      position: relative;
+      margin: 0 28.33em 0 0;
+      }
+    #main.with-top-panel {
+      background: #FFF url('../images/bg-toppanel.png') 0 0 repeat-x;
+      }
+    .top-panel {
+      overflow: hidden;
+      height: 23px;
+      margin: -2.35em -1.67em 1.67em;
+      padding: .6em 1.2em 0;
+      }
+    
+    
+  /* =Cols
+  ----------------------------------------------- */
+  .sidebar {
+    float: right;
+    width: 25em;
+    }
+  .lft-bar {
+    float: left;
+    width: 11.66em;
+    margin: 0 1.67em 0 0;
+    }
+  .adv-lft {
+    float: left;
+    margin: 0 3.33em 0 0;
+    }
+  .adv-rgt {
+    float: right;
+    margin: 0 0 0 3.33em;
+    }
+  .content-lft .content {
+    display: table;
+    width: 51.6em;
+    }
+  
+/* =Footer
+----------------------------------------------- */	
+#footer {
+  background-color: #E1E9F3;
+  margin: -10px 0 0;
+  padding: 2em 1.67em 1.3em;
+  }

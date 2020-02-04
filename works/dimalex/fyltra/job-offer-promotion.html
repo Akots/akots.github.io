@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+   
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+   <title>Fyltra</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Language" content="en" />
+   <meta name="description" content="" />
+   <meta name="keywords" content="" />
+   <meta name="robots" content="all" />
+   <link type="image/x-icon" href="../favicon.ico" rel="shortcut icon" />
+   <link rel="stylesheet" type="text/css" media="all" href="stylesheets/base.css" />
+   
+   <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="stylesheets/ie.css" media="all" /><![endif]-->
+
+   <script src="javascripts/rounded-corners.js" type="text/javascript" charset="utf-8"></script>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script src="javascripts/jqModal.js" type="text/javascript"></script>
+   <script src="javascripts/jquery.watermark.min.js" type="text/javascript"></script>
+   <script src="javascripts/common.js" type="text/javascript"></script>
+   <script type="text/javascript">
+      $().ready(function() {
+         selectDays($(".days-picker"), $("[name=workdays]"));
+      });
+   </script>
+</head>
+
+<body>
+<!-- BEGIN #wrapper -->
+<div id="wrapper">
+   <div id="header" class="clearfix">
+      <h1 id="logo"><a href="#">Filter and expedite your staff selection <span></span></a></h1>
+
+      <div class="user-panel">
+         <ul class="dropdown-list countrys">
+            <li class="cty-venezuela"><a href="#"><span class="pseudo">Venezuela</span></a></li>
+            <li class="it-visible cty-colombia"><a href="#"><span class="pseudo">Colombia</span></a></li>
+            <li class="cty-costarica"><a href="#"><span class="pseudo">Costa Rico</span>a</a></li>
+            <li class="cty-panama"><a href="#"><span class="pseudo">Panama</span></a></li>
+         </ul>
+
+         <a class="pseudo action" href="#">Sign in</a> <span class="spr">&bull;</span> Register as <a class="role-seeker" href="#">Job Seeker</a> or <a class="role-employer" href="#">Employer</a>
+      </div>
+      
+      <div class="top-menu nav">
+         <ul>
+            <li class="rc5 active"><b>Home</b></li><li class="rc5"><a href="#">My Account</a></li><li class="rc5"><a href="#">Search jobs</a></li><li class="rc5"><a href="#">Pricing</a></li><li class="rc5"><a href="#">What is Fyltra?</a></li>
+         </ul>
+      </div>
+      
+   </div><!-- /#header -->
+
+   <div id="main" class="rc10 content-lft">
+      <div id="content" class="clearfix">
+         <h1 class="header">Promote your job offer!</h1>
+			<p class="sub-header">Grab the attention of our jobseekers by simply adding the following extra features.</p>
+				<form action="#" class="form-cont payment-form long-fields">
+					<div class="b-grey rc5">
+						<div class="promote-list">
+							<div class="promote-item">
+								<div class="item-head">
+									<input type="checkbox" id="promote-1" />
+									<label for="promote-1">Make it starred</label>
+								</div>
+								<div class="item-body clearfix">
+									<img src="images/make-it-starred.png" alt="Make it starred" />
+									<p>Jobs posted with this feature will have a star near the title. It will be shown at all search results. Jobs with star are very attractive to users!</p>
+									<div class="cost"><strong>$6.95</strong> for 30 days</div>
+								</div>
+							</div>
+							<hr class="ln-shw" />
+							<div class="promote-item">
+								<div class="item-head">
+									<input type="checkbox" id="promote-2" />
+									<label for="promote-2">Post as sponsored job</label>
+								</div>
+								<div class="item-body clearfix">
+									<img src="images/post-as-sponsored-job.png" alt="Post as sponsored job" />
+									<p>Do you like to be first? Sponsored jobs appear at the top of the search results in a special section. We also display sponsored jobs at the Home page.</p>
+									<div class="cost"><strong>$12.95</strong> for 30 days</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="bill-info">
+						<h2>Billing information</h2>
+						
+						<div class="field">
+							<label for="card-number">Card number</label>
+							<input type="text" name="card-number" id="card-number" value="" class="inputbox" />
+							<span class="card-type"><img src="images/visa.png" alt="Visa" /> <img src="images/master.png" alt="Master" /></span>
+						</div>
+						<div class="field">
+							<label for="expires">Expires on</label>
+							<div class="time-input">
+								<select name="expires" id="expires" class="sel-mon_num">
+									<option value="0">01</option>
+									<option value="1">02</option>
+									<option value="2">03</option>
+									<option value="3">04</option>
+								</select>
+								<select name="expires_y" id="expires_y" class="sel-year">
+									<option value="0">2009</option>
+									<option value="1">2010</option>
+									<option value="2">2011</option>
+									<option value="3">2012</option>
+								</select>
+							</div>
+						</div>
+						<div class="field">
+							<label for="cardholder-name">Cardholder name</label>
+							<input type="text" name="cardholder-name" id="cardholder-name" value="" class="inputbox" />
+						</div>
+						<div class="field">
+							<label for="ccv">CCV</label>
+							<input type="text" name="ccv" id="ccv" value="" class="inputbox" />
+							<div class="field-help">CCV is a 3-digit number printed on the back of your card.</div>
+						</div>
+						<div class="field">
+							<label for="address">Billing address</label>
+							<input type="text" name="address" id="address" value="" class="inputbox" />
+						</div>
+					</div>
+					
+					<div class="submit form-footer">
+						<button class="button yellow"><span>Continue</span><i></i></button>
+					</div>
+					
+				</form>
+      </div><!-- #content -->
+
+   </div><!-- /#main -->
+
+   <div id="footer">
+      <div class="copy">&copy; 2010 <b class="inline-logo"><span class="name">Fyltra</span>.com</b><br />
+         All rights reserved</div>
+
+      <ul class="links">
+         <li><a href="#">Post a new job</a></li>
+         <li><a href="#">Site widget</a></li>
+         <li><a href="#">RSS</a></li>
+      </ul>
+
+      <ul class="links">
+         <li><a href="#">About Us</a></li>
+         <li><a href="#">Contact</a></li>
+      </ul>
+   </div><!-- /#footer -->
+</div>
+<!-- END #wrapper -->
+</body>
+</html>

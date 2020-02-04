@@ -1,0 +1,33 @@
+/*******************************
+* Title: Styles for IE 7 & early
+********************************/
+
+/*First child emulation*/
+.top-menu li {
+   display: inline;
+   }
+*html .shadow .ct,
+*html .shadow .cb {
+   margin: 0 9px 0 8px;
+   }
+*html .shadow .cr {
+   margin-right: 1px;
+   }
+*html .shadow .cn.tr {
+   top: -8px;
+   }
+*html .shadow .cn.br,
+*html .shadow .cn.bl {
+   bottom: -9px;
+   }
+*html .tabular {
+   width: 99%;
+   }
+*html .countries {
+   width: 803px;
+   }
+*html .content {
+   zoom: 1;
+   overflow: hidden;
+   width: 866px;
+   }

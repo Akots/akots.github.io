@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/*Styles for Profiles list page*/
+.profiles #main  {
+   padding: 15px 7px 18px 6px;
+   }
+.with-sidebar #content {
+   width: 656px;
+   padding: 0;
+   }
+#content .bg-inner {
+   padding: 12px 9px 12px 12px;
+   }
+.profiles #content h1.header  {
+   margin-left: 10px;
+   }
+#sidebar {
+   margin-top: 0;
+   }
+
+.search-profile {
+   margin-left: 10px;
+   margin-bottom: 32px;
+   }
+   .search-profile label {
+      font-size: 1.2em;
+      }
+   .search-profile .inputbox {
+      width: 190px;
+      }
+.profiles-blc .tabs {
+   margin-left: 6px;
+   margin-bottom: -7px;
+   }
+   .profiles-blc .tabs .active {
+      margin-bottom: -2px;
+      }
+.profiles-blc .sorting {
+   margin-top: 5px;
+   margin-bottom: 20px;
+   }
+.profiles-list {
+   border-bottom: 1px solid #D2DEE4;
+   overflow: hidden;
+   margin-bottom: 16px;
+   }
+.list-profiles {
+   margin-right: -58px;
+   }
+   .list-profiles li {
+      margin: 0 58px 29px 0;
+      }
+      .list-profiles .title:link, .list-profiles .title:active, .list-profiles .title:visited {
+         color: #C1062D;
+         }
+      .list-profiles .mask {
+         background: url('../images/bg-profiles-mask.png') 0 0 no-repeat;
+         }
+
+.profiles #content .blc {
+   width: 322px;
+   float: left;
+   }
+   .profiles  #content .blc.comments {
+      margin-right: 12px;
+      }
+      #content .list-highlights.comments {
+          margin-bottom: 10px;
+          }

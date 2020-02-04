@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+   
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+   <title>Requirements - Install Wizard</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Language" content="en" />
+   <meta name="description" content="" />
+   <meta name="keywords" content="" />
+   <meta name="robots" content="all" />
+   <link type="image/x-icon" href="../favicon.ico" rel="shortcut icon" />
+   <link rel="stylesheet" type="text/css" media="all" href="css/base.css" />
+   <link rel="stylesheet" href="css/forms.css" type="text/css" media="all" />
+   <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" media="all" /><![endif]-->
+</head>
+
+<body class="install">
+<!-- BEGIN #wrapper -->
+<div id="wrapper">
+   <a href="#" title="SiteManager" id="logo">SiteManager - Your effective site builder</a>
+   <div id="main">
+      <h1 class="header">Site Manager Installation</h1>
+
+      <ul class="steps">
+         <li class="current">Requirements</li>
+         <li>Webmaster Authentication</li>
+         <li>IP Address</li>
+         <li>Install Directory</li>
+         <li>Database Connection</li>
+         <li>Webhost Manager</li>
+      </ul>
+      <div class="maincontent">
+         <h2>Requirements</h2>
+         <form action="install.php" method="post">
+            <ul class="requirements">
+               <li><span class="require-name">PHP Version:</span> <span class="ok">OK</span> <i title="5.2.10-2ubuntu6.4" class="info">5.2.10-2ubuntu.&hellip;</i></li>
+               <li><span class="require-name">Mysql for PHP:</span> <span class="ok">OK</span> <i title="5.1.37" class="info">5.1.37</i></li>
+               <li><span class="require-name">Root directory is readable/writable:</span> <span class="notok">ERROR</span></li>
+               <li><span class="require-name">Apache mod_rewrite Support:</span> <span class="ok">OK</span></li>
+               <li><span class="require-name">PHP Session Support:</span> <span class="ok">OK</span></li>
+               <li><span class="require-name">PHP PCRE Support:</span> <span class="ok">OK</span> </li>
+            </ul>
+            <div class="buttons">
+               <button class="next">Next<i></i></button>
+            </div>
+         </form>
+      </div>
+      <div class="cr-lft"></div><div class="cr-rgt"></div>
+   </div><!-- /#main -->
+</div>
+<!-- END #wrapper -->
+</body>
+</html>

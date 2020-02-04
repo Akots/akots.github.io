@@ -1,0 +1,84 @@
+<div id="registration-form" style="display:none;">
+<div class="form-box">
+<h3>Присоединиться к офису</h3>
+
+<form method="post" action="/u/register">
+
+	<table class="table">
+	<tbody>
+	<tr class="org first">
+		<td class="label">Название компании:</td>
+		<td class="value edit input">
+			<input type="text" maxlength="50" size="30" name="org" class="text" id="org" />
+			<span class="not-exists">Такой компании нет в базе, можете добавить заполнив адрес</span>
+		</td>
+	</tr>
+	<tr class="venue first">
+		<td class="label"><label for="venue">Адрес офиса:</label></td>
+		<td class="value edit input"><input maxlength="50" type="text" size="30" name="venue" class="text" id="venue"/></td>
+	</tr>
+	<tr class="city first add_office">
+		<td class="label">Город:</td>
+		<td class="edit input"><input type="text" size="30" name="city" class="text" id="city" /></td>
+	</tr>
+	<!--tr class="first add_office">
+		<td class="label"><label for="ownership">Форма собственности:</label></td>
+		<td class="value edit input"><input type="text" size="30" name="ownership" class="text" id="ownership" /></td>
+	</tr>
+	<tr class="first add_office">
+		<td class="label"><label for="direction">Отрасль:</label></td>
+		<td class="value edit input"><input type="text" size="30" name="direction" class="text" id="direction" /></td>
+	</tr>
+	<tr class="first add_office">
+		<td class="label"><label for="org_phone">© Телефон:</label></td>
+		<td class="value edit input"><input type="text" size="30" name="org_phone" class="text" id="org_phone" /></td>
+	</tr>
+	<tr class="first add_office">
+		<td class="label"><label for="org_email">© E-mail:</label></td>
+		<td class="value edit input"><input type="text" size="30" name="org_email" class="text" id="org_email" /></td>
+	</tr>
+	<tr class="first add_office">
+		<td class="label"><label for="www">© Сайт:</label></td>
+		<td class="value edit input"><input type="text" size="30" name="www" class="text" id="www" /></td>
+	</tr-->
+	<tr class="second">
+		<td class="label"><label for="name">Имя:</label></td>
+		<td class="value edit input"><input type="text" maxlength="50" size="30" name="first_name" class="text" id="first_name" /></td>
+	</tr>
+	<tr class="second">
+		<td class="label"><label for="surname">Фамилия:</label></td>
+		<td class="value edit input"><input type="text" maxlength="50" size="30" name="last_name" class="text" id="last_name" /></td>
+	</tr>
+	<!--tr class="pos second">
+		<td class="label"><label for="pos">Должность:</label></td>
+		<td class="value edit input"><input type="text" size="30" name="pos" class="text" id="pos" /></td>
+	</tr-->
+	<tr class="second">
+		<td class="label"><label for="email">E-mail:</label></td>
+		<td class="value edit input"><input type="text" maxlength="360" size="30" name="email" class="text" id="email" /></td>
+	</tr>
+	<tr class="second">
+		<td class="label"><label for="password">Пароль:</label></td>
+		<td class="value edit input"><input type="password" maxlength="50" size="30" name="password" class="text" id="password" /></td>
+	</tr>
+	<!--tr class="second">
+		<td class="label"><label for="start_work_cont">Период работы:</label></td>
+		<td class="double input">с <input type="text" size="30" name="start_work_cont" class="text" id="start_work_cont" /> по <input type="text" size="30" name="end_work_cont" class="text" id="end_work_cont" />
+		<div generated="true" title="start_work_cont" class="error"></div></td>
+	</tr-->
+	<tr>
+		<td class="submit" colspan="2">
+			<div class="message"></div>
+			<!--input type="button" class="back" value="&lt;&lt; Назад" name="next"/-->
+			<input type="button" class="next" value="Присоедениться" name="next"/>
+			<input type="submit" class="submit" value="Зарегистрироваться" name="register"/>
+			<input type="button" class="cancel" value="Отмена" name="cancel"/>
+		</td>
+	</tr>
+	</tbody></table>
+
+</form>
+
+<div class="both"/>
+</div>
+</div>

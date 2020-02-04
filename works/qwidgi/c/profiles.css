@@ -1,0 +1,1275 @@
+
+.profile_comp-header{position:relative;}
+
+.profile_comp-header .wrap_menu{position:absolute; right:0;top:0;}
+
+#officeProfile_view 
+   {
+   overflow: hidden;
+   }
+   #userProfile_view .pattern,
+   #officeProfile_view .pattern
+   {display:none;}
+   #officeProfile_view #lftcol-groups 
+      {
+      overflow: auto;
+      }
+   #officeProfile_view  .message_wrap 
+      {
+      position:absolute;
+      z-index:500;
+      }
+   .company.main
+      {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 184px;
+      right: 0;
+      bottom: 0;
+      overflow: auto;
+      }
+      #profile
+         {
+         width: 60%;
+         min-width: 586px;
+         position: relative;
+         margin: 69px auto;
+         }
+      .profile_comp
+         {
+         width: 80%;
+         position: relative;
+         margin: 69px 0 0 140px;
+         }
+      .dialog-hint.profile-message 
+         {
+         width: 300px;
+         margin: 60px 0 60px 20px;
+         }
+      .company-view .profile_comp
+         {
+         margin: 29px 0 0 0;
+         }
+         #profile-header,
+         .profile_comp-header
+            {
+            position: relative;
+            height: 3em;
+            min-height: 3em;
+            height: auto; !important
+            height: 3em;
+            margin: 13px 0 9px 0;
+            padding: 0 12px 5px 0;
+            }
+            #profile-header h1,
+            .company.main h1
+               {
+               font-size: 2.4em;
+               letter-spacing: -0.025em;
+               line-height: 1em;
+               }
+            #profile-header h1 
+               {
+               width: 70%;
+               }
+               #profile-header a:active, #profile-header a:link, #profile-header a:active, #profile-header a:visited,
+               .company.main h1 a:link, .company.main h1 a:active, .company.main h1 a:visited
+                  {
+                  color: #1F2726;
+                  text-decoration: none;
+                  }
+         #profile-header .profile-tabs
+            {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0;
+            }
+         .common_info
+            {
+            position: absolute;
+            left: 0;
+            min-width: 95px;
+            }
+            .common_info .logotype,
+            .common_info .avatar
+               {
+               background: #FAF9F1;
+               }
+            .common_info .imgchanger
+               {
+               position: relative;
+               }
+               .common_info .imgchanger ul 
+                  {
+                  height: 100%;
+                  }
+               .common_info .edit 
+                  {
+                  height: 100%;
+                  }
+                  .common_info .edit a
+                     {
+                     position: absolute;
+                     display: block;
+                     width: 100%;
+                     height: 100%;
+                     }
+            .common_info img 
+               {
+               margin-bottom: -4px;
+               }
+            .common_info .no-avatar
+               {
+               width: 196px;
+               height: 196px;
+               background: url(/u/photo/none-avatar.png) 0 0 no-repeat;
+               }
+            .profile_comp .send_user_message 
+               {
+               width: 38px;
+               }
+            .profile-avatar-corners 
+               {
+               position: absolute;
+               z-index: 20;
+               width: 100%;
+               left: 0;
+               right: 0;
+               }
+            .profile-avatar-corners,
+            .profile-avatar-corners div
+               {
+               background: url(/i/bg-profile-avatar-corners.png) 0 0 no-repeat;
+               height: 7px;
+               }
+            .profile-avatar-corners div 
+               {
+               background-position: 100% -21px;
+               }
+         #info,
+         .company_info
+            {
+            margin: 0 0 0 218px;
+            }
+         .imgchng-form-cont
+            {
+            width: 640px
+            }
+            .imgchng-form-cont label
+               {
+               width: 152px;
+               float: left;
+               padding-right: 15px;
+               }
+            .imgchng-form-cont .image-function
+               {
+               float: left;
+               }
+            .imagechanger h4
+               {
+               color: #A8A28F;
+               font-size: 1.2em;
+               font-weight: normal;
+               margin-bottom: 3px;
+               }
+            .edit_image
+               {
+               padding:5px 27px;
+               }
+               .edit_image img 
+                  {
+                  margin-bottom: 15px;
+                  }
+         .load_image
+            {
+            overflow: hidden;
+            padding: 5px 27px;
+            }
+            .load_image p 
+               {
+               margin: 0;
+               }
+            .load_image input 
+               {
+               font-size: 1.4em;
+               margin-bottom: 3px;
+               }
+            .load_image p.grey.fsz-smaller
+               {
+               margin-bottom: 8px
+               }
+         .contacts_view #list-items 
+            {
+            left: 0;
+            padding: 2em 0 0 2em;
+            }
+         .contacts_view #info
+            {
+            margin-left: 219px;
+            }
+            #first-info 
+               {
+               margin-bottom: 13px;
+               }
+            .info-item
+               {
+               clear: both;
+               white-space: nowrap;
+               margin: 0 0 4px 0;
+               padding: 10px 11px;
+               }
+            .profile_comp .info-item 
+               {
+               overflow: hidden;
+               }
+               .info-item div.error
+                  {
+                  color: #F00;
+                  display: none;
+                  font-size: 11px;
+                  font-weight: normal;
+                  clear: both;
+                  margin: 9px 0 0 130px;
+                  }
+               #profile #work div.error
+                  { margin-left: 0; }
+               .add-info-item,
+               .del-info-item 
+                  {
+                  display: block;
+                  position: absolute;
+                  width: 20px;
+                  height: 16px;
+                  }
+               .add-info-item
+                  {
+                  background: url(/i/ic-add-infoitem.png) 1px 0 no-repeat;
+                  position: relative;
+                  height: 20px;
+                  }
+               .del-info-item
+                  {
+                  background: url(/i/ic-del-infoitem.png) 0 0 no-repeat;
+                  margin-top: 3px;
+                  left: 0;
+                  }
+               .info-item a.add-info-item,
+               .info-item a.del-info-item,
+               .info-item a.add-info-item:hover,
+               .info-item a.del-info-item:hover
+                  {
+                  border: none;
+                  }
+               .info-item .value
+                  {
+                  font-size: 1.4em;
+                  }
+               #first-info .info-item .value,
+               .basic_info .info-item .value
+                  {
+                  font-weight: bold;
+                  line-height: 1.15em;
+                  }
+               .info-item .label 
+                  {
+                  color: #414846;
+                  font-size: 1.1em;
+                  line-height: 1.4em;
+                  font-weight: normal;
+                  float: left;
+                  width: 130px;
+                  text-align: right;
+                  margin-right: 6px;
+                  }
+                  #first-info .info-item .label,
+                  .company_info .info-item .label
+                     {
+                     line-height: 1.7em;
+                     }
+               .hidebar_header.label 
+                  {
+                  width: 130px;
+                  }
+               .info-item p,
+               .job .title
+                  {
+                  clear: both;
+                  margin-left: 121px;
+                  }
+                .info-item h4.title 
+                   {
+                   margin-top: 0;
+                   margin-bottom: 4px;
+                   }
+                   .info-item h4.title span
+                      {
+                      font-size: 14px;
+                      font-weight: bold;
+                      line-height: 1.4em;
+                      }
+               .info-item p
+                  {
+                  line-height: 2em;
+                  margin-bottom:0;
+                  }
+               .info-item table,
+               .job,
+               div.highschool,
+               div.school
+                  {
+                  width: 100%;
+                  position: relative;
+                  margin: 0 0 24px 0;
+                  overflow: visible;
+                  }
+                  .info-item table td
+                     {
+                     vertical-align: top;
+                     padding-bottom: .6em;
+                     }
+                  #secondary-info .info-item .label,
+                  .info-item h4.title .type
+                     {
+                     color: #bfc1bc;
+                     display: block;
+                     float: none;
+                     width: 118px;
+                     padding-right: 6px;
+                     }
+                  #secondary-info .info-item 
+                     {
+                     min-height: 1.8em;
+                     height: auto; !important
+                     height: 1.8em;
+                     padding: 3px 11px;
+                     }
+                     #secondary-info .info-item .label
+                        {
+                        float: left;
+                        width: 115px;
+                        padding-right: 1px;
+                        }
+                     #secondary-info .info-item .value 
+                        {
+                        font-size: 1.2em;
+                        line-height: 1.2em;
+                        }
+                  .info-item h4.title .type
+                     {
+                     font-size: inherit;
+                     line-height: 2em;
+                     font-weight: normal;
+                     float: left;
+                     width: 115px;
+                     text-align: right;
+                     }
+                     .info-item h4.title span
+                        {
+                        display: block;
+                        }
+                  #info .info-item .pattern,
+                  #info .info-item.change-password
+                     {
+                     display: none;
+                     }
+                  .info-item table td .value,
+                  .info-item table td.value,
+                  .info-item p .value,
+                  .info-item p .pos_cont,
+                  .info-item p.double,
+                  #first-info .info-item .change-password
+                     {
+                     font-size: 1.2em;
+                     }
+                 a.change-password
+                    {
+                    float: left;
+                    display: block;
+                    }
+               .info-item a:link, .info-item a:active, .info-item a:visited
+                  {
+                  color: #1F2726;
+                  text-decoration: none;
+                  }
+               .info-item table .about_cont, .info-item table .about_cont p
+                  {
+                  line-height: 1.4em;
+                  margin: 0 0 20px 0;
+                  }
+               .info-item table td h3 .value
+                  {
+                  font-size: 1.4em;
+                  }
+              .profile_comp .director .value
+                 {
+                 float: left;
+                 display: block;
+                 margin-right: 5px;
+                 }
+             .profile_comp .director.changed .changed.empty 
+                {
+                height: 1.15em;
+                }
+            #profile #info .val,
+            .profile_comp .basic_info .val,
+            .profile_comp .basic_info .value input,
+            #profile #info .val:hover,
+            .profile_comp .basic_info .val:hover,
+            #profile #info .value input, #profile #info .value select, #profile #info .double input, #profile #info textarea,
+            .profile_comp .basic_info .value input, .profile_comp .basic_info .value select, .profile_comp .basic_info .double input,
+            .vacancy-view .val,
+            .vacancy-view input, .vacancy-view textarea
+               {
+               outline: none;
+               color: #a5a8a4;
+               font-size: 14px;
+               font-weight: bold;
+               }
+            #profile .val:hover,
+            .profile_comp .val:hover,
+            .vacancy-view .val:hover
+               {
+               background: #FFF;
+               border: 1px solid #8c8c8c;
+               margin: -6px -6px 0 -6px;
+               padding: 6px 5px 6px 5px;
+               }
+            
+            .profile_comp-header .val,
+            #profile-header .val
+               {
+               letter-spacing: -0.025em;
+               }
+            #profile .value input, #profile .value select, #profile .value textarea,
+            .profile_comp .value input, .profile_comp .value select, .profile_comp .value textarea,
+            .vacancy-view .value input, .vacancy-view .value textarea
+               {
+               background: #FFF;
+               border: 1px solid #8c8c8c;
+               color: #a5a8a4;
+               font-weight: bold;
+               margin: -7px 0 -7px -6px;
+               padding: 6px 5px 6px 4px;
+               }
+            #profile .about_cont .val
+               {
+               display: block;
+               }
+            #profile .value select,
+            .profile_comp .value select,
+            .profile_comp .profile_comp-header .value select
+               {
+               margin: -7px 0 -7px -6px;
+               padding: 4px 5px 5px 1px;
+               }
+            #profile #profile-header .value input, #profile #profile-header .value select,
+            .profile_comp .profile_comp-header .value input, .profile_comp .profile_comp-header .value select
+               {
+               letter-spacing: -0.025em;
+               margin: -9px -6px -7px;
+               padding: 5px 5px 6px 4px;
+               }
+            #profile #profile-header .empty input, #profile #profile-header .empty select,
+            .profile_comp .profile_comp-header .empty input, .profile_comp .profile_comp-header .empty select
+               {
+               margin: -10px -6px -7px;
+               }
+            #profile #secondary-info select
+               {
+               padding: 5px 5px 5px 1px;
+               }
+            #start_work,
+            #end_work,
+            #birthday
+               {
+               width: 5.2em;
+               }
+            .profile_comp .profile_comp-header .value select
+               {
+               margin: -9px 0 -4px -6px;
+               padding: 4px 5px 5px 1px;
+               }
+            .profile_comp .director .value input
+               {
+               margin: -7px -6px -7px -6px;
+               }
+            #profile #work h4 input
+               {
+               margin: -6px 0 -6px -6px;
+               padding: 6px 5px 6px 4px;
+               }
+            #profile #work input,
+            #profile #educ input,
+            #profile #work select,
+            #profile #educ select
+               {
+               margin: -5px 0 -6px -6px;
+               }
+            #profile #work select,
+            #profile #educ select 
+               {
+               padding: 5px 5px 5px 1px;
+               }
+            #profile .val,
+            .profile_comp .val,
+            #educ .title .val,
+            #work .title .val,
+            #profile .val,
+            .profile_comp .val .name
+               {
+               cursor: text;
+               display: inline;
+               }
+            div.info-item.changed.empty,
+            tr.info-item.changed.empty
+               {
+               display: block;
+               }
+               .basic_info .changed.empty .changed,
+               .basic_info .changed .changed.empty
+                  {
+                  display: block;
+                  cursor: pointer;
+                  float: left;
+                  height: .95em;
+                  width: 6em;
+                  }
+              .profile_comp-header .changed,
+              .profile_comp-header .changed.empty
+                 {
+                 display: inline;
+                 }
+              .profile_comp-header .changed.empty .changed
+                 {
+                 margin-right: 5px;
+                 padding: 0 35px;
+                 }
+              .pattern_ownership.changed.empty 
+                 {
+                 margin: 0 0 0 5px;
+                 }
+            #profile .val,
+            .profile_comp .val
+               {
+               color: #a5a8a4;
+               font-weight: bold;
+               }
+            #profile .empty .val,
+            .profile_comp .empty .val
+               {
+               color: #999;
+               font-style: italic;
+               }
+            #profile .work_list .company_card
+               {
+               width: 176px;
+               margin: .3em 0;
+               }
+              #profile .about_cont
+                 {
+                 float: left;
+                 margin: -14px 0 0 121px
+                 }
+              #profile .about_cont p
+                 {
+                 line-height: 1.5em;
+                 white-space: normal;
+                 margin: 0 0 20px;
+                 }
+              #profile .about_cont .val 
+                 {
+                 margin-top: -4px
+                 }
+              #profile .about_cont .val:hover
+                  {
+                  display: block !important;
+                  margin: -11px -6px 0 -6px;
+                  }
+              #profile .about_cont .val,
+              #profile .about_cont textarea 
+                 {
+                 float: left;
+                 }
+              #profile .about_cont textarea,
+              #profile .about_cont textarea:hover
+                  {
+                  line-height: 1.5em;
+                  height: 15em;
+                  margin: -11px -5px -7px -6px;
+                  }
+
+            .profile_comp .empty,
+            .profile_comp .comp_name .empty,
+            #profile .name .empty,
+            #profile .empty {display:none;}
+
+            .profile_comp.edit .empty,
+            #profile.edit .empty {display:block;}
+
+            .profile_comp.edit tr.empty,
+            #profile.edit tr.empty{display:table-row;}
+
+            #profile.edit #profile-header .empty,
+            .profile_comp.edit .comp_name .empty{display:inline;}
+            
+            #profile.edit .double .empty,
+            .profile_comp.edit .empty
+               {
+               display: inline;
+               }
+            .about_cont .textarea .val textarea
+               {
+               width: 300px;
+               }
+            
+            #profile .menu .empty a.close
+               {
+               position: absolute;
+               background: transparent no-repeat url(/i/close.gif) center center;
+               display: block;
+               width: 16px;
+               height: 16px;
+               right: 3px;
+               top: 3px;
+               padding: 0;
+               margin: 0;
+               cursor: pointer;
+               }
+            #profile .add_tab{position: relative;}
+            
+            #profile .add_tab ul
+               {
+               position: absolute;
+               list-style-type: none;
+               background-color: #fff;
+               padding: 0;
+               margin: 0;
+               z-index: 2;
+               top: 16px;
+               left: 16px;
+               border: 1px solid black;
+               }
+            #profile .add_tab li a
+               {
+               display: block;
+               float: none;
+               padding: 5pt;
+               margin: 0;
+               background: transparent;
+               }
+            #profile .add_tab li
+               {
+               padding: 0;
+               margin: 0;
+               float: none;
+               }
+            #profile .add_tab li:hover
+               {
+               background-color: #eee;
+               }
+            #profile .empty a
+               {
+               padding: 0 25px 0 0;
+               }
+            .dialog-hint.add-city-form
+               {
+               position: absolute;
+               width: 390px;
+               z-index: 10000;
+               margin: 56px 0;
+               }
+               .add-city-form table 
+                  {
+                  margin: 15px 0 12px 0
+                  }
+               .add-city-form .label 
+                  {
+                  width: 110px;
+                  }
+            #profile .menu .add_tab .add
+               {
+               background: transparent no-repeat url(/i/add.png) center center;
+               display: block;
+               width: 16px;
+               height: 16px;
+               }
+            .ac_results
+               {
+               border: 1px solid #CFC9B7;
+               font-size: 1.2em;
+               z-index: 100;
+               }
+               .ac_even,
+               .ac_odd
+                  {
+                  background: #F9F7EE;
+                  cursor: pointer;
+                  font-weight: bold;
+                  position: relative;
+                  overflow: hidden;
+                  padding: 5px 0 5px 4px;
+                  }
+               .ac_even.ac_over,
+               .ac_odd.ac_over
+                  {
+                  background: #EEE4B3;
+                  }
+               .ac_odd
+                  {
+                  background: #FFF;
+                  }
+                  .ac_region
+                     {
+                     display: block;
+                     font-weight: normal;
+                     float: left;
+                     margin-top:.3em;
+                     }
+                  .ac_country 
+                     {
+                     font-weight: normal;
+                     float: right;
+                     margin: .3em .3em 0 0;
+                     }
+            .page .row
+               {
+               padding:  0 0 0 10px;
+               height:  45px;
+               min-height:  45px;
+               }
+            
+            .page div.error
+               {
+               padding: 3px 5px 0 9px;
+               color: #f60;
+               }
+            .profile_comp .changed .changed
+               {
+               border-bottom: 1px dashed red;
+               }
+
+        /* Employees */      
+        .employees.main #list-items .person_card
+            {
+            float: none;
+            height: auto;
+            margin: 0;
+            position: relative;
+            }
+               
+         .vacancy_cont #filters
+            {
+            width: 22.4em
+            }
+            .vacancy_cont #filters #filter-search
+               {
+               width: 19em
+               }
+               .vacancy_cont #filters #filter-search input 
+                  {
+                  width: 15em
+                  }
+         .vacancy_cont .lftcol-groups-items
+            {
+            width: 24em;
+            overflow: hidden;
+            }
+            .vacancy_cont .lftcol-groups-items .vacancies
+               {
+               position: absolute;
+               top: 0;
+               left: 0;
+               right: 0;
+               overflow: auto;
+               bottom: 38px;
+               }
+            .vacancy_cont .lftcol-groups-items .delete 
+               {
+               display: none;
+               }
+         .vacancy-view
+            {
+            position: absolute;
+            left: 25em;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            overflow: auto;
+            padding: 20px 8px 0 24px;
+            }
+            .vacancy-view .delete
+               {
+               display: block;
+               width: 16px;
+               height: 16px;
+               right: 8px;
+               top: 12px;
+               position: absolute;
+               background: url(/i/icns-album-functions.png) 0 0 no-repeat;
+               }
+            .vacancy-view .cor-bot-lft,
+            .company-view .cor-bot-lft
+               {
+               background-position: 0 -600px;
+               top: auto;
+               bottom: 18px;
+               height: 8px;
+               width: 8px;
+               }
+            .vacancy-header
+               {
+               margin-bottom: 4em;
+               padding: 0 12px 9px 0;
+               }
+           .vacancy-view .vacancy-header 
+              {
+              margin-bottom: 1.6em;
+              }
+               .vacancy-view .message_wrap 
+                  {
+                  margin-top: 8px;
+                  }
+               .vacancy-header h1
+                  {
+                  font-size: 2.4em;
+                  }
+                  .vacancy-header h1 input,
+                  .vacancy-view  h1 .val
+                     {
+                     font-size: inherit;
+                     letter-spacing:-0.025em;
+                     }
+           .vacancy-view .val
+              {
+              cursor: text;
+              margin: -7px -5px -7px 0;
+              padding: 6px 5px 8px 0;
+              }
+           .vacancy-view .title .val
+              { display: inline; }
+
+           .vacancy-view .value textarea
+              {
+              margin: -8px 0 -8px -6px;
+              }
+           .vacancy-view .value input 
+              {
+              margin: -9px 0 -11px -6px;
+              }
+           .vacancy-view .val:hover 
+              {
+              margin: -8px -5px -8px -6px;
+              }
+           .vacancy-description
+              {
+              font-size: 1.2em;
+              line-height: 1.4em;
+              }
+              .vacancy-description .message_wrap
+                 {
+                 margin-top: -10px;
+                 }
+              .vacancy-description textarea,
+              .vacancy-description .val
+                 {
+                 width: 90%;
+                 line-height: 1.5em;
+                 }
+           .vacancy-view h3
+              {
+              font-size: 1.2em;
+              margin-bottom: .8em;
+              }
+           .vacancy-view div.error
+              {
+              background: #FFF; 
+              color: #F00;
+              font-size: 12px;
+              font-weight: normal;
+              letter-spacing: normal;
+              position: absolute;
+              margin: 8px 0 0;
+              padding: 2px;
+              }
+         .responses-list,
+         .profile_comp .employees,
+         .employees
+            {
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            overflow: auto;
+            padding: 30px 0 0 36px;
+            }
+            .employees .person_card .icon .delete 
+               { display: none; }
+         .responses-list 
+            {
+            bottom: 126px;
+            }
+            .response
+               {
+               background: #F1F0E7;
+               border: 1px solid #DBD9D2;
+               overflow: hidden;
+               margin: 0 16px 12px 0;
+               padding: 7px 14px 4px 9px;
+               }
+            .responses .avatar
+               {
+               float: left;
+               position: relative;
+               }
+               .responses .avatar a 
+                  {
+                  display: block;
+                  }
+               .avatar-corners-top,
+               .avatar-corners-bot
+                  {
+                  background-image: url(/i/bg-avatar-corners.png);
+                  background-repeat: no-repeat;
+                  position: absolute;
+                  width: 100%;
+                  height: 8px;
+                  z-index: 10;
+                  left:0;
+                  }
+               .avatar-corners-top 
+                  {
+                  top: 0;
+                  }
+               .avatar-corners-bot
+                  {
+                  background-position: 0 -131px;
+                  bottom: 0;
+                  }
+            .responses .content
+               {
+               margin-left: 74px;
+               }
+               .responses .content .send_date 
+                  {
+                  color: #ADABA6;
+                  float: right;
+                  }
+               .responses .content .name 
+                  {
+                  font-size: 1.1em;
+                  margin: 0 0 .6em 0;
+                  }
+                  .responses .content .name a
+                     {
+                     color: #085897;
+                     font-weight: bold;
+                     text-decoration: none;
+                     }
+               .responses .content .text 
+                  {
+                  font-size: 1.4em;
+                  }
+         .relations .company_card, .relations .company_card.no_accept,
+         .relations .lftcol-groups-items .profile_comp-header.brd-dotted-bottom
+            {
+            background: none;
+            border: none;
+            float: none;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            position:relative;
+            width: auto;
+            }
+         .relations .lftcol-groups-items li .title .tools
+            {
+            background: url(/i/icns-album-functions.png) 0 -129px no-repeat;
+            cursor: pointer;
+            display: none;
+            position: absolute;
+            right: .2em;
+            top: .7em;
+            width: 16px;
+            height: 16px;
+            }
+         .relations .lftcol-groups-items li .title:hover .tools
+            {
+            display: block;
+            }
+            .relations .company_card img
+               {
+               float: none;
+               margin:-7px 0 -3px;
+               }
+            .relations .lftcol-groups-items .name 
+               {
+               margin: 0;
+               }
+            .relations .lftcol-groups-items h4 a 
+               {
+               display: block;
+               }
+         .company-view
+            {
+            position: absolute;
+            left: 19em;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            overflow: auto;
+            padding: 20px 8px 0 40px;
+            }
+            .company-view .message_wrap
+               {
+               top: 12px;
+               margin: 0;
+               }
+            .company-view .info-item .value 
+               {
+               font-weight: bold;
+               }
+            .company-view .company_card .company_info
+               {
+               display: block;
+               }
+#resend_info
+   {
+   background:#F2F2F2 url(/i/user_add.png) no-repeat scroll 2px center;
+   border: 1px solid #E0E0E0;
+   font-size: 1.1em;
+   white-space: normal;
+   margin: 10px 0 0 135px;
+   padding: 3px 3px 3px 25px;
+   }
+   #resend_info span
+      {
+      color:red;
+      }
+   #resend_info a
+      {
+      color:#085897;
+      font-weight:bold;
+      text-decoration:underline;
+      }
+
+   #resend_info.loading{
+      background:#F2F2F2 url(/i/loader.gif) no-repeat scroll 2px center;
+      height:auto;
+      width:auto;
+   }
+
+   #resend_info.loading * {display:inline;visibility:hidden;}
+
+#profile .hidebar_content .height
+   {
+   height:20px;
+   width:100%;
+   color:#CCC;
+   }
+#profile .hidebar_content .add-info-item
+   {
+   color:#CCC;
+   padding:1px 0 0 23px;
+   }
+
+.company.main .change_relation
+{
+   float:left;
+   font-size:1.1em;
+   position:absolute;
+   z-index:50;
+}
+   .company.main .change_relation, .company.main .change_relation li
+   {
+      border:none;
+      float:left;
+   }
+   .company.main .change_relation ul a
+   {
+      background: url(/i/brd-dotted-bottom.gif) repeat-x scroll left bottom;
+      color:#999999;
+      font-weight:bold;
+      height:auto;
+      padding:5px 0;
+      width:90%;
+      text-decoration: none;
+      padding: 1em 0 1em 0.7em;
+   }
+   .company.main .change_relation a:hover 
+      {
+      color: #000;
+      }
+   .quick_menu_bg .quick_menu .change_relation li{
+      float:none;
+   }
+   .company.main .rel_options,
+   .company.main .rel_options ul
+   {
+      background:#FFFFFF none repeat scroll 0 0;
+      border:1px solid #DAD6C4;
+      display: none;
+      margin: 0;
+      padding: 0 5px;
+      position: absolute;
+      text-align: left;
+      top: 20px;
+      left: 20px;
+      width: 130px;
+      z-index: 20;
+   }
+   .company.main .rel_options.show
+      {
+      display: block;
+      }
+   .company.main .rel_options .lev1.show ul
+      {
+      display: block;
+      left: 100pt;
+      padding: 0 5px;
+      position: absolute;
+      top: 0;
+      width: 110pt;
+      z-index: 21;
+      }
+
+   .company.main .rel_options .lev1
+      {
+      display: block;
+      position: relative;
+      width: 100pt;
+      }
+
+   .company.main .rel_options .lev1
+      {
+      display: block;
+      position: relative;
+      width: 100pt;
+      }
+
+         .company.main .rel_options ul
+         {
+            left:130px;
+            top:0;
+         }
+
+
+.lftcol-groups-items .submenu
+{
+   display:none;
+}
+
+.submenu{
+   position:absolute;
+   display:block;
+   background-color:#F2F2F2;
+   border:1px solid #E0E0E0;
+   white-space:nowrap;
+   z-index:500;
+   padding:3px;
+}
+
+.profile-tabs
+   {
+   float: left;
+   margin-top: 6px;
+   }
+   .profile-tabs li
+   	{
+   	display: block;
+   	float: left;
+   	width: 31px;
+   	height: 36px;
+   	margin-right: 6px;
+   	}
+   .profile-tabs li:hover, .profile-tabs .active
+   	{
+   	background: url(/i/ic-str-active-menucontacts.png) bottom center no-repeat;
+   	}
+   	.profile-tabs a
+   		{
+   		background: url(/i/icns-profile.png) 0 0 no-repeat;
+   		display: block;
+   		height: 30px;
+   		}
+      #profile-header .profile-tabs a
+         {
+         background-image: url(/i/icns-contact.png);
+         }
+      #profile-header .profile-tabs li:hover 
+         {
+         background: none;
+         }
+     .profile-tabs .tab-groups a
+        {
+        background-position: -130px -41px;
+        }
+     #profile-header .tab-groups a
+       {
+       background-position: -130px -39px;
+       }
+      .profile-tabs .tab-groups.active a,
+      .profile-tabs .tab-groups a:active,
+      #profile-header .tab-groups a:hover
+         {
+         background-position: -130px 0;
+         }
+     .profile-tabs .tab-video a
+        {
+        background-position: -88px -41px;
+        }
+     #profile-header .tab-video a
+        {
+        background-position: -88px -39px;
+        }
+        .profile-tabs .tab-video.active a,
+        .profile-tabs .tab-video a:active,
+        #profile-header .tab-video a:hover
+           {
+           background-position: -88px 0;
+           }
+     .profile-tabs .tab-contacts a
+        {
+        background-position: -174px -41px;
+        }
+     #profile-header .tab-contacts a
+        {
+        background-position: -174px -39px;
+        }
+        .profile-tabs .tab-contacts.active a,
+        .profile-tabs .tab-contacts a:active,
+        #profile-header .tab-contacts a:hover
+           {
+           background-position: -174px 0;
+           }
+   	.profile-tabs .tab-foto a
+   	 	{
+   	 	background-position: 0 -41px;
+   	 	}
+      #profile-header .tab-foto a
+         {
+         background-position: 0 -39px;
+         }
+         .profile-tabs .tab-foto.active a,
+         .profile-tabs .tab-foto a:active,
+         #profile-header .tab-foto a:hover
+            {
+            background-position: 0 0;
+            }
+   	.profile-tabs .tab-office a
+   	 	{
+   	 	background-position: -44px -41px;
+   	 	}
+     #profile-header .tab-office a
+         {
+         background-position: -44px -39px;
+         }
+     .profile-tabs .tab-office.active a,
+     .profile-tabs .tab-office a:active,
+     #profile-header .tab-office a:hover
+   	   {
+   	   background-position: -44px 0;
+   	   }
+     

@@ -1,0 +1,96 @@
+#dashboard_view
+   {
+   margin: 22pt 159px 0;
+   min-height: 200px;
+   width: 666px;
+   left: 10px;
+   overflow: auto;
+   bottom: 60px;
+   }
+   .block
+      {
+      background: transparent;
+      width: 180px;
+      height: 163px;
+      position: relative;
+      margin: 0 0 7px 0;
+      z-index: 100;
+      }
+      .block a
+         {
+         position:absolute;
+         display:block;
+         top:0;
+         left:0;
+         bottom:0;
+         right:0;
+         color: #FFF;
+         text-decoration: none;
+         text-align: left;
+         }
+      .block .img,
+      .block img,
+      .block .orig-image
+         {
+         background-position: 0 0;
+         background-repeat: no-repeat;
+         cursor: pointer;
+         width: 160px;
+         height: 160px;
+         }
+      .block .img 
+         {
+         position: absolute;
+         height: 157px;
+         top: 0;
+         left: 0;
+         }
+      .block img 
+         {
+         width: 147px;
+         height: 147px;
+         }
+      .block .list
+         {
+         width: 147px;
+         height: 147px;
+         background-repeat:no-repeat;
+         }
+      .block .img {
+         background-image:url(/i/bg-bigwidjet-shadow.png);
+         }
+      .block .title
+         {
+         color: #FFF;
+         width: 160px;
+         text-align:center;
+         z-index:2;
+         font-size: 1.2em;
+         line-height: 1.1em;
+         margin-top: -5px;
+         bottom:0;
+         position:absolute;
+         }
+      .icon .count
+         {
+         text-indent:300em;
+         white-space:nowrap;
+         position:absolute;
+         display:block;
+         width:39px;
+         height:30px;
+         top:4px;
+         right:18px;
+         background:transparent no-repeat url('/i/warning_numbers.png');
+         overflow:hidden;
+         }
+      .dock .icon .count 
+         {
+         right:1px;
+         }
+         .icon .count.c,
+         .icon .count.c0
+            {
+            display:none;
+            }
+

@@ -1,0 +1,71 @@
+{
+   info:{
+      hasContacts : true,
+      hasAlbums   : true,
+      office_id   : 12345,
+      user_id     : 123,
+      first_name  : 'Артем',
+      second_name  : 'Анищенко'
+   },
+   edit:true,
+   list:
+   [
+      {
+         id:1,
+         label: '/u/album/1',
+         thum: '/u/album/1/thum',
+         title: 'Это я :) длинное название длинное название длинное название длинное название длинное название',
+         description:'Разные фотографии растеряные по лабиринтам времени и страницам жизненного контекста',
+         last_update: 'Обновлен на прошлой неделе',
+         create:'Создан 18 июля 2007 года',
+         list:
+         [
+            '/u/album/1/view/2',
+            '/u/album/1/view/2',
+            '/u/album/1/view/3',
+            '/u/album/1/view/4',
+            '/u/album/1/view/5',
+            '/u/album/1/view/6',
+            '/u/album/1/view/7',
+            '/u/album/1/view/8',
+            '/u/album/1/view/9',
+            '/u/album/1/view/10',
+            '/u/album/1/view/11',
+            '/u/album/1/view/12',
+            '/u/album/1/view/13',
+            '/u/album/1/view/14',
+            '/u/album/1/view/15',
+            '/u/album/1/view/16',
+            '/u/album/1/view/17',
+            '/u/album/1/view/18'
+         ]
+      },
+      {
+         id:2,
+         label: '/u/album/2',
+         thum: '/u/album/2/thum',
+         title: 'Я в Питере :)',
+         description: 'Был у друзей, вместе работали в одной лаборотории, Кенегсберга, разрабатывали сываротку вечной молодости. Столько воды с тех пор утекло... Постоянно паспорт менять, делать вид что ты моложе и глупее.',
+         last_update: 'Обновлен 27 дней назад',
+         create:'Создан 8 июля 1907 года',
+         list:
+         [
+            '/u/album/2/view/1',
+            '/u/album/2/view/2',
+            '/u/album/2/view/3',
+            '/u/album/2/view/4',
+            '/u/album/2/view/5',
+            '/u/album/2/view/6',
+            '/u/album/2/view/7',
+            '/u/album/2/view/8',
+            '/u/album/2/view/9',
+            '/u/album/2/view/10',
+            '/u/album/2/view/11',
+            '/u/album/2/view/12',
+            '/u/album/2/view/13',
+            '/u/album/2/view/14',
+            '/u/album/2/view/15',
+         ]
+     }
+  ]
+}

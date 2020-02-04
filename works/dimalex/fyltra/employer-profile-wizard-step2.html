@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+   
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+   <title>Profile Wizard - Fyltra</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Language" content="en" />
+   <meta name="description" content="" />
+   <meta name="keywords" content="" />
+   <meta name="robots" content="all" />
+   <link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />
+   <link rel="stylesheet" type="text/css" media="all" href="stylesheets/base.css" />
+   
+   <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="stylesheets/ie.css" media="all" /><![endif]-->
+
+   <script src="javascripts/rounded-corners.js" type="text/javascript" charset="utf-8"></script>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script src="javascripts/jqModal.js" type="text/javascript"></script>
+   <script src="javascripts/jquery.watermark.min.js" type="text/javascript"></script>
+   <script src="javascripts/common.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!-- BEGIN #wrapper -->
+<div id="wrapper">
+   <div id="header" class="clearfix">
+      <h1 id="logo"><a href="#">Filter and expedite your staff selection <span></span></a></h1>
+
+      <div class="user-panel">
+         <ul class="dropdown-list countrys">
+            <li class="cty-venezuela"><a href="#"><span class="pseudo">Venezuela</span></a></li>
+            <li class="it-visible cty-colombia"><a href="#"><span class="pseudo">Colombia</span></a></li>
+            <li class="cty-costarica"><a href="#"><span class="pseudo">Costa Rico</span>a</a></li>
+            <li class="cty-panama"><a href="#"><span class="pseudo">Panama</span></a></li>
+         </ul>
+
+         <a class="pseudo action" href="#">Sign in</a> <span class="spr">&bull;</span> Register as <a class="role-seeker" href="#">Job Seeker</a> or <a class="role-employer" href="#">Employer</a>
+      </div>
+      
+      <div class="top-menu nav">
+         <ul>
+            <li class="rc5 active"><b>Home</b></li><li class="rc5"><a href="#">My Account</a></li><li class="rc5"><a href="#">Search jobs</a></li><li class="rc5"><a href="#">Pricing</a></li><li class="rc5"><a href="#">What is Fyltra?</a></li>
+         </ul>
+      </div>
+      
+   </div><!-- /#header -->
+
+   <div id="main" class="rc10">
+      <div id="content" class="profile profile-wizard clearfix">
+      	<h1>Complete your Company Profile!</h1>
+
+         <div class="welcome clearfix">
+            <div class="w-img"><img src="images/imgs/img-company-wizard.png" width="145" height="116" alt="Company Wizard" /></div>
+            <div class="w-txt">
+               <p>Please fill in the information in all categories as accurately as possible. </p>
+               <p>If you have any doubts please check our <a href="#">Support page</a> at anytime or send us a message via the "Questions" button found at the left of the screen.</p>
+               <p>Good luck!</p>
+            </div>
+         </div>
+
+         <form action="#" class="form-cont long-fields">
+            
+            <div class="field image">
+               <label for="c-logo">Company logo</label>
+               <img src="images/imgs/img-nologo.png" width="140" height="140" alt="No logo" />
+               <div>
+                  <input type="file" name="c-logo" id="c-logo" />
+                  <div class="field-help">GIF, PNG and JPG under 1 MB allowed to upload.</div>
+               </div>
+            </div>
+            
+            <div class="fields-separator"></div>
+
+            <div class="field"><label for="c-ind">Industry</label>
+               <select name="country" id="c-ind">
+                  <option value="0">Choose...</option>
+                  <option value="1">Colombia</option>
+                  <option value="2">Costa Rico</option>
+                  <option value="3">Panama</option>
+               </select>
+            </div>
+
+            <div class="field"><label for="c-desc">Company briefing</label>
+               <textarea id="c-desc" name="c-desc" class="inputbox inputbox_small" rows="5" cols="10"></textarea>
+            </div>
+
+            <div class="fields-separator"></div>
+            
+            <div class="field">
+               <label for="c-site">Website or blog</label>
+               <input type="text" name="c-site" id="c-site" class="inputbox" />
+            </div>
+            <div class="field">
+               <label for="c-twitter"><span class="label-icon ic-twitter">Twitter</span></label>
+               <span class="pre-input">@</span>
+               <input type="text" name="c-twitter" id="c-twitter" class="inputbox" />
+            </div>
+            <div class="field">
+               <label for="c-linkedin"><span class="label-icon ic-linkedin">Linkedin</span></label>
+               <input type="text" name="c-linkedin" id="c-linkedin" class="inputbox" />
+            </div>
+            <div class="field">
+               <label for="c-skype"><span class="label-icon ic-skype">Skype</span></label>
+               <input type="text" name="c-skype" id="c-skype" class="inputbox" />
+            </div>
+            <div class="field">
+               <label for="c-msn"><span class="label-icon ic-msn">MSN</span></label>
+               <input type="text" name="c-msn" id="c-msn" class="inputbox" />
+            </div>
+            <div class="field">
+               <label for="c-gtalk"><span class="label-icon ic-gtalk">Gtalk</span></label>
+               <input type="text" name="c-gtalk" id="c-gtalk" class="inputbox" />
+            </div>
+
+            <div class="form-footer">
+               <div class="submit">
+                 <input type="submit" value="Save" class="btn-submit" />
+               </div>
+            </div>
+               
+         </form>
+      </div><!-- #content -->
+
+   </div><!-- /#main -->
+
+   <div id="footer">
+      <div class="copy">&copy; 2010 <b class="inline-logo"><span class="name">Fyltra</span>.com</b><br />
+         All rights reserved</div>
+
+      <ul class="links">
+         <li><a href="#">Post a new job</a></li>
+         <li><a href="#">Site widget</a></li>
+         <li><a href="#">RSS</a></li>
+      </ul>
+
+      <ul class="links">
+         <li><a href="#">About Us</a></li>
+         <li><a href="#">Contact</a></li>
+      </ul>
+   </div><!-- /#footer -->
+</div>
+<!-- END #wrapper -->
+</body>
+</html>

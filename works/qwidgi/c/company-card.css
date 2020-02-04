@@ -1,0 +1,265 @@
+.company_card
+   {
+   background: #F7F7F7;
+   border: 1px solid #D9D9D9;
+   float: left;
+   height: 130px;
+   margin: 0pt 7px 10px;
+   padding:10px;
+   position: relative;
+   width: 250px;
+   }
+   .company_card .company_info
+      {
+      display: none;
+      }
+   .company_card 
+.company_card.no_accept
+{
+   background:#CCCCCC none repeat scroll 0% 50%;
+   border:1px solid #D9D9D9;
+}
+
+#offices .company_card .logotype
+{
+   float:left;
+   margin-right:10px;
+}
+#offices .quick_menu_bg 
+   {
+   float: right;
+   }
+#offices .quick_menu_bg, #offices .quick_menu
+   {
+   background: none;
+   }
+.company_card .name
+{
+   font-weight:bold;
+   margin-bottom:5px;
+}
+
+.company_card ul{padding:0;margin:0;}
+
+.company_card li
+{
+   list-style-type:none;
+}
+
+.relations.main .icon li,
+.company_card .icon li
+{
+   padding: 5px;
+}
+
+.submenu_active .icon .icon,
+.submenu_active .icon close_message_box,
+.relations.main .icon .icon,
+.relations.main .icon close_message_box,
+.company_card .icon .icon,
+.company_card .icon close_message_box
+{
+   border:0;
+   background:transparent no-repeat left center;
+   padding:0 0 0 20px;
+   cursor:pointer;
+   height:20px;
+   color:#262626;
+}
+
+.relations.main .profile_comp-header .icon .icon
+{
+   overflow:hidden;
+   display:block;
+   padding:0;
+   margin:0;
+   height:16px;
+   width:0;
+   padding:0 0 0 16px;
+   white-space:nowrap;
+}
+
+.relations.main .profile_comp-header .icon li
+{
+   display:inline;
+   float:left;
+}
+
+.submenu_active .icon .join .icon,
+.relations.main .icon .join .icon,
+.company_card .icon .join .icon
+{
+   background-image:url(/i/user_add.png);
+}
+
+.submenu_active .icon .delete .icon,
+.relations.main .icon .delete .icon,
+.company_card .icon .delete .icon
+{
+   background-image:url(/i/cross.png);
+}
+.submenu_active .icon .send_message .icon,
+.relations.main .icon .send_message .icon,
+.company_card .icon .send_message .icon
+{
+   background-image:url(/i/email.png);
+}
+.submenu_active .icon .relations .icon,
+.relations.main .icon .relations .icon,
+.company_card .icon .relations .icon
+{
+   background-image:url(/i/group.png);
+}
+.submenu_active .icon .change_relation .icon,
+.relations.main .icon .change_relation .icon,
+.company_card .icon .change_relation .icon
+{
+   background-image:url(/i/user_go.png);
+}
+.submenu_active .icon .accept .icon,
+.relations.main .icon .accept .icon,
+.company_card .icon .accept .icon
+{
+   background-image:url(/i/heart.png);
+}
+.submenu_active .icon .change_relation,
+.submenu_active .icon .send_message,
+.company_card .icon .change_relation,
+.company_card .icon .send_message
+{
+   position:relative;
+}
+.submenu_active .icon .send_message .message_box,
+.profile_comp-header .icon .send_message .message_box
+{
+   padding: 0px;
+   display:block;
+   position:absolute;
+   background: #E6E6E6 none repeat scroll 0%;
+   border:solid 1px #CCCCCC;
+   top: 0px;
+   z-index:999;
+   margin:0 0 0 100px;
+   width: 370px;
+   height: 195px;
+   text-align:left;
+}
+
+.profile_comp-header .icon .send_message .message_box
+{
+   margin:30px 0 0 -200px;
+}
+
+.message_box .message{
+   margin:0;
+   position:static;
+}
+
+.submenu_active .icon .send_message .message_box .header,
+.profile_comp-header .icon .send_message .message_box .header
+{
+   position:relative;
+   padding: 5px 15px;
+   height: 16px;
+   background-color: #CCC;
+}
+.submenu_active .icon .send_message .message_box .header .close_message_box,
+.profile_comp-header .icon .send_message .message_box .header .close_message_box
+{
+   background:transparent url(/i/close.gif) no-repeat center center;
+   position:absolute;
+   right:10px;
+   width:20px;
+   border:0;
+}
+.submenu_active .icon .send_message .message_box .body,
+.profile_comp-header .icon .send_message .message_box .body
+{
+   padding: 10px;
+   white-space:normal;
+}
+.submenu_active .icon .send_message .message_box .body .message,
+.profile_comp-header .icon .send_message .message_box .body .message
+{
+   margin-bottom:10px;
+   padding: 5px 5px;
+   font-size: 1.1em;
+   width: 335px;
+   height: 100px;
+}
+.submenu_active .icon .send_message .message_box .body .submit,
+.profile_comp-header .icon .send_message .message_box .body .submit
+{
+   float:right;
+}
+.submenu_active .icon .change_relation ul,
+.profile_comp-header .icon .change_relation ul
+{
+   padding: 0px;
+   position:absolute;
+   background: #E6E6E6 none repeat scroll 0%;
+   border:1px #EEEEEE;
+   top: 0px;
+   left: 0px;
+   z-index:2;
+   margin-top:15px;
+}
+
+.submenu_active .icon .change_relation ul a,
+.profile_comp-header .icon .change_relation ul a
+{
+   display:block;
+   width: 210px;
+   padding: 5px 5px;
+   color:#000000;
+   outline-color:invert;
+   outline-style:none;
+   outline-width:0pt;
+   text-decoration:none;
+}
+.submenu_active .icon .change_relation ul li,
+.profile_comp-header .icon .change_relation ul li
+{
+   display:block;
+   position:relative;
+   margin: 0px;
+}
+.submenu_active .icon .change_relation ul a:hover,
+.profile_comp-header .icon .change_relation ul a:hover
+{
+   background-color: #D6D6D6;
+}
+
+.work_list .place{font-size:.8em}
+
+.submenu_active .icon{
+   text-align:left;
+}
+
+.change_relation ul,
+.submenu_active .menu li.change_relation ul{
+   display:none;
+}
+.submenu_active .menu li.change_relation ul.show{
+   display:block;
+   left:80pt;
+   top:2em;
+   text-align:left;
+}
+.profile_comp-header .menu li.change_relation ul.show{
+   display:block;
+}
+.lftcol-groups-items .title:hover .tools
+{
+   background: transparent url(/i/edit.gif) no-repeat left center;
+   display: block;
+   position: absolute;
+   top: .45em;
+   right: .2em;
+   width: 16px;
+   height: 16px;
+}
+   .lftcol-groups-items .title .tools:hover
+   {
+      cursor:pointer;
+   }

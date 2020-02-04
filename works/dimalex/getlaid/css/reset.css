@@ -1,0 +1,51 @@
+/*
+Title: Reset & Override basic styles, declare Common styles
+Author: Kotsuruba Alexander
+*/
+
+
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q,
+small, strike, strong, sub, sup, tt,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+   background: transparent;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+}
+
+html { font-size: 100.1%; }
+
+body {
+   background: #F2F5F9;
+   color: #000;
+   font-size: 75%; /* Set 1em = 12px*/
+   font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+   text-align: center;
+   }
+
+fieldset, img, a img { border: 0 solid; }
+
+blockquote:before, blockquote:after,
+  q:before, q:after { content:""; }
+
+acronym, abbr { border-bottom: 1px dotted; cursor: help; }
+
+ol, ul { list-style: none; }
+
+a { color: #205EBC; text-decoration: none; }
+   a:hover { text-decoration: underline; }
+a:link *, a:visited * { cursor: pointer; }
+
+table { border: 0; border-collapse: collapse; }
+
+textarea { font-family: Arial, Tahoma, sans-serif; } 
+legend {	display: none; }

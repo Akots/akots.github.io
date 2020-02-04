@@ -1,0 +1,271 @@
+@charset "UTF-8";
+/*
+Author: Kotsuruba Alexander at http://dreamer.in.ua
+Version:  25.03.2010
+***********
+ Colors:
+   #212121 - black
+   #003264 - blue links
+*/
+   
+* { padding: 0; margin: 0; }
+html { font-size: 100.01%; }
+
+body {
+   background: #FFFFD3;
+   color: #212121;
+   font-size: 75%; /* Set 1em = 12px*/
+   font-family: Arial, Tahoma, sans-serif;
+   text-align: left;
+}
+
+/* The Begining of the End (default styles)
+----------------------------------------------- */
+fieldset, img, a img { border: 0 solid; }
+
+blockquote:before, blockquote:after,
+  q:before, q:after { content:""; }
+
+acronym, abbr { border-bottom: 1px dotted; cursor: help; }
+
+ol, ul { list-style: none; }
+
+a { color: #003264; text-decoration: none; }
+   a:hover { text-decoration: underline; }
+a:link *, a:visited * { cursor: pointer; }
+
+table { border: 0; border-collapse: collapse; }
+
+textarea { font-family: Arial, Tahoma, sans-serif; } 
+legend {	display: none; }
+
+.hidden { display: none !important; }
+
+/* Clearfix method for clearing floats */
+.clear { clear: both; }
+.floatbox { overflow: hidden; }
+.clearfix:after { clear: both; content: "."; display: block; font-size: 0; height: 0; visibility: hidden; }
+   .clearfix { display:block; }
+
+.pseudo { border-bottom: 1px dotted; cursor: pointer; text-decoration: none !important; }
+.ta-ctr { text-align: center; }
+
+.fsz-smaller { font-size: .8em; }
+.fsz-norm { font-size: 1em; }
+.fsz-bigger { font-size: 1.2em; }
+
+.grey { color: #666;	}
+
+.inputbox {
+   border: 1px solid #FFF;
+   border-radius: 2px;
+   -moz-border-radius: 2px;
+   -webkit-border-radius: 2px;
+   font-size: 1.1em;
+   vertical-align: middle;
+   padding: 3px 0 3px 2px;
+   }
+.button {
+   background: url('../images/bg-button.png') 0 0 repeat-x;
+   border: 1px solid #FFF;
+   border-radius: 2px;
+   -moz-border-radius: 2px;
+   -webkit-border-radius: 2px;
+   color: #444;
+   font-size: 1.1em;
+   font-weight: bold;
+   text-align: center;
+   vertical-align: middle;
+   text-transform: lowercase;
+   height: 24px;
+   padding: 1px 4px 2px;
+}
+
+/* =Header(logo,menu...)
+----------------------------------------------- */
+#header {
+   background: url('../images/bg-header-top-repeat.png') 0 0 repeat-x;
+   }
+   .header-bg {
+      background: url('../images/bg-header.png') 0 0 no-repeat;
+      margin: -3px -5px 0;
+      padding: 5px 5px 0;
+      }
+      #logo {	
+         background: url(../images/logo.png) top center no-repeat;
+         color: #619fdc;
+         float: left;
+         width: 199px;
+         height: 37px;
+         text-decoration: none;
+         overflow: hidden;
+         text-indent: -9000px;
+         margin: 21px 0 0 25px;
+         }
+      #header .description {
+         background: url('../images/bg-header-sperator.png') 0 0 no-repeat;
+         display: block;
+         float: left;
+         color: #3F6489;
+         font-size: 1.6em;
+         letter-spacing: .05em;
+         white-space: no-wrap;
+         margin: 13px 0 0 35px;
+         padding: 20px 0 14px 32px;
+         }
+      .top-menu {
+         background: url('../images/bg-topm-repeat.png') 0 0 repeat-x;
+         clear: both;
+         float: left;
+         width: 100%;
+         height: 38px;
+         margin-top: 9px;
+         }
+         .top-menu li {
+            background: url('../images/bg-topm-separator.png') 100% 0 no-repeat;
+            float: left;
+            width: 110px;
+            height: 38px;
+            font: 1.6em/38px "Myriad Pro", Arial, Tahoma, sans-serif;
+            letter-spacing: .04em;
+            text-align: center;
+            padding-right: 1px;
+            }
+            .top-menu a {
+               color: #FFF;
+               display: block;
+               text-shadow: 0 1px 5px #333;
+               }
+            .top-menu a:hover {
+               background: url('../images/bg-topm-hover-repeat.png') 0 0 repeat-x;
+               text-decoration: none;
+               }
+            .top-menu a:active, .top-menu .active a {
+               background: url('../images/bg-topm-selected.png') 0 0 no-repeat;
+               }
+
+
+         .search {
+            float: right;
+            margin: 6px 10px 0 0;
+            }
+            .search .inputbox {
+               margin-right: 3px;
+               }
+         .sub-menu {
+            background: url('../images/bg-sub-menu.png') 0 0 repeat-x;
+            height: 23px;
+            float: left;
+            width: 100%;
+            position: relative;
+            padding: 8px 0 0;
+            }
+            .sub-menu li {
+               background: url('../images/ic-str.png') 0 50% no-repeat;
+               display: inline;
+               font-size: 1.1em;
+               font-weight: bold;
+               margin: 0 5px 0 10px;
+               padding-left: 9px;
+               }
+               .sub-menu a {
+                  color: #15222E;
+                  }
+
+/* =Main
+----------------------------------------------- */
+.teaser {
+   background: #FFFFB5 url('../images/img-teaser-team.jpg') 0 0 no-repeat;
+   border-radius: 10px;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   color: #000;
+   position: relative;
+   overflow: hidden;
+   font-size: 1.2em;
+   line-height: 1.3em;
+   font-style: italic;
+   height: 69px;
+   margin: 0 0 10px;
+   padding: 28px 10px 0 270px;
+   }
+
+
+#main .header {
+   color: #333;
+   font: normal 2em "Myriad Pro", Arial, Tahoma, sans-serif;
+   }
+.content .header {
+   margin-bottom: .2em;
+   }
+
+.article {
+   margin-bottom: 1em;
+   }
+   .article .entry-title {
+      font-size: 1.4em;
+      font-weight: normal;
+      }
+   .article .entry-summary {
+      line-height: 1.4em;
+      }
+      .article .entry-summary p {
+         margin-bottom: .3em;
+         }
+   .article a:visited { color: #5481AF; }
+
+.reviews {
+   border-top: 1px solid #D4D6D8;
+   overflow: hidden;
+   clear: both;
+   margin-top: 30px;
+   padding-top: 14px;
+   }
+   .reviews p {
+      font-style: italic;
+      }
+   .reviews .name {
+      float: right;
+      }
+
+/* =Aside
+----------------------------------------------- */
+.aside .mod {
+   background-color: #FFF;
+   margin-bottom: 20px;
+   padding: 8px;
+   }
+   #main .aside .header {
+      font-size: 1.3em;
+      margin-bottom: .2em;
+      }
+   .aside p, .aside li {
+      line-height: 1.4em;
+      margin-bottom: .2em;
+      }
+   .aside ul {
+      list-style: disc outside;
+      margin-bottom: .3em;
+      }
+      .aside ul li {
+         margin-left: 1.3em;
+         }
+
+.box-shadow #wrapper {
+   background: #FFF;
+   -moz-box-shadow: 0 4px 10px #CFCFAB; /* FF3.5+ */
+   -webkit-box-shadow: 0 4px 10px #CFCFAB; /* Saf3.0+, Chrome */
+   box-shadow: 0 4px 10px #CFCFAB; /* Opera 10.5, IE 9.0 */
+   width: 960px;
+   padding: 0;
+   }
+.box-shadow .header-bg {
+   background: none;
+   margin: 0;
+   padding: 0;
+   }
+.box-shadow #footer {
+   background: #FFF;
+   margin: 0;
+   padding: 0;
+   }

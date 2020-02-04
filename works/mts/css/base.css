@@ -1,0 +1,304 @@
+/*
+Author: Kotsuruba Alexander
+Version:  4.07.08
+*/
+/* Colors
+	#666- black
+	#0197fe - blue
+	#ff7f00 - orange */
+	
+*{ font-size: 100.01%; padding: 0; margin: 0; }
+body {
+	background: #FFF;
+	color: #666;
+	font-size: 62.5%;
+	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+/* =Default styles
+----------------------------------------------- */
+a:link, a:active, a:visited { color: #f00; text-decoration: underline }
+
+fieldset, a img {border: none; border: 0;}
+
+legend {	display: none;}
+label {cursor: pointer;}
+.inputbox {
+	border: 1px solid #DBDBDB;
+	border-top: 1px solid #525252;
+	border-left: 1px solid #404040;
+	font-size: 13px;
+	padding: 1px 0 2px 1px;
+	}
+a.button:link, a.button:active, a.button:visited {
+	background: url(../images/bg-button.gif) 100% -39px no-repeat;
+	color: #333;
+	display: block;
+   float: left;
+  	font-weight: bold;
+   text-decoration: none;
+   padding-right: 10px;
+	margin-right: 10px;
+   outline: none;
+	}
+	a.button span {
+		background: url(../images/bg-button.gif) 0 0 no-repeat;
+		display: block;
+		cursor: pointer;
+  		line-height: 11px;
+  		padding: 7px 4px 8px 15px;
+		}
+	a.disable-button {
+		color: #CCC;
+		cursor: auto;
+		filter:alpha(opacity=50);
+		-moz-opacity:0.5;
+		-khtml-opacity: 0.5;
+		opacity: 0.5;
+		}
+		a.disable-button span {
+			cursor: auto;
+			}
+.ta-ctr {
+	text-align: center;
+	}
+/* =Header(logo,menu...)
+----------------------------------------------- */
+#header-outer {
+	background: #f00 url(../images/bg_inner_head.gif) repeat-x 0 100%;
+	text-align: center;
+	}
+#header-inner {
+	width: 1000px;
+	text-align: left;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 28px 0 0 0;
+	}
+	#logo {	
+		float: left;
+		margin: 4px 0 26px 23px
+		}
+	#header-inner h1 {
+		color: #FFF;
+		font-size: 3.7em;
+		font-weight: normal;
+		float: left;
+		margin: 27px 0 0 20px;
+		}
+
+	/* =Content(main)
+	----------------------------------------------- */
+
+#content-outer {
+	background: url(../images/bg_inner_links.gif) 0 0 repeat-x;
+	text-align: center;
+	padding-top: 38px;
+	}
+	#content-inner {
+		width: 1000px;
+		margin: 0 auto;
+		text-align: center;
+		}
+		#bcrumbs {
+			width: 1000px;
+			color: #000;
+			padding-left: 26px;
+			margin: 20px 0 14px 0;
+			text-align: left;
+			font-size: 1.2em;
+			text-align: left;
+			}
+			#bcrumbs a {
+				color: #f00;
+				padding: 0 2px 0 5px;
+				text-decoration: none;
+				}
+			#bcrumbs a:hover {
+				text-decoration: underline;
+				}
+			#bcrumbs span {
+				color: #000;
+				padding: 0 2px 0 5px
+				}
+			#main {
+				width: 533px;
+				margin: 0 auto;
+				text-align: left;
+				}
+			h1 {
+				color: #414f5a;
+				font-size: 3em;
+				font-weight: normal;
+				margin: 0 0 16px 70px;
+				}
+			.description-step {
+				color: #414f5a;
+				font-size: 1.2em;
+				text-decoration: underline;
+				margin: 0 0 4px 26px;
+				}
+			#block-data-inputs {
+				margin-top: 34px;
+				width: 465px;
+				}
+				#block-data-inputs-inner {
+					width: 510px;
+					padding: 0 0 0 26px;
+					}
+					*html #block-data-inputs-inner {
+						width: 550px;
+						}/* only for IE6 */
+				.inputs {
+					overflow: hidden;
+					clear: both;
+					width: 100%;
+					margin-bottom: 25px;
+					}
+				.inp-ctr {
+					text-align: left;
+					width: 250px; 
+					margin: 0 auto 25px auto;
+					}
+					.inputs label {
+						color: #000;
+						font-size: 1.2em;
+						line-height: 1.4;
+						float: left;
+						width: 215px;
+						margin-right: 33px;
+						padding: 2px 0 0 0;
+						}
+						.inputs label i {
+							color: #F00;
+							}
+						.inputs label .tooltip {
+							float: right;
+							}
+							#tooltip{
+								background: #F7F5D1;
+								color: #333;
+								display: none;
+								font-size: 1.2em;
+								position: absolute;
+								border: 1px solid #333;
+								padding: 2px 5px;
+								}	
+						.inputs label .img-descr {
+							float: right;
+							margin-top: -2px;
+							}
+					.inputs input {
+						width: 215px;
+						}
+					.summary .inputs input {
+						text-align: center;
+						}
+					#check-availability, #create-user {
+						background: url(../images/bg-button-check.gif) 0 0 no-repeat;
+						display: block;
+						color: #333;
+						font-weight: bold;
+						font-size: 1.2em;
+						position: absolute;
+						width: 85px;
+						text-align: center;
+						text-decoration: none;
+						margin: 3px 0 0 -95px;
+						padding: 8px 0;
+						}
+					#create-user {
+						position: relative !important;
+						float: right;
+						text-align: left;
+						margin: 3px 0 0 0;
+						padding: 8px 0 8px 14px;
+						}
+					#block-data-inputs hr {
+						background: #333;
+						border-bottom: 1px solid #C1C1C1;
+						line-height: 1;
+						margin: 0 10px 25px -26px;
+						}
+					#check-process-callname {
+						background: url(../images/loadingAnimation.gif) 0 0 no-repeat;
+						height: 13px;
+						display: none;
+						margin: -16px 0 25px 0;
+						}
+					#check-result-callname, #check-result-password {
+						display: none;
+						}
+					.error-massage {
+						color: #F00;
+						display: none;
+						text-align: center;
+						margin: -16px 0 25px 0;
+						}
+					.success {
+						color: #32BF25;
+						text-align: center;
+						margin: -16px 0 25px 0;
+						}
+					#message-block {
+						font-size: 1.2em;
+						line-height: 1.2;
+						margin: 0 0 10px 0;
+						padding: 10px 20px;
+						}
+						.error-msg {
+							background: #FBE3E4;
+							color: #8a1f11;
+							}
+						.success-msg {
+							display: none;
+							text-align: center;
+							color: #32BF25;
+							}
+					#buttons {
+						display: block;
+						text-align: center;
+						margin: 0 0 0 190px;
+						}
+						#buttons .button {
+							font-size: 1.4em;
+							}
+			/* individual styles for pages */
+			.login-page #block-data-inputs-inner {
+				width: 340px;
+				}
+				*html .login-page #block-data-inputs-inner {
+					width: 355px;
+					}/* only for IE6 */
+			.login-page .inputs {
+				clear: left;
+				width: 240px;
+				}
+			.login-page #buttons {
+				display: block;
+				text-align: center;
+				margin: 0 0 0 100px;
+				}
+
+			.edit-page h1 {
+				margin: 0 0 0 155px;
+				}
+	/* =Footer
+	----------------------------------------------- */	
+#footer {
+	height: 122px;
+	clear: both;
+	}
+
+	#footer p {
+		font-size: 1.1em;
+		margin: 40px 0 0 21px;
+		}
+
+	#footer p a {
+		color: #6B7B87;
+		text-decoration: underline;
+		padding-right: 10px;
+		}

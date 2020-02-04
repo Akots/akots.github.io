@@ -1,0 +1,556 @@
+@charset "UTF-8";
+/*Styles for Profile page*/
+.profile #main  {
+   padding: 15px 7px 18px 6px;
+   }
+.profile #lft-col {
+   margin-right: 10px;
+   }
+.profile #sidebar {
+   margin-top: 106px;
+   }
+.profile .with-lft-col #content {
+   margin: 8px 0 0;
+}
+.profile #content h1.name {
+   color: #010101;
+   font-size: 3.3em;
+   margin-bottom: 4px;
+   }
+.profile .info li {
+   margin-bottom: .4em;
+   }
+   .profile .info li b {
+      margin-left: 4px;
+      }
+
+.message {
+   margin: 10px 0 16px -15px;
+   }
+   .message .mesage-bg-top {
+      background: url('../images/bg-message-top.png') 0 0 no-repeat;
+      overflow: hidden;
+      }
+   .message .mesage-bg-bottom {
+      background: url('../images/bg-message-bottom.png') 100% 99% no-repeat;
+      overflow: hidden;
+      }
+   .message .inner {
+      background: #FFF;
+      margin: 36px 0 16px 15px;
+      padding: 0 12px;
+      }
+      .message .inner form,
+      .message p {
+         position: relative;
+         overflow: hidden;
+         margin: -20px 0 -2px;
+         }
+         .message label {
+            display: block;
+            font-size: 2.3em;
+            letter-spacing: -0.005em;
+            margin-bottom: 3px;
+            }
+         .message .inputbox {
+            width: 459px;
+            font-size: 1.6em;
+            height: 92px;
+            margin-bottom: 5px;
+            }
+         .message p {
+            font-size: 2.2em;
+            }
+         .message .button {
+            float: right;
+            }
+.comments-list .header {
+   border: none;
+   }
+.hentry {
+   background: url('../images/bg-list-shw-bottom-transp.png') 50% 100% no-repeat;
+   }
+
+/*Lft col*/
+#lft-col .blc p {
+   line-height: 1.4em;
+   margin-bottom: 4px;
+   }
+#lft-col .blc.user-foto {
+   margin-bottom: 3px;
+   }
+#lft-col .blc.with-shadow {
+   margin: 0 -8px 0 -11px;
+   }
+   #lft-col .blc.with-shadow .inner {
+      padding: 7px 8px 7px 11px;
+      }
+   .blc .ic-str {
+      background: url('../images/ic-blue-str.png') 1px 5px no-repeat;
+      font-weight: bold;
+      padding: 2px 0 2px 15px;
+      }
+   .blc .ic-str:link, .blc .ic-str:active, .blc .ic-str:visited {
+      color: #27B2E9;   
+      }
+   #lft-col .list-fotos .ico-delete {
+      margin: -12px 0 0;
+      right: 0;
+      }
+   .blc .list-fotos {
+      margin-bottom: 13px;
+      }
+   #lft-col .blc.anmodninger p {
+      margin: 3px 0 12px;
+      }
+   #lft-col .blc.facebook .header {
+      font-size: 1em;
+      font-weight: normal;
+      letter-spacing: -0.01em;
+      }
+   #lft-col .blc.invitation {
+      margin: 12px 0 20px;
+      }
+   #lft-col .blc.del-profile {
+      text-align: center;
+      }
+   #lft-col .blc.del-profile .inner {
+      background: none;
+      }
+
+/**** Burn rating *****/
+.burn-rating {
+   background: url('../images/bg-burn-rate.png') 0 0 no-repeat;
+   color: #FFF;
+   font-family: "Times New Roman", serif;
+   width: 397px;
+   height: 124px;
+   position: absolute;
+   right: -19px;
+   z-index: 5;
+   margin: -14px 0 0;
+   padding: 20px 25px 30px;
+   }
+   .burn-rating .label {
+      font-size: 1.8em;
+      letter-spacing: -0.01em;
+      float: left;
+      }
+   .fire-points {
+      overflow: hidden;
+      }
+      .burn-rating .rating {
+         float: right;
+         }
+   /* Flame rating */
+   .rating,
+   .rating a:hover,
+   .rating a:active,
+   .rating a:focus,
+   .rating .current-rating {
+      background: url(../images/ics-flame-rating.png) 0 -32px repeat-x;
+      height: 29px;
+      line-height: 29px;
+      }
+   .rating {
+      position: relative;
+      width: 275px;
+      height: 29px;
+      overflow: hidden;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background-position:  left top;
+      }
+   .rating li {
+      display: inline;
+      }
+   .rating a, .rating .current-rating {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-indent: -1000em;
+      height: 29px;
+      line-height: 29px;
+      outline: none;
+      overflow: hidden;
+      border: none;
+      }
+   .rating a.one-flame {
+      width: 10%;
+      z-index: 11;
+      }
+   .rating a.two-flame {
+      width: 20%;
+      z-index: 10;
+      }
+   .rating a.three-flame {
+      width: 30%;
+      z-index: 9;
+      }
+   .rating a.four-flame {
+      width: 40%;
+      z-index: 8;
+      }
+   .rating a.five-flame {
+      width: 50%;
+      z-index: 7;
+      }
+   .rating a.six-flame {
+      width: 60%;
+      z-index: 6;
+      }
+   .rating a.seven-flame {
+      width: 70%;
+      z-index: 5;
+      }
+   .rating a.eight-flame {
+      width: 80%;
+      z-index: 4;
+      }
+   .rating a.eight-flame {
+      width: 80%;
+      z-index: 4;
+      }
+   .rating a.nine-flame {
+      width: 90%;
+      z-index: 3;
+      }
+   .rating a.ten-flame {
+      width: 100%;
+      z-index: 2;
+      }
+   
+   .burn-rating .placing,
+   .burn-rating .points {
+      color: #FDC689;
+      font-size: 1.7em;
+      }
+      .placing .count {
+         font-size: 46px;
+         margin-left: 4px;
+         }
+   .burn-rating .help {
+      float: right;
+      background: url('../images/ic-burn-rate-help.png') 0 0 no-repeat;
+      width: 27px;
+      height: 27px;
+      margin-left: 9px;
+      }
+   .burn-rating .points,
+   .burn-rating .help {
+      float: right;
+      margin-top: 28px;
+      }
+   .burn-rating .activity {
+      border-top: 1px solid #1A1A1A;
+      clear: both;
+      margin-top: 8px;
+      padding-top: 4px;
+      }
+      .burn-rating .activity-bar {
+         background: url('../images/bg-burn-bar-activity.png') 0 0 no-repeat;
+         float: left;
+         width: 256px;
+         height: 13px;
+         position: relative;
+         margin: 8px 0 0 12px;
+         }
+         .burn-rating .activity-bar .current-activity {
+            background: url('../images/bg-burn-bar-activity-on.png') 0 0 repeat-x;
+            position: relative;
+            height: 11px;
+            margin: 0 1px;
+            top: 1px;
+            }
+         .burn-rating .activity-bar .count {
+               position: absolute;
+               font-size: .9em;
+               top: 12px;
+               margin-left: 140px;
+               }
+      .burn-rating .activity .help {
+         margin-top: 2px; 
+         }
+
+/******************
+* Modal windows
+*******************/
+.modal-window.edit-profile {
+   margin: -22em 0 0 -22em;
+   width: 51.2em;
+   }
+   .modal-window.edit-profile .header {
+      margin-bottom: 12px;
+      }
+   .edit-profile .change-foto {
+      position: relative;
+      }
+      .edit-profile .change-foto img {
+         float: left;
+         margin-right: 16px;
+         }
+      .edit-profile .change-foto ul {
+         float: left;
+         position: relative;
+         margin-top: 80px;
+         }
+         .edit-profile .change-foto li {
+            line-height: 2.4em;
+            }
+      .edit-profile .change-foto .button {
+         display: block;
+         }
+      .edit-profile .color-picker .colors {
+         float: left;
+         margin: 0 19px 0 0;
+         padding-top: 1px;
+         }
+         .color-picker .colors li {
+            float: left;
+            margin-right: 5px;
+            }
+         .color-picker .colors .active {
+            border: 1px solid #000;
+            margin: -1px 4px 0 -1px;
+            }
+            .color-picker .colors a {
+               border: 2px solid #BEBEBE;
+               display: block;
+               width: 10px;
+               height: 10px;
+               font-size: 8px;
+               }
+         .bg-picker .area {
+            background: #D1D1D1;
+            text-align: center;
+            width: 140px;
+            height: 140px;
+            float: left;
+            margin-right: 16px;
+            }
+         .bg-picker ul {
+            float: left;
+            margin-top: 50px;
+            }
+            .bg-picker li {
+               line-height: 2.4em;
+               }
+.modal-window.delete-content {
+   width: 26em;
+   }
+   .modal-window.delete-content p {
+      margin-bottom: 20px;
+      }
+.modal-window.upload .upload-progress {
+   border: 1px solid #000;
+   height: 9px;
+   margin: 20px 0 10px;
+   }
+   .modal-window.upload .indicator {
+      background: #000;
+      height: 9px;
+      position: relative;
+      }
+.modal-window.activity-overview {
+   margin: -24em 0 0 -22em;
+   width: 45em;
+   }
+   .modal-window.activity-overview .header {
+      margin-bottom: 12px;
+      }
+   .modal-window.activity-overview .sum-points {
+      float: right;
+      margin: 0 0 0 12px;
+      }
+   .modal-window.activity-overview .profile-image .label {
+      float: none;
+      margin-right: 30px;
+      }
+   .modal-window.activity-overview .profile-image img {
+      vertical-align: middle;
+      }
+   .modal-window.activity-overview .points li {
+      border: 1px solid #C6C6C6;
+      color: #B4B4B4;
+      float: left;
+      height: 30px;
+      line-height: 30px;
+      font-weight: bold;
+      margin-left: 3px;
+      }
+   .modal-window.activity-overview .points .on {
+      border: 1px solid #000;
+      color: #000;
+      }
+   .modal-window.activity-overview .points .p3 {
+      width: 30px;
+      text-align: center;
+      }
+   .modal-window.activity-overview .points .p10 {
+      width: 41px;
+      text-align: center;
+      }
+   .modal-window.activity-overview .profile-messages .hentry {
+      background: none;
+      }
+      .modal-window.activity-overview .profile-messages .hentry li {
+         border-top: none;
+         border-bottom: 1px solid #E5E5E5;
+         min-height: inherit;
+         padding-right: 63px;
+         }
+      .modal-window.activity-overview .profile-messages .hentry .sum-points {
+         margin-right: -63px;
+         }
+.modal-window.edit-friends {
+   margin: -22em 0 0 -21em;
+   width: 43em;
+   }
+   .list-edit-friends li {
+      float: left;
+      width: 240px;
+      }
+   .list-edit-friends li.section {
+      float: left;
+      width: 100%;
+      }
+      .list-edit-friends img {
+         float: left;
+         margin-right: 14px;
+         }
+      .list-edit-friends .title {
+         font-weight: bold;
+         display: block;
+         line-height: 1.6em;
+         margin-bottom: 10px;
+         }
+      .list-edit-friends label {
+         display: block;
+         line-height: 1.5em;
+         margin-bottom: 4px;
+         }
+         .list-edit-friends .title:link, .list-edit-friends .title:active, .list-edit-friends .title:visited {
+            color: #C1062D;
+            }
+.modal-window.friends-request {
+   margin: -22em 0 0 -21em;
+   width: 43em;
+   }
+   .modal-window.friends-request .header {
+      margin-bottom: 12px;
+      }
+   .modal-window.friends-request .list-edit-friends .title {
+      margin-bottom: 4px;
+      }
+      .modal-window.friends-request .section {
+         padding: 9px 0;
+         }
+.modal-window.report {
+   margin-top: -8em;
+   }
+   .modal-window.report label {
+      display: block;
+      margin-bottom: 12px;
+      }
+   .modal-window.report .inputbox {
+      width: 99%;
+      margin-bottom: 12px;
+      }
+
+.modal-window.edit-settings {
+   margin: -26em 0 0 -21em;
+   width: 43em;
+   }
+   .modal-window.edit-settings .section {
+      padding-bottom: 0;
+      }
+   .modal-window.edit-settings .section.buttons {
+      padding-bottom: 7px;
+      }
+   .modal-window.edit-settings label {
+      font-size: .9em;
+      line-height: 1.6em;
+      }
+   .modal-window.edit-settings .input label {
+      width: 125px;
+      }
+   .modal-window.edit-settings .scroll-area {
+      height: 194px;
+      }
+      .modal-window.edit-settings .scroll-area .section {
+         margin: 0 0 0 10px;
+         padding: 9px 0;
+         }
+.modal-window.delete-profile {
+   margin: -21em 0 0 -21em;
+   width: 43em;
+   }
+   .modal-window.delete-profile .header {
+      margin-bottom: 6px;
+      }
+   .modal-window.delete-profile .section {
+      padding-bottom: 4px;
+      }
+   .modal-window.delete-profile p {
+      line-height: 1.6em;
+      margin-bottom: 24px;
+      }
+   .modal-window.delete-profile .input label {
+      font-size: .9em;
+      width: 125px;
+      }
+.modal-window.login {
+   margin: -11em 0 0 -22em;
+   width: 45em;
+   }
+   .modal-window.login .autorization-blc {
+      border: none;
+      margin: 0;
+      padding: 0;
+      }
+      .modal-window.login .autorization-methods li {
+         border: none;
+         height: auto;
+         }
+         .modal-window.login .inner .input label {
+            font-size: .9em;
+            width: 67px;
+            }
+      .modal-window.login .autorization-methods .form-login {
+         border-right: 1px solid #E5E5E5;
+         padding-right: 25px;
+         width: 231px;
+         }
+      .modal-window.login .autorization-methods .login-facebook {
+         border-right: none;
+         width: 237px;
+         }
+         .modal-window.login .autorization-methods .login-facebook p {
+            line-height: 1.7em;
+            margin-bottom: 15px;
+            }
+      .modal-window.login .autorization-methods .register {
+         border-top: 1px solid #E5E5E5;
+         width: 99%;
+         margin: 15px 0 0;
+         padding: 15px 0 0;
+         }
+      .modal-window.login .autorization-methods .register .header {
+         display: inline;
+         }
+      .modal-window.login .autorization-methods .register .button {
+         float: none;
+         margin-left: 16px;
+         }
+.modal-window.challenge-video {
+   margin: -22em 0 0 -21em;
+   width: 48em;
+   }
+   .modal-window.challenge-video .select-challenge {
+      padding-bottom: 30px;
+      }
+   .select-challenge .challenge {
+      float: left;
+      width: 240px;
+      }

@@ -1,0 +1,107 @@
+.feedback_cont
+{
+   position: absolute !important;
+   right: 60px;
+   bottom: -20px;
+   z-index: 300;
+   display: none;
+   width: 500px;
+   padding: 0 0 12px 0;
+   background: #ddd;
+   font-size: 1.2em;
+}
+.feedback_cont .content
+{
+   padding-top:10px;
+}
+.feedback_cont .email,
+.feedback_cont textarea
+{
+   width: 380px;
+   margin: 0 0 15px 0;
+   border: 1px solid #ccc;
+   padding: 3px 5px;
+   float:right;
+}
+.feedback_cont label
+{
+   float:left;
+}
+.feedback_cont .submit
+{
+   margin-left:130px;
+}
+.feedback_cont div.error
+{
+   font-size:10px;
+   color:gray;
+   float:right;
+   height:0;
+   width: 390px;
+   position:relative;
+   top:-15px;
+}
+
+/* ---------- Форма обратной связи ---------- 
+
+
+
+.feedback label
+{
+   display: block;
+   clear: both;
+   width: auto;
+   margin: 8px 20px 0 20px;
+   padding: 0;
+   font-size: 0.8em;
+}
+
+
+.feedback .input,
+.feedback div.error,
+.feedback div.result
+{
+   width: auto;
+   margin: 0 20px;
+   padding: 0;
+}
+
+.feedback div.error,
+.feedback div.result
+{
+   margin: 0;
+   font-size: 0.8em;
+   color: #f00;
+}
+
+.feedback div.result
+{
+   margin: 8px 0;
+   border-top: 1px dashed #fbb;
+   border-bottom: 1px dashed #fbb;
+   padding: 3px 20px;
+   background: #fee;
+}
+
+.feedback div.status
+{
+   border-color: #aaa;
+   color: #000;
+}
+
+.feedback .submit
+{
+   width: auto;
+   margin: 8px 20px 0 20px;
+}
+
+.feedback .submit input
+{
+   margin: 0 15px 0 0;
+}
+
+.feedback .bg-loading
+{
+   background: #fff url(/i/indicator-load.gif) 50% 50% no-repeat;
+}
+*/

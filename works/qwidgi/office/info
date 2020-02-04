@@ -1,0 +1,98 @@
+{
+   info:{
+      hasContacts : false,
+      hasAlbums   : true,
+      office_id   : 12345,
+      user_id     : 123,
+      first_name  : 'Артем',
+      second_name  : 'Анищенко'
+   },
+   list:[
+      {
+         id:123,
+         logotype_url : '/office/1/logo',
+         comp_name: 'Днепропетровск',
+         city: 'Днепропетровск',
+         number_vacancies: 8,
+         number_photos: 1251,
+         number_messages: 58,
+         number_employees: 200,
+         year_create: '2008',
+         pattern_ownership: null,
+         branch: 'Агропромышленность',
+         venue: 'Героев Сталинграда, 139к',
+         comp_phone: '(0562) 32-34-54',
+         comp_email: 'petr.rostov@gmail.com',
+         comp_site: 'http://gmail.com/',
+         first_name: 'Артем',
+         second_name: 'Геннадьевич',
+         last_name: 'Анищенко',
+         logo_crop:{x1:10,y1:10,x2:110,y2:110},
+         change_fields: [3,6,8],
+         edit:true,
+         relations:{
+            '123':2,
+            '1234':1,
+            '1235':3,
+            '1':1
+         }
+      },
+      {
+         id:1234,
+         logotype_url : '/i/photo/90x90/2.jpg',
+         comp_name: 'Сигура Софт',
+         city: 'Калининград',
+         number_vacancies: 7,
+         number_photos: 15230,
+         number_messages: 327,
+         number_employees: 24,
+         year_create: '2007',
+         pattern_ownership: 'ООО',
+         branch: 'Информационные технологии',
+         venue: 'Площадь победы, 2',
+         comp_phone: '(4012) 95-00-55',
+         comp_email: 'self@sigurasoft.com',
+         comp_site: 'http://sigurasoft.com/',
+         first_name: 'Артур',
+         second_name: 'Геннадьевич',
+         last_name: 'Дудник',
+         logo_crop:{x1:10,y1:10,x2:110,y2:110},
+         edit:false,
+         relations:{
+            '123':2,
+            '1234':1,
+            '1235':3,
+            '12':2
+         }
+      },
+      {
+         id:12345,
+         logotype_url : '/i/photo/90x90/2.jpg',
+         comp_name: 'Не заполненый офис',
+         city: '',
+         number_vacancies: 0,
+         number_photos: 0,
+         number_messages: 0,
+         number_employees: 0,
+         year_create: '',
+         pattern_ownership: '',
+         branch: 'Информационные технологии',
+         venue: 'Площадь победы, 2',
+         comp_phone: '',
+         comp_email: '',
+         comp_site: '',
+         first_name: '',
+         second_name: 'Геннадьевич',
+         last_name: '',
+         edit:true,
+         change_fields: [1,2,3,4,5,6,7,8,9,10,11],
+         logo_crop:{x1:10,y1:10,x2:110,y2:110},
+         relations:{
+           '123':2,
+           '1234':1,
+           '1235':3,
+           '123456':3
+         }
+     }
+   ]
+}

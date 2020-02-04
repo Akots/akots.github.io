@@ -1,0 +1,65 @@
+{
+   info: false,
+   edit:true,
+   list:
+   [
+      {
+         id:1,
+         label: '/office/123/albums/1',
+         thum: '/office/123/album/1/thum',
+         title: 'Это я :) 1',
+         description:'Разные фотографии растеряные по лабиринтам времени и страницам жизненного контекста',
+         last_update: 'Обновлен на прошлой неделе',
+         create:'Создан 18 июля 2007 года',
+         list:
+         [
+            '/office/123/album/1/view/2',
+            '/office/123/album/1/view/2',
+            '/office/123/album/1/view/3',
+            '/office/123/album/1/view/4',
+            '/office/123/album/1/view/5',
+            '/office/123/album/1/view/6',
+            '/office/123/album/1/view/7',
+            '/office/123/album/1/view/8',
+            '/office/123/album/1/view/9',
+            '/office/123/album/1/view/10',
+            '/office/123/album/1/view/11',
+            '/office/123/album/1/view/12',
+            '/office/123/album/1/view/13',
+            '/office/123/album/1/view/14',
+            '/office/123/album/1/view/15',
+            '/office/123/album/1/view/16',
+            '/office/123/album/1/view/17',
+            '/office/123/album/1/view/18',
+            '/office/123/album/1/view/19'
+         ]
+      },
+      {
+         id:2,
+         label: '/office/123/albums/2',
+         thum: '/office/123/album/2/thum',
+         title: 'Я в Питере :) 2',
+         description: 'Был у друзей, вместе работали в одной лаборотории, Кенегсберга, разрабатывали сываротку вечной молодости. Столько воды с тех пор утекло... Постоянно паспорт менять, делать вид что ты моложе и глупее.',
+         last_update: 'Обновлен 27 дней назад',
+         create:'Создан 8 июля 1907 года',
+         list:
+         [
+            '/office/123/album/2/view/1',
+            '/office/123/album/2/view/2',
+            '/office/123/album/2/view/3',
+            '/office/123/album/2/view/4',
+            '/office/123/album/2/view/5',
+            '/office/123/album/2/view/6',
+            '/office/123/album/2/view/7',
+            '/office/123/album/2/view/8',
+            '/office/123/album/2/view/9',
+            '/office/123/album/2/view/10',
+            '/office/123/album/2/view/11',
+            '/office/123/album/2/view/12',
+            '/office/123/album/2/view/13',
+            '/office/123/album/2/view/14',
+            '/office/123/album/2/view/15',
+         ]
+     }
+   ]
+}

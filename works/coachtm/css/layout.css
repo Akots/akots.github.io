@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/*
+Layout Styles
+Author: Kotsuruba Alexander at http://dreamer.in.ua
+Version:  25.03.2010
+*/
+
+#wrapper {
+   background: #FFF url('../images/bg-main-repeat.png') 0 0 repeat-y;
+   width: 960px;
+   text-align: left;
+   margin: 8px auto 0;
+   padding: 0 4px;
+   }
+
+   
+   /* =Main
+   ----------------------------------------------- */
+   #main {
+      clear: both;
+      overflow: hidden;
+      padding: 10px;
+      }
+      .with-aside .content {
+         float: left;
+         width: 49.16em;
+         }
+      .content {
+         background-color: #E7F3FE;
+         border-radius: 10px;
+         -moz-border-radius: 10px;
+         -webkit-border-radius: 10px;
+         min-height: 427px;
+         padding: 10px 15px;
+         }
+
+   /* =Aside
+   ----------------------------------------------- */
+   .aside {
+      background-color: #E7F3FE;
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      float: right;
+      width: 24.15em;
+      min-height: 437px;
+      padding: 10px 10px 0;
+      }
+
+   /* =Footer
+   ----------------------------------------------- */	
+   #footer {
+      background: url('../images/bg-footer-corners.png') 0 100% no-repeat;
+      color: #333;
+      margin: 0 -4px -4px;
+      padding: 0 4px 4px;
+      }
+      .footer-bg {
+         background-color: #EDEDED;
+         padding: 10px 10px;
+         }
+         #footer .links {
+            float: right;
+            }

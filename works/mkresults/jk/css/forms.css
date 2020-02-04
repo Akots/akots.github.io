@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/*
+Title: Forms
+*/
+textarea { font-family: Arial, Tahoma, sans-serif; } 
+legend {	display: none; }
+
+input[type=text] {
+   border: 1px solid #AFAFAF;
+   border-radius: 2px; 
+   -moz-border-radius: 2px;
+   -webkit-border-radius: 2px;
+   vertical-align: middle;
+   font-size: 1em;
+   padding: 2px 0 2px 2px;
+   }
+input.inputbox {
+   background: none;
+   font-size: 1em;
+   border: none;
+   vertical-align: middle;
+   padding: 0;
+   }
+.button {
+   background: url('../images/bg-button-small.png');
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   border: none;
+   font-size: 1em;
+   color: #FFF;
+   font-weight: bold;
+   line-height: 23px;
+   vertical-align: middle;
+   width: 63px;
+   height: 23px;
+   text-align: center;
+   padding: 0 0 5px;
+   }
+.blue-medium {
+   background: url('../images/bg-button-medium.png');
+   width: 76px;
+   height: 23px;
+   }
+.blue-big {
+   background: url('../images/bg-button-big.png');
+   width: 95px;
+   height: 23px;
+   }
+.blue-large {
+   background: url('../images/bg-button-large.png');
+   width: 131px;
+   height: 23px;
+   }
+.input {
+   margin: 4px 10px 14px 0;
+   }
+.input.rounded {
+   background: url('../images/bg-inputbox.png') 0 0 no-repeat;
+   height: 27px;
+   }
+   .input .inp-bg {
+      background: url('../images/bg-inputbox.png') 100% -27px no-repeat;
+      float: right;
+      width: 14px;
+      height: 27px;
+      margin-right: -10px;
+      }
+   .input .inputbox {
+      width: 220px;
+      margin: 6px 0 0 8px;
+      }
+#content .form-cont .header {
+   border: none;
+   color: #000;
+   font-size: 1.4em;
+   font-weight: bold;
+   }
+.form-cont fieldset {
+   border: 1px solid #CFCFD1;
+   border-top: 2px solid #CFCFD1;
+   background: #F8F8F8;
+   margin-bottom: 32px;
+   padding: 14px 20px;
+   }
+   .form-cont .input {
+      font-size: 1.2em;
+      }
+      .form-cont label {
+         line-height: 1.5em;
+         width: 150px;
+         text-align: right;
+         float: left;
+         padding-right: 5px;
+         }
+      .form-cont .button {
+         margin-left: 155px;
+         }

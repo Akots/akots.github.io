@@ -1,0 +1,709 @@
+@charset "UTF-8";
+
+/*
+Title: Basic styles
+Author: Kotsuruba Alexander
+Version:  02.09.2010
+***********
+ Colors:
+   #575B5D - black
+   #BAC4C8 - borders
+*/
+
+@import "reset.css";
+@import "forms.css";
+
+/* Fonts embeding */
+@font-face {
+	font-family: 'TitilliumMaps29L400wt';
+	src: url('../fonts/titilliummaps29l001-webfont.eot');
+	src: local('☺'), url('../fonts/titilliummaps29l001-webfont.woff') format('woff'), url('../fonts/titilliummaps29l001-webfont.ttf') format('truetype'), url('../fonts/titilliummaps29l001-webfont.svg#webfontdWpv2rmi') format('svg');
+	font-weight: normal;
+	font-style: normal;
+   }
+
+@font-face {
+	font-family: 'TitilliumMaps29L800wt';
+	src: url('../fonts/titilliummaps29l002-webfont.eot');
+	src: local('☺'), url('../fonts/titilliummaps29l002-webfont.woff') format('woff'), url('../fonts/titilliummaps29l002-webfont.ttf') format('truetype'), url('../fonts/titilliummaps29l002-webfont.svg#webfontqDV5045D') format('svg');
+	font-weight: normal;
+	font-style: normal;
+   }
+
+@font-face {
+	font-family: 'TitilliumMaps29L999wt';
+	src: url('../fonts/titilliummaps29l003-webfont.eot');
+	src: local('☺'), url('../fonts/titilliummaps29l003-webfont.woff') format('woff'), url('../fonts/titilliummaps29l003-webfont.ttf') format('truetype'), url('../fonts/titilliummaps29l003-webfont.svg#webfontJdZj8BsI') format('svg');
+	font-weight: normal;
+	font-style: normal;
+   }
+
+.hidden { display: none !important; }
+
+/* Clearfix method for clearing floats */
+.clear { clear: both; }
+.floatbox { overflow: hidden; }
+.clearfix:after { clear: both; content: "."; display: block; font-size: 0; height: 0; visibility: hidden; }
+   .clearfix { display:block; }
+
+.pseudo { border-bottom: 1px dashed; cursor: pointer; text-decoration: none !important; }
+.ta-ctr { text-align: center; }
+
+.fsz-smaller { font-size: .8em; }
+.fsz-norm { font-size: 1em; }
+.fsz-bigger { font-size: 1.2em; }
+
+.grey { color: #666;	}
+.action { color: #575B5D; text-shadow: 1px 1px 0 #FFF; }
+
+.ta-rgt { text-align: right; }
+
+h1 { 
+   color: #A6D7E1;
+   font: 2.7em/1 'TitilliumMaps29L999wt',Arial,sans-serif;
+   letter-spacing: -0.005em;
+   text-shadow: 1px 1px 0 #045678;
+   margin-bottom: .8em;
+   }
+h2 {
+   color: #A6D7E1;
+   font: bold 2.8em/1 'TitilliumMaps29L999wt',Arial,sans-serif;
+   letter-spacing: -0.005em;
+   margin-bottom: .5em;
+}
+h3 { font-size: 1.3em; margin-bottom: .5em; }
+h4 { font-size: 1em; margin-bottom: .2em; }
+
+li { margin-bottom: .5em; }
+p { line-height: 1.3em; margin: 0 0 .8em; }
+
+.tabular {
+   width: 100%;
+   text-align: left;
+   margin: 0 0 1.8em;
+   }
+   .tabular thead th {
+      font-size: 1.2em;
+      font-weight: bold;
+      text-shadow: 1px 1px 0 #16455B;
+      padding: 0 0 .4em 0;
+      }
+   .tabular tbody td {
+      padding: 0 0 1.4em 0;
+      }
+
+
+/* Layouts
+----------------------------------------------- */
+#wrapper {
+   margin: 0 auto;
+   text-align: left;
+   }
+   #header {
+      width: 980px;
+      margin: 0 auto;
+      }
+   /* =Header(logo,menu...)
+   ----------------------------------------------- */
+   #header-outer {
+      background: #31819A url('../images/bg-header.png') 0 0 repeat-x;
+      height: 85px;
+      }
+      #header {
+         position: relative;
+         padding: 8px 0 0;
+         }
+         #header #logo {
+            color: #EEE;
+            font-size: 2.2em;
+            width: 244px;
+            height: 72px;
+            left: 0;
+            position: absolute;
+            }
+            #header #logo a {
+               background: url('../images/logo.png') 0 0 no-repeat;
+               display: block;
+               color: #F1F3F4;
+               text-decoration: none;
+               width: 244px;
+               height: 72px;
+               overflow: hidden;
+               text-indent: -9000px;
+               }
+         .top-menu {
+            position: relative;
+            top: 2.75em;
+            margin: 0 0 0 25em;
+            }
+            .top-menu li {
+               font-size: 1.2em;
+               height: 26px;
+               display: -moz-inline-stack;
+               display: inline-block;
+               margin: 0 1.55em 0 0;
+               }
+            .top-menu li li { font-size: 14px; }
+            .top-menu .autoriz {
+               float: right;
+               margin: 0 40px 0 0;
+               }
+               .top-menu .current a, .top-menu .current a i {
+                  background: url('../images/bg-topm-active.png') 0 0 no-repeat;
+                  }
+               .top-menu a {
+                  color: #FFF;
+                  position: relative;
+                  display: inline-block;
+                  word-spacing: nowrap;
+                  text-shadow: 1px 1px 0 rgba(8,28,44,.5);
+                  padding: .3em 0 .35em;
+                  }
+               .top-menu .autoriz a,
+               .top-menu .settings-dropdown .main-item .str {
+                  background: url('../images/ics-autoriz-v2.png') 0 6px no-repeat;
+                  }
+               .top-menu .autoriz a {
+                  margin: 0 0 0 1.2em;
+                  padding: .2em 0 .2em 1.1em;
+                  }
+                  .top-menu .autoriz .pseudo {
+                     border: none;
+                     text-decoration: none;
+                     }
+                     .top-menu .autoriz .pseudo span {
+                        border-bottom: 1px dashed;
+                        padding-bottom: .15em;
+                        }
+               .top-menu .autoriz .tg-register {
+                  background-position: 0 -30px;
+                  }
+               .top-menu .settings-dropdown {
+                  display: inline;
+                  position: absolute;
+                  margin: -2px 0 0 -93px;
+                  padding: 2px 0 0;
+                  }
+               .top-menu .settings-dropdown:hover,
+               .top-menu .settings-dropdown.dropped {
+                  background: url('../images/bg-settings-dropdown.png') 0 0 no-repeat;
+                  height: 72px;
+                  width: 131px;
+                  }
+                  .top-menu .settings-dropdown li {
+                     display: none;
+                     height: auto;
+                     margin: 0 .2em .1em .75em;
+                     }
+                     .top-menu .settings-dropdown a {
+                        display: block;
+                        text-decoration: none;
+                        margin: 0;
+                        }
+                  .top-menu .settings-dropdown .sub-item { font-size: 12px; }
+                  .top-menu .settings-dropdown:hover .sub-item,
+                  .top-menu .settings-dropdown.dropped .sub-item { display: block; }
+                  .top-menu .settings-dropdown .main-item {
+                     display: block;
+                     margin-bottom: .2em;
+                     }
+                     .top-menu .settings-dropdown .main-item a {
+                        background-position: 0 -58px;
+                        padding-left: 1.2em;
+                        }
+                     .top-menu .settings-dropdown:hover .main-item a,
+                     .top-menu .settings-dropdown.dropped .main-item a { color: #FFF; }
+                        .top-menu .settings-dropdown .main-item .str {
+                           background-position: 100% -111px;
+                           padding-right: 1.15em;
+                           }
+                     .top-menu .settings-dropdown .sub-item a { background: none; padding-left: 0; }
+                  
+               .top-menu .autoriz .logout {
+                  text-decoration: none;
+                  background-position: 0 -86px;
+                  }
+               .top-menu a:hover {
+                  color: #D29113;
+                  }
+               .top-menu a i {
+                  display: none;
+                  }
+               .top-menu .current a {
+                  padding-left: 1em;
+                  }
+               .top-menu .current a,
+               .top-menu .current a:hover {
+                  color: #FFF;
+                  cursor: default;
+                  text-decoration: none;
+                  }
+               .top-menu .current a i {
+                  display: inline-block;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  width: 11px;
+                  height: 25px;
+                  margin-right: -11px;
+                  }
+               .top-menu .current a i {
+                  background-position: 100% 100%;
+                  }
+
+   /* =Main
+   ----------------------------------------------- */
+   #main-outer {
+      background-color: #2A7590;
+      }
+   #main {
+      width: 980px;
+      margin: 0 auto;
+      min-height: 497px;
+      padding: 22px 0;
+      }
+   .center #main {
+      width: 670px;
+      padding: 1.91em 0 1em 310px;
+      }
+   #footer {
+      font-size: .9em;
+      color: #0E2C42;
+      text-align: center;
+      padding: 3em 0 2em;
+      }
+      #footer .social {
+         margin-top: 1em;
+         }
+         #footer .social a {
+            color: #003950;
+            text-decoration: none;
+            margin: 0 1em;
+            }
+         #footer .social a:hover {
+            color: #D29113;
+            }
+            #footer .social a img {
+               vertical-align: -4px;
+               margin-right: .1em;
+               }
+      #siteseal {
+         display: block;
+         margin: 10px 0 0;
+         }
+         #siteseal img {
+            vertical-align: middle;
+            margin-right: 3px;
+            }
+
+/*******************
+* Main page
+*******************/
+.pg-main #main-outer {
+   background: transparent url('../images/bg-main-repeat.png') 0 0 repeat-x;
+   }
+   .pg-main #main  {
+      text-align: center;
+      height: 496px;
+      }
+   .pg-main .main-header {
+      color: #FFF;
+      position: relative;
+      font-size: 20px;
+      width: 499px;
+      height: 70px;
+      margin: 0 auto 26px;
+      }
+      .pg-main .main-header span {
+         background: url('../images/bg-main-header.png') 0 0 no-repeat;
+         position: absolute;
+         width: 500px;
+         height: 69px;
+         z-index: 10;
+         top: 0;
+         left: 0;
+         }
+.highlight-steps {
+   overflow: hidden;
+   }
+   .highlight-steps li {
+      background: url('../images/bg-step-arrow.png') 100% 76px no-repeat;
+      display: -moz-inline-stack;
+      display: inline-block;
+      text-align: center;
+      padding: 0 84px 0 0;
+      }
+      .highlight-steps li span {
+         display: block;
+         height: 196px;
+         }
+      .highlight-steps strong {
+         display: block;
+         font: bold 2em/1 'TitilliumMaps29L999wt',Arial,sans-serif;
+         text-shadow: 1px 1px 0 rgb(8,28,44);
+         text-shadow: 1px 1px 0 rgba(8,28,44,.5);
+         margin: -8px 0 0;
+         }
+   .highlight-steps .create span {
+      background: url('../images/bg-steps-create.png') 50% 0 no-repeat;
+      width: 206px;
+      }
+   .highlight-steps .define {
+      margin-left: 33px;
+      }
+      .highlight-steps .define span {
+         background: url('../images/bg-steps-define.png') 30px 0 no-repeat;
+         width: 258px;
+         }
+   .highlight-steps .publish {
+      width: 231px;
+      background: none;
+      text-align: right;
+      margin: 0 0 0 -10px;
+      padding-right: 0;
+      }
+      .highlight-steps .publish span {
+         background: url('../images/bg-steps-publish.png') 50% 0 no-repeat;
+         }
+.pg-main .buttons {
+   text-align: center;
+   margin: 68px 0 0;
+   }
+   .pg-main .buttons .button {
+      margin: 0 .4em;
+      }
+
+/*******************
+* Subscribe Form
+*******************/
+.subscribe {
+   width: 480px;
+   }
+   .payment {
+      margin: 0 0 1.2em;
+      }
+   .payment .field {
+      font-size: 1.2em;
+      }
+      .payment .radio {
+         vertical-align: middle;
+         padding-right: .5em;
+         }
+         .payment .radio input {
+            vertical-align: middle;
+            }
+      .payment img {
+         vertical-align: middle;
+         margin: 0 .4em 0 0;
+         }
+   .subscribe .label {
+      font-size: 1.2em;
+      padding: 0 0 0 .55em;
+      }
+   .types .radio {
+      margin: 0 1em 0 0;
+      }
+   /* Rounded corners with shadow */
+   .f-round, .f-round .bg-bot {
+      background: url('../images/bg-fround-cors.png') 0 -13px no-repeat;
+      }
+   .f-round {
+      position: relative;
+      margin: 0 0 8px -32px;
+      padding: 8px 0 0;
+      }   
+   .f-round .bg-bot {
+      background-position: 0 0;
+      height: 12px;
+      }
+   .f-round .inner {
+      background: url('../images/bg-fround-repeat.png') 0 0 repeat-y;
+      position: relative;
+      overflow: hidden;
+      padding: 13px 20px 3px 41px;
+      }
+   .subscribe .submit {
+      text-align: center;
+      margin: 0 0 0 -34px;
+      padding: 10px 0;
+      }
+
+.purchase-info #main {
+   width: 672px;
+   padding: 1.91em 0 1em 54px;
+   }
+   .purchase-info .message,
+   .purchase-info .trans-info {
+      margin-left: -52px;
+      }
+   .purchase-info .trans-info {
+      background-color: #347D9B;
+      overflow: hidden;
+      font-size: 1.2em;
+      margin-bottom: 2em;
+      padding: .8em 0 .6em 52px;
+      }
+      .purchase-info table th {
+         width: 120px;
+         text-align: left;
+         padding-bottom: .45em;
+         }
+   .back-subsc {
+      font-size: 1.2em;
+      }
+      .back-subsc .return {
+         margin-left: 1.2em;
+         }
+
+/*Modal window*/
+.over-panel {
+   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpiVMjr/gQQYAAD3AINazsQUQAAAABJRU5ErkJggg==);
+   background: rgba(32,110,139,,95);
+   display: none;
+   left: 0;
+   position: absolute;
+   top: 85px;
+   width: 100%;
+   height: 497px;
+   z-index: 999;
+   text-align: left;
+   }
+   .over-panel .inner {
+      width: 670px;
+      margin: 0 auto;
+      padding: 46px 0 0 310px;
+      }
+.signin .inner {
+   padding-top: 106px;
+   }
+   .signin .field .label {
+      margin-bottom: .4em;
+      }
+   .signin .form-cont .inputbox,
+   .register .form-cont .inputbox {
+      font-size: 1.4em;
+      width: 13em;
+      }
+   .forgote-pas {
+      color: #A6D7E1;
+      font-size: .9em;
+      margin-left: 71px;
+      }
+   
+.register .inner {
+   padding-top: 32px;
+   }
+   .register .form-cont .field {
+      padding-left: 86px;
+      }
+      .register .form-cont .field label {
+         width: 5.8em;
+         margin-left: -86px;
+         padding-left: 0;
+         }
+   .register .form-cont .capcha label,
+   .register .form-cont .field .error {
+      width: auto;
+      margin-left: 0;
+      }
+   .register .form-cont .capcha .inputbox,
+   .signin .form-cont .capcha .inputbox {
+      width: 6em;
+      }
+   .register .form-cont .capcha .error,
+   .signin .form-cont .capcha .error {
+      margin-left: 110px;
+      }
+   .register .submit {
+      margin-left: 50px;
+      }
+
+.b-round {
+   position: relative;
+   }
+.b-round .cn {
+   background: url('../images/bg-b-round.png') 0 0 no-repeat;
+   width: 7px;
+   height: 7px;
+   position: absolute;
+   }
+   .b-round .cn.tl {
+      left: 0;
+      top: 0;
+      }
+   .b-round .cn.tr {
+      background-position: 100% 0;
+      top: 0;
+      right: 0;
+      }
+   .b-round .cn.bl {
+      background-position: 0 100%;
+      bottom: 0;
+      left: 0;
+      }
+   .b-round .cn.br {
+      background-position: 100% 100%;
+      right: 0;
+      bottom: 0;
+      }
+
+/*Pricing table*/
+.pricing td, .pricing th {
+   text-align: center;
+   }
+.pricing .f-descr {
+   text-align: left;
+   }
+.pricing tbody td {
+   vertical-align: bottom;
+   }
+.pricing tfoot td {
+   vertical-align: top;
+   }
+.pricing tfoot .f-descr {
+   vertical-align: top;
+   }
+.pricing .checklist {
+   width: 170px;
+   }
+.pricing .checklist.highlight {
+   background-color: #347D9B;
+   width: 156px;
+   }
+.pricing thead th {
+   padding-top: 8px;
+   }
+   .pricing th .b-round .cn {
+      top: -12px;
+      }
+.pricing th.f-descr {
+   font-size: inherit;
+   }
+   .pricing h2 {
+      color: #FFF;
+      font-size: 1.6em;
+      font-family: inherit;
+      }
+.pricing td.f-descr h3 {
+   color: #8BCCF5;
+   font-size: 1.8em;
+   margin: 0 0 .2em;
+   }
+.f-on {
+   background: url('../images/ic-yes.png') 0 0 no-repeat;
+   display: block;
+   text-indent: -9000px;
+   overflow: hidden;
+   width: 20px;
+   height: 22px;
+   margin: 0 auto;
+   }
+.limit {
+   display: block;
+   margin: .4em 0 -19px;
+   }
+.lite {
+   color: #87CAF2;
+   }
+.txt-reg {
+   color: #FDBF28;
+   font-size: 1.2em;
+   text-shadow: 1px 1px #1C5976;
+   }
+.txt-faq {
+   font-size: 1.2em;
+   text-shadow: 1px 1px #1C5976;
+   }
+   .txt-faq a {
+      color: #A6D7E1;
+      }
+.pricing tfoot td {
+   background: url('../images/bg-line.png') 0 0 repeat-x;
+   padding-top: 1em;
+   }
+   .pricing .price {
+      background-color: #055778;
+      font-size: 1.6em;
+      padding: 0;
+      }
+   .pricing .price .b-round {
+      height: 45px;
+      padding-top: 10px;
+      }
+      .pricing .price .numb {
+         font-size: 24px;
+         }
+.pricing tfoot .download-btn td{
+  background: #2A7590;
+  }
+.pricing .button span {
+   min-width: 4em;
+   }
+
+/*Global messages: Erorrs, etc.*/
+.g-message {
+   position: relative;
+   height: 500px;
+   text-align: center;
+   }
+   .g-message .inner {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 40%;
+      bottom: 0;
+      height: 4em;
+      margin: 0 auto;
+      }
+   .g-message h1 {
+      color: #2F7F98;
+      font-size: 100px;
+      text-shadow: none;
+      margin: 0 0 10px;
+      }
+   .success h1 {
+      font-size: 48px;
+      }
+   .g-message span {
+      color: #575B5D;
+      font-size: 1.6em;
+      text-shadow: 1px 1px 0 #FFF;
+      }
+.paypall-link{
+  font-weight:bold;
+  font-style:italic;
+  }
+  .paypall-link .pay{
+    color:#1a3665;
+    }
+  .paypall-link .pall{
+    color:#32689a;
+    }
+
+.support  .inner{
+  padding-top: 0;
+  }
+  .support  .legend{
+    font-size: 14px;
+    text-shadow:1px 1px 0 #045678;
+    position:relative;
+    top: -1.2em;
+    }
+    .support  .legend a{
+      color:#fff;
+      }
+   .support .field label {
+      display: block;
+      margin-bottom: .2em;
+      }
+   .support .inner .inputbox {
+      font-size: 1.4em;
+      width: 24em;
+      }
+.thank-you{
+  color:#fff;
+  font:2.7em/1 'TitilliumMaps29L999wt',Arial,sans-serif;
+  letter-spacing:-0.005em;
+  margin:2em 0;
+  text-align:center;
+  }

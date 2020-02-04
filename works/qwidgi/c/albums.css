@@ -1,0 +1,494 @@
+.qgallery
+   {
+   overflow: hidden;
+   }
+.albums.real .col-tools
+   { display: none; }
+.qgallery .albums,
+.qgallery .imgview
+   {
+   display: block;
+   position: absolute;
+   left: 184px;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   overflow: auto;
+   overflow-x: hidden;
+   }
+   .qgallery .imgview .photos
+      {
+      margin-right: -15px;
+      width: 105%;
+      }
+.albums.real 
+   {
+   padding: 12px 0 0 51px;
+   }
+   .albums.real .list
+      {
+      position: relative;
+      }
+      .albums.real .list .album
+         {
+         display: inline;
+         float: left;
+         position: relative;
+         width: 162px;
+         margin: 25px 57px 0 0;
+         }
+         .qgallery .photos .photo
+            {
+            float: left;
+            width: 120px;
+            height: 135px;
+            margin: 20px 30px 5px 20px;
+            }
+            .qgallery .photos img
+               {
+               max-height: 110px;
+               max-width: 120px;
+               }
+               .photo .view a 
+                  {
+                  display: block;
+                  }
+   .imgview .foto-corners-repeat,
+   .imgview .foto-corners-repeat span
+      {
+      left: 0;
+      top: 6px;
+      width: 100%;
+      height: 90%;
+      }
+      .imgview .foto-corners-repeat span 
+         {
+         top: 0;
+         height: 100%;
+         }
+   .imgview .foto-corners-bot
+      {
+      background-position: 0 99%;
+      left: 0;
+      bottom: 0;
+      }
+   .imgview .img .foto-corners-bot 
+      {
+      bottom: 2px;
+      }
+.imgview .tools, .albums.real .tools
+   {
+   background: transparent url(/i/bg-userfoto-functions.png) repeat scroll 0 0;
+   display: none;
+   left: 0;
+   bottom: 0;
+   position: absolute;
+   text-align: center;
+   width: 100%;
+   z-index: 92;
+   }
+   .albums.real .tools
+      {
+      float: right;
+      width: 80px;
+      background: none;
+      position: relative;
+      margin-top: 2px;
+      }
+      .albums.real .tools ul
+         { 
+         float: right;
+         width: 80px;
+         position: relative;
+         margin: 3px 0 0;
+         padding: 0;
+         }
+      .albums.real .count 
+         {
+         display: block;
+         float: left;
+         margin-top: 2px;
+         }
+.imgview .img .tools 
+   { bottom: 2px; }
+.imgview .photo:hover .tools,
+.imgview .img:hover .tools,
+.albums.real .album .tools
+   {
+   display: block;
+   }
+   .imgview .url 
+      {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 91;
+      }
+   .imgview .tools li,
+   .albums.real .tools li
+      {
+      display: block;
+      float: right;
+      width: 16px;
+      height: 16px;
+      }
+      .imgview .tools li a
+         {
+         background: transparent url(/i/icns-userfoto-functions.png) 0 0 no-repeat;
+         display: block;
+         width: 16px;
+         height: 16px;
+         }
+      .albums.real .tools li a 
+         {
+         display: block;
+         padding: 8px;
+         }
+   .imgview .tools .edit 
+      {
+      padding: 7px 10px 2px 9px;
+      }
+   .imgview .tools .delete
+      {
+      background: transparent url(/i/bg-brd-userfoto-functions.png) 100% 0 repeat-y;
+      padding: 8px 8px 6px 11px;
+      }
+      .imgview .tools .delete a
+         {
+         background-position: 2px -138px;
+         }
+   .imgview .tools .back
+      {
+      background: transparent url(/i/bg-brd-userfoto-functions.png) 0 0 repeat-y;
+      padding: 8px 8px 6px 11px;
+      }
+      .imgview .tools .back a
+         {
+         background-position: 2px -264px;
+         }
+   .albums.real .tools li 
+      {
+      margin-right: 3px;
+      }
+      .albums.real .tools li a,
+      .qgallery .album .tools a
+         {
+         background: url(/i/icns-album-functions.png) 0 0 no-repeat;
+         }
+      .albums.real .tools .rename a,
+      .qgallery .album .tools .rename a
+         {
+         background-position: 0 -83px;
+         }
+      .albums.real .tools .add-photo a,
+      .qgallery .album .tools .add-photo a
+         {
+         background-position: 0 -46px;
+         }
+
+.imgview .title,
+.albums.real .title a
+   {
+   color: #000;
+   font-size: 1.2em;
+   font-weight: bold;
+   text-decoration: none;
+   }
+.albums.real .title a 
+   {
+   padding-bottom: 2px;
+   }
+.imgview h1.title
+   {
+   font-size: 1.4em;
+   letter-spacing: 0;
+   position: relative;
+   }
+.imgview .photo .title,
+.imgview h1.title
+   {
+   padding: 5px 0;
+   }
+   .imgview .title .val,
+   .imgview h1.title .val
+      {
+      cursor: text;
+      font-size: inherit;
+      font-weight: bold;
+      }
+      .imgview .title  .message_wrap
+         {
+         margin: -80px 0 0 20px;
+         }
+      .imgview h1.title .message_wrap 
+         {
+         top: -62px;
+         left: 10px;
+         margin: 0;
+         }
+   .imgview .title .val:hover 
+      {
+      background: #FFF;
+      border: 1px solid #8c8c8c;
+      margin: -4px 0 -4px -3px;
+      padding: 3px 5px 3px 2px;
+      }
+   .imgview .title input,
+   .albums.real .title input
+      {
+      font-size: inherit;
+      background: #FFF;
+      border: 1px solid #8c8c8c;
+      color: #000;
+      font-weight: bold;
+      margin: -4px 0 -4px -3px;
+      padding: 3px 5px 3px 1px;
+      }
+   .albums.real .title input 
+      {
+      font-size: 1.2em;
+      }
+   .imgview .title .message 
+      {
+      font-size: inherit;
+      }
+
+.qgallery.loading .imgview,
+.qgallery.loading .real,
+.qgallery.loading #lftcol-groups{display:none;}
+
+.imgview .area
+   {
+   position: relative;
+   width: auto;
+   margin: 20pt auto;
+   }
+.qgallery.viewlist .albums, 
+.qgallery .albums.viewlist
+{
+   position:absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   margin: 0;
+   overflow: visible;
+}
+.qgallery .albums.viewlist 
+   {
+   overflow: hidden;
+   }
+   .qgallery .albums.viewlist .list
+      {
+      position:absolute;
+      top: 45px;
+      bottom: 0;
+      width: 100%;
+      overflow: auto;
+      }
+   .qgallery .albums.viewlist.can-add .list 
+      {
+      bottom: 38px;
+      }
+.qgallery.viewlist .albums .list ul, 
+.qgallery .albums.viewlist .list ul
+{
+    margin:0;
+    float:none;
+}
+.qgallery .album
+{
+   position: relative;
+   width: auto;
+}
+
+.qgallery.viewlist .albums .list .album .tools, 
+.qgallery .albums.viewlist .list .album .tools
+{
+   display: none;
+   z-index: 15;
+}
+#lftcol-groups .album .tools
+   {
+   display: none;
+   position: absolute;
+   top: 1.5em;
+   right: .2em;
+   width: 16px;
+   height: 16px;
+   }
+#lftcol-groups .hover .tools,
+#lftcol-groups .album:hover .tools
+   {
+   display: block;
+   }
+.albums.real .list .deleted ul,
+.qgallery .photos .deleted ul,
+.imgview .deleted .img,
+.imgview .deleted .title,
+.imgview .deleted .nav
+ { display: none }
+
+.albums.real .deleted .message_wrap,
+.photos .deleted .message_wrap,
+.imgview .deleted .message_wrap
+   {
+   display: block;
+   margin: 30px 19px 0 0;
+   }
+#lftcol-groups .album .tools ul
+   {
+   position: absolute;
+   height: 16px;
+   width: 16px;
+   }
+   #lftcol-groups .title .message_wrap
+      {
+      margin: -75px 0 0 3px;
+      }
+      #lftcol-groups .title .message a 
+         {
+         background: none;
+         border: none;
+         color: #085897;
+         display: inline;
+         font-size: 12px;
+         font-weight: normal;
+         padding: 0;
+         }
+#lftcol-groups .album .tools *,
+#lftcol-groups .album .tools ul
+   { display: none; background-color: transparent; border: none }
+   
+#lftcol-groups .album:hover .tools *,
+#lftcol-groups .hover .tools *
+   { display:block; }
+
+#lftcol-groups .album .tools .rename,
+#lftcol-groups .album .tools .delete
+   {
+   display: none;
+   }
+#lftcol-groups .album .tools .add-photo a
+   {
+   background-color: transparent;
+   padding: 8px 6px;
+   }
+.qgallery.viewlist .albums .list .count,
+.qgallery.viewlist .albums .list .preview,
+.qgallery .albums.viewlist .list .count,
+.qgallery .albums.viewlist .list .preview
+{
+   display:none;
+}
+
+.qgallery .albums .list .count
+   {
+   color: #9b9a9a;
+   font-size: 11px;
+   }
+.qgallery .albums.viewlist .list .count
+   {
+   display: none;
+   }
+
+.photo .view,
+.area .img{position:relative;}
+.photo .view 
+   {
+   background: #CCC;
+   height: 110px;
+   width: 120px;
+   }
+.imgchanger 
+   {
+   text-align: center;
+   }
+.qgallery .albums.viewlist h2 {display:block;}
+.qgallery .albums h2
+{
+   display:none;
+}
+.qgallery.viewlist h2
+{
+   display:block;
+}
+
+.qgallery.viewlist .albums.real
+{
+   display: none;
+}
+#lftcol-groups .album .title.rename
+   {
+   display: block;
+   background: #68C8FF;
+   padding: .6em 0 .6em 3.5em;
+   }
+#lftcol-groups .album .title.rename input
+   {
+   border-top: 1px solid #707070;
+   border-left: 1px solid #707070;
+   color: #1E2725;
+   display: block;
+   font-size: 1.4em;
+   width: 8.3em;
+   text-decoration: none;
+   padding: .3em 0 .3em .2em;
+   }
+
+.albums .list .preview
+   {
+   position: relative;
+   height: 160px;
+   overflow: hidden;
+   margin-bottom: 5px;
+   }
+   .albums .list .preview a.item
+      {
+      display: block;
+      float: left;
+      background-color: #FFF;
+      filter:alpha(opacity=0);
+      -moz-opacity: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      }
+   .albums .list .preview a.item:hover
+      { filter:alpha(opacity=50);
+      -moz-opacity: .5;
+      opacity: .5;
+      }
+
+.albums.real .tools 
+   {
+   display: none;
+   }
+
+.qgallery .nav
+   {
+   width: 82px;
+   margin: 10px auto;
+   }
+   .qgallery .nav li
+      {
+      float: left;
+      margin-right: 5px;
+      }
+      .qgallery .nav a
+         {
+         background: url(/i/arrows.png) 0 -27px no-repeat;
+         display: block;
+         width: 35px;
+         height: 27px;
+         }
+      .qgallery .nav a.left:hover
+         { background-position: 0 -54px; }
+
+.qgallery .nav a.right{
+   background-position:-35px -27px;
+}
+
+.qgallery .nav a.right:hover{
+   background-position:-35px -54px;
+}

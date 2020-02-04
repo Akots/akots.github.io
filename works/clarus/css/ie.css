@@ -1,0 +1,36 @@
+/*
+Title: Styles for IE 7 and early versions
+Author: Kotsuruba Alexander
+Version:  21.07.08
+*/
+#contact-us {
+	width: 230px;
+	text-align: right;
+	}
+	#contact-us p {
+		width: 130px;
+		text-align: left;
+		}
+	*+html #contact-us {
+		width: 190px;
+		}
+#language-select {
+	margin-left: -1em;
+	position: relative;
+	}
+#clients {
+	width: 75.5em;
+	}
+	*+html #clients {
+		width: 75.6em;
+		}
+ #top-menu .menuparent {
+	width: 11%;
+	}
+#top-menu .menuparent ul {
+	filter:alpha(opacity=80);
+	margin-left: -5.5em;
+	}
+#top-menu li#active_menu ul {
+	margin-left: -4.7em;
+	}
