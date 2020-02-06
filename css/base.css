@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
 Author: Kotsuruba Alexander
-Version:  18.05.2010
+Version:  06.02.2020
 ***********
  Colors:
    #111E22 - black
@@ -457,12 +457,12 @@ footer {
       width: 100%;
       padding: 0 10px;
       }
-   header .description {
+   /*header .description {
       font-size: 1.2em;
       }
    nav {
       display: none;
-   }
+   }*/
    .works-list .work {
       height: auto;
       padding-right: 10px;
@@ -474,10 +474,4 @@ footer {
       float: none;
       margin-bottom: 15px;
       }
-}
-
-@media screen and (max-width:320px) {
-   header .description {
-      display: none;
-   }
 }

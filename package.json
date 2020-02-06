@@ -1,0 +1,11 @@
+{
+  "name": "AKots",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}

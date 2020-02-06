@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/*
+Author: Kotsuruba Alexander
+Version:  06.02.2020
+***********
+ Colors:
+   #111E22 - black
+   #4690BB - blue links
+*/
+   
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q,
+small, strike, strong, sub, sup, tt,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+header, nav, footer, section {
+   background: transparent;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   vertical-align: baseline;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+
+body {
+   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+   background-color: #FFF;
+   color: #41424E;
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5;
+   text-align: left;
+}
+
+/* The Begining of the End (default styles)
+----------------------------------------------- */
+
+fieldset, img, a img { border: 0 solid; }
+
+a {
+   text-decoration: none;
+}
+ol, ul { list-style: none outside; }
+
+
+/* Stylws
+----------------------------------------------- */
+
+
+.user-favorite {
+   background-image: url("images/favourites-star.svg");
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   -webkit-background-size: 17px 17px;
+   background-size: 17px 17px;
+   background-color: #FFA578;
+   box-shadow: 0 7px 40px rgba(255, 108, 0, .46);
+   border-radius: 100%;
+   width: 3rem;
+   height: 3rem;
+}
+.user-profile-pic .user-favorite {
+   position: absolute;
+   z-index: 1;
+   left: 1.125rem;
+   top: 1.125rem;
+}
+
+.user-profile-pic {
+   border-radius: 100%;
+   border: 1px solid rgba(242, 241, 240, 1);
+   
+   width: 11.375rem;
+   height: 11.375rem;
+   position: relative;
+   display: -webkit-flex;
+   display: -moz-flex;
+   display: -ms-flex;
+   display: -o-flex;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   padding: 12px;
+}
+.user-profile-pic::after {
+   border: 1px solid rgba(230, 230, 230, 1);
+   content: "";
+   border-radius: 100%;
+   position: absolute;
+   top: 12px;
+   left: 12px;
+   right: 12px;
+   bottom: 12px;
+}
+.userpic {
+   border-radius: 100%;
+   background-position: center center;
+}
+
+.user-profile-pic .userpic {
+   width: 8rem;
+   height: 8rem;
+}
+
+.user-info-name {
+   color: #FFA578;
+   font-size: 1.5rem;
+   line-height: 1.5rem;
+   font-weight: bold;
+}
+
+.user-label-link {
+   background-color: #E5E7F1;
+   display: inline-block;
+   font-size: 0.75rem;
+   font-weight: bold;
+   color: #41424E;
+   height: 1.5rem;
+   line-height: 1.5rem;
+   padding: 0 0.75rem;
+}
+.user-label-link--city {
+   background-color: #D8E8FF;
+}
+.user-label-link--team {
+   background-color: #DDF5C0;
+}
+.user-label-link--position {
+   background-color: #FAE7FF;
+}
+
+.user-labels .user-label-item {
+   display: inline-block;
+   margin-bottom: 6px;
+   margin-right: 6px;
+}
+.user-label-item .user-label-link {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   max-width: 300px;
+}
+
+.user-block {
+   display: -webkit-flex;
+   display: -moz-flex;
+   display: -ms-flex;
+   display: -o-flex;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.user-block .user-profile-pic {
+   flex-basis: 11.375rem;
+   margin-right: 2.5rem;
+   margin-bottom: 2rem
+}
+.user-block .user-info-name {
+   margin-bottom: 1.3rem;
+}
+
+
+.main {
+   margin: 5rem 3rem;
+}
+
+/*
+   Mobile & Tables layout
+*/
+@media screen and (max-width:768px) {
+   .user-block {
+      flex-direction: column;
+   }
+   .user-block .user-profile-pic {
+      margin-bottom: 2rem;
+   }
+}
+@media screen and (max-width:576px) {
+   .main {
+      margin: 5rem 1rem;
+   }
+   .user-block {
+      flex-direction: column;
+   }
+}
