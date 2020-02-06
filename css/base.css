@@ -79,7 +79,7 @@ header, nav, article, footer, main { display: block; }
 #main-outer {
    /*background: #D0EFF3 url('../images/bg-clouds.png') fixed no-repeat 50% 92px;*/
    background: #D0EFF3;
-   padding: 39px 0 6px;
+   padding: 30px 0 6px;
    }
    #main {
       width: 78.3em;
@@ -93,7 +93,7 @@ header, nav, article, footer, main { display: block; }
 
    
    /* =Header(logo,menu...)
-   ----------------------------------------------- */
+   ----------------------------------------------- 
    .logo-wrap {
       float: left;
       width: 33em;
@@ -139,7 +139,7 @@ header, nav, article, footer, main { display: block; }
             border: none;
             color: #000;
             cursor: default;
-            }
+            }*/
 
    /* =Main
    ----------------------------------------------- */
@@ -331,7 +331,7 @@ header, nav, article, footer, main { display: block; }
          clear: both;
          position: relative;
          overflow: hidden;
-         margin: 0 0 20px;
+         margin: 5px 0 20px;
          padding: 12px 20px 10px 10px;
          }
       .works-list .work {

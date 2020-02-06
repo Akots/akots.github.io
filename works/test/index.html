@@ -6,13 +6,18 @@
    <title>Portfolio | Alexander Kotsuruba</title>
    <meta name="description" content="Portfolio of Alexander Kotsuruba, UX Designer/Frontend developer."/>
    <meta name="robots" content="all" >
-   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no,maximum-scale=1.0,user-scalable=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
    <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
 
    <link rel="stylesheet" media="screen" href="./css/base.css">
    <!--[if lte IE 9]>
       <script>
+         document.createElement('header');
          document.createElement('footer');
+         document.createElement('section');
+         document.createElement('aside');
+         document.createElement('nav');
+         document.createElement('article');
          document.createElement('main');
       </script>
    <![endif]-->
@@ -24,7 +29,7 @@
 <body>
 <!-- BEGIN #main-outer -->
 <div id="main-outer">
-   <main id="main">
+   <div id="main">
       <div class="maincontent">
         <ul class="works-list">
           <li class="work bg-shadow">
@@ -32,7 +37,7 @@
             <strong class="title">Vocabnetwork</strong>
             <em class="summary">English learning platform</em>
             <div class="entry-content">
-               UX Design, 
+               UX Design, Frontend development
                HTML/CSS/SCSS/JavaScript/JQuery/Vue.js<br>
                Web: <a rel="external" target="_blank" href="https://vocabnetwork.com/">www.vocabnetwork.com</a><br>
             </div>
@@ -43,7 +48,7 @@
             <strong class="title">Lens Culture</strong>
             <em class="summary">One of the largest destinations for curated, contemporary photography from around the world.</em>
             <div class="entry-content">
-               UX Design, Prototyping, HTML/CSS/JavaScript<br>
+               UX Design, HTML/CSS/JavaScript<br>
                Mobile prototype: <a rel="external" target="_blank" href="https://marvelapp.com/38c195g">LS iPhone</a><br>
                Web: <a rel="external" target="_blank" href="http://www.lensculture.com">www.lensculture.com</a><br>
             </div>
@@ -65,7 +70,7 @@
             <strong class="title">DTC</strong>
             <em class="summary">Social platform for lawyers</em>
             <div class="entry-content">
-               UX Design, Prototyping<br>
+               UX Design<br>
                Wireframes: <a href="/works/dimalex/dtc/">/works/dimalex/dtc/</a><br>
             </div>
           </li>
@@ -184,7 +189,7 @@
             </li> -->
           </ul>
       </div>
-  </main>
+  </div>
 </div><!-- END #main-outer -->
 <footer>
    <div class="copyrights">
