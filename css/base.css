@@ -409,7 +409,7 @@ header, nav, article, footer, main { display: block; }
    
 /* =Footer
 ----------------------------------------------- */ 
-footer {
+#footer {
    width: 78.3em;
    overflow: hidden;
    -webkit-box-sizing: border-box;
@@ -418,15 +418,15 @@ footer {
    margin: 0 auto;
    padding: 15px 20px 10px;
    }
-   footer dl {
+   /*.footer dl {
       float: left;
       width: 300px;
       }
-      footer dt {
+      .footer dt {
          font: 2em "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
          margin-bottom: 3px;
          }
-      footer dd {
+      .footer dd {
          font-size: 1.4em;
          line-height: 1.4em;
          }
@@ -441,7 +441,7 @@ footer {
          }
       .linkedin {
          background-position: 0 -40px;
-         }
+         }*/
       .copyrights {
          color: #5D6365;
          font-size: 1.2em;
@@ -453,10 +453,14 @@ footer {
    Mobile & Tables layout
 */
 @media screen and (max-width:720px) {
-   #main {
+   #main,
+   #footer {
       width: 100%;
       padding: 0 10px;
       }
+   #footer {
+      padding: 10px;
+   }
    /*header .description {
       font-size: 1.2em;
       }
