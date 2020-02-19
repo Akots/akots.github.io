@@ -1,6 +1,7 @@
 {
   "name": "AKots",
   "version": "0.1.0",
+  "description": "Personal portfolio",
   "private": true,
   "scripts": {
     "dev": "lite-server"
