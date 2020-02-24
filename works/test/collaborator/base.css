@@ -105,6 +105,8 @@ ol, ul { list-style: none outside; }
 .userpic {
    border-radius: 100%;
    background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
 }
 
 .user-profile-pic .userpic {
